@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Overview</title>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
     <style>
       @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
@@ -65,11 +67,36 @@
     </div>
 
     <script type="text/javascript">
-      window.reflect = {
-        view: 'wnNmRf91R32Ibn8D9TS7Cg',
-        element: document.getElementById('view'),
-      };
+      var ui = new ReflectUI();
+
+      function render() {
+        ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
+      }
+
+      ui.on('status', 'dataPointClick', function(data) {
+        ui.withFilters([{
+          field: 'Status',
+          op: '=',
+          value: data.rowData.Status,
+          removable: true,
+        }]);
+
+        render();
+      });
+
+      ui.on('type', 'dataPointClick', function(data) {
+        ui.withFilters([{
+          field: 'Type',
+          op: '=',
+          value: data.rowData.Type,
+          removable: true,
+        }]);
+
+        render();
+      });
+
+      render()
     </script>
-    <script type="text/javascript" src="https://cdn.reflect.io/embed.js"></script>
+    <script type="text/javascript" src="https://cdn.reflect.io/latest/reflect.js"></script>
   </body>
 </html>
