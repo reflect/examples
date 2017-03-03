@@ -7,6 +7,10 @@
     <a href="https://github.com/reflect/examples">
       <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">
     </a>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="https://www.patrick-wied.at/static/heatmapjs/assets/js/leaflet-heatmap.js"></script>
+    <script src="https://www.patrick-wied.at/static/heatmapjs/assets/js/heatmap.min.js"></script>
     <script src="https://cdn.reflect.io/latest/reflect.js"></script>
     <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
     <style>
@@ -70,35 +74,65 @@
     </div>
 
     <script type="text/javascript">
-      var ui = new ReflectUI();
 
-      function render() {
-        ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
+      const HeatmapType = function(elem, settings, data) {
+        data = data.pluckMetric(0).map(function(val, i) {
+          var d = {
+            lat: data.pluckDimension(0)[i],
+            lng: data.pluckDimension(1)[i],
+            value: val
+          };
+
+          return d
+        })
+
+        var testData = {
+          max: 3000,
+          data: data
+        };
+
+        var baseLayer = L.tileLayer(
+          'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+            attribution: '...',
+            maxZoom: 18
+          }
+        );
+
+        var config = {
+          // radius should be small ONLY if scaleRadius is true (or small radius is intended)
+          // if scaleRadius is false it will be the constant radius used in pixels
+          "radius": 2,
+          "maxOpacity": .6,
+          // scales the radius based on map zoom
+          "scaleRadius": true,
+          // if set to false the heatmap uses the global maximum for colorization
+          // if activated: uses the data maximum within the current map boundaries
+          //   (there will always be a red spot with useLocalExtremas true)
+          "useLocalExtrema": true,
+        };
+
+
+        var heatmapLayer = new HeatmapOverlay(config);
+
+        var map = new L.Map(elem, {
+          center: new L.LatLng(25.6586, -80.3568),
+          zoom: 2,
+          layers: [baseLayer, heatmapLayer]
+        });
+
+        heatmapLayer.setData(testData);
+
+        settings.events['render:complete']();
       }
 
-      ui.on('status', 'dataPointClick', function(data) {
-        ui.withFilters([{
-          field: 'Status',
-          op: '=',
-          value: data.rowData.Status,
-          removable: true,
-        }]);
+      var ui = new ReflectUI();
 
-        render();
+      ui.withChartTypes({
+        heatmap: HeatmapType
       });
 
-      ui.on('type', 'dataPointClick', function(data) {
-        ui.withFilters([{
-          field: 'Type',
-          op: '=',
-          value: data.rowData.Type,
-          removable: true,
-        }]);
+      ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
 
-        render();
-      });
-
-      render()
     </script>
     <script type="text/javascript" src="https://cdn.reflect.io/latest/reflect.js"></script>
   </body>
