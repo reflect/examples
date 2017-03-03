@@ -131,8 +131,33 @@
         heatmap: HeatmapType
       });
 
-      ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
+      function render() {
+        ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
+      }
 
+      ui.on('status', 'dataPointClick', function(data) {
+        ui.withFilters([{
+          field: 'Status',
+          op: '=',
+          value: data.rowData.Status,
+          removable: true,
+        }]);
+        render();
+      });
+
+      ui.on('type', 'dataPointClick', function(data) {
+        ui.withFilters([{
+          field: 'Type',
+          op: '=',
+          value: data.rowData.Type,
+          removable: true,
+        }]);
+
+        render();
+      });
+
+
+      render();
     </script>
     <script type="text/javascript" src="https://cdn.reflect.io/latest/reflect.js"></script>
   </body>
