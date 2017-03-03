@@ -74,43 +74,30 @@
     </div>
 
     <script type="text/javascript">
-
       const HeatmapType = function(elem, settings, data) {
         data = data.pluckMetric(0).map(function(val, i) {
-          var d = {
+          return {
             lat: data.pluckDimension(0)[i],
             lng: data.pluckDimension(1)[i],
             value: val
           };
-
-          return d
         })
 
-        var testData = {
-          max: 3000,
-          data: data
-        };
+        var testData = { max: 3000, data: data };
 
         var baseLayer = L.tileLayer(
           'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-            attribution: '...',
+            attribution: 'Powered by Reflect',
             maxZoom: 18
           }
         );
 
         var config = {
-          // radius should be small ONLY if scaleRadius is true (or small radius is intended)
-          // if scaleRadius is false it will be the constant radius used in pixels
-          "radius": 2,
-          "maxOpacity": .6,
-          // scales the radius based on map zoom
-          "scaleRadius": true,
-          // if set to false the heatmap uses the global maximum for colorization
-          // if activated: uses the data maximum within the current map boundaries
-          //   (there will always be a red spot with useLocalExtremas true)
-          "useLocalExtrema": true,
+          radius: 2,
+          maxOpacity: .6,
+          scaleRadius: true,
+          useLocalExtrema: true,
         };
-
 
         var heatmapLayer = new HeatmapOverlay(config);
 
