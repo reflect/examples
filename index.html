@@ -23,7 +23,7 @@
           var $list = $('.page-list');
 
           data.forEach(function(d) {
-            if (d.type === 'file' && d.name.match(/\.html$/)) {
+            if (d.type === 'file' && d.name.match(/\.html$/) && d.name !== 'index.html') {
               $list.append('<li><a href="./' + d.name +  '">' + d.name.replace(/\.html$/, '') + '</a></li>')
             }
           })
