@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Earthquakes",
+    "description": "Heat map and statistics on earthquake intensity across US",
+    "tags": ["Custom component", "Advanced embedding"],
+    "url": "https://github.com/reflect/examples/blob/master/earthquakes.html",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  },
+  {
+    "title": "Productivity",
+    "description": "Who's better, Geoff or Colby?",
+    "tags": ["Parameters", "Advanced embedding"],
+    "url": "https://github.com/reflect/examples/blob/master/productivity.html",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  }
+]

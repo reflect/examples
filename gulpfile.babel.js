@@ -1,23 +1,27 @@
+'use strict';
+
 // Load plugins
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    clean = require('gulp-clean'),
-    concat = require('gulp-concat'),
-    cache = require('gulp-cache'),
-    browserSync = require('browser-sync').create();
-    reload = browserSync.reload;
-    stream = browserSync.stream;
+import gulp from 'gulp';
+import sass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+import minifycss from 'gulp-minify-css';
+import uglify from 'gulp-uglify';
+import imagemin from 'gulp-imagemin';
+import rename from 'gulp-rename';
+import clean from 'gulp-clean';
+import concat from 'gulp-concat';
+import cache from 'gulp-cache';
+import browserSync from 'browser-sync';
+
+const reload = browserSync.reload;
+const stream = browserSync.stream;
 
 // Styles
-gulp.task('styles', function() {
+gulp.task('styles', () => {
   return gulp.src('assets/stylesheets/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
+    .pipe(concat('main.css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/stylesheets'))
@@ -26,7 +30,7 @@ gulp.task('styles', function() {
 });
 
 // Scripts (2 part)
-gulp.task('compile:scripts', function() {
+gulp.task('compile:scripts', () => {
   return gulp.src('assets/javascripts/*.js')
     .pipe(concat('main.js'))
     .pipe(rename({ suffix: '.min' }))
@@ -35,12 +39,12 @@ gulp.task('compile:scripts', function() {
 });
 
 // Ensure the compile task is complete before reloading browsers
-gulp.task('watch:scripts', ['compile:scripts'], function() {
+gulp.task('watch:scripts', ['compile:scripts'], () => {
     browserSync.reload();
 });
 
 // Images
-gulp.task('images', function() {
+gulp.task('images', () => {
   return gulp.src('assets/images/**/*')
     .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/images'))
@@ -49,19 +53,19 @@ gulp.task('images', function() {
 });
 
 // Views
-gulp.task('views', function() {
+gulp.task('views', () => {
   return gulp.src('views/**/*')
     .pipe(gulp.dest('dist/views'))
 });
 
 // Index
-gulp.task('index', function() {
+gulp.task('index', () => {
   return gulp.src('./index.html')
     .pipe(gulp.dest('dist'))
 });
 
 // Clean
-gulp.task('clean', function() {
+gulp.task('clean', () => {
   return gulp.src(['dist'], {read: false})
     .pipe(clean());
 });
@@ -73,7 +77,7 @@ gulp.task('build', ['styles', 'compile:scripts', 'images', 'views', 'index']);
 gulp.task('default', ['clean', 'build']);
 
 // Watch task
-gulp.task('watch', ['build'], function() {
+gulp.task('watch', ['build'], () => {
   // Start browserSync
   browserSync.init({
     server: "./dist"
