@@ -18,10 +18,9 @@ const stream = browserSync.stream;
 
 // Styles
 gulp.task('styles', () => {
-  return gulp.src('assets/stylesheets/*.scss')
+  return gulp.src('assets/stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(concat('main.css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/stylesheets'))
@@ -84,7 +83,7 @@ gulp.task('watch', ['build'], () => {
   });
 
   // .scss files
-  gulp.watch('assets/stylesheets/*.scss', ['styles']);
+  gulp.watch('assets/stylesheets/**/*.scss', ['styles']);
 
   // .js files
   gulp.watch('assets/javascripts/*.js', ['watch:scripts']);

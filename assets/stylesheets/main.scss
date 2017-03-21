@@ -14,6 +14,7 @@ $container-box-shadow: .5rem .3rem 2rem rgba(0,0,0,0.17);
 
 header {
   display: inline-block;
+  width: 100%;
 }
 
 header p {
@@ -70,20 +71,72 @@ a {
 .view-container,
 .card-container {
   @include border-radius-default;
-  margin-top: 5.5rem;
   background-color: #F9F9F9;
 }
 
 .view-container {
-  padding: 0 12px;
-  border: 3px dashed #ecebea;
+  margin-top: 50px;
+  padding: 20px;
+  border: 3px solid #ecebea;
   border-radius: 5px;
   min-height: 400px;
 }
 
 
+//Toolbar
+.toolbar {
+  width: 450px;
+  display: inline-block;
+  float: right;
+}
 
+.toolbar .group,
+.toolbar .title,
+.toolbar .option-list,
+.toolbar .option {
+  @include border-radius-default;
+  display: inline-block;
+}
 
+.toolbar .group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+
+  &:first-of-type {
+    background: #CB2BB8;
+  }
+  &:nth-of-type(2) {
+    background: #B22DD5;
+  }
+  &:last-of-type {
+    background: #7B32BE;
+  }
+}
+
+.toolbar .title,
+.toolbar .option {
+  padding: 0 10px;
+}
+
+.toolbar .title {
+  line-height: 50px;
+  width: 100px;
+  color: #fff;
+}
+
+.toolbar .option-list {
+}
+
+.toolbar .option {
+  background-color: #fff;
+  margin-right: 10px;
+
+  &.selected {
+    background-color: #269cff;
+    color: #fff;
+  }
+}
 
 //Cards
 
@@ -92,27 +145,17 @@ a {
   flex-flow: row wrap;
   justify-content: space-around;
   height: 100%;
-
-  &:active,
-  &:hover,
-  &:focus {
-    img {
-      opacity: .7;
-    }
-  }
+  margin-top: 80px;
+  text-align: center;
+  padding: 35px;
 }
 
-.card-wrapper {
+//used to force grid with any number of apps
+.card-filler {
+  padding: 0 35px;
+  width: 300px;
   display: inline-block;
-  padding: 50px;
-
-  &:active,
-  &:hover,
-  &:focus {
-    img {
-      opacity: 1;
-    }
-  }
+  position: relative;
 }
 
 .card {
@@ -123,11 +166,16 @@ a {
   height: 300px;
   position: relative;
   overflow: hidden;
+  margin: 35px;
 
   &:active,
   &:hover,
   &:focus {
     box-shadow: $card-hover-box-shadow;
+  }
+
+  &.on-hover img {
+    opacity: .7;
   }
 }
 
@@ -167,6 +215,7 @@ a {
 .card .description {
   border-bottom-right-radius: 0.2778rem;
   border-bottom-left-radius: 0.2778rem;
+  text-align: left;
   position: absolute;
   bottom: 0;
   left: 0;

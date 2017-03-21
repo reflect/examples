@@ -1,0 +1,42 @@
+// Redefine tooltip legend colors for timeseries
+$viz-palette-base: #FF775D;
+
+$viz-palette: (
+  0: $viz-palette-base,
+  1: adjust-hue($viz-palette-base, 18 * 1),
+  2: adjust-hue($viz-palette-base, 18 * 2),
+  3: adjust-hue($viz-palette-base, 18 * 3),
+  4: adjust-hue($viz-palette-base, 18 * 4),
+  5: adjust-hue($viz-palette-base, 18 * 5),
+  6: adjust-hue($viz-palette-base, 18 * 6),
+  7: adjust-hue($viz-palette-base, 18 * 7),
+  8: adjust-hue($viz-palette-base, 18 * 8),
+  9: adjust-hue($viz-palette-base, 18 * 9),
+  10: adjust-hue($viz-palette-base, 18 * 10),
+  11: adjust-hue($viz-palette-base, 18 * 11)
+) !default;
+
+// Reflect Styles
+@import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+#view {
+ .viz-metric-value {
+   color: $viz-palette-base;
+ }
+}
+
+#_yp5RyjnSdazrPqSN9DslA-3,
+#_yp5RyjnSdazrPqSN9DslA-4,
+#wh9HHUVETR-YwdTRuws4Ww-3,
+#wh9HHUVETR-YwdTRuws4Ww-4 {
+  background-color: lightgrey;
+  color: grey;
+
+  .viz-metric-value {
+    color: white;
+  }
+}
+
+button {
+  color: red;
+}
