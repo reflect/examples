@@ -19,7 +19,23 @@ $viz-palette: (
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
 
 .view-container {
-  background-color: beige;
+  background-color: #F0F0F0;
+  border: 2px solid #3E6C85;
+  position: relative;
+}
+
+.disclaimer {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  z-index: 99;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 0 5px;
+
+  span {
+    color: #FF775D;
+  }
 }
 
 #view, #view2 {
@@ -34,7 +50,7 @@ $viz-palette: (
   }
 }
 
-// style grey kpi
+// style top kpi
 #_yp5RyjnSdazrPqSN9DslA-3,
 #_yp5RyjnSdazrPqSN9DslA-4,
 #wh9HHUVETR-YwdTRuws4Ww-3,
@@ -53,6 +69,41 @@ $viz-palette: (
   }
 }
 
+// gender bar tooltip
+#wh9HHUVETR-YwdTRuws4Ww-1 .viz-multi-series {
+  .viz-series-indicator {
+    background: pink;
+  }
+
+  &:last-of-type .viz-series-indicator {
+    background: lightblue;
+  }
+}
+
+// dropdown
+.rc-dropdown-label-text {
+  color: darken(adjust-hue($viz-palette-base, 18 * 2),20%);
+}
+
+.rc-dropdown-toggle .rc-icon {
+  fill: darken(adjust-hue($viz-palette-base, 18 * 2),20%);
+}
+
+.rc-menu .rc-menu-item {
+  a {
+    color: #3E6C85;
+  }
+
+  &:hover a {
+    background-color: darken(adjust-hue($viz-palette-base, 18 * 2),20%);
+  }
+
+  &.rc-menu-item-selected a {
+    background-color: #3E6C85;
+    color: white;
+  }
+}
+
 .controls-wrapper {
   text-align: center;
 }
@@ -61,7 +112,7 @@ $viz-palette: (
   display: inline-block;
 
   p {
-    color: white;
+    color: #3E6C85;
     font-size: 20px;
     padding: 5px;
     display: inline-block;
@@ -69,9 +120,11 @@ $viz-palette: (
     padding: 5px;
     padding-left: 10px;
     width: auto;
-    background-color: tan;
+    background-color: white;
     margin-bottom: 16px;
     border-radius: 5px;
+    border: 1px solid #3E6C85;
+    text-transform: capitalize;
   }
 }
 
@@ -85,7 +138,7 @@ select {
   height: 38px;
   padding: 5px;
   width: auto;
-  background-color: tan;
+  background-color: #3E6C85;
   color: white;
   margin-bottom: 16px;
   font-family: 'Open Sans',sans-serif;
@@ -99,11 +152,17 @@ label {
 }
 
 button {
-  color: red;
+  color: darken(adjust-hue($viz-palette-base, 18 * 2),20%);
   position: relative;
-  top: -2px;
   margin-left: 10px;
   margin-right: 5px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 hr {

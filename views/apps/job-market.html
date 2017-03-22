@@ -12,9 +12,13 @@
   <body>
     <h1>Job outlook for US college graduates</h1>
     <p>INTERACTIONS || CUSTOM CONTROLS || THEMING</p>
+    <p>Custom Controls || Interactions()</p>
     <p>Drill into specific concentrations by clicking on the associated bar.</p>
 
     <div class="view-container">
+      <div class="disclaimer">
+        <p><span>*</span>Click on a bar to learn about that specific major</p>
+      </div>
       <div class="controls-wrapper">
         <div id="industry-controls">
           <label for="major-selects">Industry</label>
@@ -57,6 +61,12 @@
         "value": major
       }]);
 
+      ui.withFormatters({
+        Major: function(d) {
+          return (d.substr(0,1).toUpperCase() + d.substr(1));
+        }
+      });
+
       function render() {
         ui.view(document.getElementById('view'), '_yp5RyjnSdazrPqSN9DslA');
         $('#view2').html('');
@@ -76,6 +86,7 @@
 
         render();
         $('#concentration-controls').html('');
+        $('.disclaimer').show();
       });
 
       // drill into "concentration"
@@ -90,19 +101,27 @@
           "value": concentration
         }]);
 
+        newui.withFormatters({
+          Major: function(d) {
+            return (d.substr(0,1).toUpperCase() + d.substr(1));
+          }
+        });
+
         newui.view(document.getElementById('view2'), 'wh9HHUVETR-YwdTRuws4Ww');
         $('#view').html('');
+        $('.disclaimer').hide();
 
         newui.on('bars-gender', 'render', function(data) {
           $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series rect').css({'fill': 'pink', 'stroke': 'pink'});
           $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series:last-of-type rect').css({'fill': 'lightblue', 'stroke': 'lightblue'});
         });
 
-        $('#concentration-controls').html('<label>Concentration</label><p>' + concentration + '<button type="button" id="concentration-btn">X</button></p>');
+        $('#concentration-controls').html('<label>Focus</label><p>' + concentration + '<button type="button" id="concentration-btn">&times</button></p>');
 
         // remove "concentration" filter
         $("#concentration-btn").click(function() {
           $('#concentration-controls').html('');
+          $('.disclaimer').show();
           render();
         });
       }

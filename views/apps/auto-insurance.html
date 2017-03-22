@@ -13,9 +13,18 @@
   <body>
     <h1>Auto Insurance Losses</h1>
     <p>CUSTOM CONTROLS || THEMING</p>
+    <p>Groups &amp; withColors() || withFilters() &amp; filter-bar</p>
     <p>Find trends in the data using withColors()</p>
 
     <div class="view-container">
+      <div class="controls">
+        <p>Regional filters: </p>
+        <button type="button" value="West" class="region-btn">West</button>
+        <button type="button" value="Midwest" class="region-btn">Midwest</button>
+        <button type="button" value="South" class="region-btn">South</button>
+        <button type="button" value="Northeast" class="region-btn">Northeast</button>
+        <button type="button" value="" class="clear-btn">All</button>
+      </div>
       <div id="view"></div>
     </div>
 
@@ -27,11 +36,52 @@
         ui.view(document.getElementById('view'), 'e46eKoNGQo6cqIaeoEwAHA');
       }
 
+      ui.withFormatters({
+        'Alcohol Impaired': function(d) {
+          return d + '%';
+        },
+        'First Accident': function(d) {
+          return d + '%';
+        },
+        'Speeding': function(d) {
+          return d + '%';
+        },
+        'Hand Held Ban': function(d) {
+          switch(true) {
+            case d === 'All drivers':
+              return 'Full ban';
+              break;
+            case d === 'Partial':
+              return 'Partial ban';
+              break;
+            default:
+              return 'No ban';
+          }
+        },
+        'Texting Ban': function(d) {
+          switch(true) {
+            case d === 'All drivers':
+              return 'Full ban';
+              break;
+            case d === 'Partial':
+              return 'Partial ban';
+              break;
+            default:
+              return 'No ban';
+          }
+        },
+      });
+
       ui.withColors({
         'Texting Ban': {
-          'No ban': 'red',
-          'Partial': 'yellow',
-          'All drivers': '#164D71'
+          'No ban': '#70B6E3',
+          'Partial': '#E3E270',
+          'All drivers': '#D23B2F'
+        },
+        'Hand Held Ban': {
+          'No ban': '#70B6E3',
+          'Partial': '#E3E270',
+          'All drivers': '#D23B2F'
         }
       });
 
@@ -48,6 +98,28 @@
           $('li:contains("0.00")').hide();
         });
       });
+
+      $('.region-btn').click(function(e) {
+        var region = {
+          field: 'Region',
+          op: '=',
+          value: e.target.value,
+          removable: true
+        }
+
+        ui.withFilters([
+          region
+        ]);
+
+        render();
+      });
+
+      $('.clear-btn').click(function(e) {
+        ui.withFilters([]);
+
+        render();
+      });
+
 
     </script>
   </body>

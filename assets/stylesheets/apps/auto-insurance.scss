@@ -18,8 +18,64 @@ $viz-palette: (
 // Reflect Styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
 
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+.view-container {
+  background-color: teal;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  z-index: 99;
+
+  p {
+    display: inline-block;
+    color: white;
+    vertical-align: bottom;
+  }
+
+  button {
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
 #view {
+  .viz-headline .viz-title {
+    color: #fff !important;
+  }
+
+  .viz-title {
+    font-size: 20px !important;
+  }
+
+  .viz-filters {
+    background-color: white;
+  }
+
+  .viz-icon-plus:before {
+    content: '+';
+  }
+
+  .viz-icon-cancel-circled:before {
+    content: '\00D7';
+  }
+
+  .viz-container, .viz-container p,
+  .viz .viz-legend ul li,
+  .viz-title {
+    font-family: 'Anonymous Pro', monospace !important;
+  }
+
   .viz-metric-value {
     color: $viz-palette-base;
+    font-family: 'Anonymous Pro', monospace !important;
   }
 }

@@ -23,6 +23,23 @@ $accent-color: #FFDD38;
 .view-container {
   background-color: black;
   border-color: black;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  z-index: 99;
+
+  button {
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    margin-left: 5px;
+  }
 }
 
 #view {
