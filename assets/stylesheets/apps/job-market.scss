@@ -1,4 +1,3 @@
-// Redefine tooltip legend colors for timeseries
 $viz-palette-base: #FF775D;
 
 $viz-palette: (
@@ -19,24 +18,86 @@ $viz-palette: (
 // Reflect Styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
 
-#view {
- .viz-metric-value {
-   color: $viz-palette-base;
- }
+.view-container {
+  background-color: tan;
 }
 
+#view, #view2 {
+  .viz-container {
+      -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+      -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+      box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+  }
+
+  .viz-metric-value {
+    color: #3E6C85;
+  }
+}
+
+// style grey kpi
 #_yp5RyjnSdazrPqSN9DslA-3,
 #_yp5RyjnSdazrPqSN9DslA-4,
 #wh9HHUVETR-YwdTRuws4Ww-3,
 #wh9HHUVETR-YwdTRuws4Ww-4 {
-  background-color: lightgrey;
+  text-align: center;
+  background-color: #3E6C85;
+  border-color: #3E6C85;
   color: grey;
+
+  .viz-title {
+    color: lightgrey !important;
+  }
 
   .viz-metric-value {
     color: white;
   }
 }
 
+.controls-wrapper {
+  text-align: center;
+}
+
+#industry-controls, #concentration-controls {
+  display: inline-block;
+
+  p {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+  }
+}
+
+#concentration-controls {
+  margin-left: 20px;
+}
+
+select {
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  padding: 5px;
+  width: auto;
+  background-color: tan;
+  color: white;
+  margin-bottom: 16px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+label {
+  font-size: 34px;
+  padding: 5px;
+  display: block;
+  color: #3E6C85;
+}
+
 button {
   color: red;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+
+hr {
+  border-color: #3E6C85;
 }

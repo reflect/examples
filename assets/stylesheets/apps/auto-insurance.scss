@@ -1,0 +1,25 @@
+$viz-palette-base: #164D71;
+
+$viz-palette: (
+  0: $viz-palette-base,
+  1: lighten($viz-palette-base, 10%),
+  2: lighten($viz-palette-base, 15%),
+  3: lighten($viz-palette-base, 20%),
+  4: lighten($viz-palette-base, 25%),
+  5: lighten($viz-palette-base, 30%),
+  6: lighten($viz-palette-base, 35%),
+  7: lighten($viz-palette-base, 40%),
+  8: lighten($viz-palette-base, 45%),
+  9: lighten($viz-palette-base, 50%),
+  10: lighten($viz-palette-base, 55%),
+  11: lighten($viz-palette-base, 60%)
+) !default;
+
+// Reflect Styles
+@import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+#view {
+  .viz-metric-value {
+    color: $viz-palette-base;
+  }
+}

@@ -29,7 +29,6 @@ header p {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  line-height: 24px;
   padding: 0 30px;
   color: #6d7a87;
   letter-spacing: .2px;
@@ -71,13 +70,13 @@ a {
 .view-container,
 .card-container {
   @include border-radius-default;
-  background-color: #F9F9F9;
+  // background-color: #F9F9F9;
 }
 
 .view-container {
   margin-top: 50px;
   padding: 20px;
-  border: 3px solid #ecebea;
+  // border: 3px solid #ecebea;
   border-radius: 5px;
   min-height: 400px;
 }

@@ -10,32 +10,39 @@
     <script src="https://cdn.reflect.io/latest/reflect.js"></script>
   </head>
   <body>
-    <h1>Job market outlook for 2016 college graduates</h1>
+    <h1>Job outlook for US college graduates</h1>
     <p>INTERACTIONS || CUSTOM CONTROLS || THEMING</p>
-    <p>Drill into specific specializations by clicking on the associated bar.</p>
+    <p>Drill into specific concentrations by clicking on the associated bar.</p>
 
     <div class="view-container">
-      <select name="major-selects">
-        <option value="Agriculture &amp; Natural Resources">Agriculture &amp; Natural Resources</option>
-        <option value="Arts">Arts</option>
-        <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
-        <option value="Business">Business</option>
-        <option value="Communications &amp; Journalism">Communications &amp; Journalism</option>
-        <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
-        <option value="Education">Education</option>
-        <option selected value="Engineering">Engineering</option>
-        <option value="Health">Health</option>
-        <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
-        <option value="Industrial Arts &amp; Consumer Services">Industrial Arts &amp; Consumer Services</option>
-        <option value="Law &amp; Public Policy">Law &amp; Public Policy</option>
-        <option value="Physical Sciences">Physical Sciences</option>
-        <option value="Psychology &amp; Social Work">Psychology &amp; Social Work</option>
-        <option value="Social Science">Social Science</option>
-      </select>
+      <div class="controls-wrapper">
+        <div id="industry-controls">
+          <label for="major-selects">Industry</label>
+          <select name="major-selects">
+            <option value="Agriculture &amp; Natural Resources">Agriculture &amp; Natural Resources</option>
+            <option value="Arts">Arts</option>
+            <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
+            <option value="Business">Business</option>
+            <option value="Communications &amp; Journalism">Communications &amp; Journalism</option>
+            <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
+            <option value="Education">Education</option>
+            <option selected value="Engineering">Engineering</option>
+            <option value="Health">Health</option>
+            <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
+            <option value="Industrial Arts &amp; Consumer Services">Industrial Arts &amp; Consumer Services</option>
+            <option value="Law &amp; Public Policy">Law &amp; Public Policy</option>
+            <option value="Physical Sciences">Physical Sciences</option>
+            <option value="Psychology &amp; Social Work">Psychology &amp; Social Work</option>
+            <option value="Social Science">Social Science</option>
+          </select>
+        </div>
+        <div id="concentration-controls"></div>
+      </div>
 
-      <div id="specialization-tab"></div>
+      <hr>
 
       <div id="view"></div>
+      <div id="view2"></div>
     </div>
 
     <script type="text/javascript">
@@ -52,6 +59,7 @@
 
       function render() {
         ui.view(document.getElementById('view'), '_yp5RyjnSdazrPqSN9DslA');
+        $('#view2').html('');
       }
 
       render();
@@ -67,27 +75,34 @@
         }]);
 
         render();
+        $('#concentration-controls').html('');
       });
 
-      // drill into "specialization"
+      // drill into "concentration"
       function drillIn(data) {
-        const specialization = data.rowData.Major;
+        const concentration = data.rowData.Major;
 
         var newui = new ReflectUI();
 
         newui.withFilters([{
           "field": "Major",
           "op": "=",
-          "value": specialization
+          "value": concentration
         }]);
 
-        newui.view(document.getElementById('view'), 'wh9HHUVETR-YwdTRuws4Ww');
+        newui.view(document.getElementById('view2'), 'wh9HHUVETR-YwdTRuws4Ww');
+        $('#view').html('');
 
-        $('#specialization-tab').html('<p>' + specialization + '</p><button type="button" id="specialization-btn">X</button>');
+        newui.on('bars-gender', 'render', function(data) {
+          $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series rect').css({'fill': 'pink', 'stroke': 'pink'});
+          $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series:last-of-type rect').css({'fill': 'lightblue', 'stroke': 'lightblue'});
+        });
 
-        // remove "specialization" filter
-        $("#specialization-btn").click(function() {
-          $('#specialization-tab').html('');
+        $('#concentration-controls').html('<label>Concentration</label><p>' + concentration + '</p><button type="button" id="concentration-btn">X</button>');
+
+        // remove "concentration" filter
+        $("#concentration-btn").click(function() {
+          $('#concentration-controls').html('');
           render();
         });
       }
