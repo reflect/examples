@@ -1,0 +1,11 @@
+{
+  "name": "reflect-lambda-example",
+  "version": "0.1.0",
+  "main": "reflect.js",
+  "repository": "https://github.com/reflect/examples",
+  "author": "lucperkins <lucperkins@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "reflect-node": "^0.2.1"
+  }
+}
