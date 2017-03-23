@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flying etiquette</title>
+    <link href="../../stylesheets/main.min.css" rel="stylesheet" />
+    <link href="../../stylesheets/apps/flying-etiquette.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+  </head>
+  <body>
+    <h1>Flying etiquette</h1>
+    <p>FORMATTERS || THEMING</p>
+    <p>withFormatters() || withColors()</p>
+    <p>The top view is unchecked. The bottom view demonstrates what parameterization could look like if Nintendo was an authenticated customer</p>
+
+    <div class="view-container">
+      <div class="controls">
+        <button type="button" id="enforce-params">Remove custom formatters</button>
+      </div>
+      <div id="view"></div>
+    </div>
+
+    <script type="text/javascript">
+
+      var ui = new ReflectUI();
+
+      function render() {
+        ui.view(document.getElementById('view'), 'ImB3HVGyQxSeZDpvUsUTkw');
+      }
+
+      var rudeFormatter = {
+        'No, not at all rude': '#AED0A8',
+        'Yes, somewhat rude': '#DED0A8',
+        'Yes, very rude': '#DA94A8',
+        '(empty)': 'lightgrey'
+      };
+
+      ui.withColors({
+        'Wake a passenger to use bathroom': rudeFormatter
+      });
+
+      render();
+
+      $('#withFormatters').click(function(e) {
+        var formattersOn = (e.target.innerText).indexOf('Off') >= 0;
+
+        if (formattersOn) {
+          render();
+          $('#enforce-params').text('Turn Parameters On').removeClass('active');
+          $('#authentication').hide();
+          $('#disclaimer').hide();
+        } else {
+          $('#view').html('');
+          $('#enforce-params').text('Turn Parameters Off').addClass('active');
+          $('#authentication').show();
+          $('#disclaimer').show();
+        }
+      });
+
+      $('#authenticate-params').click(function(e) {
+        authenticateUser();
+        $('#authentication').hide();
+        $('#disclaimer').hide();
+      });
+
+    </script>
+  </body>
+</html>

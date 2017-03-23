@@ -66,11 +66,11 @@ $accent-color: #FFDD38;
 }
 
 #authentication {
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
 
   input, button {
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 5px;
   }
 
@@ -83,6 +83,7 @@ $accent-color: #FFDD38;
     background: white;
     border: none;
     font-size: 19px;
+    margin-left: 10px;
   }
 }
 

@@ -60,38 +60,34 @@
       render();
 
 
-      function enforceParameters(authenticated) {
+      function authenticateUser() {
         // typically someFunctionToGetUserId()
         var userData = 'Nintendo.json';
 
-        if (authenticated) {
-          $.get('users/' + userData, function(data) {
-            var ui = new ReflectUI([
-              '83efeba2-933b-47ca-90e6-b41c67579860',
-              data.reflectSignedToken
-            ]);
+        $.get('users/' + userData, function(data) {
+          var ui = new ReflectUI([
+            '83efeba2-933b-47ca-90e6-b41c67579860',
+            data.reflectSignedToken
+          ]);
 
-            var userParam = {
-               field: 'Publisher',
-               op: '=',
-               value: data.userPublisher
-             }
+          var userParam = {
+             field: 'Publisher',
+             op: '=',
+             value: data.userPublisher
+           }
 
-            ui.withParameters([
-              userParam
-            ]);
+          ui.withParameters([
+            userParam
+          ]);
 
-            ui.withColors({
-              'Publisher': {
-                'Nintendo': '#DE0000'
-              }
-            });
-
-            ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
+          ui.withColors({
+            'Publisher': {
+              'Nintendo': '#DE0000'
+            }
           });
-        } else {
+
           ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
-        }
+        });
       };
 
       $('#enforce-params').click(function(e) {
@@ -103,7 +99,7 @@
           $('#authentication').hide();
           $('#disclaimer').hide();
         } else {
-          enforceParameters(false);
+          $('#view').html('');
           $('#enforce-params').text('Turn Parameters Off').addClass('active');
           $('#authentication').show();
           $('#disclaimer').show();
@@ -111,7 +107,7 @@
       });
 
       $('#authenticate-params').click(function(e) {
-        enforceParameters(true);
+        authenticateUser();
         $('#authentication').hide();
         $('#disclaimer').hide();
       });

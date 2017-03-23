@@ -39,10 +39,11 @@ $viz-palette: (
 }
 
 #view, #view2 {
-  .viz-container {
-      -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
-      -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
-      box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+  .react-grid-item {
+    background-color: #FDFDFD;
+    -webkit-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 13px 1px rgba(0,0,0,0.15);
   }
 
   .viz-metric-value {
@@ -120,7 +121,7 @@ $viz-palette: (
     padding: 5px;
     padding-left: 10px;
     width: auto;
-    background-color: white;
+    background-color: #FDFDFD;
     margin-bottom: 16px;
     border-radius: 5px;
     border: 1px solid #3E6C85;
