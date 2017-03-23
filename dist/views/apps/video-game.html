@@ -17,66 +17,104 @@
 
     <div class="view-container">
       <div class="controls">
-        <button type="button" value="" class="">Authenticate as 'Nintendo'</button>
-        <button type="button" value="" class="">Fail to Authenticate</button>
-        <button type="button" value="" class="">Security Off</button>
+        <button type="button" id="enforce-params">Turn Parameters On</button>
+      </div>
+      <div id="disclaimer">
+        <p>With parameters enabled, only authenticated users can render the view.</p>
+        <p>They will <span>only see data permitted</span> by the parameter set.</p>
       </div>
       <div id="view"></div>
+      <div id="authentication">
+        <input type="text" placeholder="nintendo.employee@email.me"disabled>
+        <button type="button" id="authenticate-params">Login</button>
+      </div>
     </div>
 
     <script type="text/javascript">
 
-      // typically someFunctionToGetUserId()
-      var userId = 'Nintendo.json';
+      var ui = new ReflectUI();
 
-      // $.get("users/" + userId, function(data) {
-        var ui = new ReflectUI([
-          '83efeba2-933b-47ca-90e6-b41c67579860',
-          '=2=dzfaejwgxZCErrmj9zpYcxhAigotXM2VN1wzTbal82o='
-        ]);
+      function render() {
+        ui.view(document.getElementById('view'), 'NDyeRFJpSlaYaVsX7laFmQ');
+      }
 
-        var userParam = {
-           field: "Publisher",
-           op: "=",
-           value: "Nintendo"
-         }
+      ui.withColors({
+        'Publisher': {
+          'Nintendo': '#DE0000',
+          'Electronic Arts': '#005BAA',
+          'Activision': 'silver',
+          'Sony Computer Entertainment': '#EDA802',
+          'Ubisoft': '#4F63A6',
+          'Take-Two Interactive': '#0C6EB5',
+          'THQ': '#6D6D6D',
+          'Microsoft Game Studios': '#0E9421',
+          'Konami Digital Entertainment': '#AE162B',
+          'Sega': '#0089CF',
+          'Namco Bandai Games': '#F27536',
+          'Capcom': '#FFCA08',
+          'Square Enix': '#8B8A8A',
+          'SquareSoft': 'silver'
+        }
+      });
 
-        ui.withParameters([
-          userParam
-        ]);
-
-        ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
-      // });
+      render();
 
 
+      function enforceParameters(authenticated) {
+        // typically someFunctionToGetUserId()
+        var userData = 'Nintendo.json';
 
+        if (authenticated) {
+          $.get('users/' + userData, function(data) {
+            var ui = new ReflectUI([
+              '83efeba2-933b-47ca-90e6-b41c67579860',
+              data.reflectSignedToken
+            ]);
 
-      // var ui = new ReflectUI();
-      //
-      // function render() {
-      //   ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
-      // }
-      //
-      // ui.withColors({
-      //   'Publisher': {
-      //     'Nintendo': '#DE0000',
-      //     'Electronic Arts': '#005BAA',
-      //     'Activision': 'silver',
-      //     'Sony Computer Entertainment': '#EDA802',
-      //     'Ubisoft': '#4F63A6',
-      //     'Take-Two Interactive': '#0C6EB5',
-      //     'THQ': '#6D6D6D',
-      //     'Microsoft Game Studios': '#0E9421',
-      //     'Konami Digital Entertainment': '#AE162B',
-      //     'Sega': '#0089CF',
-      //     'Namco Bandai Games': '#F27536',
-      //     'Capcom': '#FFCA08',
-      //     'Square Enix': '#8B8A8A',
-      //     'SquareSoft': 'silver'
-      //   }
-      // });
-      //
-      // render();
+            var userParam = {
+               field: 'Publisher',
+               op: '=',
+               value: data.userPublisher
+             }
+
+            ui.withParameters([
+              userParam
+            ]);
+
+            ui.withColors({
+              'Publisher': {
+                'Nintendo': '#DE0000'
+              }
+            });
+
+            ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
+          });
+        } else {
+          ui.view(document.getElementById('view'), 'UngU1LbiTn67o0n8FQNs6A');
+        }
+      };
+
+      $('#enforce-params').click(function(e) {
+        var paramsEnforced = (e.target.innerText).indexOf('Off') >= 0;
+
+        if (paramsEnforced) {
+          render();
+          $('#enforce-params').text('Turn Parameters On').removeClass('active');
+          $('#authentication').hide();
+          $('#disclaimer').hide();
+        } else {
+          enforceParameters(false);
+          $('#enforce-params').text('Turn Parameters Off').addClass('active');
+          $('#authentication').show();
+          $('#disclaimer').show();
+        }
+      });
+
+      $('#authenticate-params').click(function(e) {
+        enforceParameters(true);
+        $('#authentication').hide();
+        $('#disclaimer').hide();
+      });
 
     </script>
   </body>

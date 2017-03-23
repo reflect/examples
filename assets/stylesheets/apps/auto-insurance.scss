@@ -39,11 +39,16 @@ $viz-palette: (
 
   button {
     padding: 5px 10px;
-    background: white;
+    background-color: #164D71;
+    color: white;
     border-radius: 5px;
     border: none;
     font-size: 12px;
     margin-left: 5px;
+
+    &:hover {
+      background-color: lighten(#164D71, 20%);
+    }
   }
 }
 

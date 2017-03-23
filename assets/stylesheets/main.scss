@@ -63,6 +63,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 #view {
   position: relative;
 }

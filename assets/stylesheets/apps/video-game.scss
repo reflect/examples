@@ -28,7 +28,7 @@ $accent-color: #FFDD38;
 
 .controls {
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 35px;
   z-index: 99;
 
@@ -39,8 +39,53 @@ $accent-color: #FFDD38;
     border: none;
     font-size: 12px;
     margin-left: 5px;
+
+    &.active {
+      background-color: #DE0000;
+      color: white;
+    }
   }
 }
+
+#disclaimer, #authentication {
+  display: none;
+  color: white;
+}
+
+#disclaimer {
+  margin-top: 12px;
+  margin-bottom: 120px;
+
+  p {
+    margin-top: 10px;
+  }
+
+  span {
+    color: $accent-color;
+  }
+}
+
+#authentication {
+  margin-top: 200px;
+  text-align: center;
+
+  input, button {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  input {
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  button {
+    background: white;
+    border: none;
+    font-size: 19px;
+  }
+}
+
 
 #view {
   .viz-container, .viz-controls {
