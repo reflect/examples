@@ -17,7 +17,7 @@
 
     <div class="view-container">
       <div class="controls">
-        <button type="button" id="enforce-params">Remove custom formatters</button>
+        <button type="button" id="toggle-formatters">Remove custom formatters</button>
       </div>
       <div id="view"></div>
     </div>
@@ -30,30 +30,82 @@
         ui.view(document.getElementById('view'), 'ImB3HVGyQxSeZDpvUsUTkw');
       }
 
-      var rudeFormatter = {
+      var rudeColors = {
         'No, not at all rude': '#AED0A8',
+        'No, not rude at all': '#AED0A8',
         'Yes, somewhat rude': '#DED0A8',
         'Yes, very rude': '#DA94A8',
         '(empty)': 'lightgrey'
       };
 
       ui.withColors({
-        'Wake a passenger to use bathroom': rudeFormatter
+        'Rude to wake a passenger to walk around?': rudeColors,
+        'Rude to wake a passenger to use bathroom?': rudeColors,
+        'Rude to move to an unsold seat?': rudeColors,
+        'Rude to fly with unruly children?': rudeColors
+      });
+
+      var rudeFormatters = {
+        'No, not at all rude': 'Not rude',
+        'No, not rude at all': 'Not rude',
+        'Yes, somewhat rude': 'Somewhat rude',
+        'Yes, very rude': 'Very rude',
+        '(empty)': 'Undecided'
+      };
+
+      var armrestFormatters = {
+        'The arm rests should be shared': 'Evenly shared',
+        'The person in the middle seat gets both arm rests': 'Middle seat',
+        'Whoever puts their arm on the arm rest first': 'Whoever\'s first',
+        'The people in the aisle and window seats get both arm rests': 'Middle gets none',
+        'Other (please specify)': 'It depends',
+        '(empty)': 'Undecided'
+      };
+
+      var windowFormatters = {
+        'Everyone in the row should have some say': 'Evenly shared',
+        'The person in the window seat should have exclusive control': 'Window seat',
+        '(empty)': 'Undecided'
+      };
+
+      var emptyFormatters = {
+        '(empty)': 'Undecided'
+      }
+
+      ui.withFormatters({
+        'Rude to wake a passenger to walk around?': function(d) {
+          return rudeFormatters[d];
+        },
+        'Rude to wake a passenger to use bathroom?': function(d) {
+          return rudeFormatters[d];
+        },
+        'Rude to move to an unsold seat?': function(d) {
+          return rudeFormatters[d];
+        },
+        'Rude to fly with unruly children?': function(d) {
+          return rudeFormatters[d];
+        },
+        'Who gets the armrests?': function(d) {
+          return armrestFormatters[d];
+        },
+        'Who has control over window shade?': function(d) {
+          return windowFormatters[d];
+        }
       });
 
       render();
 
-      $('#withFormatters').click(function(e) {
-        var formattersOn = (e.target.innerText).indexOf('Off') >= 0;
+      $('#toggle-formatters').click(function(e) {
+        var formattersOn = (e.target.innerText).indexOf('Remove') >= 0;
 
         if (formattersOn) {
           render();
-          $('#enforce-params').text('Turn Parameters On').removeClass('active');
+          $('#enforce-params').text('Add custom formatters').addClass('active');
           $('#authentication').hide();
           $('#disclaimer').hide();
         } else {
           $('#view').html('');
-          $('#enforce-params').text('Turn Parameters Off').addClass('active');
+          $('#enforce-params').text('Remove custom formatters').removeClass('active');
           $('#authentication').show();
           $('#disclaimer').show();
         }
