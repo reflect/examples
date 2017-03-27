@@ -129,12 +129,12 @@
           removeFormatters();
           render();
 
-          $('#toggle-formatters').text('Apply custom formatters');
+          $('#toggle-formatters').text('Apply custom formatters').addClass('active');
         } else {
           applyFormatters();
           render();
 
-          $('#toggle-formatters').text('Remove custom formatters');
+          $('#toggle-formatters').text('Remove custom formatters').removeClass('active');
         }
       });
     </script>

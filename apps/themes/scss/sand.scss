@@ -1,27 +1,27 @@
 //custom color variables
-$view-bg-color: teal;
+$view-bg-color: white;
 $component-bg-color: white;
-$accent-color: orange;
-$view-title-color: white;
+$accent-color: lightblue;
+$view-title-color: lightblue;
 $component-title-color: grey;
-$metric-color: orange;
+$metric-color: tan;
 
 //REFLECT variables
-$viz-palette-base: #164D71;
+$viz-palette-base: tan;
 
 $viz-palette: (
   0: $viz-palette-base,
-  1: lighten($viz-palette-base, 10%),
-  2: lighten($viz-palette-base, 15%),
-  3: lighten($viz-palette-base, 20%),
-  4: lighten($viz-palette-base, 25%),
-  5: lighten($viz-palette-base, 30%),
-  6: lighten($viz-palette-base, 35%),
-  7: lighten($viz-palette-base, 40%),
-  8: lighten($viz-palette-base, 45%),
-  9: lighten($viz-palette-base, 50%),
-  10: lighten($viz-palette-base, 55%),
-  11: lighten($viz-palette-base, 60%)
+  1: darken($viz-palette-base, 10%),
+  2: darken($viz-palette-base, 20%),
+  3: darken($viz-palette-base, 30%),
+  4: darken($viz-palette-base, 40%),
+  5: darken($viz-palette-base, 50%),
+  6: darken($viz-palette-base, 60%),
+  7: darken($viz-palette-base, 70%),
+  8: darken($viz-palette-base, 80%),
+  9: darken($viz-palette-base, 90%),
+  10: darken($viz-palette-base, 15%),
+  11: darken($viz-palette-base, 25%)
 ) !default;
 
 $brand-primary:                  $accent-color;

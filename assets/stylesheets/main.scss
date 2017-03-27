@@ -10,6 +10,7 @@ $black: #404040;
 $dark-grey: #888;
 $grey: #F2F2F2;
 $light-grey: #F6F6F6;
+$blue: #269CFF;
 
 //mixins
 @mixin button-default {
@@ -175,10 +176,23 @@ button {
   float: right;
   margin-top: 6px;
 
-  button {
+  button, select {
     @include border-default;
     @include button-default;
     color: $dark-grey;
+
+    &.active {
+      color: white;
+      background-color: $blue;
+    }
+
+    &#major-btn {
+      text-transform: capitalize;
+    }
+
+    span {
+      color: red;
+    }
   }
 }
 

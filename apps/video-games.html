@@ -108,12 +108,12 @@
           removeColors();
           render();
 
-          $('#toggle-colors').text('Apply custom colors');
+          $('#toggle-colors').text('Apply custom colors').addClass('active');
         } else {
           applyColors();
           render();
 
-          $('#toggle-colors').text('Remove custom colors');
+          $('#toggle-colors').text('Remove custom colors').removeClass('active');
         }
       });
     </script>

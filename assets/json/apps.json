@@ -31,5 +31,16 @@
     "theme": "purple",
     "dataset": "sample-dataset.csv",
     "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  },
+  {
+    "file": "job-market.html",
+    "title": "Interactions",
+    "description": "Use data point interactions to update components and views, or to swap out views entirely.",
+    "mainGoal": "Click on a bar column to swap out the view and filter by Major",
+    "secondaryGoal": "Use the select bar to filter by Industry",
+    "features": ["interactions", "custom controls"],
+    "theme": "sand",
+    "dataset": "sample-dataset.csv",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
   }
 ]
