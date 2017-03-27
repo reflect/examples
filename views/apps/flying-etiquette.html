@@ -3,22 +3,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Flying etiquette</title>
+    <title>FORMATTERS</title>
     <link href="../../stylesheets/main.min.css" rel="stylesheet" />
     <link href="../../stylesheets/apps/flying-etiquette.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.reflect.io/latest/reflect.js"></script>
   </head>
   <body>
-    <h1>Flying etiquette</h1>
-    <p>FORMATTERS || THEMING</p>
+    <h1>FORMATTERS & THEMING</h1>
     <p>withFormatters() || withColors()</p>
-    <p>The top view is unchecked. The bottom view demonstrates what parameterization could look like if Nintendo was an authenticated customer</p>
+
+    <div class="controls">
+      <button type="button" id="toggle-formatters">Remove custom formatters</button>
+    </div>
 
     <div class="view-container">
-      <div class="controls">
-        <button type="button" id="toggle-formatters">Remove custom formatters</button>
-      </div>
       <div id="view"></div>
     </div>
 
@@ -27,7 +26,7 @@
       var ui = new ReflectUI();
 
       function render() {
-        ui.view(document.getElementById('view'), 'ImB3HVGyQxSeZDpvUsUTkw');
+        ui.view(document.getElementById('view'), '73pTGTQdT3m2MWOZz548kA');
       }
 
       var rudeColors = {
@@ -39,10 +38,10 @@
       };
 
       ui.withColors({
-        'Rude to wake a passenger to walk around?': rudeColors,
-        'Rude to wake a passenger to use bathroom?': rudeColors,
-        'Rude to move to an unsold seat?': rudeColors,
-        'Rude to fly with unruly children?': rudeColors
+        'Is it rude to wake a passenger to walk around?': rudeColors,
+        'Is it rude to wake a passenger to use bathroom?': rudeColors,
+        'Is it rude to move to an unsold seat?': rudeColors,
+        'Is it rude to fly with unruly children?': rudeColors
       });
 
       var rudeFormatters = {
@@ -68,53 +67,57 @@
         '(empty)': 'Undecided'
       };
 
-      var emptyFormatters = {
-        '(empty)': 'Undecided'
-      }
-
       ui.withFormatters({
-        'Rude to wake a passenger to walk around?': function(d) {
+        'Is it rude to wake a passenger to walk around?': function(d) {
           return rudeFormatters[d];
         },
-        'Rude to wake a passenger to use bathroom?': function(d) {
+        'Is it rude to wake a passenger to use bathroom?': function(d) {
           return rudeFormatters[d];
         },
-        'Rude to move to an unsold seat?': function(d) {
+        'Is it rude to move to an unsold seat?': function(d) {
           return rudeFormatters[d];
         },
-        'Rude to fly with unruly children?': function(d) {
+        'Is it rude to fly with unruly children?': function(d) {
           return rudeFormatters[d];
         },
         'Who gets the armrests?': function(d) {
           return armrestFormatters[d];
         },
-        'Who has control over window shade?': function(d) {
+        'Who gets control of window shade?': function(d) {
           return windowFormatters[d];
+        },
+        'Participants': function(d) {
+          return d + ' frequent flyers';
         }
       });
 
       render();
 
+      function removeFormatters() {
+        var unformatted = new ReflectUI();
+
+        unformatted.withColors({
+          'Is it rude to wake a passenger to walk around?': rudeColors,
+          'Is it rude to wake a passenger to use bathroom?': rudeColors,
+          'Is it rude to move to an unsold seat?': rudeColors,
+          'Is it rude to fly with unruly children?': rudeColors
+        });
+
+        unformatted.view(document.getElementById('view'), '73pTGTQdT3m2MWOZz548kA');
+      }
+
       $('#toggle-formatters').click(function(e) {
         var formattersOn = (e.target.innerText).indexOf('Remove') >= 0;
 
         if (formattersOn) {
-          render();
-          $('#enforce-params').text('Add custom formatters').addClass('active');
-          $('#authentication').hide();
-          $('#disclaimer').hide();
-        } else {
-          $('#view').html('');
-          $('#enforce-params').text('Remove custom formatters').removeClass('active');
-          $('#authentication').show();
-          $('#disclaimer').show();
-        }
-      });
+          removeFormatters();
 
-      $('#authenticate-params').click(function(e) {
-        authenticateUser();
-        $('#authentication').hide();
-        $('#disclaimer').hide();
+          $('#toggle-formatters').text('Apply custom formatters');
+        } else {
+          ui.view(document.getElementById('view'), '73pTGTQdT3m2MWOZz548kA');
+
+          $('#toggle-formatters').text('Remove custom formatters');
+        }
       });
 
     </script>

@@ -26,23 +26,18 @@ $viz-palette: (
 }
 
 .controls {
-  position: absolute;
-  right: 20px;
-  top: 35px;
-  z-index: 99;
 
   p {
     display: inline-block;
-    color: white;
+    color: black;
     vertical-align: bottom;
   }
 
   button {
     padding: 5px 10px;
-    background-color: #164D71;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 5px;
-    border: none;
     font-size: 12px;
     margin-left: 5px;
 

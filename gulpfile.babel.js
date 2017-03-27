@@ -31,7 +31,7 @@ gulp.task('styles', () => {
 // Scripts (2 part)
 gulp.task('compile:scripts', () => {
   return gulp.src('assets/javascripts/*.js')
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('dist/javascripts'))

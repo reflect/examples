@@ -22,70 +22,48 @@ $accent-color: #FFDD38;
 
 .view-container {
   background-color: black;
-  border-color: black;
   position: relative;
 }
 
-.controls {
-  position: absolute;
-  right: 25px;
-  top: 35px;
-  z-index: 99;
-
-  button {
-    padding: 5px 10px;
-    background: white;
-    border-radius: 5px;
-    border: none;
-    font-size: 12px;
-    margin-left: 5px;
-
-    &.active {
-      background-color: #DE0000;
-      color: white;
-    }
-  }
-}
-
-#disclaimer, #authentication {
-  display: none;
-  color: white;
-}
-
-#disclaimer {
-  margin-top: 12px;
-  margin-bottom: 120px;
-
-  p {
-    margin-top: 10px;
-  }
-
-  span {
-    color: $accent-color;
-  }
-}
-
-#authentication {
-  margin-top: 150px;
-  text-align: center;
-
-  input, button {
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  input {
-    font-size: 1rem;
-    width: 300px;
-  }
-
-  button {
-    background: white;
-    border: none;
-    font-size: 19px;
-    margin-left: 10px;
-  }
-}
+// #disclaimer, #authentication {
+//   display: none;
+//   color: white;
+// }
+//
+// #disclaimer {
+//   margin-top: 12px;
+//   margin-bottom: 120px;
+//
+//   p {
+//     margin-top: 10px;
+//   }
+//
+//   span {
+//     color: $accent-color;
+//   }
+// }
+//
+// #authentication {
+//   margin-top: 150px;
+//   text-align: center;
+//
+//   input, button {
+//     padding: 10px;
+//     border-radius: 5px;
+//   }
+//
+//   input {
+//     font-size: 1rem;
+//     width: 300px;
+//   }
+//
+//   button {
+//     background: white;
+//     border: none;
+//     font-size: 19px;
+//     margin-left: 10px;
+//   }
+// }
 
 
 #view {
@@ -94,13 +72,7 @@ $accent-color: #FFDD38;
   }
 
   .viz-container {
-    border-color: $accent-color;
-
-    &.viz-donut {
-      border-top-color: black;
-      border-bottom-color: black;
-      border-radius: 0;
-    }
+    border-color: #A67D3D;
   }
 
   .viz-title {

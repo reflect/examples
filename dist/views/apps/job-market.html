@@ -10,43 +10,34 @@
     <script src="https://cdn.reflect.io/latest/reflect.js"></script>
   </head>
   <body>
-    <h1>Job outlook for US college graduates</h1>
-    <p>INTERACTIONS || CUSTOM CONTROLS || THEMING</p>
-    <p>Custom Controls || Interactions()</p>
-    <p>Drill into specific concentrations by clicking on the associated bar.</p>
+    <h1>CUSTOM CONTROLS & INTERACTIONS</h1>
+
+    <div class="controls-wrapper">
+      <div id="industry-controls">
+        <label for="major-selects">Industry</label>
+        <select name="major-selects">
+          <option value="Agriculture &amp; Natural Resources">Agriculture &amp; Natural Resources</option>
+          <option value="Arts">Arts</option>
+          <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
+          <option value="Business">Business</option>
+          <option value="Communications &amp; Journalism">Communications &amp; Journalism</option>
+          <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
+          <option value="Education">Education</option>
+          <option selected value="Engineering">Engineering</option>
+          <option value="Health">Health</option>
+          <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
+          <option value="Industrial Arts &amp; Consumer Services">Industrial Arts &amp; Consumer Services</option>
+          <option value="Law &amp; Public Policy">Law &amp; Public Policy</option>
+          <option value="Physical Sciences">Physical Sciences</option>
+          <option value="Psychology &amp; Social Work">Psychology &amp; Social Work</option>
+          <option value="Social Science">Social Science</option>
+        </select>
+      </div>
+      <div id="concentration-controls"></div>
+    </div>
 
     <div class="view-container">
-      <div class="disclaimer">
-        <p><span>*</span>Click through columns to learn more</p>
-      </div>
-      <div class="controls-wrapper">
-        <div id="industry-controls">
-          <label for="major-selects">Industry</label>
-          <select name="major-selects">
-            <option value="Agriculture &amp; Natural Resources">Agriculture &amp; Natural Resources</option>
-            <option value="Arts">Arts</option>
-            <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
-            <option value="Business">Business</option>
-            <option value="Communications &amp; Journalism">Communications &amp; Journalism</option>
-            <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
-            <option value="Education">Education</option>
-            <option selected value="Engineering">Engineering</option>
-            <option value="Health">Health</option>
-            <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
-            <option value="Industrial Arts &amp; Consumer Services">Industrial Arts &amp; Consumer Services</option>
-            <option value="Law &amp; Public Policy">Law &amp; Public Policy</option>
-            <option value="Physical Sciences">Physical Sciences</option>
-            <option value="Psychology &amp; Social Work">Psychology &amp; Social Work</option>
-            <option value="Social Science">Social Science</option>
-          </select>
-        </div>
-        <div id="concentration-controls"></div>
-      </div>
-
-      <hr>
-
       <div id="view"></div>
-      <div id="view2"></div>
     </div>
 
     <script type="text/javascript">
@@ -68,7 +59,7 @@
       });
 
       function render() {
-        ui.view(document.getElementById('view'), '_yp5RyjnSdazrPqSN9DslA');
+        ui.view(document.getElementById('view'), 'Bqpd2IQeTlSOqnKGT9S7PA');
         $('#view2').html('');
       }
 
@@ -76,7 +67,7 @@
 
       // filter by "major" using select
       $('select[name=major-selects]').change(function() {
-        const major = $(this).val();
+        var major = $(this).val();
 
         ui.withFilters([{
           "field": "Major Category",
@@ -86,42 +77,31 @@
 
         render();
         $('#concentration-controls').html('');
-        $('.disclaimer').show();
       });
 
       // drill into "concentration"
       function drillIn(data) {
-        const concentration = data.rowData.Major;
+        var concentration = data.rowData.Major;
 
-        var newui = new ReflectUI();
-
-        newui.withFilters([{
+        ui.withFilters([{
           "field": "Major",
           "op": "=",
           "value": concentration
         }]);
 
-        newui.withFormatters({
+        ui.withFormatters({
           Major: function(d) {
             return (d.substr(0,1).toUpperCase() + d.substr(1));
           }
         });
 
-        newui.view(document.getElementById('view2'), 'wh9HHUVETR-YwdTRuws4Ww');
-        $('#view').html('');
-        $('.disclaimer').hide();
-
-        newui.on('bars-gender', 'render', function(data) {
-          $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series rect').css({'fill': 'pink', 'stroke': 'pink'});
-          $('#wh9HHUVETR-YwdTRuws4Ww-1 .viz-series:last-of-type rect').css({'fill': 'lightblue', 'stroke': 'lightblue'});
-        });
+        ui.view(document.getElementById('view'), '49dITq-EQlyRO-QTnfs7ow');
 
         $('#concentration-controls').html('<label>Focus</label><p>' + concentration + '<button type="button" id="concentration-btn">&times</button></p>');
 
         // remove "concentration" filter
         $("#concentration-btn").click(function() {
           $('#concentration-controls').html('');
-          $('.disclaimer').show();
           render();
         });
       }
