@@ -1,0 +1,74 @@
+//custom color variables
+$view-bg-color: teal;
+$component-bg-color: white;
+$accent-color: orange;
+$view-title-color: white;
+$component-title-color: grey;
+$metric-color: orange;
+
+
+//REFLECT variables
+$viz-palette-base: #164D71;
+
+$viz-palette: (
+  0: $viz-palette-base,
+  1: lighten($viz-palette-base, 10%),
+  2: lighten($viz-palette-base, 15%),
+  3: lighten($viz-palette-base, 20%),
+  4: lighten($viz-palette-base, 25%),
+  5: lighten($viz-palette-base, 30%),
+  6: lighten($viz-palette-base, 35%),
+  7: lighten($viz-palette-base, 40%),
+  8: lighten($viz-palette-base, 45%),
+  9: lighten($viz-palette-base, 50%),
+  10: lighten($viz-palette-base, 55%),
+  11: lighten($viz-palette-base, 60%)
+) !default;
+
+$brand-primary:                  $accent-color;
+$border-color:                   $accent-color !default;
+
+//import REFLECT UI styles
+@import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+
+.view-container {
+  background-color: $view-bg-color;
+}
+
+.viz-container, .viz-controls {
+  background-color: $component-bg-color;
+}
+
+.viz-title {
+  color: $component-title-color !important;
+}
+
+.viz-header .viz-headline .viz-title {
+  color: $view-title-color !important;
+}
+
+.viz-metric-value {
+  color: $metric-color !important;
+}
+
+.viz-loading-wrapper {
+  background-color: $component-bg-color !important;
+
+  .viz-loading {
+    border-color: $accent-color;
+    border-top-color: $viz-palette-base;
+  }
+}
+
+.viz-filters {
+  background-color: $component-bg-color;
+}
+
+.viz-icon-plus:before {
+  content: '+';
+}
+
+.viz-icon-cancel-circled:before {
+  content: '\00D7';
+}

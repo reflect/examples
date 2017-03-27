@@ -1,0 +1,35 @@
+[
+  {
+    "file": "video-games.html",
+    "title": "Custom Colors",
+    "description": "Assign unique color values to fields to improve legibility. Easily tie metrics to their visual cues and swap colors on the fly.",
+    "mainGoal": "Toggle custom colors and selected fields.",
+    "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
+    "features": ["custom colors", "filters", "interactions"],
+    "theme": "mono-black",
+    "dataset": "sample-dataset.csv",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  },
+  {
+    "file": "auto-insurance.html",
+    "title": "Filters",
+    "description": "Filter your components and views with flexbile controls. Include a filter bar from the app or build triggers, simply.",
+    "mainGoal": "Swap regional filters using custom buttons.",
+    "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14",
+    "features": ["filters", "custom controls"],
+    "theme": "green-orange",
+    "dataset": "sample-dataset.csv",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  },
+  {
+    "file": "airline-survey.html",
+    "title": "Formatters",
+    "description": "Manipulate your data on the frontend. Shorten metrics, add units, and give meaning to empty values with custom formatters.",
+    "mainGoal": "Toggle custom formatters and selected dimensions",
+    "secondaryGoal": "Note how custom colors are used to imply aggreableness",
+    "features": ["formatters", "custom colors"],
+    "theme": "purple",
+    "dataset": "sample-dataset.csv",
+    "imageUrl": "https://githubreportcard.reflect.io/images/screenshot.jpg"
+  }
+]

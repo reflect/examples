@@ -1,0 +1,208 @@
+//custom color variables
+$black: black;
+$accent-color: #FFDD38;
+
+
+$viz-palette-base: lightgrey;
+
+$viz-palette: (
+  0: $viz-palette-base,
+  1: darken($viz-palette-base, 10%),
+  2: darken($viz-palette-base, 20%),
+  3: darken($viz-palette-base, 30%),
+  4: darken($viz-palette-base, 40%),
+  5: darken($viz-palette-base, 50%),
+  6: darken($viz-palette-base, 60%),
+  7: darken($viz-palette-base, 70%),
+  8: darken($viz-palette-base, 80%),
+  9: darken($viz-palette-base, 90%),
+  10: darken($viz-palette-base, 15%),
+  11: darken($viz-palette-base, 25%)
+) !default;
+
+$white:                          #fff;
+$gray-base:                      #201F1E;
+$gray-darker:                    lighten($gray-base, 19%) !default;
+$gray-dark:                      lighten($gray-base, 38%) !default;
+$gray:                           lighten($gray-base, 56%) !default;
+$gray-light:                     lighten($gray-base, 80%) !default;
+$gray-lighter:                   lighten($gray-base, 84%) !default;
+
+// $red:                            #E62E53 !default;
+// $green:                          #00DFA2 !default;
+// $yellow:                         #DFA200 !default;
+
+$brand-primary:                  $accent-color;
+// $brand-success:                  #5cb85c !default;
+// $brand-info:                     #5bc0de !default;
+// $brand-warning:                  #f0ad4e !default;
+// $brand-danger:                   #d9534f !default;
+
+$border-color:                   $accent-color !default;
+$border-hover-color:             $gray;
+$border-radius:                  4px;
+$border:                         1px solid red;
+$border-heavy:                   2px solid red;
+$border-hover:                   1px solid $border-hover-color;
+
+$outer-shadow:                   1px 1px 7px rgba(0, 0, 0,.07);
+$hover-shadow:                   1px 1px 10px rgba(0, 0, 0,.1);
+$selected-shadow:                0px 0px 0px 1px $brand-primary;
+
+$grid-gutter-width:              30px;
+$font-size-large:                18px;
+$font-size-base:                 16px;
+$font-size-medium:               14px;
+$font-size-small:                12px;
+$line-height-base:               1.428571429; // 20/14
+
+$input-border-focus:             $brand-primary;
+$layer-popover:                  26;
+
+$body-bg:                        $black;
+
+$header-height:                  130px;
+$header-bg:                      $white;
+$header-border:                  1px solid $border-color;
+
+$nav-color:                      $gray;
+$nav-font-size:                  14px;
+$nav-color-hover:                $brand-primary;
+$nav-color-active:               $brand-primary;
+$nav-pill-bg:                    $gray-lighter;
+
+$rc-progress-color:              $white;
+
+
+
+
+
+$font-family:                   'Open Sans', sans-serif !default;
+
+$font-size-large:                18px !default;
+$font-size-base:                 30px !default;
+$font-size-medium:               14px !default;
+$font-size-small:                12px !default;
+$font-size-tiny:                 10px !default;
+$line-height-base:               1.428571429 !default; // 20/14
+
+$font-color-base:                red;
+
+$border-color:                   red !default;
+$border-hover-color:             $gray !default;
+$border-radius:                  4px !default;
+$border:                         1px solid $border-color !default;
+$border-heavy:                   2px solid $border-color;
+$border-active:                  1px solid $brand-primary !default;
+$border-hover:                   1px solid $border-hover-color !default;
+
+$outer-shadow:                   0 0px 1px rgba(0, 0, 0, .05) !default;
+$hover-shadow:                   0px 0px 0px 1px $gray !default;
+$selected-shadow:                0px 0px 0px 1px $brand-primary !default;
+
+$padding:                        16px;
+
+// Reflect UI Styles
+@import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+
+// @import "../../../node_modules/@reflect/reflect-components/source/scss/library/all.scss";
+
+
+
+// .view-container {
+//   background-color: black;
+//   position: relative;
+// }
+
+// #disclaimer, #authentication {
+//   display: none;
+//   color: white;
+// }
+//
+// #disclaimer {
+//   margin-top: 12px;
+//   margin-bottom: 120px;
+//
+//   p {
+//     margin-top: 10px;
+//   }
+//
+//   span {
+//     color: $accent-color;
+//   }
+// }
+//
+// #authentication {
+//   margin-top: 150px;
+//   text-align: center;
+//
+//   input, button {
+//     padding: 10px;
+//     border-radius: 5px;
+//   }
+//
+//   input {
+//     font-size: 1rem;
+//     width: 300px;
+//   }
+//
+//   button {
+//     background: white;
+//     border: none;
+//     font-size: 19px;
+//     margin-left: 10px;
+//   }
+// }
+
+
+// #view {
+//   .viz-container, .viz-controls {
+//     background-color: black;
+//   }
+//
+//   .viz-container {
+//     border-color: #A67D3D;
+//   }
+//
+//   .viz-title {
+//     color: white !important;
+//   }
+//
+//   .viz-metric-value {
+//     color: grey;
+//   }
+//
+//   // dropdown
+//   .rc-dropdown-label-text {
+//     color: $accent-color;
+//   }
+//
+//   .rc-icon {
+//     fill: $accent-color;
+//   }
+//
+//   .viz-loading-wrapper {
+//     background-color: black;
+//
+//     .viz-loading {
+//       border-color: $accent-color;
+//       border-top-color: lightgrey;
+//     }
+//   }
+// }
+//
+// .rc-menu .rc-menu-item {
+//   a {
+//     color: black;
+//   }
+//
+//   &:hover a {
+//     background-color: grey;
+//   }
+//
+//   &.rc-menu-item-selected a {
+//     background-color: lightgrey;
+//     color: white;
+//   }
+// }

@@ -72,6 +72,7 @@ header {
 
   div {
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -79,11 +80,17 @@ header {
   @include button-default;
   @include border-oval;
 
-  &.colors {
+  &.custom_colors {
     @include feature(red);
   }
+  &.custom_controls {
+    @include feature(purple);
+  }
   &.filters {
-    @include feature(blue);
+    @include feature(green);
+  }
+  &.formatters {
+    @include feature(gold);
   }
   &.interactions {
     @include feature(orange);
@@ -166,12 +173,17 @@ button {
 
 .controls {
   float: right;
+  margin-top: 6px;
 
   button {
     @include border-default;
     @include button-default;
     color: $dark-grey;
   }
+}
+
+#app-instruction {
+  display: inline-block;
 }
 
 .instruction, .controls {

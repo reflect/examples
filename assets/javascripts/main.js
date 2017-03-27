@@ -45,22 +45,5 @@ $(function(){
     $('.card-container').mouseleave(function() {
       $('.card').removeClass('on-hover');
     })
-
-    var filters = [];
-
-    //filter apps
-    $('.toolbar .option').click(function() {
-      var filter = $(this).text();
-      var index = filters.indexOf(filter);
-
-      if (index > -1) {
-        filters.splice(index, 1);
-      } else {
-        filters.push(filter);
-      }
-      console.log(filters);
-
-      $(this).toggleClass('selected');
-    })
   });
 })
