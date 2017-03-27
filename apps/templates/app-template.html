@@ -51,18 +51,13 @@
         });
       }
 
-      //call to remove changes
-      function removeSomething() {
-        ui.withSomething({});
-      }
-
       //apply changes and render on page load
       applySomething();
       render();
 
       //do something on toolbar button click
       $('#do-something').click(function(e) {
-
+        applySomething();
       });
     </script>
   </body>
