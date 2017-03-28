@@ -18,7 +18,7 @@ $blue: #269CFF;
   border: 1px solid $dark-grey;
   background-color: white;
   cursor: pointer;
-  padding: 2px 6px 3px;
+  padding: 2px 10px 3px;
 }
 
 @mixin feature($color) {
@@ -77,21 +77,25 @@ header {
   }
 }
 
-.features a {
+.features a, .features p {
   @include button-default;
   @include border-oval;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 2px;
+  font-size: .75rem;
 
   &.custom_colors {
-    @include feature(red);
+    @include feature(#E341D5);
   }
   &.custom_controls {
-    @include feature(purple);
+    @include feature(#00AD39);
   }
   &.filters {
-    @include feature(green);
+    @include feature(turquoise);
   }
   &.formatters {
-    @include feature(gold);
+    @include feature(#FFDB49);
   }
   &.interactions {
     @include feature(orange);
@@ -105,7 +109,7 @@ body {
   padding: 0 30px;
   color: $grey;
   background-color: $light-grey;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 38px auto;
   letter-spacing: .02223rem;
   font-weight: 400;
@@ -119,20 +123,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   margin-bottom: 1rem;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 1.778rem;
-  color: $dark-grey;
-  font-weight: 400;
+  color: $black;
 }
 
 h2 {
   color: $dark-grey;
   font-size: 1.15rem;
-  font-weight: normal;
   line-height: 1.7;
   margin-bottom: 1.111rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 h6 {
@@ -141,6 +149,10 @@ h6 {
   text-transform: uppercase;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   display: inline-block;
+}
+
+p {
+  margin: .5rem 0 1rem;
 }
 
 a {
@@ -154,18 +166,19 @@ button {
   }
 }
 
-//main content container
-.view-container,
-.card-container {
-  @include border-btm-default;
+.toolbar, .view-container, #app-header {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+//app container
 .view-container {
-  padding: 20px;
+  @include border-btm-default;
+  padding: 1rem;
   min-height: 400px;
 }
 
-//Toolbar
+//toolbar
 .toolbar {
   @include border-top-default;
   background-color: $grey;
@@ -205,88 +218,49 @@ button {
   color: $dark-grey;
 }
 
+//cards
+.card-container {
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+}
 
-//Cards
+.card-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
-//
-// .card-container {
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: space-around;
-//   height: 100%;
-//   margin-top: 80px;
-//   text-align: center;
-//   padding: 35px;
-// }
-//
-// //used to force grid with any number of apps
-// .card-filler {
-//   padding: 0 35px;
-//   width: 300px;
-//   display: inline-block;
-//   position: relative;
-// }
-//
-// .card {
-//   @include border-default;
-//   display: inline-block;
-//   box-shadow: $card-box-shadow;
-//   width: 300px;
-//   height: 300px;
-//   position: relative;
-//   overflow: hidden;
-//   margin: 35px;
-//
-//   &:active,
-//   &:hover,
-//   &:focus {
-//     box-shadow: $card-hover-box-shadow;
-//   }
-//
-//   &.on-hover img {
-//     opacity: .7;
-//   }
-// }
-//
-// .card .title {
-//   text-transform: capitalize;
-//   color: #fff;
-// }
-//
-// // guarantee image does not show behind rounded corners
-// .card .image-wrapper {
-//   max-height: 250px;
-//   overflow: hidden;
-// }
-//
-// .card img {
-//   border-bottom-left-radius: .2778rem;
-//   border-bottom-right-radius: .2778rem;
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: auto;
-// }
-//
-// .card .lead,
-// .card .description {
-//   background-color: #fff;
-//   padding: 10px;
-// }
-//
-// .card .lead {
-//   border-top-right-radius: 0.2778rem;
-//   border-top-left-radius: 0.2778rem;
-//   text-align: center;
-//   background-color: #269cff;
-// }
-//
-// .card .description {
-//   border-bottom-right-radius: 0.2778rem;
-//   border-bottom-left-radius: 0.2778rem;
-//   text-align: left;
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-// }
+//card-fillers force grid with any number of apps
+.card, .card-filler {
+  width: 350px;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+  text-align: left;
+  position: relative;
+  padding: 0 20px;
+}
+
+.card.on-hover img {
+  opacity: .7;
+}
+
+.card .image-wrapper {
+  @include border-default;
+  max-height: 190px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .title {
+  color: $black;
+}
+
+.card .description {
+  color: $dark-grey;
+}

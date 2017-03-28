@@ -9,12 +9,12 @@ var featureUrls = {
 
 $(function(){
   //retrieve path name
-  var path = (window.location.pathname).split("/").pop();
+  var path = (window.location.pathname).split("/").pop().split(".")[0];
 
   $.get('../json/apps.json', function(data) {
     //find the app details
     var app = data.find(function(item) {
-      return item.file === path;
+      return item.name === path;
     });
 
     //update page title
@@ -37,7 +37,7 @@ $(function(){
       features.push('<a class="' + featureId + '" href="' + link + '">' + feature + '</a>');
     });
 
-    features = features.sort().join(',');
+    features = features.sort().join('');
 
     //populate the instructions
     var $instruction = $('#app-instruction');

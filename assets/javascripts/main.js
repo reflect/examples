@@ -1,28 +1,35 @@
-function App(title, description, tags, url, imageUrl) {
-    this.title = title;
-    this.description = description;
-    this.tags = tags;
-    this.url = url;
-    this.imageUrl = imageUrl;
-}
-
 $(function(){
-  //include navbar
-  $.get('views/layouts/navbar.html', function(data) {
-    $('#navbar').html(data);
-  });
-
   //get the app details from json
-  $.get('views/apps/apps.json', function(app) {
+  $.get('./json/apps.json', function(app) {
     var $list = $('.card-list');
 
     app.forEach(function(d) {
 
-      //create the app  object
-      const app = new App(d.title, d.description, d.tags, d.url, d.imageUrl);
+      //build features list
+      var features = [];
+
+      (d.features).forEach(function(feature) {
+        var featureId = feature.split(' ').join('_');
+        features.push('<p class="' + featureId + '">' + feature + '</p>');
+      });
+
+      features = features.sort().join('');
 
       //create the card
-      $list.append('<a class="card" href="views/apps/college-majors.html"><div class="lead"><h3 class="title">' + app.title + '</h3></div><div class="image-wrapper"><img src="' + app.imageUrl + '" /></div><div class="description"><p>' + app.description + '</p></div></a>');
+      $list.append(`
+        <a class="card" href="/apps/` + d.name + `.html">
+          <div class="image-wrapper">
+            <img src="/images/apps/` + d.name + `.png" />
+          </div>
+          <div class="content">
+            <h3 class="title">` + d.title + `</h3>
+            <p class="description">` + d.description + `</p>
+            <div class="features">
+              ` + features + `
+            </div>
+          </div>
+        </a>'
+      `);
     });
 
     //force grid

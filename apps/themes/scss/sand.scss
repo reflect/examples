@@ -1,13 +1,13 @@
 //custom color variables
-$view-bg-color: white;
-$component-bg-color: white;
-$accent-color: lightblue;
-$view-title-color: lightblue;
-$component-title-color: grey;
-$metric-color: tan;
+$view-bg-color: #47525F;
+$component-bg-color: #333F4E;
+$accent-color: #fafafa;
+$view-title-color: lightgrey;
+$component-title-color: white;
+$metric-color: #DA513D;
 
 //REFLECT variables
-$viz-palette-base: tan;
+$viz-palette-base: #DA513D;
 
 $viz-palette: (
   0: $viz-palette-base,
@@ -25,7 +25,7 @@ $viz-palette: (
 ) !default;
 
 $brand-primary:                  $accent-color;
-$border-color:                   $accent-color !default;
+$border-color:                   lightgrey !default;
 
 //import REFLECT UI styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
@@ -33,6 +33,10 @@ $border-color:                   $accent-color !default;
 
 .view-container {
   background-color: $view-bg-color;
+}
+
+.viz {
+  color: lightgrey;
 }
 
 .viz-container, .viz-controls {
@@ -70,4 +74,14 @@ $border-color:                   $accent-color !default;
 
 .viz-icon-cancel-circled:before {
   content: '\00D7';
+}
+
+// dropdown
+.rc-menu .rc-menu-item a {
+  color: $component-bg-color;
+}
+
+.rc-menu .rc-menu-item-selected a {
+  background-color: grey;
+  color: white;
 }

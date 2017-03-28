@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <a href="https://reflect.io">
+      <a href="/">
         <img class="logo" src="../../images/reflect-logo-bw.svg" alt="Reflect logo">
       </a>
       <div id="app-header" />
@@ -78,7 +78,7 @@
       $('select[name=major-selects]').change(function() {
         var newIndustry = $(this).val();
 
-        applyFilters(newIndustry);
+        applyFilters('Major Category', newIndustry);
         render();
 
         $('#concentration-controls').html('');
