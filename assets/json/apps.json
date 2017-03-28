@@ -22,7 +22,7 @@
   {
     "name": "airline-survey",
     "title": "Formatters",
-    "description": "Manipulate your data on the frontend. Shorten metrics, add units, and give meaning to empty values with custom formatters.",
+    "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
     "mainGoal": "Toggle custom formatters and selected dimensions",
     "secondaryGoal": "Note how custom colors are used to imply aggreableness",
     "features": ["formatters", "custom colors"],

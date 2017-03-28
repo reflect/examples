@@ -1,3 +1,4 @@
+//fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 //shadows
@@ -12,12 +13,14 @@ $grey: #F2F2F2;
 $light-grey: #F6F6F6;
 $blue: #269CFF;
 
+//sizes
+$mobile: 799px;
+
 //mixins
 @mixin button-default {
   font-size: .8rem;
   border: 1px solid $dark-grey;
   background-color: white;
-  cursor: pointer;
   padding: 2px 10px 3px;
 }
 
@@ -66,6 +69,7 @@ header {
   margin: 0 auto 50px;
 }
 
+//resources bar
 .resources {
   text-align: left;
   display: flex;
@@ -73,17 +77,37 @@ header {
 
   div {
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+  }
+
+  h6 {
+    margin: 0;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+
+    //Bring back if we want resources on mobile
+    // h6, .feature {
+    //   display: block;
+    //   margin-bottom: 1px;
+    // }
+    //
+    // .theme, .dataset {
+    //   display: none;
+    // }
   }
 }
 
-.features a, .features p {
+//feature tags
+.feature {
   @include button-default;
   @include border-oval;
   display: inline-block;
   text-transform: uppercase;
-  margin-right: 2px;
-  font-size: .75rem;
+  margin: 3px 2px 0 0;
+  font-size: .7rem;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
 
   &.custom_colors {
     @include feature(#E341D5);
@@ -114,8 +138,9 @@ body {
   letter-spacing: .02223rem;
   font-weight: 400;
 
-  @media (max-width: 799px) {
-    margin: 17px auto;
+  //reduce max-width with card line break
+  @media (max-width: 1237px) {
+    max-width: 800px;
   }
 }
 
@@ -166,6 +191,7 @@ button {
   }
 }
 
+//set smaller width for examples
 .toolbar, .view-container, #app-header {
   max-width: 800px;
   margin: 0 auto;
@@ -176,6 +202,10 @@ button {
   @include border-btm-default;
   padding: 1rem;
   min-height: 400px;
+
+  @media (max-width: $mobile) {
+    padding: 5px;
+  }
 }
 
 //toolbar
@@ -183,11 +213,33 @@ button {
   @include border-top-default;
   background-color: $grey;
   padding: 1rem;
+  overflow: auto;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+
+    .controls {
+      float: none;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+  }
+}
+
+//user prompt
+#app-instruction {
+  display: inline-block;
+}
+
+.instruction, .controls {
+  display: inline-block;
+  color: $dark-grey;
 }
 
 .controls {
   float: right;
-  margin-top: 6px;
 
   button, select {
     @include border-default;
@@ -209,16 +261,7 @@ button {
   }
 }
 
-#app-instruction {
-  display: inline-block;
-}
-
-.instruction, .controls {
-  display: inline-block;
-  color: $dark-grey;
-}
-
-//cards
+//homepage cards
 .card-container {
   width: 100%;
   margin-top: 80px;
@@ -232,16 +275,24 @@ button {
 }
 
 //card-fillers force grid with any number of apps
-.card, .card-filler {
+.card-wrapper, .card-filler {
   width: 350px;
   justify-content: space-between;
-  margin: 0;
-  text-align: left;
-  position: relative;
   padding: 0 20px;
+  margin: 0 auto 50px;
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
-.card.on-hover img {
+.card {
+  text-align: left;
+  position: relative;
+}
+
+//reduce opacity of neighboring cards on hover
+.card.inactive img {
   opacity: .7;
 }
 
@@ -263,4 +314,10 @@ button {
 
 .card .description {
   color: $dark-grey;
+}
+
+@media (max-width: $mobile) {
+  .viz-legend, #app-instruction {
+    display: none;
+  }
 }

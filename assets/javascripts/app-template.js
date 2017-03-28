@@ -34,7 +34,7 @@ $(function(){
     (app.features).forEach(function(feature) {
       var featureId = feature.split(' ').join('_');
       var link = featureUrls[featureId];
-      features.push('<a class="' + featureId + '" href="' + link + '">' + feature + '</a>');
+      features.push('<a class="feature ' + featureId + '" href="' + link + '">' + feature + '</a>');
     });
 
     features = features.sort().join('');

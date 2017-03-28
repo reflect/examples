@@ -10,29 +10,33 @@ $(function(){
 
       (d.features).forEach(function(feature) {
         var featureId = feature.split(' ').join('_');
-        features.push('<p class="' + featureId + '">' + feature + '</p>');
+        features.push('<p class="feature ' + featureId + '">' + feature + '</p>');
       });
 
       features = features.sort().join('');
 
       //create the card
       $list.append(`
-        <a class="card" href="/apps/` + d.name + `.html">
-          <div class="image-wrapper">
-            <img src="/images/apps/` + d.name + `.png" />
-          </div>
-          <div class="content">
-            <h3 class="title">` + d.title + `</h3>
-            <p class="description">` + d.description + `</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <a href="/apps/` + d.name + `.html">
+              <div class="image-wrapper">
+                <img src="/images/apps/` + d.name + `.png" />
+              </div>
+              <div class="content">
+                <h3 class="title">` + d.title + `</h3>
+                <p class="description">` + d.description + `</p>
+              </div>
+            </a>
             <div class="features">
               ` + features + `
             </div>
           </div>
-        </a>'
+        </div>
       `);
     });
 
-    //force grid
+    //force grid at any length
     if (Object.keys(app).length < 3) {
       //if number of apps is less than 3 do nothing to center
     } else if (Object.keys(app).length % 2 === 1) {
@@ -45,12 +49,12 @@ $(function(){
 
     //card hover effect
     $('.card').mouseenter(function() {
-      $(this).removeClass('on-hover');
-      $(this).siblings().addClass('on-hover');
+      $('.card').not(this).addClass('inactive');
+      $(this).removeClass('inactive');
     })
 
     $('.card-container').mouseleave(function() {
-      $('.card').removeClass('on-hover');
+      $('.card').not(this).removeClass('inactive');
     })
   });
 })
