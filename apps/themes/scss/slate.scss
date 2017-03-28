@@ -3,7 +3,7 @@ $view-bg-color: #47525F;
 $component-bg-color: #333F4E;
 $accent-color: #fafafa;
 $view-title-color: lightgrey;
-$component-title-color: white;
+$component-title-color: lightgrey;
 $metric-color: #DA513D;
 
 //REFLECT variables
@@ -25,7 +25,7 @@ $viz-palette: (
 ) !default;
 
 $brand-primary:                  $accent-color;
-$border-color:                   lightgrey !default;
+$border-color:                   rgba(255,255,255,.3) !default;
 
 //import REFLECT UI styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";

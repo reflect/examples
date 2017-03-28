@@ -32,11 +32,11 @@
   {
     "name": "job-market",
     "title": "Interactions",
-    "description": "Use data point interactions to update components and views, or to swap out entire views.",
-    "mainGoal": "Click on a bar column to swap out the view and filter by Major",
-    "secondaryGoal": "Use the select bar to filter by Industry",
+    "description": "Use data point interactions to update components and views. Exchange views by simply changing the view ID.",
+    "mainGoal": "Use the select bar to filter by Industry",
+    "secondaryGoal": "Click on a bar column to drill into a new view",
     "features": ["interactions", "custom controls"],
-    "theme": "sand",
+    "theme": "slate",
     "dataset": "sample-dataset.csv"
   }
 ]
