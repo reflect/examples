@@ -59,7 +59,7 @@ $border-color:                   rgba(255,255,255,.3) !default;
   background-color: $component-bg-color !important;
 
   .viz-loading {
-    border-color: $accent-color;
+    border-color: rgba(255, 255, 255,.5);
     border-top-color: $viz-palette-base;
   }
 }
@@ -81,7 +81,11 @@ $border-color:                   rgba(255,255,255,.3) !default;
   color: $component-bg-color;
 }
 
+.rc-menu .rc-menu-item a:hover {
+  color: $component-bg-color;
+}
+
 .rc-menu .rc-menu-item-selected a {
-  background-color: grey;
+  background-color: $component-bg-color;
   color: white;
 }

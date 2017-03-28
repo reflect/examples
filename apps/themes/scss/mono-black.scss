@@ -25,7 +25,7 @@ $viz-palette: (
 ) !default;
 
 $brand-primary:                  $accent-color;
-$border-color:                   $accent-color !default;
+$border-color:                   rgba(255, 221, 56,.7) !default;
 
 //import REFLECT UI styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
@@ -55,8 +55,8 @@ $border-color:                   $accent-color !default;
   background-color: $component-bg-color !important;
 
   .viz-loading {
-    border-color: $accent-color;
-    border-top-color: $viz-palette-base;
+    border-color: $viz-palette-base;
+    border-top-color: rgba(255, 255, 255,.5);
   }
 }
 
@@ -72,18 +72,18 @@ $border-color:                   $accent-color !default;
   content: '\00D7';
 }
 
-// // dropdown
-// .rc-menu .rc-menu-item {
-//   a {
-//     color: $bg-color;
-//   }
-//
-//   &:hover a {
-//     background-color: grey;
-//   }
-//
-//   &.rc-menu-item-selected a {
-//     background-color: lightgrey;
-//     color: white;
-//   }
-// }
+// dropdown
+.rc-menu .rc-menu-item {
+  a {
+    color: $view-bg-color;
+  }
+
+  &:hover a {
+    background-color: grey;
+  }
+
+  &.rc-menu-item-selected a {
+    background-color: lightgrey;
+    color: white;
+  }
+}

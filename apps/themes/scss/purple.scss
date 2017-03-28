@@ -1,27 +1,27 @@
 //custom color variables
-$view-bg-color: #2E004D;
-$component-bg-color: white;
+$view-bg-color: #452842;
+$component-bg-color: #4F2F4C;
 $accent-color: #89428B;
 $view-title-color: white;
-$component-title-color: grey;
-$metric-color: #89428B;
+$component-title-color: #C0C0C0;
+$metric-color: #fafafa;
 
 //REFLECT variables
 $viz-palette-base: #9900FF;
 
 $viz-palette: (
   0: $viz-palette-base,
-  1: darken($viz-palette-base, 10%),
-  2: darken($viz-palette-base, 20%),
-  3: darken($viz-palette-base, 30%),
-  4: darken($viz-palette-base, 40%),
-  5: darken($viz-palette-base, 50%),
-  6: darken($viz-palette-base, 60%),
-  7: darken($viz-palette-base, 70%),
-  8: darken($viz-palette-base, 80%),
-  9: darken($viz-palette-base, 90%),
-  10: darken($viz-palette-base, 15%),
-  11: darken($viz-palette-base, 25%)
+  1: adjust-hue($viz-palette-base, 10%),
+  2: adjust-hue($viz-palette-base, 20%),
+  3: adjust-hue($viz-palette-base, 30%),
+  4: adjust-hue($viz-palette-base, 40%),
+  5: adjust-hue($viz-palette-base, 50%),
+  6: adjust-hue($viz-palette-base, 60%),
+  7: adjust-hue($viz-palette-base, 70%),
+  8: adjust-hue($viz-palette-base, 80%),
+  9: adjust-hue($viz-palette-base, 90%),
+  10: adjust-hue($viz-palette-base, 15%),
+  11: adjust-hue($viz-palette-base, 25%)
 ) !default;
 
 $brand-primary:                  $accent-color;
@@ -29,7 +29,6 @@ $border-color:                   $accent-color !default;
 
 //import REFLECT UI styles
 @import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
-
 
 .view-container {
   background-color: $view-bg-color;
@@ -70,4 +69,34 @@ $border-color:                   $accent-color !default;
 
 .viz-icon-cancel-circled:before {
   content: '\00D7';
+}
+
+.rc-dropdown-toggle .rc-dropdown-label {
+  color: #fafafa;
+}
+
+// dropdown
+.rc-menu .rc-menu-item {
+  a {
+    color: $view-bg-color;
+  }
+
+  &:hover a {
+    color: $view-bg-color;
+    background-color: $component-title-color;
+  }
+
+  &.rc-menu-item-selected a {
+    background-color: $view-bg-color;
+    color: white;
+  }
+}
+
+.viz .viz-tooltip .viz-metric-value {
+  color: $view-bg-color !important;
+}
+
+.viz .viz-tooltip .viz-dimension-value {
+  background-color: $view-bg-color !important;
+  color: #fafafa;
 }
