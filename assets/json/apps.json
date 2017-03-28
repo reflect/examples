@@ -38,5 +38,15 @@
     "features": ["interactions", "custom controls"],
     "theme": "slate",
     "dataset": "sample-dataset.csv"
+  },
+  {
+    "name": "ecommerce",
+    "title": "Dates",
+    "description": "",
+    "mainGoal": "",
+    "secondaryGoal": "",
+    "features": ["dates", "filters"],
+    "theme": "reflect-blue",
+    "dataset": "sample-dataset.csv"
   }
 ]
