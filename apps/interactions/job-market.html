@@ -81,11 +81,9 @@
 
         applyFilters('Major Category', newIndustry);
         render();
-
-        $('#concentration-controls').html('');
       });
 
-      //call to swap views and filter by Major
+      //call to swap views and drill into Major
       function swapViews(data) {
         var major = data.rowData.Major;
         var industry = $('select[name=major-selects]').find(":selected").text();
@@ -97,6 +95,7 @@
         ui.view(document.getElementById('view'), '49dITq-EQlyRO-QTnfs7ow');
 
         $('#major-controls').html('<button id="major-btn">' + major + ' <span>&times</span></button>');
+        $('#industry-controls').addClass('hidden');
 
         //revert view and remove Major filter
         $('#major-btn').click(function() {
@@ -104,6 +103,7 @@
           render();
 
           $('#major-controls').html('');
+          $('#industry-controls').removeClass('hidden');
         });
       }
 

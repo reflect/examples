@@ -2,11 +2,12 @@
 var featureUrls = {
   custom_colors: "https://reflect.io/docs/platform/embedding#Customcolors",
   filters: "https://reflect.io/docs/platform/embedding#Filters",
-  parameters: "https://reflect.io/docs/platform/embedding#Parameters",
+  parameters: "https://reflect.io/docs/platform/authentication#Parameterizedviews",
   formatters: "https://reflect.io/docs/platform/embedding#Formatters",
-  interaction: "https://reflect.io/docs/platform/embedding#Interactions",
+  interactions: "https://reflect.io/docs/platform/embedding#Interactions",
   custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews",
-  dates: "https://reflect.io/docs/platform/embedding#dates"
+  custom_components: "https://reflect.io/docs/platform/embedding#Customcomponenttypes",
+  dates: "https://reflect.io/docs/platform/embedding#Dateranges"
 }
 
 $(function(){
@@ -56,8 +57,8 @@ $(function(){
     var $instruction = $('#app-instruction');
 
     $instruction.html(`
-      <small class="instruction desktop-only"><strong>First</strong>: ` + app.mainGoal + `</small><br>
-      <small class="instruction desktop-only"><strong>Then</strong>: ` + app.secondaryGoal + `</small>
+      <small class="instruction desktop-only"><strong>&#9866;</strong> ` + app.mainGoal + `</small><br>
+      <small class="instruction desktop-only"><strong>&#9868;</strong> ` + app.secondaryGoal + `</small>
     `);
 
     //populate the header

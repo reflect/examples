@@ -51,11 +51,11 @@
   },
   {
     "name": "earthquakes",
-    "category": "custom-controls",
+    "category": "custom-components",
     "description": "Custom controls are currently in beta",
     "mainGoal": "Experiment with the leafly controls",
     "secondaryGoal": "Edit the dates",
-    "features": ["custom controls", "dates"],
+    "features": ["custom components", "dates"],
     "theme": "reflect-blue",
     "dataset": "sample-dataset.csv"
   }

@@ -136,8 +136,11 @@ gulp.task('watch', ['build'], () => {
   // json files
   gulp.watch('src/json/*', ['json']);
 
-  // views and live reload on change
-  gulp.watch('apps/**/*.html', ['apps']).on('change', reload);;
+  // app misc and live reload on change
+  gulp.watch(['apps/**/*.css', 'apps/**/*.js'], ['misc']).on('change', reload);
+
+  // app views and live reload on change
+  gulp.watch('apps/**/*.html', ['apps']).on('change', reload);
 
   // index and live reload on change
   gulp.watch('./index.html', ['index']).on('change', reload);
