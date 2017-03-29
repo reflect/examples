@@ -1,17 +1,3 @@
-/*
-Sample app
-{
-    "name": "name-of-html-and-png-files",
-    "category": "name-of-folder",
-    "description": "This is a description of the feature and why it's great",
-    "mainGoal": "Do this thing with the example",
-    "secondaryGoal": "Do this other thing with the example",
-    "features": ["feature one", "feature two"],
-    "theme": "theme-name",
-    "dataset": "sample-dataset.csv"
-}
-*/
-
 [
   {
     "name": "video-games",
