@@ -7,8 +7,7 @@
     "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
     "theme": "mono-black",
-    "dataset": "sample-dataset.csv",
-    "github": "github.com"
+    "dataset": "sample-dataset.csv"
   },
   {
     "name": "auto-insurance",
@@ -18,8 +17,7 @@
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
     "theme": "green-orange",
-    "dataset": "sample-dataset.csv",
-    "github": "github.com"
+    "dataset": "sample-dataset.csv"
   },
   {
     "name": "airline-survey",
@@ -29,8 +27,7 @@
     "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
     "features": ["formatters", "custom colors"],
     "theme": "purple",
-    "dataset": "sample-dataset.csv",
-    "github": "github.com"
+    "dataset": "sample-dataset.csv"
   },
   {
     "name": "job-market",
@@ -40,8 +37,7 @@
     "secondaryGoal": "Click on a bar column to drill into a new view.",
     "features": ["interactions", "custom controls"],
     "theme": "slate",
-    "dataset": "sample-dataset.csv",
-    "github": "github.com"
+    "dataset": "sample-dataset.csv"
   },
   {
     "name": "e-commerce",
@@ -51,7 +47,6 @@
     "secondaryGoal": "Note how the sales data is now limited to Ted's personal performance.",
     "features": ["parameters"],
     "theme": "reflect-blue",
-    "dataset": "sample-dataset.csv",
-    "github": "github.com"
+    "dataset": "sample-dataset.csv"
   }
 ]
