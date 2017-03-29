@@ -11,3 +11,6 @@ Sample app
     "dataset": "sample-dataset.csv"
 }
 */
+
+When adding a NEW feature, include a url to docs in ../javascripts/app-template.js
+Then add a new color style in ../stylesheets/main.scss

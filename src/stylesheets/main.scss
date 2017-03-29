@@ -17,7 +17,7 @@ $red: #FF2645;
 //sizes
 $mobile: 799px;
 
-//mixins
+////feature colors
 @mixin features {
   &.custom_colors {
     color: #E341D5;
@@ -37,8 +37,12 @@ $mobile: 799px;
   &.interactions {
     color: orange;
   }
+  &.dates {
+    color: maroon;
+  }
 }
 
+//mixins
 @mixin button-default {
   z-index: 99;
   font-size: .8rem;

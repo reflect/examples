@@ -1,11 +1,12 @@
-//feature links
+////feature links
 var featureUrls = {
   custom_colors: "https://reflect.io/docs/platform/embedding#Customcolors",
   filters: "https://reflect.io/docs/platform/embedding#Filters",
   parameters: "https://reflect.io/docs/platform/embedding#Parameters",
   formatters: "https://reflect.io/docs/platform/embedding#Formatters",
   interaction: "https://reflect.io/docs/platform/embedding#Interactions",
-  custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews"
+  custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews",
+  dates: "https://reflect.io/docs/platform/embedding#dates"
 }
 
 $(function(){
