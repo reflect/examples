@@ -17,8 +17,14 @@ import babel from 'gulp-babel';
 const reload = browserSync.reload;
 const stream = browserSync.stream;
 
-// Compile default CSS for downloadable examples
-gulp.task('base-theme', () => {
+// Copy base CSS into build folders
+gulp.task('copy:base-theme', () => {
+  return gulp.src('apps/**/*.css')
+    .pipe(gulp.dest('build'))
+});
+
+// Compile base CSS for downloadable examples
+gulp.task('compile:base-theme', () => {
   return gulp.src(['assets/stylesheets/main.scss', 'apps/themes/reflect-blue.scss'])
     .pipe(concat('base'))
     .pipe(sass().on('error', sass.logError))
@@ -31,7 +37,7 @@ gulp.task('base-theme', () => {
 });
 
 // Main styles
-gulp.task('styles', ['base-theme'], () => {
+gulp.task('styles', ['compile:base-theme'], () => {
   return gulp.src('assets/stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
@@ -43,11 +49,12 @@ gulp.task('styles', ['base-theme'], () => {
 });
 
 // Themes
-gulp.task('themes', ['base-theme'], () => {
+gulp.task('themes', ['compile:base-theme'], () => {
   return gulp.src('apps/themes/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('build/themes'))
+    .pipe(gulp.dest('apps/themes/css'))
     // Live reload after compiling scss
     .pipe(stream({stream: true}));
 });
@@ -110,12 +117,12 @@ gulp.task('index', () => {
 
 // Clean
 gulp.task('clean', () => {
-  return gulp.src(['build'], {read: false})
+  return gulp.src(['build', 'apps/themes/css'], {read: false})
     .pipe(clean());
 });
 
 // Build task
-gulp.task('build', ['styles', 'compile:scripts', 'images', 'apps', 'cards', 'json', 'themes', 'index']);
+gulp.task('build', ['styles', 'compile:scripts', 'images', 'apps', 'cards', 'json', 'themes', 'copy:base-theme', 'index']);
 
 // Default task
 gulp.task('default', ['clean', 'build']);
@@ -132,6 +139,9 @@ gulp.task('watch', ['build'], () => {
 
   // theme .scss files
   gulp.watch('apps/themes/*.scss', ['themes']);
+
+  // base .scss files
+  gulp.watch('apps/**/*.css', ['copy:base-theme']);
 
   // .js files
   gulp.watch('assets/javascripts/*.js', ['watch:scripts']);
