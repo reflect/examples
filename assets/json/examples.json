@@ -1,52 +1,57 @@
 [
   {
     "name": "video-games",
-    "title": "Custom colors",
+    "category": "custom-colors",
     "description": "Assign unique color values to fields to improve legibility. Easily tie metrics to their visual cues and swap colors on the fly.",
     "mainGoal": "Toggle custom colors and selected fields.",
     "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
     "theme": "mono-black",
-    "dataset": "sample-dataset.csv"
+    "dataset": "sample-dataset.csv",
+    "github": "github.com"
   },
   {
     "name": "auto-insurance",
-    "title": "Filters",
+    "category": "filters",
     "description": "Filter your components and views with flexbile controls. Include a filter bar from the app or build triggers, simply.",
     "mainGoal": "Swap regional filters using custom buttons.",
-    "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14",
+    "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
     "theme": "green-orange",
-    "dataset": "sample-dataset.csv"
+    "dataset": "sample-dataset.csv",
+    "github": "github.com"
   },
   {
     "name": "airline-survey",
-    "title": "Formatters",
+    "category": "formatters",
     "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
-    "mainGoal": "Toggle custom formatters and selected dimensions",
-    "secondaryGoal": "Note how custom colors are used to imply aggreableness",
+    "mainGoal": "Toggle custom formatters and selected dimensions.",
+    "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
     "features": ["formatters", "custom colors"],
     "theme": "purple",
-    "dataset": "sample-dataset.csv"
+    "dataset": "sample-dataset.csv",
+    "github": "github.com"
   },
   {
     "name": "job-market",
-    "title": "Interactions",
+    "category": "interactions",
     "description": "Use data point interactions to update components and views. Exchange views by simply changing the view ID.",
-    "mainGoal": "Use the select bar to filter by Industry",
-    "secondaryGoal": "Click on a bar column to drill into a new view",
+    "mainGoal": "Use the select bar to filter by Industry.",
+    "secondaryGoal": "Click on a bar column to drill into a new view.",
     "features": ["interactions", "custom controls"],
     "theme": "slate",
-    "dataset": "sample-dataset.csv"
+    "dataset": "sample-dataset.csv",
+    "github": "github.com"
   },
   {
     "name": "e-commerce",
-    "title": "Parameters",
-    "description": "With parameters enabled, only authenticated users can render the view. They will only see data permitted by their credentials.",
-    "mainGoal": "Turn on parameters and login as Ted, the Sales Rep",
-    "secondaryGoal": "Note how the sales data is now limited to Ted's personal performance",
+    "category": "parameters",
+    "description": "Apply parameters to enforce user authentication. Users will only see data permitted by their credentials.",
+    "mainGoal": "Turn on parameters and login as Ted, the Sales Rep.",
+    "secondaryGoal": "Note how the sales data is now limited to Ted's personal performance.",
     "features": ["parameters"],
     "theme": "reflect-blue",
-    "dataset": "sample-dataset.csv"
+    "dataset": "sample-dataset.csv",
+    "github": "github.com"
   }
 ]

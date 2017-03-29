@@ -1,9 +1,11 @@
 $(function(){
   //get the app details from json
-  $.get('./json/apps.json', function(app) {
+  $.get('./src/json/examples.json', function(app) {
     var $list = $('.card-list');
 
     app.forEach(function(d) {
+
+      var title = d.category.replace(/-/g, ' ');
 
       //build features list
       var features = [];
@@ -19,12 +21,12 @@ $(function(){
       $list.append(`
         <div class="card-wrapper">
           <div class="card">
-            <a href="/apps/` + d.name + `.html">
+            <a href="/` + d.category + `">
               <div class="image-wrapper">
-                <img src="/images/apps/` + d.name + `.png" />
+                <img src="/src/images/` + d.category + `/` + d.name + `.png" />
               </div>
               <div class="content">
-                <h3 class="title">` + d.title + `</h3>
+                <h3 class="title">` + title + `</h3>
                 <p class="description">` + d.description + `</p>
               </div>
             </a>

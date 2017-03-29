@@ -12,29 +12,42 @@ import clean from 'gulp-clean';
 import concat from 'gulp-concat';
 import cache from 'gulp-cache';
 import browserSync from 'browser-sync';
-import babel from 'gulp-babel'
+import babel from 'gulp-babel';
 
 const reload = browserSync.reload;
 const stream = browserSync.stream;
 
+// Compile default CSS for downloadable examples
+gulp.task('base-theme', () => {
+  return gulp.src(['assets/stylesheets/main.scss', 'apps/themes/reflect-blue.scss'])
+    .pipe(concat('base'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(minifycss())
+    .pipe(gulp.dest('assets/stylesheets'))
+    // Live reload after compiling scss
+    .pipe(stream({stream: true}));
+});
+
 // Main styles
-gulp.task('styles', () => {
+gulp.task('styles', ['base-theme'], () => {
   return gulp.src('assets/stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
-    .pipe(gulp.dest('build/stylesheets'))
+    .pipe(gulp.dest('build/src/stylesheets'))
     // Live reload after compiling scss
     .pipe(stream({stream: true}));
 });
 
-// App themes
-gulp.task('themes', () => {
-  return gulp.src('apps/themes/scss/*.scss')
+// Themes
+gulp.task('themes', ['base-theme'], () => {
+  return gulp.src('apps/themes/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('build/apps/themes'))
+    .pipe(gulp.dest('build/themes'))
     // Live reload after compiling scss
     .pipe(stream({stream: true}));
 });
@@ -46,7 +59,7 @@ gulp.task('compile:scripts', () => {
     // .pipe(concat('main.js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
-    .pipe(gulp.dest('build/javascripts'))
+    .pipe(gulp.dest('build/src/javascripts'))
 });
 
 // Ensure the compile task is complete before reloading browsers
@@ -54,27 +67,39 @@ gulp.task('watch:scripts', ['compile:scripts'], () => {
     browserSync.reload();
 });
 
+// Cards
+gulp.task('cards', () => {
+  return gulp.src('apps/**/*.png')
+    .pipe(cache(imagemin()))
+    .pipe(gulp.dest('build/src/images'))
+    // Live reload after compiling
+    .pipe(stream({stream: true}));
+});
+
 // Images
 gulp.task('images', () => {
-  return gulp.src('assets/images/**/*')
+  return gulp.src('assets/images/*')
     .pipe(cache(imagemin()))
-    .pipe(gulp.dest('build/images'))
+    .pipe(gulp.dest('build/src/images'))
     // Live reload after compiling
     .pipe(stream({stream: true}));
 });
 
 // JSON
 gulp.task('json', () => {
-  return gulp.src('assets/json/**/*')
-    .pipe(gulp.dest('build/json'))
+  return gulp.src('assets/json/*')
+    .pipe(gulp.dest('build/src/json'))
     // Live reload after compiling
     .pipe(stream({stream: true}));
 });
 
 // App views
 gulp.task('apps', () => {
-  return gulp.src('apps/**/*')
-    .pipe(gulp.dest('build/apps'))
+  return gulp.src('apps/**/*.html')
+    .pipe(rename(function(file) {
+      file.basename = 'index';
+    }))
+    .pipe(gulp.dest('build'))
 });
 
 // Index
@@ -90,7 +115,7 @@ gulp.task('clean', () => {
 });
 
 // Build task
-gulp.task('build', ['styles', 'compile:scripts', 'images', 'apps', 'json', 'themes', 'index']);
+gulp.task('build', ['styles', 'compile:scripts', 'images', 'apps', 'cards', 'json', 'themes', 'index']);
 
 // Default task
 gulp.task('default', ['clean', 'build']);
@@ -103,19 +128,22 @@ gulp.task('watch', ['build'], () => {
   });
 
   // main .scss files
-  gulp.watch('assets/stylesheets/**/*.scss', ['styles']);
+  gulp.watch('assets/stylesheets/*.scss', ['styles']);
 
   // theme .scss files
-  gulp.watch('apps/themes/scss/*.scss', ['themes']);
+  gulp.watch('apps/themes/*.scss', ['themes']);
 
   // .js files
   gulp.watch('assets/javascripts/*.js', ['watch:scripts']);
 
-  // image files
-  gulp.watch('assets/images/**/*', ['images']);
+  // card image files
+  gulp.watch('apps/**/*.png', ['cards']);
 
-  // image files
-  gulp.watch('assets/json/**/*', ['json']);
+  // general image files
+  gulp.watch('assets/images/*', ['images']);
+
+  // json files
+  gulp.watch('assets/json/*', ['json']);
 
   // views and live reload on change
   gulp.watch('apps/**/*.html', ['apps']).on('change', reload);;

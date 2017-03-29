@@ -28,8 +28,7 @@ $brand-primary:                  $accent-color;
 $border-color:                   $accent-color !default;
 
 //import REFLECT UI styles
-@import "../../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
-
+@import "../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
 
 .view-container {
   background-color: $view-bg-color;
@@ -62,12 +61,4 @@ $border-color:                   $accent-color !default;
 
 .viz-filters {
   background-color: $component-bg-color;
-}
-
-.viz-icon-plus:before {
-  content: '+';
-}
-
-.viz-icon-cancel-circled:before {
-  content: '\00D7';
 }

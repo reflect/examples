@@ -18,16 +18,33 @@ $red: #FF2645;
 $mobile: 799px;
 
 //mixins
+@mixin features {
+  &.custom_colors {
+    color: #E341D5;
+  }
+  &.custom_controls {
+    color: #00AD39;
+  }
+  &.filters {
+    color: turquoise;
+  }
+  &.formatters {
+    color: #FFDB49;
+  }
+  &.parameters {
+    color: #FF03A6;
+  }
+  &.interactions {
+    color: orange;
+  }
+}
+
 @mixin button-default {
   z-index: 99;
   font-size: .8rem;
   border: 1px solid $dark-grey;
   background-color: white;
   padding: 2px 10px 3px;
-}
-
-@mixin feature($color) {
-  color: $color;
 }
 
 @mixin border-default {
@@ -66,9 +83,20 @@ header {
   margin-bottom: 60px;
 }
 
+.fork-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
 .lead {
   max-width: 600px;
   margin: 0 auto 50px;
+}
+
+.title::first-letter {
+  text-transform: capitalize;
 }
 
 //resources bar
@@ -103,27 +131,12 @@ header {
 .feature {
   @include button-default;
   @include border-oval;
+  @include features;
   display: inline-block;
   text-transform: uppercase;
   margin: 3px 2px 0 0;
   font-size: .7rem;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-
-  &.custom_colors {
-    @include feature(#E341D5);
-  }
-  &.custom_controls {
-    @include feature(#00AD39);
-  }
-  &.filters {
-    @include feature(turquoise);
-  }
-  &.formatters {
-    @include feature(#FFDB49);
-  }
-  &.interactions {
-    @include feature(orange);
-  }
 }
 
 //general
@@ -315,13 +328,6 @@ button {
 
 .card .description {
   color: $dark-grey;
-}
-
-//REFLECT
-//place error message lower in view-container
-.viz-view-message-container {
-  position: relative !important;
-  margin-top: 100px;
 }
 
 //helpers
