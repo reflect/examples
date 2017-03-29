@@ -1,3 +1,17 @@
+/*
+Sample app
+{
+    "name": "name-of-html-and-png-files",
+    "category": "name-of-folder",
+    "description": "This is a description of the feature and why it's great",
+    "mainGoal": "Do this thing with the example",
+    "secondaryGoal": "Do this other thing with the example",
+    "features": ["feature one", "feature two"],
+    "theme": "theme-name",
+    "dataset": "sample-dataset.csv"
+}
+*/
+
 [
   {
     "name": "video-games",
@@ -46,6 +60,16 @@
     "mainGoal": "Turn on parameters and login as Ted, the Sales Rep.",
     "secondaryGoal": "Note how the sales data is now limited to Ted's personal performance.",
     "features": ["parameters"],
+    "theme": "reflect-blue",
+    "dataset": "sample-dataset.csv"
+  },
+  {
+    "name": "earthquakes",
+    "category": "custom-controls",
+    "description": "Custom controls are currently in beta",
+    "mainGoal": "Experiment with the leafly controls",
+    "secondaryGoal": "Edit the dates",
+    "features": ["custom controls", "dates"],
     "theme": "reflect-blue",
     "dataset": "sample-dataset.csv"
   }
