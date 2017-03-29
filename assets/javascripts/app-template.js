@@ -43,8 +43,8 @@ $(function(){
     var $instruction = $('#app-instruction');
 
     $instruction.prepend(`
-      <small class="instruction"><strong>First</strong>: ` + app.mainGoal + `</small><br>
-      <small class="instruction"><strong>Then</strong>: ` + app.secondaryGoal + `</small>
+      <small class="instruction desktop-only"><strong>First</strong>: ` + app.mainGoal + `</small><br>
+      <small class="instruction desktop-only"><strong>Then</strong>: ` + app.secondaryGoal + `</small>
     `);
 
     //populate the header
@@ -55,7 +55,7 @@ $(function(){
         <h1>` + app.title + `</h1>
         <h2>` + app.description + `</h2>
       </div>
-      <div class="resources">
+      <div class="resources desktop-only">
         <div class="features">
           <h6>Features</h6>
           ` + features + `

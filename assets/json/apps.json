@@ -40,12 +40,12 @@
     "dataset": "sample-dataset.csv"
   },
   {
-    "name": "ecommerce",
-    "title": "Dates",
-    "description": "",
-    "mainGoal": "",
-    "secondaryGoal": "",
-    "features": ["dates", "filters"],
+    "name": "e-commerce",
+    "title": "Parameters",
+    "description": "With parameters enabled, only authenticated users can render the view. They will only see data permitted by their credentials.",
+    "mainGoal": "Turn on parameters and login as Ted, the Sales Rep",
+    "secondaryGoal": "Note how the sales data is now limited to Ted's personal performance",
+    "features": ["parameters"],
     "theme": "reflect-blue",
     "dataset": "sample-dataset.csv"
   }

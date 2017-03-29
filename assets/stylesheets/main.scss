@@ -12,12 +12,14 @@ $dark-grey: #888;
 $grey: #F2F2F2;
 $light-grey: #F6F6F6;
 $blue: #269CFF;
+$red: #FF2645;
 
 //sizes
 $mobile: 799px;
 
 //mixins
 @mixin button-default {
+  z-index: 99;
   font-size: .8rem;
   border: 1px solid $dark-grey;
   background-color: white;
@@ -84,10 +86,8 @@ header {
     margin: 0;
   }
 
-  @media (max-width: $mobile) {
-    display: none;
-
-    //Bring back if we want resources on mobile
+  //Bring back if we want resources on mobile
+  // @media (max-width: $mobile) {
     // h6, .feature {
     //   display: block;
     //   margin-bottom: 1px;
@@ -96,7 +96,7 @@ header {
     // .theme, .dataset {
     //   display: none;
     // }
-  }
+  // }
 }
 
 //feature tags
@@ -221,10 +221,6 @@ button {
     .controls {
       float: none;
     }
-
-    .desktop-only {
-      display: none;
-    }
   }
 }
 
@@ -249,6 +245,11 @@ button {
     &.active {
       color: white;
       background-color: $blue;
+    }
+
+    &.alert {
+      color: white;
+      background-color: $red;
     }
 
     &#major-btn {
@@ -316,8 +317,20 @@ button {
   color: $dark-grey;
 }
 
+//REFLECT
+//place error message lower in view-container
+.viz-view-message-container {
+  position: relative !important;
+  margin-top: 100px;
+}
+
+//helpers
+.hidden {
+  display: none;
+}
+
 @media (max-width: $mobile) {
-  .viz-legend, #app-instruction {
+  .desktop-only {
     display: none;
   }
 }

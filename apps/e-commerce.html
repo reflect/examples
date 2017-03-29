@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link href="../../stylesheets/main.min.css" rel="stylesheet" />
+    <link id="app-theme" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <script src="../../javascripts/app-template.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="desktop-only" href="https://github.com/you">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+      <a href="/">
+        <img class="logo" src="../../images/reflect-logo-bw.svg" alt="Reflect logo">
+      </a>
+      <div id="app-header" />
+    </header>
+
+    <div class="toolbar">
+      <div id="app-instruction"></div>
+      <div class="controls">
+        <button id="enforce-params">Turn Parameters On</button>
+        <button id="remove-params" class="hidden">Turn Parameters Off</button>
+        <div id="authentication" class="hidden">
+          <input placeholder="SalesmanTed@email.com" disabled>
+          <button id="authenticate-params" class="active">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Where the view gets rendered -->
+    <div class="view-container">
+      <div id="view" />
+    </div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render the exposed view
+      function render() {
+        ui.view(document.getElementById('view'), 'V3_Y-rsBRreuiuJYO98SYw');
+      }
+
+      //call to render the secure view -- passing ui for scoping only
+      function renderSecure(ui) {
+        ui.view(document.getElementById('view'), 'rAdvnZ24RoKog3fCcCK1Ng');
+      }
+
+      //render exposed view on page load
+      render();
+
+      function authenticateUser() {
+        //typically some function to get user ID
+        var userId = 'user.json';
+
+        //make a request to your backend to fetch a signed token generated with user attributes
+        $.get('../json/' + userId, function(data) {
+          //create the REFLECT instance with the project access token and signed token
+          var ui = new ReflectUI([
+            '53e5b6a5-9d36-4d6b-8c59-ff3c4a6ce301',
+            data.reflectSignedToken
+          ]);
+
+          //define parameters with user attributes to match backend request
+          var userParam = {
+             field: 'Region',
+             op: '=',
+             value: data.userRegion
+           }
+
+          //apply parameters
+          ui.withParameters([
+            userParam
+          ]);
+
+          //render secure view
+          renderSecure(ui);
+        });
+      };
+
+      //try rendering view without authentication -- fails
+      $('#enforce-params').click(function(e) {
+        renderSecure(ui);
+
+        $('#enforce-params').addClass('hidden');
+        $('#authentication').removeClass('hidden');
+      });
+
+      //authenticate user and render a parameterized view
+      $('#authenticate-params').click(function(e) {
+        authenticateUser();
+
+        $('#authentication').addClass('hidden');
+        $('#remove-params').removeClass('hidden');
+      });
+
+      //remove parameters and return to exposed view
+      $('#remove-params').click(function(e) {
+        render();
+
+        $('#remove-params').addClass('hidden');
+        $('#enforce-params').removeClass('hidden');
+      });
+    </script>
+  </body>
+</html>
