@@ -12,7 +12,7 @@ $(function(){
   //retrieve path name
   var path = (window.location.pathname).match('\/(.*?)\/')[1];
 
-  $.get('../src/json/examples.json', function(data) {
+  $.get('../../src/json/examples.json', function(data) {
 
     //find the app details
     var app = data.find(function(option) {
