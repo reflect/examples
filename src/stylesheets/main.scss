@@ -217,7 +217,7 @@ button {
 }
 
 //set smaller width for examples
-.toolbar, .view-container, #app-header {
+.toolbar, .view-container, #app-header, #app-navigation {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -304,7 +304,7 @@ button {
 
 #app-navigation {
   margin-top: 40px;
-  display: inline-block;
+  height: 40px;
   width: 100%;
 
   .prev {
@@ -352,7 +352,7 @@ button {
   width: 350px;
   justify-content: space-between;
   padding: 0 20px;
-  margin: 0 auto 50px;
+  margin: 0 auto;
 
   //a little smaller than mobile for better breaklines
   @media (max-width: 750px) {
@@ -363,6 +363,7 @@ button {
 .card {
   text-align: left;
   position: relative;
+  margin-bottom: 50px;
 }
 
 //reduce opacity of neighboring cards on hover
