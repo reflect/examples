@@ -52,7 +52,7 @@ gulp.task('images', () => {
 gulp.task('cards', () => {
   return gulp.src('apps/**/*.png')
     .pipe(cache(imagemin()))
-    .pipe(gulp.dest('build/src/images'))
+    .pipe(gulp.dest('build'))
     // Live reload after compiling
     .pipe(stream({stream: true}));
 });

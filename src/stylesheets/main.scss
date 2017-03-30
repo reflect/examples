@@ -253,6 +253,10 @@ button {
 //user prompt
 #app-instruction {
   display: inline-block;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .instruction, .controls {
@@ -266,7 +270,7 @@ button {
 
 .controls {
   float: right;
-  margin-top: 8px;
+  margin: 8px auto;
 
   button, select, input {
     @include border-default;

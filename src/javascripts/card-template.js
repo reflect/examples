@@ -23,7 +23,7 @@ $(function(){
           <div class="card">
             <a href="/` + d.category + `">
               <div class="image-wrapper">
-                <img src="/src/images/` + d.category + `/` + d.name + `.png" />
+                <img src="` + d.category + `/` + d.name + `.png" />
               </div>
               <div class="content">
                 <h3 class="title">` + title + `</h3>

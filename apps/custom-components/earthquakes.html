@@ -27,7 +27,8 @@
     <div class="toolbar">
       <div id="app-instruction"></div>
       <div class="controls">
-        <button id="toggle-colors">Remove custom colors</button>
+        <input id="start" type="date" min="2017-02-27" max="2017-03-30" value="2017-02-27">
+        <input id="end" type="date" min="2013-02-27" max="2017-03-30" value="2017-03-30">
       </div>
     </div>
 
@@ -41,89 +42,7 @@
     <!-- REFLECT view -->
     <script type="text/javascript">
 
-      // //instantiate new instance
-      // var ui = new ReflectUI();
-      //
-      // //call to render the view
-      // function render() {
-      //   ui.view(document.getElementById('view'), 'a_VMCP2FQDmo-9zOnVZJfA');
-      // }
-      //
-      // //call to apply custom colors
-      // function applyColors() {
-      //   ui.withColors({
-      //     'Publisher': {
-      //       'Nintendo': '#DE0000',
-      //       'Electronic Arts': '#005BAA',
-      //       'Activision': 'silver',
-      //       'Sony Computer Entertainment': '#EDA802',
-      //       'Ubisoft': '#512DA8'
-      //     }
-      //   });
-      // }
-      //
-      // //call to remove custom colors with empty object
-      // function removeColors() {
-      //   ui.withColors({});
-      // }
-      //
-      // //apply custom colors and render on page load
-      // applyColors();
-      // render();
-      //
-      // //call to filter by publisher
-      // var filterActive = false;
-      // function filterByPublisher(publisher) {
-      //   var publisherFilter = {
-      //     field: 'Publisher',
-      //     op: '=',
-      //     value: publisher,
-      //     removable: true
-      //   }
-      //
-      //   if (filterActive) {
-      //     ui.withFilters([]);
-      //
-      //     filterActive = false;
-      //   } else {
-      //     ui.withFilters([publisherFilter]);
-      //
-      //     filterActive = true;
-      //   }
-      // }
-      //
-      // //filter on data-point click
-      // ui.on('sales-timeseries', 'dataPointClick', function(data) {
-      //   var publisher = data.rowData.Publisher;
-      //
-      //   filterByPublisher(publisher);
-      //   render();
-      // });
-      //
-      // //filter on legend-item click
-      // ui.on('sales-timeseries', 'legendItemClick', function(data) {
-      //   var publisher = data.value;
-      //
-      //   filterByPublisher(publisher);
-      //   render();
-      // });
-      //
-      // //toggle colors on toolbar button click
-      // $('#toggle-colors').click(function(e) {
-      //   var colorsOn = (e.target.innerText).indexOf('Remove') >= 0;
-      //
-      //   if (colorsOn) {
-      //     removeColors();
-      //     render();
-      //
-      //     $('#toggle-colors').text('Apply custom colors').addClass('active');
-      //   } else {
-      //     applyColors();
-      //     render();
-      //
-      //     $('#toggle-colors').text('Remove custom colors').removeClass('active');
-      //   }
-      // });
+      //script for custom heatmap component
       const HeatmapType = function(elem, settings, data) {
         data = data.pluckMetric(0).map(function(val, i) {
           return {
@@ -162,39 +81,38 @@
         settings.events['render:complete']();
       }
 
+      //instantiate new instance
       var ui = new ReflectUI();
 
+      //apply the custom chart type
       ui.withChartTypes({
         heatmap: HeatmapType
       });
 
+      //call to render the view
       function render() {
-        ui.view(document.getElementById('view'), 'wnNmRf91R32Ibn8D9TS7Cg');
+        ui.view(document.getElementById('view'), '0_Sae0xfTTGf6lkuDSB4XQ');
       }
 
-      ui.on('status', 'dataPointClick', function(data) {
-        ui.withFilters([{
-          field: 'Status',
-          op: '=',
-          value: data.rowData.Status,
-          removable: true,
-        }]);
-        render();
-      });
-
-      ui.on('type', 'dataPointClick', function(data) {
-        ui.withFilters([{
-          field: 'Type',
-          op: '=',
-          value: data.rowData.Type,
-          removable: true,
-        }]);
-
-        render();
-      });
-
-
+      //render the view on page load
       render();
+
+      //filter by dates on input change
+      $('#toggle-colors').click(function(e) {
+        var colorsOn = (e.target.innerText).indexOf('Remove') >= 0;
+
+        if (colorsOn) {
+          removeColors();
+          render();
+
+          $('#toggle-colors').text('Apply custom colors').addClass('active');
+        } else {
+          applyColors();
+          render();
+
+          $('#toggle-colors').text('Remove custom colors').removeClass('active');
+        }
+      });
     </script>
   </body>
 </html>

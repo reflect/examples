@@ -64,8 +64,8 @@ $(function(){
     var $instruction = $('#app-instruction');
 
     $instruction.html(`
-      <small class="instruction desktop-only"><strong>1</strong> ` + app.mainGoal + `</small><br>
-      <hr><small class="instruction desktop-only"><strong>2</strong> ` + app.secondaryGoal + `</small>
+      <small class="instruction"><strong>1</strong> ` + app.mainGoal + `</small><br>
+      <hr><small class="instruction"><strong>2</strong> ` + app.secondaryGoal + `</small>
     `);
 
     //populate the header

@@ -52,9 +52,9 @@
   {
     "name": "earthquakes",
     "category": "custom-components",
-    "description": "Custom controls are currently in beta",
-    "mainGoal": "Experiment with the leafly controls",
-    "secondaryGoal": "Edit the dates",
+    "description": "Build new, exciting components on top of our data modeling. Retain full Reflect feature functionality.",
+    "mainGoal": "Explore the world of quakes using zoom and drag",
+    "secondaryGoal": "Change the date inputs to filter the view",
     "features": ["custom components", "dates"],
     "theme": "reflect-blue",
     "dataset": "sample-dataset.csv"
