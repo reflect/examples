@@ -29,9 +29,10 @@ $(function(){
 
     //update page title
     var title = app.category.replace(/-/g, ' ');
+    title = title.substr(0,1).toUpperCase() + title.substr(1);
     var $title = $('#app-title');
 
-    $title.text(title);
+    $title.text('Reflect / ' + title);
 
     //load theme
     var $theme = $('#app-theme');
@@ -113,7 +114,7 @@ $(function(){
     `);
 
     //Change nav content to fit across sizes
-    function fitNav() {
+    function fitNavigation() {
       if ($(window).width() <= 799) {
         $('.defaultTitle').removeClass('hidden');
         $('.navTitle').addClass('hidden');
@@ -124,10 +125,10 @@ $(function(){
       }
     }
 
-    fitNav();
+    fitNavigation();
 
     $(window).on('resize', function() {
-      fitNav();
+      fitNavigation();
     });
   });
 })

@@ -227,6 +227,7 @@ button {
   @include border-btm-default;
   padding: 1rem;
   min-height: 400px;
+  overflow: hidden;
 
   @media (max-width: $mobile) {
     padding: 5px;
@@ -409,9 +410,10 @@ button {
 
   &:after {
     position: absolute;
+    text-align: center;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50px;
+    top: 80px;
     color: $blue;
     content: 'View is locked! Please login.'
   }
@@ -423,4 +425,12 @@ button {
 
 .viz-icon-cancel-circled:before {
   content: '\00D7' !important;
+}
+
+@media (max-width: $mobile) {
+  .viz-legend, .viz-controls {
+    width: 0 !important;
+    padding: 0 !important;
+    display: none;
+  }
 }
