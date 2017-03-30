@@ -43,10 +43,10 @@ $(function(){
       //if number of apps is less than 3 do nothing to center
     } else if (Object.keys(app).length % 2 === 1) {
       //if odd number of apps, add one more
-      $list.append('<div class="card-filler"></div>');
+      $list.append('<div class="card-filler desktop-only"></div>');
     } else if (Object.keys(app).length % 2 === 0) {
       //if even number of apps, add two more
-      $list.append('<div class="card-filler"></div><div class="card-filler"></div>');
+      $list.append('<div class="card-filler desktop-only"></div><div class="card-filler desktop-only"></div>');
     }
 
     //card hover effect

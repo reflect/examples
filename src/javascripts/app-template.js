@@ -16,10 +16,16 @@ $(function(){
 
   $.get('../../src/json/examples.json', function(data) {
 
-    //find the app details
-    var app = data.find(function(option) {
+    var appId;
+    //find the relevant app and index
+    var app = data.find(function(option, i) {
+      appId = i;
       return option.category === path;
     });
+
+    //find the neighboring apps
+    var prev = appId > 0 ? data[appId-1] : data[data.length-1];
+    var next = data.length > appId+1 ? data[appId+1] : data[0];
 
     //update page title
     var title = app.category.replace(/-/g, ' ');
@@ -57,8 +63,8 @@ $(function(){
     var $instruction = $('#app-instruction');
 
     $instruction.html(`
-      <small class="instruction desktop-only"><strong>&#9866;</strong> ` + app.mainGoal + `</small><br>
-      <small class="instruction desktop-only"><strong>&#9868;</strong> ` + app.secondaryGoal + `</small>
+      <small class="instruction desktop-only"><strong>1</strong> ` + app.mainGoal + `</small><br>
+      <hr><small class="instruction desktop-only"><strong>2</strong> ` + app.secondaryGoal + `</small>
     `);
 
     //populate the header
@@ -87,5 +93,41 @@ $(function(){
         </div>
       </div>
     `);
+
+    //populate the navigation
+    var $navigation = $('#app-navigation');
+    var prevTitle = prev.category.replace(/-/g, ' ');
+    var nextTitle = next.category.replace(/-/g, ' ');
+
+    $navigation.html(`
+      <a class="prev" href="/` + prev.category + `">
+        <strong>〈</strong>
+        <span class="navTitle">` + prevTitle + `</span>
+        <span class="defaultTitle hidden">Previous</span>
+      </a>
+      <a class="next" href="/` + next.category + `">
+        <span class="navTitle">` + nextTitle + `</span>
+        <span class="defaultTitle hidden">Next</span>
+        <strong>〉</strong>
+      </a>
+    `);
+
+    //Change nav content to fit across sizes
+    function fitNav() {
+      if ($(window).width() <= 799) {
+        $('.defaultTitle').removeClass('hidden');
+        $('.navTitle').addClass('hidden');
+      }
+      else {
+        $('.defaultTitle').addClass('hidden');
+        $('.navTitle').removeClass('hidden');
+      }
+    }
+
+    fitNav();
+
+    $(window).on('resize', function() {
+      fitNav();
+    });
   });
 })

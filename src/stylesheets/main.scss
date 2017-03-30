@@ -81,7 +81,7 @@ $mobile: 799px;
 header {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .logo {
@@ -151,7 +151,7 @@ header {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  padding: 0 30px;
+  padding: 0 30px 20px;
   color: $grey;
   background-color: $light-grey;
   max-width: 1200px;
@@ -162,6 +162,10 @@ body {
   //reduce max-width with card line break
   @media (max-width: 1237px) {
     max-width: 800px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 10px;
   }
 }
 
@@ -253,12 +257,17 @@ button {
 .instruction, .controls {
   display: inline-block;
   color: $dark-grey;
+
+  strong {
+    color: $blue;
+  }
 }
 
 .controls {
   float: right;
+  margin-top: 8px;
 
-  button, select {
+  button, select, input {
     @include border-default;
     @include button-default;
     color: $dark-grey;
@@ -286,6 +295,42 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+  }
+
+  input {
+    width: 180px;
+  }
+}
+
+#app-navigation {
+  margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+
+  .prev {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
+
+  .navTitle, .defaultTitle {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: super;
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  strong {
+    font-size: 30px;
+  }
+
+  @media (max-width: $mobile) {
+    text-align: center;
   }
 }
 
@@ -347,11 +392,34 @@ button {
 
 //helpers
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: $mobile) {
   .desktop-only {
     display: none;
   }
+}
+
+//REFLECT
+.viz-view-container .viz-view-message-container {
+  position: relative !important;
+  margin-top: 100px;
+
+  &:after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50px;
+    color: $blue;
+    content: 'View is locked! Please login.'
+  }
+}
+
+.viz-icon-plus:before {
+  content: '+' !important;
+}
+
+.viz-icon-cancel-circled:before {
+  content: '\00D7' !important;
 }

@@ -36,6 +36,8 @@
       <div id="view"></div>
     </div>
 
+    <div id="app-navigation"></div>
+
     <!-- REFLECT view -->
     <script type="text/javascript">
 
@@ -60,7 +62,7 @@
         var userId = 'users.json';
 
         //make a request to your backend to fetch a signed token generated with user attributes
-        $.get('../json/' + userId, function(data) {
+        $.get('../src/json/' + userId, function(data) {
           //create the REFLECT instance with the project access token and signed token
           var ui = new ReflectUI([
             '53e5b6a5-9d36-4d6b-8c59-ff3c4a6ce301',
