@@ -27,8 +27,8 @@
     <div class="toolbar">
       <div id="app-instruction"></div>
       <div class="controls">
-        <input id="start" type="date" min="2017-02-27" max="2017-03-30" value="2017-02-27">
-        <input id="end" type="date" min="2013-02-27" max="2017-03-30" value="2017-03-30">
+        <input class="date-input" name="start" type="date" min="2017-02-27" max="2017-03-29" value="2017-02-27" required="required">
+        <input class="date-input" name="end" type="date" min="2013-02-28" max="2017-03-30" value="2017-03-30" required="required">
       </div>
     </div>
 
@@ -98,20 +98,12 @@
       render();
 
       //filter by dates on input change
-      $('#toggle-colors').click(function(e) {
-        var colorsOn = (e.target.innerText).indexOf('Remove') >= 0;
+      $('.date-input').change(function() {
+        var startDate = $('input[name=start]').val();
+        var endDate = $('input[name=end]').val();
 
-        if (colorsOn) {
-          removeColors();
-          render();
-
-          $('#toggle-colors').text('Apply custom colors').addClass('active');
-        } else {
-          applyColors();
-          render();
-
-          $('#toggle-colors').text('Remove custom colors').removeClass('active');
-        }
+        ui.withDates([startDate, endDate])
+        render();
       });
     </script>
   </body>
