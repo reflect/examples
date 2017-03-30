@@ -303,7 +303,7 @@ button {
   }
 
   input {
-    width: 180px;
+    width: 160px;
   }
 }
 
@@ -412,6 +412,7 @@ button {
   position: relative !important;
   margin-top: 100px;
 
+  //give extra notice for demonstration sake
   &:after {
     position: absolute;
     text-align: center;
@@ -432,9 +433,26 @@ button {
 }
 
 @media (max-width: $mobile) {
-  .viz-legend, .viz-controls {
+  //hide these elements
+  .viz-legend, .viz-controls, .viz-options {
     width: 0 !important;
     padding: 0 !important;
     display: none;
+  }
+
+  //center tooltips
+  .viz-tooltip {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: -7% !important;
+    left: 50% !important;
+    z-index: 99;
+    width: 100%;
+  }
+
+  //allow tooltip to overlap other components
+  .viz-visualization {
+    overflow: visible !important;
+    z-index: 0 !important;
   }
 }

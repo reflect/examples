@@ -131,4 +131,17 @@ $(function(){
       fitNavigation();
     });
   });
+
+
+  // setInterval(function() {
+  //   console.log($('.viz-tooltip').is(":visible"))
+  // }, 500);
+
+  // $(document).bind('DOMSubtreeModified', function() {
+  //   if ($('.viz-tooltip').is(":hidden")) {
+  //     $('.viz-tooltip').addClass('offScreen');
+  //   } else {
+  //     $('.viz-tooltip').removeClass('offScreen');
+  //   }
+  // });
 })
