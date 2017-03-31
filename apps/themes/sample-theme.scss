@@ -1,0 +1,203 @@
+//To create a new theme simply change the CUSTOM VARIABLES at top
+//then choose the style of palette generation
+
+//import fonts
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+//custom variables
+$font-fam: 'Lora' !important;
+$border-rad: 0px;
+$accent-color: blue;
+$base-color: lightgrey;
+$view-bg-color: white;
+$component-bg-color: black;
+$view-title-color: white;
+$component-title-color: white;
+$metric-color: grey;
+
+//REFLECT components variables
+$font-family: $font-fam;
+$border-radius: $border-rad;
+$brand-primary: $accent-color;
+$viz-palette-base: $base-color;
+
+//darken palette
+$viz-palette: (
+  0: $viz-palette-base,
+  1: darken($viz-palette-base, 10%),
+  2: darken($viz-palette-base, 20%),
+  3: darken($viz-palette-base, 30%),
+  4: darken($viz-palette-base, 40%),
+  5: darken($viz-palette-base, 50%),
+  6: darken($viz-palette-base, 60%),
+  7: darken($viz-palette-base, 70%),
+  8: darken($viz-palette-base, 80%),
+  9: darken($viz-palette-base, 90%),
+  10: darken($viz-palette-base, 15%),
+  11: darken($viz-palette-base, 25%)
+) !default;
+
+//lighten palette
+// $viz-palette: (
+//   0: $viz-palette-base,
+//   1: lighten($viz-palette-base, 10%),
+//   2: lighten($viz-palette-base, 15%),
+//   3: lighten($viz-palette-base, 20%),
+//   4: lighten($viz-palette-base, 25%),
+//   5: lighten($viz-palette-base, 30%),
+//   6: lighten($viz-palette-base, 35%),
+//   7: lighten($viz-palette-base, 40%),
+//   8: lighten($viz-palette-base, 45%),
+//   9: lighten($viz-palette-base, 50%),
+//   10: lighten($viz-palette-base, 55%),
+//   11: lighten($viz-palette-base, 60%)
+// ) !default;
+
+//adjust hue palette
+// $viz-palette: (
+//   0: $viz-palette-base,
+//   1: adjust-hue($viz-palette-base, 10%),
+//   2: adjust-hue($viz-palette-base, 20%),
+//   3: adjust-hue($viz-palette-base, 30%),
+//   4: adjust-hue($viz-palette-base, 40%),
+//   5: adjust-hue($viz-palette-base, 50%),
+//   6: adjust-hue($viz-palette-base, 60%),
+//   7: adjust-hue($viz-palette-base, 70%),
+//   8: adjust-hue($viz-palette-base, 80%),
+//   9: adjust-hue($viz-palette-base, 90%),
+//   10: adjust-hue($viz-palette-base, 15%),
+//   11: adjust-hue($viz-palette-base, 25%)
+// ) !default;
+
+//import REFLECT UI styles
+@import "../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+//view container
+.view-container {
+  background-color: $view-bg-color;
+  border-radius: $border-rad;
+}
+
+//viz container
+.viz-container {
+  border-radius: $border-rad;
+  background-color: $component-bg-color;
+}
+
+//view title
+.viz-header .viz-headline .viz-title {
+  font-family: $font-fam;
+  color: $component-title-color !important;
+}
+
+//component titles
+.viz-container h1, .viz-container h2, .viz-container h3, .viz-container h4, .viz-container h5, .viz-container h6 {
+  font-family: $font-fam;
+  color: $component-title-color !important;
+}
+
+//controls
+.viz-controls {
+  background-color: $component-bg-color;
+}
+
+//metrics
+.viz-metric .viz-metric-value {
+  font-family: $font-fam;
+  color: $metric-color !important;
+}
+
+//axis
+.viz, .viz text {
+  font-family: $font-fam;
+}
+
+//legend list items
+.viz .viz-legend ul li {
+  font-family: $font-fam;
+}
+
+//tooltip
+.viz .viz-tooltip {
+  font-family: $font-fam;
+}
+
+//tooltip wrapper
+.viz .viz-tooltip .viz-wrapper {
+  border-radius: $border-rad;
+}
+
+//button and misc font
+.viz-button, .viz-container, .viz-container p {
+  font-family: $font-fam;
+}
+
+
+
+.viz {
+  color: red;
+}
+
+
+//
+// .viz-loading-wrapper {
+//   background-color: $component-bg-color !important;
+//
+//   .viz-loading {
+//     border-color: $viz-palette-base;
+//     border-top-color: rgba(255, 255, 255,.5);
+//   }
+// }
+//
+// .viz-filters {
+//   background-color: $component-bg-color;
+// }
+//
+// // dropdown
+// .rc-menu .rc-menu-item {
+//   a {
+//     color: $view-bg-color;
+//   }
+//
+//   &:hover a {
+//     background-color: grey;
+//   }
+//
+//   &.rc-menu-item-selected a {
+//     background-color: lightgrey;
+//     color: white;
+//   }
+// }
+
+//
+
+
+
+
+//
+// .viz-loading-wrapper {
+//   background-color: $component-bg-color !important;
+//
+//   .viz-loading {
+//     border-color: rgba(255, 255, 255,.5);
+//     border-top-color: $viz-palette-base;
+//   }
+// }
+//
+// .viz-filters {
+//   background-color: $component-bg-color;
+// }
+//
+// // dropdown
+// .rc-menu .rc-menu-item a {
+//   color: $component-bg-color;
+// }
+//
+// .rc-menu .rc-menu-item a:hover {
+//   color: $component-bg-color;
+// }
+//
+// .rc-menu .rc-menu-item-selected a {
+//   background-color: $component-bg-color;
+//   color: white;
+// }

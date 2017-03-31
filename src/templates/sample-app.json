@@ -12,5 +12,6 @@ Sample app
 }
 */
 
-When adding a NEW feature, include a url to docs in ../javascripts/app-template.js
-Then add a new color style in ../stylesheets/main.scss
+When adding a NEW feature
+1. Include a url to docs in src/javascripts/app-template.js
+2. Then add a new color style in src/stylesheets/main.scss
