@@ -19,9 +19,11 @@ A new tab should open in your browser directed at localhost:3000, or you can nav
 
 We are excited announce that custom theming will be made available in the coming months. In the meantime, this repo provides several variants of our default theme for you to clone as you please.
 
+--------------------------------------------------
 
-------
+--------------------------------------------------
 
+--------------------------------------------------
 
 ## Internal use
 
