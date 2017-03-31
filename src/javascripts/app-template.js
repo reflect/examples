@@ -77,7 +77,7 @@ $(function(){
         </div>
         <div class="theme">
           <h6>Theme</h6>
-          <a href="https://github.com/reflect/examples/blob/master/apps/themes/` + app.theme + `.scss">` + app.theme + `</a>
+          <a href="https://github.com/reflect/examples/blob/master/apps/themes/minified` + app.theme + `.min.css">` + app.theme + `</a>
         </div>
         <div class="dataset">
           <h6>Dataset</h6>
