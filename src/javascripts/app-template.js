@@ -40,13 +40,6 @@ $(function(){
 
     $theme.attr('href', theme);
 
-    //load navbar
-    var $navbar = $('#navbar');
-
-    $navbar.append(`
-      <a href="https://app.reflect.io/register">+</a>
-    `);
-
     //build features list
     var features = [];
 
