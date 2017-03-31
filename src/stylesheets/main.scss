@@ -90,6 +90,75 @@ header {
   margin-bottom: 60px;
 }
 
+#navbar2 {
+  position: fixed;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  top: 5px;
+  transform: translate(-50%);
+  left: 50%;
+
+  a {
+    color: #fff;
+    background-color: $blue;
+    padding: 6px 12.3px 7px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
+#navbar {
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+
+  a {
+    position: absolute;
+    background-color: $blue;
+    color: #fff;
+    padding: 6px 12.3px 7px;
+    border-radius: 5rem;
+    // opacity: .5;
+  }
+}
+
+/* The ribbons */
+
+.corner-ribbon {
+  width: 200px;
+  background: $blue;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 .fork-me {
   position: absolute;
   top: 0;
@@ -439,7 +508,9 @@ button {
     padding: 0 !important;
     display: none;
   }
+}
 
+@media (max-width: 500px) {
   //center tooltips
   .viz-tooltip {
     text-align: center;

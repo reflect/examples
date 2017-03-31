@@ -41,13 +41,11 @@ $(function(){
     $theme.attr('href', theme);
 
     //load navbar
-    // var $navbar = $('#navbar');
-    //
-    // $navbar.html(`
-    //   <a href="/">
-    //     <img class="logo" src="../../images/reflect-logo-bw.svg" alt="Reflect logo">
-    //   </a>
-    // `);
+    var $navbar = $('#navbar');
+
+    $navbar.append(`
+      <a href="https://app.reflect.io/register">+</a>
+    `);
 
     //build features list
     var features = [];
@@ -131,17 +129,4 @@ $(function(){
       fitNavigation();
     });
   });
-
-
-  // setInterval(function() {
-  //   console.log($('.viz-tooltip').is(":visible"))
-  // }, 500);
-
-  // $(document).bind('DOMSubtreeModified', function() {
-  //   if ($('.viz-tooltip').is(":hidden")) {
-  //     $('.viz-tooltip').addClass('offScreen');
-  //   } else {
-  //     $('.viz-tooltip').removeClass('offScreen');
-  //   }
-  // });
 })
