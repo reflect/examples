@@ -9,7 +9,6 @@ import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 import rename from 'gulp-rename';
 import clean from 'gulp-clean';
-import concat from 'gulp-concat';
 import cache from 'gulp-cache';
 import browserSync from 'browser-sync';
 import babel from 'gulp-babel';
@@ -19,15 +18,15 @@ const reload = browserSync.reload;
 const stream = browserSync.stream;
 
 // Compile scripts
-gulp.task('compile:scripts', () => {
+gulp.task('scripts', () => {
   return gulp.src('src/javascripts/*.js')
     .pipe(babel())
     .pipe(uglify())
     .pipe(gulp.dest('build/src/javascripts'))
 });
 
-// Ensure the compile task is complete before reloading browsers
-gulp.task('watch:scripts', ['compile:scripts'], () => {
+// Ensure compiling is complete before reloading
+gulp.task('watch:scripts', ['scripts'], () => {
     browserSync.reload();
 });
 
@@ -39,7 +38,7 @@ gulp.task('json', () => {
     .pipe(stream({stream: true}));
 });
 
-// Images
+// General images
 gulp.task('images', () => {
   return gulp.src('src/images/*')
     .pipe(cache(imagemin()))
@@ -48,7 +47,7 @@ gulp.task('images', () => {
     .pipe(stream({stream: true}));
 });
 
-// Cards
+// Card images
 gulp.task('cards', () => {
   return gulp.src('apps/**/*.png')
     .pipe(cache(imagemin()))
@@ -65,7 +64,7 @@ gulp.task('styles', () => {
     .pipe(minifycss())
     .pipe(gulp.dest('build/src/stylesheets'))
     // Live reload after compiling scss
-    .pipe(stream({stream: true}));
+    .pipe(stream({stream: true}))
 });
 
 // Themes
@@ -73,28 +72,15 @@ gulp.task('themes', () => {
   return gulp.src('apps/themes/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
+    // Dump css into repo for users
     .pipe(gulp.dest('apps/themes/css'))
     .pipe(minifycss())
     .pipe(gulp.dest('build/themes'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('apps/themes/minified'))
     // Live reload after compiling scss
-    .pipe(stream({stream: true}));
-});
-
-// App views
-gulp.task('apps', () => {
-  return gulp.src('apps/**/*.html')
-    .pipe(rename(function(file) {
-      file.basename = 'index';
-    }))
-    .pipe(gulp.dest('build'))
-});
-
-// App misc
-gulp.task('misc', () => {
-  return gulp.src(['apps/**/*.css', 'apps/**/*.js'])
-    .pipe(gulp.dest('build'))
+    .pipe(stream({stream: true}))
+    .pipe(rename({suffix: '.min'}))
+    // Dump minified css repo folder for users
+    .pipe(gulp.dest('apps/themes/minified'))
 });
 
 // Index
@@ -103,13 +89,39 @@ gulp.task('index', () => {
     .pipe(gulp.dest('build'))
 });
 
+// App views
+gulp.task('views', () => {
+  return gulp.src('apps/**/*.html')
+    .pipe(rename(function(file) {
+      file.basename = 'index';
+    }))
+    .pipe(gulp.dest('build'))
+});
+
+// Ensure compiling is complete before reloading
+gulp.task('watch:html', ['index', 'views'], () => {
+    browserSync.reload();
+});
+
+// App misc
+gulp.task('misc', () => {
+  return gulp.src(['apps/**/*.css', 'apps/**/*.js'])
+    .pipe(gulp.dest('build'))
+});
+
+// Ensure compiling is complete before reloading
+gulp.task('watch:misc', ['misc'], () => {
+    browserSync.reload();
+});
+
+
 // Clean
 gulp.task('clean', () => {
   del.sync(['build', 'apps/themes/css', 'apps/themes/minified'], {read: false})
 });
 
 // Build task
-gulp.task('build', ['clean', 'compile:scripts', 'json', 'styles', 'images', 'apps', 'cards', 'misc', 'themes', 'index']);
+gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'themes', 'index']);
 
 // Watch task
 gulp.task('watch', ['build'], () => {
@@ -118,32 +130,29 @@ gulp.task('watch', ['build'], () => {
     server: "./build"
   });
 
-  // main .scss files
+  // main scss
   gulp.watch('src/stylesheets/*.scss', ['styles']);
 
-  // theme .scss files
+  // theme scss
   gulp.watch('apps/themes/*.scss', ['themes']);
 
-  // .js files
+  // js
   gulp.watch('src/javascripts/*.js', ['watch:scripts']);
 
-  // card image files
-  gulp.watch('apps/**/*.png', ['cards']);
+  // card images
+  gulp.watch('apps/*/*.png', ['cards']);
 
-  // general image files
+  // general images
   gulp.watch('src/images/*', ['images']);
 
-  // json files
+  // json
   gulp.watch('src/json/*', ['json']);
 
-  // app misc and live reload on change
-  gulp.watch(['apps/**/*.css', 'apps/**/*.js'], ['misc']).on('change', reload);
+  // per app misc
+  gulp.watch(['apps/*/*.css', 'apps/*/*.js'], ['watch:misc']);
 
-  // app views and live reload on change
-  gulp.watch('apps/**/*.html', ['apps']).on('change', reload);
-
-  // index and live reload on change
-  gulp.watch('./index.html', ['index']).on('change', reload);
+  // views + index
+  gulp.watch(['apps/*/*.html', './index.html'], ['watch:html']);
 });
 
 

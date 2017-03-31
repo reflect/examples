@@ -48,7 +48,7 @@ $mobile: 799px;
 //mixins
 @mixin button-default {
   z-index: 99;
-  font-size: .8rem;
+  font-size: .7rem;
   border: 1px solid $dark-grey;
   background-color: white;
   padding: 10px;
@@ -276,6 +276,7 @@ button {
     @include border-default;
     @include button-default;
     color: $dark-grey;
+    font-family: 'Open Sans',sans-serif;
 
     &.active {
       color: white;
@@ -304,6 +305,10 @@ button {
 
   input {
     width: 160px;
+
+    &.dateInput {
+      width: 140px;
+    }
   }
 }
 
