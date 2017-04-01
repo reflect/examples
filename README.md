@@ -28,16 +28,17 @@ We are excited announce that custom theming will be made available in the coming
 ## Internal use
 
 **After running npm install**
+
 The relative paths in @reflect/reflect-ui are off by a factor of one folder. After running `npm install`, and before running `gulp`, hop into `node_modules/@reflect/reflect-ui/sass/reflect-ui.scss` and add an extra `../` to each of the following imports:
 
-TOP of file
+*TOP of file*
 
 - `@import '../node_modules/react-grid-layout/css/styles';
 `
 - `@import '../node_modules/react-resizable/css/styles';
 `
 
-BOTTOM of file
+*BOTTOM of file*
 
 - `@import '../node_modules/@reflect/reflect-js/sass/reflect';
 `
