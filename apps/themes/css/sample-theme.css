@@ -163,7 +163,7 @@
   position: relative;
   background-color: #FFF;
   height: inherit;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 12px;
   line-height: normal !important;
@@ -208,8 +208,8 @@
     .viz-container.viz-container-selectable:not(.viz-container-selected) * {
       pointer-events: none; }
   .viz-container.viz-container-selectable:not(.viz-dragging):hover:not(.viz-container-selected) {
-    border-color: #EFEFEF;
-    box-shadow: 0px 0px 0px 2px #EFEFEF; }
+    border-color: white;
+    box-shadow: 0px 0px 0px 2px white; }
   .viz-container.viz-container-selectable:not(.viz-dragging).viz-container-selected {
     border: 1px solid 1px solid #dedede;
     box-shadow: 0px 0px 0px 2px #dedede;
@@ -332,7 +332,7 @@
 .viz-table {
   width: 100%; }
   .viz-table th {
-    border-left: 1px solid #EFEFEF;
+    border-left: 1px solid white;
     color: #b2bac1;
     font-weight: 600 !important; }
     .viz-table th:first-child {
@@ -340,12 +340,12 @@
   .viz-table tr:hover td {
     background: #f6f6f6; }
   .viz-table tr:last-child {
-    border-bottom: 1px solid #EFEFEF; }
+    border-bottom: 1px solid white; }
   .viz-table td {
     font-size: 16px;
     background: #fff;
-    border-top: 1px solid #EFEFEF;
-    border-left: 1px solid #EFEFEF; }
+    border-top: 1px solid white;
+    border-left: 1px solid white; }
     .viz-table td:first-child {
       border-left: 0px; }
 
@@ -496,15 +496,15 @@
 .viz-filters {
   position: relative;
   border-radius: 5px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   box-sizing: border-box;
   height: 38px; }
   .viz-filters hr {
-    border-top: 0px solid #EFEFEF; }
+    border-top: 0px solid white; }
   .viz-filters .form-group {
     width: 100%; }
   .viz-filters.viz-filters-unconfigured {
-    border: 1px dashed #EFEFEF; }
+    border: 1px dashed white; }
     .viz-filters.viz-filters-unconfigured .viz-filters-unconfigured-message {
       color: #6D7A87;
       display: -ms-flexbox;
@@ -545,7 +545,7 @@
     padding-right: 12px;
     display: inline-block;
     border-radius: 0;
-    border-right: 1px solid #EFEFEF;
+    border-right: 1px solid white;
     vertical-align: middle;
     padding: 9px 15px;
     height: 38px -2; }
@@ -787,7 +787,7 @@
     white-space: nowrap;
     padding: 12px;
     margin-right: 12px;
-    border: 1px #EFEFEF solid;
+    border: 1px white solid;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #EFEFEF; }
     .viz-list .viz-list-item:last-child {
@@ -839,14 +839,14 @@
 
 .viz-button.viz-button-white {
   background: #FFF;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   color: #6D7A87; }
   .viz-button.viz-button-white:hover {
     background: #FFF; }
 
 .viz-button.viz-button-dashed {
   background: #FFF;
-  border: 1px dashed #EFEFEF;
+  border: 1px dashed white;
   color: #6D7A87; }
   .viz-button.viz-button-dashed:hover {
     background: #FFF; }
@@ -3751,7 +3751,7 @@ form {
 
 [class^="rc-"] a {
   text-decoration: none;
-  color: blue; }
+  color: gold; }
 
 [class^="rc-"] {
   font-family: "Lora" !important;
@@ -3775,23 +3775,23 @@ a.rc-button, button.rc-button {
   cursor: pointer;
   border-radius: 0px;
   outline: none;
-  background: blue;
+  background: gold;
   border: 1px solid transparent;
   color: #fff !important; }
   a.rc-button:hover, button.rc-button:hover {
-    background: #0000cc;
+    background: #ccac00;
     border: 1px solid transparent;
     color: #fff !important; }
     a.rc-button:hover .rc-icon, button.rc-button:hover .rc-icon {
       fill: #fff; }
     a.rc-button:hover .rc-button-menu-inner .rc-icon path, button.rc-button:hover .rc-button-menu-inner .rc-icon path {
-      fill: #0000cc; }
+      fill: #ccac00; }
   a.rc-button:after, button.rc-button:after {
-    background: blue; }
+    background: gold; }
   a.rc-button .rc-icon, button.rc-button .rc-icon {
     fill: #fff; }
   a.rc-button .rc-button-menu-inner .rc-icon path, button.rc-button .rc-button-menu-inner .rc-icon path {
-    fill: blue; }
+    fill: gold; }
   a.rc-button.rc-button-block, button.rc-button.rc-button-block {
     display: block;
     width: 100%; }
@@ -3926,7 +3926,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
     .rc-split-button .rc-button-menu.rc-popover-target-open {
-      background: #0000cc; }
+      background: #ccac00; }
     .rc-split-button .rc-button-menu.rc-button-small .rc-button-menu-inner {
       padding: 1px; }
     .rc-split-button .rc-button-menu.rc-button-tiny .rc-button-content {
@@ -3946,7 +3946,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
 
 .rc-card {
   background: #fff;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 0px;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05);
   display: block;
@@ -3982,10 +3982,10 @@ a.rc-floating-action-button, button.rc-floating-action-button {
     .rc-card.rc-card-selectable:hover {
       border: 1px solid #b0aeab; }
   .rc-card.rc-card-selected {
-    border: 1px solid blue;
-    box-shadow: 0px 0px 0px 1px blue; }
+    border: 1px solid gold;
+    box-shadow: 0px 0px 0px 1px gold; }
     .rc-card.rc-card-selected:hover {
-      border: 1px solid blue; }
+      border: 1px solid gold; }
   .rc-card.rc-card-removable {
     position: relative; }
     .rc-card.rc-card-removable:hover .remove-corner {
@@ -4089,10 +4089,10 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   fill: #a02622; }
 
 .rc-dropdown-toggle:focus .rc-dropdown-label {
-  color: #000099; }
+  color: #998100; }
 
 .rc-dropdown-toggle:focus .rc-icon {
-  fill: #000099; }
+  fill: #998100; }
 
 .rc-dropdown-toggle[disabled] .rc-dropdown-label {
   color: #b0aeab; }
@@ -4101,15 +4101,15 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   fill: #b0aeab; }
 
 .rc-dropdown-toggle .rc-dropdown-label {
-  color: blue; }
+  color: gold; }
 
 .rc-dropdown-toggle .rc-icon {
-  fill: blue; }
+  fill: gold; }
 
 .rc-dropdown-toggle.rc-dropdown-toggle-select {
   display: block;
   background: #ecebea;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 0px;
   padding: 6px 7px; }
   .rc-dropdown-toggle.rc-dropdown-toggle-select .rc-dropdown-label {
@@ -4166,11 +4166,11 @@ a.rc-floating-action-button, button.rc-floating-action-button {
       text-decoration: none; }
       .rc-dropdown-menu .rc-dropdown-item a:hover {
         color: #fff;
-        background: #0000cc;
+        background: #ccac00;
         text-decoration: none; }
   .rc-dropdown-menu .rc-dropdown-item-selected a {
     color: #fff;
-    background: blue; }
+    background: gold; }
   .rc-dropdown-menu .rc-dropdown-item-disabled a {
     color: #fff;
     background: #ecebea;
@@ -4226,7 +4226,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   transition: all 200ms ease;
   background-color: #fff;
   color: #524f4d;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 0px;
   outline: none; }
 
@@ -4239,8 +4239,8 @@ a.rc-floating-action-button, button.rc-floating-action-button {
 
 .is-open > .Select-control {
   background: #fff;
-  border-color: blue;
-  box-shadow: 0px 0px 0px 1px blue; }
+  border-color: gold;
+  box-shadow: 0px 0px 0px 1px gold; }
 
 .is-open > .Select-control > .Select-arrow {
   border-color: transparent transparent #999999;
@@ -4344,8 +4344,8 @@ a.rc-floating-action-button, button.rc-floating-action-button {
 
 .Select-menu-outer {
   background-color: #fff;
-  border: 1px solid blue;
-  box-shadow: 0px 0px 0px 1px blue;
+  border: 1px solid gold;
+  box-shadow: 0px 0px 0px 1px gold;
   box-sizing: border-box;
   margin-top: -1px;
   max-height: 160px;
@@ -4367,7 +4367,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   padding: 8px 10px; }
 
 .Select-option.is-focused {
-  background-color: #3333ff;
+  background-color: #ffdf33;
   color: #fff; }
 
 .Select-option.is-disabled {
@@ -4391,9 +4391,9 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   padding: 3px 0; }
 
 .Select-item {
-  background-color: #3333ff;
+  background-color: #ffdf33;
   border-radius: 0px;
-  border: 1px solid blue;
+  border: 1px solid gold;
   color: #fff;
   display: inline-block;
   font-size: 0.9em;
@@ -4414,16 +4414,16 @@ a.rc-floating-action-button, button.rc-floating-action-button {
 
 .Select-item-icon {
   cursor: pointer;
-  border-right: 1px solid blue;
+  border-right: 1px solid gold;
   padding: 3px 6px; }
 
 .Select-item-icon:hover,
 .Select-item-icon:focus {
-  background-color: #3333ff;
+  background-color: #ffdf33;
   color: #84807c; }
 
 .Select-item-icon:active {
-  background-color: #3333ff; }
+  background-color: #ffdf33; }
 
 .Select.is-multi.is-disabled .Select-item {
   background-color: #f2f2f2;
@@ -4456,18 +4456,18 @@ a.rc-floating-action-button, button.rc-floating-action-button {
     .rc-filter-form .rc-split-button .rc-button-main {
       background: #ecebea; }
       .rc-filter-form .rc-split-button .rc-button-main .rc-button-content {
-        color: blue;
+        color: gold;
         float: right; }
       .rc-filter-form .rc-split-button .rc-button-main:hover .rc-button-content {
-        color: #0000cc; }
+        color: #ccac00; }
     .rc-filter-form .rc-split-button .rc-button-menu {
       background: #ecebea; }
       .rc-filter-form .rc-split-button .rc-button-menu .rc-button-menu-inner {
-        background: blue; }
+        background: gold; }
         .rc-filter-form .rc-split-button .rc-button-menu .rc-button-menu-inner path {
           fill: #fff; }
       .rc-filter-form .rc-split-button .rc-button-menu:hover .rc-button-menu-inner {
-        background: #0000cc; }
+        background: #ccac00; }
         .rc-filter-form .rc-split-button .rc-button-menu:hover .rc-button-menu-inner path {
           fill: #fff; }
   .rc-filter-form .rc-filter-form-fields {
@@ -4488,18 +4488,18 @@ a.rc-floating-action-button, button.rc-floating-action-button {
           .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small.is-focused:not(.is-open) .Select-control {
             z-index: 24;
             background: #fff;
-            border-color: blue;
-            box-shadow: 0px 0px 0px 1px blue; }
+            border-color: gold;
+            box-shadow: 0px 0px 0px 1px gold; }
         .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small .Select-menu-outer {
           margin-top: 0;
           background-color: #fff;
-          border: 1px solid blue;
-          box-shadow: 0px 0px 0px 1px blue; }
+          border: 1px solid gold;
+          box-shadow: 0px 0px 0px 1px gold; }
           .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small .Select-menu-outer .Select-option.is-selected {
             background-color: #fff;
             color: #EFEFEF; }
           .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small .Select-menu-outer .Select-option.is-focused {
-            background-color: #3333ff;
+            background-color: #ffdf33;
             color: #fff; }
         .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small .Select-control {
           border-color: #ecebea;
@@ -4523,8 +4523,8 @@ a.rc-floating-action-button, button.rc-floating-action-button {
         .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small.is-open > .Select-control {
           z-index: 24;
           background: #fff;
-          border-color: blue;
-          box-shadow: 0px 0px 0px 1px blue; }
+          border-color: gold;
+          box-shadow: 0px 0px 0px 1px gold; }
         .rc-filter-form .rc-filter-form-fields .rc-selects-row .Select-small.Select-left > .Select-control {
           border-top-right-radius: 0;
           border-bottom-right-radius: 0;
@@ -4540,8 +4540,8 @@ a.rc-floating-action-button, button.rc-floating-action-button {
       border-top-right-radius: 0; }
       .rc-filter-form .rc-filter-form-fields .rc-input:focus {
         background: #fff;
-        border-color: blue;
-        box-shadow: 0px 0px 0px 1px blue; }
+        border-color: gold;
+        box-shadow: 0px 0px 0px 1px gold; }
   .rc-filter-form:hover .rc-split-button {
     visibility: visible; }
   .rc-filter-form:hover .rc-filter-form-fields {
@@ -4555,15 +4555,15 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   padding: 10px 12px;
   width: 100%;
   color: #524f4d;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 0px;
   outline: none; }
   .rc-input.rc-input-error {
     border: 1px solid #d9534f; }
   .rc-input:focus {
     background: #fff;
-    border: 1px solid blue;
-    box-shadow: 0px 0px 0px 1px blue; }
+    border: 1px solid gold;
+    box-shadow: 0px 0px 0px 1px gold; }
   .rc-input[disabled] {
     background: #f6f5f5;
     color: #b0aeab; }
@@ -4614,20 +4614,20 @@ a.rc-floating-action-button, button.rc-floating-action-button {
     width: 100%; }
 
 .rc-tag-selected {
-  border: 2px solid blue; }
+  border: 2px solid gold; }
 
 .rc-list-item .rc-tooltip-hover-area {
   display: block; }
 
 .rc-list-item.rc-list-item-selected a {
-  border: 1px solid blue; }
+  border: 1px solid gold; }
 
 .rc-list-item a.rc-list-item-link {
   display: block;
   position: relative;
   background: #fff;
   color: #b0aeab;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   border-radius: 0px;
   font-size: 14px;
   padding: 6px 12px;
@@ -4730,7 +4730,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   clip: rect(0, 0, 0, 0);
   border: 0; }
   .rc-switch-checkbox:checked + .rc-switch-label {
-    background: blue;
+    background: gold;
     color: #fff; }
     .rc-switch-checkbox:checked + .rc-switch-label:after {
       left: auto;
@@ -4745,7 +4745,7 @@ a.rc-floating-action-button, button.rc-floating-action-button {
   color: #524f4d;
   cursor: pointer; }
   .rc-toggle .rc-toggle-label.rc-toggle-active {
-    color: blue; }
+    color: gold; }
 
 .rc-toggle .rc-switch {
   margin-left: 10px;
@@ -4754,9 +4754,9 @@ a.rc-floating-action-button, button.rc-floating-action-button {
     border: none;
     background: #ecebea; }
     .rc-toggle .rc-switch .rc-switch-label:after {
-      background: blue; }
+      background: gold; }
   .rc-toggle .rc-switch .rc-switch-checkbox:checked + .rc-switch-label {
-    color: blue; }
+    color: gold; }
 
 .rc-modal-overlay {
   background: rgba(255, 255, 255, 0.8);
@@ -4827,7 +4827,7 @@ a.rc-modal-close {
     padding: 20px 30px;
     background: #fff;
     overflow: hidden;
-    border-top: 1px solid #EFEFEF;
+    border-top: 1px solid white;
     text-align: right; }
     .rc-modal .rc-modal-actions .rc-modal-actions-cta {
       float: left;
@@ -4850,7 +4850,7 @@ a.rc-modal-close {
   display: block; }
   .rc-tabs.rc-tabs-vertical .rc-tab.rc-tab-active a {
     border-bottom: none;
-    border-right: 2px solid blue; }
+    border-right: 2px solid gold; }
   .rc-tabs.rc-tabs-vertical .rc-tab a {
     border-right: 2px solid #f6f5f5;
     border-bottom: none; }
@@ -4862,8 +4862,8 @@ a.rc-modal-close {
 .rc-tabs .rc-tab {
   display: inline-block; }
   .rc-tabs .rc-tab.rc-tab-active a {
-    color: blue;
-    border-bottom: 2px solid blue; }
+    color: gold;
+    border-bottom: 2px solid gold; }
   .rc-tabs .rc-tab a {
     display: block;
     padding: 10px 20px;
@@ -4974,13 +4974,13 @@ a.rc-modal-close {
       z-index: 1; }
 
 .rc-progress .rc-progress-line {
-  stroke: blue; }
+  stroke: gold; }
 
 .rc-progress .rc-progress-step {
-  stroke: blue; }
+  stroke: gold; }
 
 .rc-progress .rc-progress-step-active {
-  fill: blue;
+  fill: gold;
   transition: transform 400ms; }
   .rc-progress .rc-progress-step-active.rc-progress-step-active-shadow {
     fill: #000;
@@ -5054,7 +5054,7 @@ a.rc-modal-close {
     left: 0;
     right: 0;
     text-align: right;
-    border-top: 1px solid #EFEFEF;
+    border-top: 1px solid white;
     padding: 10px 20px; }
 
 .rc-accordion .rc-accordion-item-title .rc-accordion-item-header {
@@ -5097,17 +5097,17 @@ a.rc-modal-close {
     display: block; }
 
 .rc-menu .rc-menu-item a {
-  color: blue;
+  color: gold;
   background: #fff; }
   .rc-menu .rc-menu-item a:hover {
     color: #fff;
-    background: #0000cc; }
+    background: #ccac00; }
   .rc-menu .rc-menu-item a svg {
     fill: #fff; }
 
 .rc-menu .rc-menu-item-selected a {
   color: #fff;
-  background: blue; }
+  background: gold; }
 
 .rc-menu .rc-menu-item-disabled a {
   color: #fff;
@@ -5138,13 +5138,13 @@ a.rc-modal-close {
 .rc-menu-section {
   padding: 16px; }
   .rc-menu-section:not(last-of-type) {
-    border-bottom: 1px solid #EFEFEF; }
+    border-bottom: 1px solid white; }
 
 .rc-menu-header {
   display: -ms-flexbox;
   display: flex;
   padding: 7px 16px 9px;
-  border-bottom: 1px solid #EFEFEF; }
+  border-bottom: 1px solid white; }
   .rc-menu-header .rc-menu-close {
     display: -ms-flexbox;
     display: flex;
@@ -5195,7 +5195,7 @@ a.rc-modal-close {
   height: 100px;
   margin-bottom: 20px; }
   .rc-blank-slate-icon .rc-icon {
-    fill: blue; }
+    fill: gold; }
 
 .rc-blank-slate-message {
   display: block;
@@ -5208,7 +5208,7 @@ a.rc-modal-close {
 
 .rc-panel {
   background: #fff;
-  border: 1px solid #EFEFEF;
+  border: 1px solid white;
   padding: 16px;
   border-radius: 0px;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.05); }
@@ -5227,16 +5227,18 @@ a.rc-modal-close {
   top: 0px; }
 
 .rc-grid-block-icon-container .rc-icon {
-  fill: blue !important;
+  fill: gold !important;
   stroke: #f6f5f5; }
 
 .view-container {
-  background-color: white;
+  background-color: green;
   border-radius: 0px; }
 
 .viz-container {
   border-radius: 0px;
-  background-color: black; }
+  border: 1px solid white;
+  background-color: #004d00;
+  color: lightgrey; }
 
 .viz-header .viz-headline .viz-title {
   font-family: "Lora" !important;
@@ -5247,17 +5249,40 @@ a.rc-modal-close {
   color: white !important; }
 
 .viz-controls {
-  background-color: black; }
+  background-color: #004d00; }
+
+.viz-controls .viz-separator {
+  color: lightgrey; }
+
+.viz-options {
+  background-color: #004d00; }
+
+.viz-button-group .viz-button {
+  color: black;
+  background-color: lightgrey; }
+
+.viz-button-group .viz-button.viz-selected, .viz-button-group .viz-button:hover {
+  background-color: #bababa; }
+
+.viz-button-group .viz-button:first-of-type {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+.viz-button-group .viz-button:last-of-type {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
 
 .viz-metric .viz-metric-value {
   font-family: "Lora" !important;
-  color: grey !important; }
+  color: gold !important; }
 
 .viz, .viz text {
-  font-family: "Lora" !important; }
+  font-family: "Lora" !important;
+  fill: lightgrey; }
 
 .viz .viz-legend ul li {
-  font-family: "Lora" !important; }
+  font-family: "Lora" !important;
+  color: lightgrey; }
 
 .viz .viz-tooltip {
   font-family: "Lora" !important; }
@@ -5268,5 +5293,36 @@ a.rc-modal-close {
 .viz-button, .viz-container, .viz-container p {
   font-family: "Lora" !important; }
 
-.viz {
-  color: red; }
+.viz-loading-wrapper {
+  background-color: #004d00 !important; }
+
+.viz-loading {
+  border-color: lightgrey;
+  border-top-color: gold; }
+
+.viz-filters {
+  background-color: #004d00; }
+
+.rc-menu .rc-menu-item a {
+  color: #004d00; }
+
+.rc-menu .rc-menu-item a:hover {
+  color: white;
+  background: #009a00; }
+
+.rc-menu .rc-menu-item-selected a {
+  background-color: green;
+  color: white; }
+
+.rc-dropdown-menu .rc-dropdown-hint {
+  color: lightgrey; }
+
+.viz .viz-tooltip .viz-metric-value {
+  color: black !important; }
+
+.viz .viz-tooltip .viz-dimension-value {
+  background-color: green !important;
+  color: lightgrey; }
+
+.viz .viz-tooltip .viz-wrapper {
+  border-color: green; }
