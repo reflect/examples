@@ -1,0 +1,247 @@
+////
+////To create new theme:
+////Manipulate top custom variables and select your palette logic
+////
+
+//import fonts
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+//custom variables
+$font-fam: 'Lora' !important;
+$viz-palette-base: lightgrey;
+
+$view-bg-color: green;
+$component-bg-color: darken(green, 10%);
+
+$view-title-color: white;
+$component-title-color: white;
+
+$border-color: white;
+$component-border: 1px solid $border-color;
+$component-border-rad: 0px;
+
+$accent-color: gold;
+$loading-accent-color: gold;
+$metric-color: gold;
+
+$secondary-font-color: lightgrey;
+$separator-font-color: lightgrey;
+
+$dropdown-a-bg: $view-bg-color;
+$dropdown-a-hover-bg: lighten($view-bg-color, 5%);
+
+$dropdown-title-color: lightgrey;
+$tooltip-title-color: lightgrey;
+
+$tooltip-font-color: black;
+$button-font-color: black;
+
+$tooltip-accent-color: green;
+
+$button-bg-color: lightgrey;
+$button-selected-bg: darken($button-bg-color, 10%);
+
+//darken palette
+$viz-palette: (
+  0: $viz-palette-base,
+  1: darken($viz-palette-base, 10%),
+  2: darken($viz-palette-base, 20%),
+  3: darken($viz-palette-base, 30%),
+  4: darken($viz-palette-base, 40%),
+  5: darken($viz-palette-base, 50%),
+  6: darken($viz-palette-base, 60%),
+  7: darken($viz-palette-base, 70%),
+  8: darken($viz-palette-base, 80%),
+  9: darken($viz-palette-base, 90%),
+  10: darken($viz-palette-base, 15%),
+  11: darken($viz-palette-base, 25%)
+) !default;
+
+//lighten palette
+// $viz-palette: (
+//   0: $viz-palette-base,
+//   1: lighten($viz-palette-base, 10%),
+//   2: lighten($viz-palette-base, 15%),
+//   3: lighten($viz-palette-base, 20%),
+//   4: lighten($viz-palette-base, 25%),
+//   5: lighten($viz-palette-base, 30%),
+//   6: lighten($viz-palette-base, 35%),
+//   7: lighten($viz-palette-base, 40%),
+//   8: lighten($viz-palette-base, 45%),
+//   9: lighten($viz-palette-base, 50%),
+//   10: lighten($viz-palette-base, 55%),
+//   11: lighten($viz-palette-base, 60%)
+// ) !default;
+
+//adjust hue palette
+// $viz-palette: (
+//   0: $viz-palette-base,
+//   1: adjust-hue($viz-palette-base, 10%),
+//   2: adjust-hue($viz-palette-base, 20%),
+//   3: adjust-hue($viz-palette-base, 30%),
+//   4: adjust-hue($viz-palette-base, 40%),
+//   5: adjust-hue($viz-palette-base, 50%),
+//   6: adjust-hue($viz-palette-base, 60%),
+//   7: adjust-hue($viz-palette-base, 70%),
+//   8: adjust-hue($viz-palette-base, 80%),
+//   9: adjust-hue($viz-palette-base, 90%),
+//   10: adjust-hue($viz-palette-base, 15%),
+//   11: adjust-hue($viz-palette-base, 25%)
+// ) !default;
+
+
+
+
+/////
+////Only affect below this line for advanced theming
+////
+
+//REFLECT components variables
+$font-family: $font-fam;
+$border-radius: $component-border-rad;
+$brand-primary: $accent-color;
+
+//import REFLECT UI styles
+@import "../../node_modules/@reflect/reflect-ui/sass/reflect-ui.scss";
+
+//view container
+.view-container {
+  background-color: $view-bg-color;
+  border-radius: $component-border-rad;
+}
+
+//viz container
+.viz-container {
+  border-radius: $component-border-rad;
+  border: $component-border;
+  background-color: $component-bg-color;
+  color: $secondary-font-color;
+}
+
+//view title
+.viz-header .viz-headline .viz-title {
+  font-family: $font-fam;
+  color: $component-title-color !important;
+}
+
+//component titles
+.viz-container h1, .viz-container h2, .viz-container h3, .viz-container h4, .viz-container h5, .viz-container h6 {
+  font-family: $font-fam;
+  color: $component-title-color !important;
+}
+
+//controls
+.viz-controls {
+  background-color: $component-bg-color;
+}
+
+//control separators
+.viz-controls .viz-separator {
+  color: $separator-font-color;
+}
+
+//options
+.viz-options {
+  background-color: $component-bg-color;
+}
+
+.viz-button-group .viz-button {
+  color: $button-font-color;
+  background-color: $button-bg-color;
+}
+
+.viz-button-group .viz-button.viz-selected, .viz-button-group .viz-button:hover {
+  background-color: $button-selected-bg;
+}
+
+.viz-button-group .viz-button:first-of-type {
+  border-top-left-radius: $component-border-rad;
+  border-bottom-left-radius: $component-border-rad;
+}
+
+.viz-button-group .viz-button:last-of-type {
+  border-top-right-radius: $component-border-rad;
+  border-bottom-right-radius: $component-border-rad;
+}
+
+//metrics
+.viz-metric .viz-metric-value {
+  font-family: $font-fam;
+  color: $metric-color !important;
+}
+
+//axis
+.viz, .viz text {
+  font-family: $font-fam;
+  fill: $secondary-font-color;
+}
+
+//legend list items
+.viz .viz-legend ul li {
+  font-family: $font-fam;
+  color: $secondary-font-color;
+}
+
+//tooltip
+.viz .viz-tooltip {
+  font-family: $font-fam;
+}
+
+//tooltip wrapper
+.viz .viz-tooltip .viz-wrapper {
+  border-radius: $component-border-rad;
+}
+
+//button and misc font
+.viz-button, .viz-container, .viz-container p {
+  font-family: $font-fam;
+}
+
+//loading background
+.viz-loading-wrapper {
+  background-color: $component-bg-color !important;
+}
+
+//loading icon
+.viz-loading {
+  border-color: $viz-palette-base;
+  border-top-color: $loading-accent-color;
+}
+
+//filter bar
+.viz-filters {
+  background-color: $component-bg-color;
+}
+
+// dropdown
+.rc-menu .rc-menu-item a {
+  color: $component-bg-color;
+}
+
+.rc-menu .rc-menu-item a:hover {
+  color: $view-title-color;
+  background: $dropdown-a-hover-bg;
+}
+
+.rc-menu .rc-menu-item-selected a {
+  background-color: $dropdown-a-bg;
+  color: $view-title-color;
+}
+
+.rc-dropdown-menu .rc-dropdown-hint {
+  color: $dropdown-title-color;
+}
+
+//tooltips
+.viz .viz-tooltip .viz-metric-value {
+  color: $tooltip-font-color !important;
+}
+
+.viz .viz-tooltip .viz-dimension-value {
+  background-color: $tooltip-accent-color !important;
+  color: $tooltip-title-color;
+}
+
+.viz .viz-tooltip .viz-wrapper {
+  border-color: $tooltip-accent-color;
+}
