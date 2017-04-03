@@ -46,7 +46,7 @@
     "mainGoal": "Turn on parameters and login.",
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
     "features": ["parameters"],
-    "theme": "dummy-theme",
+    "theme": "reflect-blue",
     "dataset": "sample-dataset.csv"
   },
   {
