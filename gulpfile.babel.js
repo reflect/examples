@@ -70,7 +70,7 @@ gulp.task('styles', () => {
 // Themes
 gulp.task('themes', () => {
   return gulp.src('apps/themes/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ errLogToConsole: true, includePaths: ['./node_modules'] }))
     .pipe(autoprefixer('last 2 versions'))
     // Dump css into repo for users
     .pipe(gulp.dest('apps/themes/css'))
