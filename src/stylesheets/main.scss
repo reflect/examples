@@ -202,6 +202,10 @@ p {
   margin: .5rem 0 1rem;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   color: #269cff;
   text-decoration: none;
@@ -217,8 +221,10 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid $medium-grey;
   padding: 0;
+  background: $medium-grey;
+  background: -moz-linear-gradient(0deg, $medium-grey, $medium-grey 60%, $grey);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from($medium-grey), color-stop(60%, $medium-grey), to($grey));
 }
 
 //set smaller width for examples
@@ -270,6 +276,9 @@ hr {
 
   strong {
     color: $blue;
+    background-color: white;
+    padding: 2px 8px;
+    border-radius: 5rem;
   }
 }
 
@@ -286,6 +295,7 @@ hr {
     &.active {
       color: white;
       background-color: $blue;
+      border-color: $blue;
     }
 
     &.alert {
