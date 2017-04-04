@@ -118,6 +118,10 @@ gulp.task('default', ['build', 'server']);
 
 // Watch task
 gulp.task('watch', ['build'], () => {
+  // Start browserSync for local server
+  browserSync.init({
+    server: "./build"
+  });
   // main scss
   gulp.watch('src/stylesheets/*.scss', ['styles']);
 
