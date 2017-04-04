@@ -7,7 +7,7 @@
     "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
     "theme": "mono-black",
-    "dataset": "sample-dataset.csv"
+    "dataset": "game-sales.csv"
   },
   {
     "name": "auto-insurance",
@@ -17,7 +17,7 @@
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
     "theme": "green-orange",
-    "dataset": "sample-dataset.csv"
+    "dataset": "insurance-policies.csv"
   },
   {
     "name": "airline-survey",
@@ -27,7 +27,7 @@
     "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
     "features": ["formatters", "custom colors"],
     "theme": "purple",
-    "dataset": "sample-dataset.csv"
+    "dataset": "flyer-survey.csv"
   },
   {
     "name": "job-market",
@@ -37,7 +37,7 @@
     "secondaryGoal": "Click on a bar column to drill into a new view.",
     "features": ["interactions", "custom controls"],
     "theme": "slate",
-    "dataset": "sample-dataset.csv"
+    "dataset": "leading-industries.csv"
   },
   {
     "name": "e-commerce",
@@ -47,7 +47,7 @@
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
     "features": ["parameters"],
     "theme": "reflect-blue",
-    "dataset": "sample-dataset.csv"
+    "dataset": "web-order-data.csv"
   },
   {
     "name": "earthquakes",
@@ -57,6 +57,6 @@
     "secondaryGoal": "Change the date inputs to filter the view",
     "features": ["custom components", "dates"],
     "theme": "reflect-blue",
-    "dataset": "sample-dataset.csv"
+    "dataset": "earthquakes.csv"
   }
 ]
