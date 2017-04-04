@@ -45,6 +45,16 @@ $(function(){
 
     features = features.sort().join('');
 
+    //build dataset link
+    var dataset = app.dataset;
+    var datasetLink;
+
+    if (dataset === 'default') {
+      datasetLink = '<p>Default sample connection</p>';
+    } else {
+      datasetLink = `<a href="https://cdn.reflect.io/datasets/` + dataset + `">` + dataset + `</a>`;
+    }
+
     //populate the instructions
     var $instruction = $('#app-instruction');
 
@@ -71,7 +81,7 @@ $(function(){
         </div>
         <div class="dataset">
           <h6>Dataset</h6>
-          <a href="https://cdn.reflect.io/datasets/` + app.dataset + `">` + app.dataset + `</a>
+          ` + datasetLink + `
         </div>
       </div>
     `);
