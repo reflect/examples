@@ -67,22 +67,6 @@ gulp.task('styles', () => {
     .pipe(stream({stream: true}))
 });
 
-// Themes
-gulp.task('themes', () => {
-  return gulp.src('apps/themes/*.scss')
-    .pipe(sass({ errLogToConsole: true, includePaths: ['./node_modules'] }))
-    .pipe(autoprefixer('last 2 versions'))
-    // Dump css into repo for users
-    .pipe(gulp.dest('apps/themes/css'))
-    .pipe(minifycss())
-    .pipe(gulp.dest('build/themes'))
-    // Live reload after compiling scss
-    .pipe(stream({stream: true}))
-    .pipe(rename({suffix: '.min'}))
-    // Dump minified css repo folder for users
-    .pipe(gulp.dest('apps/themes/minified'))
-});
-
 // Index
 gulp.task('index', () => {
   return gulp.src('./index.html')
@@ -117,11 +101,11 @@ gulp.task('watch:misc', ['misc'], () => {
 
 // Clean
 gulp.task('clean', () => {
-  del.sync(['build', 'apps/themes/css', 'apps/themes/minified'], {read: false})
+  del.sync(['build'], {read: false})
 });
 
 // Build task
-gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'themes', 'index']);
+gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'index']);
 
 // Watch task
 gulp.task('watch', ['build'], () => {
@@ -132,9 +116,6 @@ gulp.task('watch', ['build'], () => {
 
   // main scss
   gulp.watch('src/stylesheets/*.scss', ['styles']);
-
-  // theme scss
-  gulp.watch('apps/themes/*.scss', ['themes']);
 
   // js
   gulp.watch('src/javascripts/*.js', ['watch:scripts']);

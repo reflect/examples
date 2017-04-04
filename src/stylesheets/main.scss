@@ -130,18 +130,6 @@ header {
     display: inline-block;
     margin: 0;
   }
-
-  //Bring back if we want resources on mobile
-  // @media (max-width: $mobile) {
-    // h6, .feature {
-    //   display: block;
-    //   margin-bottom: 1px;
-    // }
-    //
-    // .theme, .dataset {
-    //   display: none;
-    // }
-  // }
 }
 
 //feature tags
@@ -435,6 +423,10 @@ hr {
 }
 
 //REFLECT
+.view-container {
+  background-color: white;
+}
+
 .viz-view-container .viz-view-message-container {
   position: relative !important;
   margin-top: 100px;

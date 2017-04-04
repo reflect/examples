@@ -34,12 +34,6 @@ $(function(){
 
     $title.text('Reflect / ' + title);
 
-    //load theme
-    var $theme = $('#app-theme');
-    var theme = '../themes/' + app.theme + '.css'
-
-    $theme.attr('href', theme);
-
     //build features list
     var features = [];
 
@@ -74,10 +68,6 @@ $(function(){
         <div class="features">
           <h6>Features</h6>
           ` + features + `
-        </div>
-        <div class="theme">
-          <h6>Theme</h6>
-          <p>` + app.theme + `</p>
         </div>
         <div class="dataset">
           <h6>Dataset</h6>

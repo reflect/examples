@@ -6,7 +6,6 @@
     "mainGoal": "Toggle custom colors and selected fields.",
     "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
-    "theme": "mono-black",
     "dataset": "game-sales.csv"
   },
   {
@@ -16,7 +15,6 @@
     "mainGoal": "Swap regional filters using custom buttons.",
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
-    "theme": "green-orange",
     "dataset": "insurance-policies.csv"
   },
   {
@@ -26,7 +24,6 @@
     "mainGoal": "Toggle custom formatters and selected dimensions.",
     "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
     "features": ["formatters", "custom colors"],
-    "theme": "purple",
     "dataset": "flyer-survey.csv"
   },
   {
@@ -36,7 +33,6 @@
     "mainGoal": "Use the select bar to filter by Industry.",
     "secondaryGoal": "Click on a bar column to drill into a new view.",
     "features": ["interactions", "custom controls"],
-    "theme": "slate",
     "dataset": "leading-industries.csv"
   },
   {
@@ -46,7 +42,6 @@
     "mainGoal": "Turn on parameters and login.",
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
     "features": ["parameters"],
-    "theme": "reflect-blue",
     "dataset": "web-order-data.csv"
   },
   {
@@ -56,7 +51,6 @@
     "mainGoal": "Explore the world of quakes using zoom and drag",
     "secondaryGoal": "Change the date inputs to filter the view",
     "features": ["custom components", "dates"],
-    "theme": "reflect-blue",
     "dataset": "earthquakes.csv"
   }
 ]
