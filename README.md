@@ -16,7 +16,7 @@ The example apps in this repository each showcase a key Reflect feature. Each ap
 
   A new tab should open in your browser directed at localhost:3000, or you can navigate there manually.
 
-##Credits
+## Credits
 
 The sample datasets used herein can be found at the following original sites:
 - Video Game Sales: https://www.kaggle.com/gregorut/videogamesales
