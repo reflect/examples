@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
 //shadows
+$button-box-shadow: 0.05556rem 0.05556rem 0.2222rem rgba(0, 0, 0, 0.22);
 $card-box-shadow: .2rem .2rem .8rem rgba(0,0,0,0.05);
 $card-hover-box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 $container-box-shadow: .5rem .3rem 2rem rgba(0,0,0,0.17);
@@ -9,6 +10,7 @@ $container-box-shadow: .5rem .3rem 2rem rgba(0,0,0,0.17);
 //colors
 $black: #404040;
 $dark-grey: #888;
+$medium-grey: #DEDEDE;
 $grey: #F2F2F2;
 $light-grey: #F6F6F6;
 $blue: #269CFF;
@@ -49,30 +51,32 @@ $mobile: 799px;
 @mixin button-default {
   z-index: 99;
   font-size: .7rem;
-  border: 1px solid $dark-grey;
+  border: 1px solid $medium-grey;
   background-color: white;
   padding: 10px;
+  box-shadow: $button-box-shadow;
 }
 
 @mixin border-default {
-  border: 1px solid $dark-grey;
+  border: 1px solid $medium-grey;
   border-radius: 0.2778rem;
 }
 
 @mixin border-oval() {
   border-radius: 1rem;
-  border: 1px solid $grey;
+  border: 1px solid $medium-grey;
+  box-shadow: $card-box-shadow;
 }
 
 @mixin border-btm-default {
-  border: 1px solid $dark-grey;
+  border: 1px solid $medium-grey;
   border-bottom-left-radius: 0.2778rem;
   border-bottom-right-radius: 0.2778rem;
   border-top: none;
 }
 
 @mixin border-top-default {
-  border: 1px solid $dark-grey;
+  border: 1px solid $medium-grey;
   border-top-left-radius: 0.2778rem;
   border-top-right-radius: 0.2778rem;
 }
@@ -216,6 +220,14 @@ button {
   }
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $medium-grey;
+  padding: 0;
+}
+
 //set smaller width for examples
 .toolbar, .view-container, #app-header, #app-navigation {
   max-width: 800px;
@@ -329,6 +341,7 @@ button {
     display: inline-block;
     padding: 0 5px;
     vertical-align: super;
+    font-size: 1.15rem;
 
     &:first-letter {
       text-transform: capitalize;
@@ -337,6 +350,8 @@ button {
 
   strong {
     font-size: 30px;
+    position: relative;
+    top: -3px;
   }
 
   @media (max-width: $mobile) {
@@ -386,6 +401,7 @@ button {
   max-height: 190px;
   overflow: hidden;
   margin-bottom: 1rem;
+  box-shadow: $card-box-shadow;
 }
 
 .card img {

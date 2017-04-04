@@ -93,14 +93,14 @@ $(function(){
 
     $navigation.html(`
       <a class="prev" href="/` + prev.category + `">
-        <strong>〈</strong>
+        <strong>&#10094</strong>
         <span class="navTitle">` + prevTitle + `</span>
         <span class="defaultTitle hidden">Previous</span>
       </a>
       <a class="next" href="/` + next.category + `">
         <span class="navTitle">` + nextTitle + `</span>
         <span class="defaultTitle hidden">Next</span>
-        <strong>〉</strong>
+        <strong>&#10095</strong>
       </a>
     `);
 
