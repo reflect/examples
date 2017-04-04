@@ -112,13 +112,12 @@ header {
 
 //resources bar
 .resources {
-  text-align: left;
-  display: flex;
+  text-align: center;
   width: 100%;
 
   div {
-    justify-content: space-between;
-    margin: 0 auto 10px;
+    display: inline-block;
+    margin: 0 10px 10px;
   }
 
   h6 {
