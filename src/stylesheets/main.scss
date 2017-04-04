@@ -125,6 +125,12 @@ header {
     margin: 0;
   }
 
+  p {
+    color: $black;
+    display: inline-block;
+    margin: 0;
+  }
+
   //Bring back if we want resources on mobile
   // @media (max-width: $mobile) {
     // h6, .feature {

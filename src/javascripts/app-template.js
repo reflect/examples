@@ -77,11 +77,11 @@ $(function(){
         </div>
         <div class="theme">
           <h6>Theme</h6>
-          <a href="https://github.com/reflect/examples/blob/master/apps/themes/minified/` + app.theme + `.min.css">` + app.theme + `</a>
+          <p>` + app.theme + `</p>
         </div>
         <div class="dataset">
           <h6>Dataset</h6>
-          <a href="#">` + app.dataset + `</a>
+          <p>` + app.dataset + `</p>
         </div>
       </div>
     `);
