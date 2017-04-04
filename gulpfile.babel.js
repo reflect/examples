@@ -98,7 +98,6 @@ gulp.task('watch:misc', ['misc'], () => {
     browserSync.reload();
 });
 
-
 // Clean
 gulp.task('clean', () => {
   del.sync(['build'], {read: false})
@@ -107,13 +106,18 @@ gulp.task('clean', () => {
 // Build task
 gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'index']);
 
-// Watch task
-gulp.task('watch', ['build'], () => {
-  // Start browserSync
+// Start browserSync for local server
+gulp.task('server', () => {
   browserSync.init({
     server: "./build"
   });
+})
 
+// Default task
+gulp.task('default', ['build', 'server']);
+
+// Watch task
+gulp.task('watch', ['build'], () => {
   // main scss
   gulp.watch('src/stylesheets/*.scss', ['styles']);
 
@@ -135,7 +139,3 @@ gulp.task('watch', ['build'], () => {
   // views + index
   gulp.watch(['apps/*/*.html', './index.html'], ['watch:html']);
 });
-
-
-// Default task
-gulp.task('default', ['watch']);
