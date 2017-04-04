@@ -45,12 +45,12 @@
 
       //call to render an exposed view
       function render() {
-        ui.view(document.getElementById('view'), 'V3_Y-rsBRreuiuJYO98SYw');
+        ui.view(document.getElementById('view'), 'rYKZrGfmSXKYiY14SAbNtg');
       }
 
       //call to render a secure view -- passing ui for scoping only
       function renderSecure(ui) {
-        ui.view(document.getElementById('view'), 'rAdvnZ24RoKog3fCcCK1Ng');
+        ui.view(document.getElementById('view'), '4N1qV2dpQhugk4Zgx5Fz5w');
       }
 
       //render exposed view on page load
@@ -64,7 +64,7 @@
         $.get('../src/json/' + userId, function(data) {
           //create the REFLECT instance with the project access token and signed token
           var ui = new ReflectUI([
-            '53e5b6a5-9d36-4d6b-8c59-ff3c4a6ce301',
+            'd6e7e493-c9ea-4226-a048-26b30cd03755',
             data.reflectSignedToken
           ]);
 

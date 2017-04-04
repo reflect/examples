@@ -71,7 +71,7 @@ $(function(){
         </div>
         <div class="dataset">
           <h6>Dataset</h6>
-          <p>` + app.dataset + `</p>
+          <a href="https://cdn.reflect.io/datasets/` + app.dataset + `">` + app.dataset + `</a>
         </div>
       </div>
     `);

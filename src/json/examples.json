@@ -6,7 +6,7 @@
     "mainGoal": "Toggle custom colors and selected fields.",
     "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
-    "dataset": "game-sales.csv"
+    "dataset": "games-sales.csv"
   },
   {
     "name": "auto-insurance",
@@ -15,7 +15,7 @@
     "mainGoal": "Swap regional filters using custom buttons.",
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
-    "dataset": "insurance-policies.csv"
+    "dataset": "insurance-findings.csv"
   },
   {
     "name": "airline-survey",
@@ -24,7 +24,7 @@
     "mainGoal": "Toggle custom formatters and selected dimensions.",
     "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
     "features": ["formatters", "custom colors"],
-    "dataset": "flyer-survey.csv"
+    "dataset": "airlines-survey.csv"
   },
   {
     "name": "job-market",
@@ -42,7 +42,7 @@
     "mainGoal": "Turn on parameters and login.",
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
     "features": ["parameters"],
-    "dataset": "web-order-data.csv"
+    "dataset": "web-order.csv"
   },
   {
     "name": "earthquakes",
@@ -51,6 +51,6 @@
     "mainGoal": "Explore the world of quakes using zoom and drag",
     "secondaryGoal": "Change the date inputs to filter the view",
     "features": ["custom components", "dates"],
-    "dataset": "earthquakes.csv"
+    "dataset": "world-earthquakes.csv"
   }
 ]
