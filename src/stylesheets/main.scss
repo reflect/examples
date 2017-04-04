@@ -141,7 +141,13 @@ header {
   margin: 3px 6px 0 0;
   font-size: .7rem;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  padding: 4px 10px 5px;
+  padding: 5px 10px 5px;
+}
+
+//dataset tags
+.dataset a, p {
+  position: relative;
+  top: 1px;
 }
 
 //general
