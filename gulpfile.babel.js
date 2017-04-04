@@ -107,21 +107,17 @@ gulp.task('clean', () => {
 gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'index']);
 
 // Start browserSync for local server
-gulp.task('server', () => {
+gulp.task('server', ['build'], () => {
   browserSync.init({
     server: "./build"
   });
 })
 
 // Default task
-gulp.task('default', ['build', 'server']);
+gulp.task('default', ['server']);
 
 // Watch task
-gulp.task('watch', ['build'], () => {
-  // Start browserSync for local server
-  browserSync.init({
-    server: "./build"
-  });
+gulp.task('watch', ['server'], () => {
   // main scss
   gulp.watch('src/stylesheets/*.scss', ['styles']);
 
