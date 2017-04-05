@@ -411,8 +411,8 @@ hr {
 //reduce opacity of neighboring cards on hover
 .card.inactive img {
   opacity: .5;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
 }
 
 .card .image-wrapper {
@@ -472,20 +472,12 @@ hr {
     margin: 0 auto;
     padding: 0 1.65rem;
 
-    a, p {
+    p {
       color: $dark-grey;
     }
 
     a.mobile-only:not(:first-of-type) {
       padding-left: 50px;
-    }
-
-    p.desktop-only {
-      a:hover,
-      a:active,
-      a:focus {
-        text-decoration: underline;
-      }
     }
   }
 }

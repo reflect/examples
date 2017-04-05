@@ -130,9 +130,9 @@ $(function(){
       <div class="footer">
         <div class="link-list">
           <p class="desktop-only">
-            <a target="_blank" href="` + githubLink + `">View the code on Github</a>,
-            <a target="_blank" href="https://app.reflect.io/register">create an account</a>,
-            <a target="_blank" href="https://reflect.io">or visit the Reflect website</a>
+            View the <a target="_blank" href="` + githubLink + `">code</a>  on Github,
+            <a target="_blank" href="https://app.reflect.io/register">create</a>  an account,
+            or <a target="_blank" href="https://reflect.io">visit</a>  the Reflect website
           </p>
           <a class="mobile-only" target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
           <a class="mobile-only" target="_blank" href="https://reflect.io">Learn more</a>
