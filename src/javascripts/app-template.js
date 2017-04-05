@@ -11,9 +11,10 @@ var featureUrls = {
 }
 
 $(function(){
-  //retrieve path name
-  var path = (window.location.pathname).match('\/(.*?)\/');
-  var category = path[path.length-1];
+  //retrieve path name and drop last /
+  var path = window.location.pathname.slice(0, -1);
+  //category is substring after last /
+  var category = path.substring(path.lastIndexOf("/")+1, path.length);
 
   $.get('../src/json/examples.json', function(data) {
 
