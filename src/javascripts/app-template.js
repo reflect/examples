@@ -121,5 +121,18 @@ $(function(){
     $(window).on('resize', function() {
       fitNavigation();
     });
+
+    //populate the footer
+    var $footer = $('#app-footer');
+
+    $footer.html(`
+      <div class="footer">
+        <div class="link-list">
+          <a target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
+          <a target="_blank" href="https://reflect.io/tour">Learn more</a>
+          <a class="desktop-only" target="_blank" href="https://twitter.com/reflecthq">Follow us</a>
+        </div>
+      </div>
+    `);
   });
 })
