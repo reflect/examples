@@ -164,7 +164,7 @@ header {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  padding: 0 30px 120px;
+  padding: 0 30px 100px;
   color: $grey;
   background-color: $light-grey;
   margin: 0 auto;
@@ -446,30 +446,44 @@ hr {
   }
 }
 
+@media (min-width: 800px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 //footer
 .footer {
-  background-color: $blue;
+  background-color: $medium-grey;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
   text-align: center;
   font-size: 1.15rem;
   display: flex;
   align-items: center;
 
-  div {
+  .link-list {
     margin: 0 auto;
     padding: 0 1.65rem;
 
-    a {
-      color: white;
+    a, p {
+      color: $dark-grey;
     }
 
-    a:not(:first-of-type) {
+    a.mobile-only:not(:first-of-type) {
       padding-left: 50px;
+    }
+
+    p.desktop-only {
+      a:hover,
+      a:active,
+      a:focus {
+        text-decoration: underline;
+      }
     }
   }
 }

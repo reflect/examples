@@ -67,9 +67,10 @@ $(function(){
 
     //populate the header
     var $header = $('#app-header');
+    var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html`;
 
     $header.append(`
-      <a target="_blank" class="fork-me desktop-only" href="https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html">View on Github</a>
+      <a target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on Github</a>
       <div class="lead">
         <h1 class="title">` + title + `</h1>
         <h2>` + app.description + `</h2>
@@ -128,9 +129,13 @@ $(function(){
     $footer.html(`
       <div class="footer">
         <div class="link-list">
-          <a target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
-          <a target="_blank" href="https://reflect.io/tour">Learn more</a>
-          <a class="desktop-only" target="_blank" href="https://twitter.com/reflecthq">Follow us</a>
+          <p class="desktop-only">
+            <a target="_blank" href="` + githubLink + `">View the code on Github</a>,
+            <a target="_blank" href="https://app.reflect.io/register">create an account</a>,
+            <a target="_blank" href="https://reflect.io">or visit the Reflect website</a>
+          </p>
+          <a class="mobile-only" target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
+          <a class="mobile-only" target="_blank" href="https://reflect.io">Learn more</a>
         </div>
       </div>
     `);
