@@ -12,7 +12,8 @@ var featureUrls = {
 
 $(function(){
   //retrieve path name
-  var path = (window.location.pathname).match('\/(.*?)\/')[1];
+  var path = (window.location.pathname).match('\/(.*?)\/');
+  var category = path[path.length-1];
 
   $.get('../src/json/examples.json', function(data) {
 
@@ -20,7 +21,7 @@ $(function(){
     //find the relevant app and index
     var app = data.find(function(option, i) {
       appId = i;
-      return option.category === path;
+      return option.category === category;
     });
 
     //find the neighboring apps
