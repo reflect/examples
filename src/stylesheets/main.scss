@@ -410,7 +410,9 @@ hr {
 
 //reduce opacity of neighboring cards on hover
 .card.inactive img {
-  opacity: .7;
+  opacity: .5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .card .image-wrapper {
