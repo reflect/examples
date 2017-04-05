@@ -67,9 +67,9 @@ gulp.task('styles', () => {
     .pipe(stream({stream: true}))
 });
 
-// Index
+// Index + Favicon
 gulp.task('index', () => {
-  return gulp.src('./index.html')
+  return gulp.src(['./index.html', './favicon.ico'])
     .pipe(gulp.dest('build'))
 });
 
