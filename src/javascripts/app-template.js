@@ -14,7 +14,7 @@ $(function(){
   //retrieve path name
   var path = (window.location.pathname).match('\/(.*?)\/')[1];
 
-  $.get('../../src/json/examples.json', function(data) {
+  $.get('../src/json/examples.json', function(data) {
 
     var appId;
     //find the relevant app and index
@@ -92,12 +92,12 @@ $(function(){
     var nextTitle = next.category.replace(/-/g, ' ');
 
     $navigation.html(`
-      <a class="prev" href="/` + prev.category + `">
+      <a class="prev" href="../` + prev.category + `">
         <strong>&#10094</strong>
         <span class="navTitle">` + prevTitle + `</span>
         <span class="defaultTitle hidden">Previous</span>
       </a>
-      <a class="next" href="/` + next.category + `">
+      <a class="next" href="../` + next.category + `">
         <span class="navTitle">` + nextTitle + `</span>
         <span class="defaultTitle hidden">Next</span>
         <strong>&#10095</strong>
