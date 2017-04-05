@@ -1,0 +1,16 @@
+/*
+Sample app
+{
+    "name": "name-of-html-and-png-files",
+    "category": "name-of-folder",
+    "description": "This is a description of the feature and why it's great",
+    "mainGoal": "Do this thing with the example",
+    "secondaryGoal": "Do this other thing with the example",
+    "features": ["feature one", "feature two"],
+    "dataset": "sample-dataset.csv"
+}
+*/
+
+When adding a NEW feature
+1. Include a url to docs in src/javascripts/app-template.js
+2. Then add a new color style in src/stylesheets/main.scss

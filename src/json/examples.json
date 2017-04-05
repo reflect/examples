@@ -1,0 +1,56 @@
+[
+  {
+    "name": "video-games",
+    "category": "custom-colors",
+    "description": "Assign unique color values to fields to improve legibility. Easily tie metrics to their visual cues and swap colors on the fly.",
+    "mainGoal": "Toggle custom colors and selected fields.",
+    "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
+    "features": ["custom colors", "filters", "interactions"],
+    "dataset": "games-sales.csv"
+  },
+  {
+    "name": "auto-insurance",
+    "category": "filters",
+    "description": "Filter your components and views with flexbile controls. Include a filter bar from the app or build triggers, simply.",
+    "mainGoal": "Swap regional filters using custom buttons.",
+    "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
+    "features": ["filters", "custom controls"],
+    "dataset": "insurance-findings.csv"
+  },
+  {
+    "name": "airline-survey",
+    "category": "formatters",
+    "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
+    "mainGoal": "Toggle custom formatters and selected dimensions.",
+    "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
+    "features": ["formatters", "custom colors"],
+    "dataset": "airlines-survey.csv"
+  },
+  {
+    "name": "job-market",
+    "category": "interactions",
+    "description": "Use data point interactions to update components and views. Exchange views by simply changing the view ID.",
+    "mainGoal": "Use the select bar to filter by Industry.",
+    "secondaryGoal": "Click on a bar column to drill into a new view.",
+    "features": ["interactions", "custom controls"],
+    "dataset": "leading-industries.csv"
+  },
+  {
+    "name": "e-commerce",
+    "category": "parameters",
+    "description": "Apply parameters to enforce user authentication. Users will only see data permitted by their credentials.",
+    "mainGoal": "Turn on parameters and login.",
+    "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
+    "features": ["parameters"],
+    "dataset": "default"
+  },
+  {
+    "name": "earthquakes",
+    "category": "custom-components",
+    "description": "Build new, exciting components on top of our data modeling. Retain full Reflect feature functionality.",
+    "mainGoal": "Explore the world of quakes using zoom and drag",
+    "secondaryGoal": "Change the date inputs to filter the view",
+    "features": ["custom components", "dates"],
+    "dataset": "world-earthquakes.csv"
+  }
+]

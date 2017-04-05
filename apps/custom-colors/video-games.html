@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link href="../src/stylesheets/main.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <script src="../src/javascripts/app-template.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+      </a>
+      <div id="app-header"></div>
+    </header>
+
+    <div class="toolbar">
+      <div id="app-instruction"></div>
+      <div class="controls">
+        <button id="toggle-colors">Remove custom colors</button>
+      </div>
+    </div>
+
+    <!-- Where the view gets rendered -->
+    <div class="view-container">
+      <div id="view"></div>
+    </div>
+
+    <div id="app-navigation"></div>
+    <div id="app-footer"></div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render the view
+      function render() {
+        ui.view(document.getElementById('view'), 'jurfWr30SiiPlM8Nt0QJpg');
+      }
+
+      //call to apply custom colors
+      function applyColors() {
+        ui.withColors({
+          'Publisher': {
+            'Nintendo': '#DE0000',
+            'Electronic Arts': '#005BAA',
+            'Activision': 'silver',
+            'Sony Computer Entertainment': '#EDA802',
+            'Ubisoft': '#512DA8'
+          }
+        });
+      }
+
+      //call to remove custom colors with empty object
+      function removeColors() {
+        ui.withColors({});
+      }
+
+      //apply custom colors and render on page load
+      applyColors();
+      render();
+
+      //call to filter by publisher
+      var filterActive = false;
+      function filterByPublisher(publisher) {
+        var publisherFilter = {
+          field: 'Publisher',
+          op: '=',
+          value: publisher,
+          removable: true
+        }
+
+        if (filterActive) {
+          ui.withFilters([]);
+
+          filterActive = false;
+        } else {
+          ui.withFilters([publisherFilter]);
+
+          filterActive = true;
+        }
+      }
+
+      //filter on data-point click
+      ui.on('sales-timeseries', 'dataPointClick', function(data) {
+        var publisher = data.rowData.Publisher;
+
+        filterByPublisher(publisher);
+        render();
+      });
+
+      //filter on legend-item click
+      ui.on('sales-timeseries', 'legendItemClick', function(data) {
+        var publisher = data.value;
+
+        filterByPublisher(publisher);
+        render();
+      });
+
+      //toggle colors on toolbar button click
+      $('#toggle-colors').click(function(e) {
+        var colorsOn = (e.target.innerText).indexOf('Remove') >= 0;
+
+        if (colorsOn) {
+          removeColors();
+          render();
+
+          $('#toggle-colors').text('Apply custom colors').addClass('active');
+        } else {
+          applyColors();
+          render();
+
+          $('#toggle-colors').text('Remove custom colors').removeClass('active');
+        }
+      });
+    </script>
+  </body>
+</html>
