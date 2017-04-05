@@ -67,11 +67,10 @@ $(function(){
 
     //populate the header
     var $header = $('#app-header');
+    var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html`;
 
     $header.append(`
-      <a target="_blank" class="fork-me desktop-only" href="https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html">
-        <img src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
-      </a>
+      <a target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on GitHub</a>
       <div class="lead">
         <h1 class="title">` + title + `</h1>
         <h2>` + app.description + `</h2>
@@ -130,9 +129,13 @@ $(function(){
     $footer.html(`
       <div class="footer">
         <div class="link-list">
-          <a target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
-          <a target="_blank" href="https://reflect.io/tour">Learn more</a>
-          <a class="desktop-only" target="_blank" href="https://twitter.com/reflecthq">Follow us</a>
+          <p class="desktop-only">
+            View the <a target="_blank" href="` + githubLink + `">code</a>  on GitHub,
+            <a target="_blank" href="https://app.reflect.io/register">create</a>  an account,
+            or <a target="_blank" href="https://reflect.io">visit</a>  the Reflect website
+          </p>
+          <a class="mobile-only" target="_blank" href="https://app.reflect.io/register">Join Reflect</a>
+          <a class="mobile-only" target="_blank" href="https://reflect.io">Learn more</a>
         </div>
       </div>
     `);
