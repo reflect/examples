@@ -95,11 +95,20 @@ header {
   margin-bottom: 60px;
 }
 
-.fork-me {
+.fork-me{
   position: absolute;
-  top: -38px;
-  right: 0;
-  border: 0;
+  top: 30px;
+  right: -100px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  width: 400px;
+  background: $blue;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: white;
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
 
 .lead {
