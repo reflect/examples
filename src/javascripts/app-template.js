@@ -70,7 +70,7 @@ $(function(){
     var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html`;
 
     $header.append(`
-      <a target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on Github</a>
+      <a target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on GitHub</a>
       <div class="lead">
         <h1 class="title">` + title + `</h1>
         <h2>` + app.description + `</h2>
@@ -130,7 +130,7 @@ $(function(){
       <div class="footer">
         <div class="link-list">
           <p class="desktop-only">
-            View the <a target="_blank" href="` + githubLink + `">code</a>  on Github,
+            View the <a target="_blank" href="` + githubLink + `">code</a>  on GitHub,
             <a target="_blank" href="https://app.reflect.io/register">create</a>  an account,
             or <a target="_blank" href="https://reflect.io">visit</a>  the Reflect website
           </p>
