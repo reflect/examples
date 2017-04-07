@@ -58,5 +58,21 @@ $(function(){
     $('.card-container').mouseleave(function() {
       $('.card').not(this).removeClass('inactive');
     })
+
+    //GITHUB VISITED
+    var githubFooter = document.getElementById('github-footer');
+    analytics.trackLink(githubFooter, 'GitHub visited', {
+      example: 'home',
+      category: 'home',
+      features: ['all'],
+      location: 'footer'
+    });
+    var githubHeader = document.getElementById('github-header');
+    analytics.trackLink(githubHeader, 'GitHub visited', {
+      example: 'home',
+      category: 'home',
+      features: ['all'],
+      location: 'header'
+    });
   });
 })
