@@ -54,7 +54,7 @@ $(function(){
     if (dataset === 'default') {
       datasetLink = '<p>Default sample connection</p>';
     } else {
-      datasetLink = `<a href="https://cdn.reflect.io/datasets/` + dataset + `">` + dataset + `</a>`;
+      datasetLink = `<a id="dataset-download" href="https://cdn.reflect.io/datasets/` + dataset + `">` + dataset + `</a>`;
     }
 
     //populate the instructions
@@ -70,7 +70,7 @@ $(function(){
     var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html`;
 
     $header.append(`
-      <a target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on GitHub</a>
+      <a id="github-header" target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on GitHub</a>
       <div class="lead">
         <h1 class="title">` + title + `</h1>
         <h2>` + app.description + `</h2>
@@ -130,7 +130,7 @@ $(function(){
       <div class="footer">
         <div class="link-list">
           <p class="desktop-only">
-            View the <a target="_blank" href="` + githubLink + `">code</a>  on GitHub,
+            View the <a id="github-footer" target="_blank" href="` + githubLink + `">code</a>  on GitHub,
             <a target="_blank" href="https://app.reflect.io/register">create</a>  an account,
             or <a target="_blank" href="https://reflect.io">visit</a>  the Reflect website
           </p>
@@ -139,5 +139,29 @@ $(function(){
         </div>
       </div>
     `);
+
+    //event tracking
+    //DATASET DOWNLOADED
+    var datasetDownload = document.getElementById('dataset-download');
+    analytics.trackLink(datasetDownload, 'Dataset downloaded', {
+      example: app.name,
+      category: app.category,
+      dataset: app.dataset
+    });
+    //GITHUB VISITED
+    var githubFooter = document.getElementById('github-footer');
+    analytics.trackLink(githubFooter, 'GitHub visited', {
+      example: app.name,
+      category: app.category,
+      features: app.features,
+      location: 'footer'
+    });
+    var githubHeader = document.getElementById('github-header');
+    analytics.trackLink(githubHeader, 'GitHub visited', {
+      example: app.name,
+      category: app.category,
+      features: app.features,
+      location: 'header'
+    });
   });
 })
