@@ -13,32 +13,34 @@
     <script src="../src/javascripts/external.js"></script>
   </head>
   <body>
-    <header>
-      <a href="../">
-        <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
-      </a>
-      <div id="app-header"></div>
-    </header>
+    <div class="container">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+      </header>
 
-    <div class="toolbar">
-      <div id="app-instruction"></div>
-      <div class="controls">
-        <button id="enforce-params">Turn Parameters On</button>
-        <div id="authentication" class="hidden">
-          <input placeholder="Ted@SalesTeam.com" disabled>
-          <button id="authenticate-params" class="active">Login</button>
+      <div class="toolbar">
+        <div id="app-instruction"></div>
+        <div class="controls">
+          <button id="enforce-params">Turn Parameters On</button>
+          <div id="authentication" class="hidden">
+            <input placeholder="Ted@SalesTeam.com" disabled>
+            <button id="authenticate-params" class="active">Login</button>
+          </div>
+          <button id="remove-params" class="hidden">Turn Parameters Off</button>
         </div>
-        <button id="remove-params" class="hidden">Turn Parameters Off</button>
       </div>
-    </div>
 
-    <!-- Where the view gets rendered -->
-    <div class="view-container">
-      <div id="view"></div>
-    </div>
+      <!-- Where the view gets rendered -->
+      <div class="view-container">
+        <div id="view"></div>
+      </div>
 
-    <div id="app-navigation"></div>
-    <div id="app-footer"></div>
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
 
     <!-- REFLECT view -->
     <script type="text/javascript">

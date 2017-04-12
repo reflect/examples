@@ -97,7 +97,7 @@ header {
 
 .fork-me{
   position: absolute;
-  top: 30px;
+  top: 80px;
   right: -100px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -162,6 +162,11 @@ header {
 
 //general
 body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   padding: 0 30px 100px;
@@ -170,8 +175,8 @@ body {
   margin: 0 auto;
   letter-spacing: .02223rem;
   font-weight: 400;
-  position: relative;
   overflow-x: hidden;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {

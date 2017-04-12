@@ -13,37 +13,39 @@
     <script src="../src/javascripts/external.js"></script>
   </head>
   <body>
-    <header>
-      <a href="../">
-        <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
-      </a>
-      <div id="app-header"></div>
-    </header>
+    <div class="container">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+      </header>
 
-    <div class="toolbar">
-      <div id="app-instruction"></div>
-      <div class="controls">
-        <div id="industry-controls">
-          <select name="major-selects">
-            <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
-            <option value="Business">Business</option>
-            <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
-            <option value="Education">Education</option>
-            <option selected value="Engineering">Engineering</option>
-            <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
-          </select>
+      <div class="toolbar">
+        <div id="app-instruction"></div>
+        <div class="controls">
+          <div id="industry-controls">
+            <select name="major-selects">
+              <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
+              <option value="Business">Business</option>
+              <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
+              <option value="Education">Education</option>
+              <option selected value="Engineering">Engineering</option>
+              <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
+            </select>
+          </div>
+          <div id="major-controls"></div>
         </div>
-        <div id="major-controls"></div>
       </div>
-    </div>
 
-    <!-- Where the view gets rendered -->
-    <div class="view-container">
-      <div id="view"></div>
-    </div>
+      <!-- Where the view gets rendered -->
+      <div class="view-container">
+        <div id="view"></div>
+      </div>
 
-    <div id="app-navigation"></div>
-    <div id="app-footer"></div>
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
 
     <!-- REFLECT view -->
     <script type="text/javascript">
