@@ -29,6 +29,12 @@ $(function(){
     var prev = appId > 0 ? data[appId-1] : data[data.length-1];
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
+    if (prev.category === 'my-Klout-report') {
+      prev = appId > 0 ? data[appId-2] : data[data.length-2];
+    } else if (next.category === 'my-Klout-report') {
+      next = data.length > appId+2 ? data[appId+2] : data[0];
+    }
+
     //update page title
     var title = app.category.replace(/-/g, ' ');
     title = title.substr(0,1).toUpperCase() + title.substr(1);
@@ -53,6 +59,8 @@ $(function(){
 
     if (dataset === 'default') {
       datasetLink = '<p>Default sample connection</p>';
+    } else if (dataset === 'klout') {
+      datasetLink = '<p>Klout API</p>';
     } else {
       datasetLink = `<a id="dataset-download" href="https://cdn.reflect.io/datasets/` + dataset + `">` + dataset + `</a>`;
     }

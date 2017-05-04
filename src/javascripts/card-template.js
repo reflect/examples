@@ -4,38 +4,39 @@ $(function(){
     var $list = $('.card-list');
 
     app.forEach(function(d) {
+      if (d.category !== 'my-Klout-report') {
+        var title = d.category.replace(/-/g, ' ');
 
-      var title = d.category.replace(/-/g, ' ');
+        //build features list
+        var features = [];
 
-      //build features list
-      var features = [];
+        (d.features).forEach(function(feature) {
+          var featureId = feature.split(' ').join('_');
+          features.push('<p class="feature ' + featureId + '">' + feature + '</p>');
+        });
 
-      (d.features).forEach(function(feature) {
-        var featureId = feature.split(' ').join('_');
-        features.push('<p class="feature ' + featureId + '">' + feature + '</p>');
-      });
+        features = features.sort().join('');
 
-      features = features.sort().join('');
-
-      //create the card
-      $list.append(`
-        <div class="card-wrapper">
-          <div class="card">
-            <a href="./` + d.category + `">
-              <div class="image-wrapper">
-                <img src="./` + d.category + `/` + d.name + `.png" />
+        //create the card
+        $list.append(`
+          <div class="card-wrapper">
+            <div class="card">
+              <a href="./` + d.category + `">
+                <div class="image-wrapper">
+                  <img src="./` + d.category + `/` + d.name + `.png" />
+                </div>
+                <div class="content">
+                  <h3 class="title">` + title + `</h3>
+                  <p class="description">` + d.description + `</p>
+                </div>
+              </a>
+              <div class="features">
+                ` + features + `
               </div>
-              <div class="content">
-                <h3 class="title">` + title + `</h3>
-                <p class="description">` + d.description + `</p>
-              </div>
-            </a>
-            <div class="features">
-              ` + features + `
             </div>
           </div>
-        </div>
-      `);
+        `);
+      }
     });
 
     //force grid at any length

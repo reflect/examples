@@ -52,5 +52,14 @@
     "secondaryGoal": "Change the date inputs to filter the view",
     "features": ["custom components", "dates"],
     "dataset": "world-earthquakes.csv"
+  },
+  {
+    "name": "klout-analytics-scraper",
+    "category": "my-Klout-report",
+    "description": "Give a shoutout to those that matter most. At Reflect, we love building <a target='_blank' href='https://reflect.io/contact-us'>free custom demos</a> and <a target='_blank' href='https://reflect.io'>making impressions</a>.",
+    "mainGoal": "Submit the token you received to view your Klout report.",
+    "secondaryGoal": "Click on any data point to send the user a tweet!",
+    "features": ["parameters", "interactions"],
+    "dataset": "klout"
   }
 ]

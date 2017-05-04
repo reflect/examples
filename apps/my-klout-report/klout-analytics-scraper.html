@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link href="../src/stylesheets/main.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/0.7.20/reflect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/0.7.20/reflect.js"></script>
+    <script src="../src/javascripts/app-template.js"></script>
+    <script src="../src/javascripts/external.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+      </header>
+
+      <div class="toolbar">
+        <div id="app-instruction"></div>
+        <div class="controls">
+          <div id="authentication">
+            <input placeholder="Your access token">
+            <button id="authenticate-params" class="active">See my report</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Where the view gets rendered -->
+      <div class="view-container">
+        <div id="view"></div>
+      </div>
+
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render sample view
+      function render() {
+        ui.view(document.getElementById('view'), 'uLKQRuL1ThargI-nhtMcfw');
+      }
+
+      //call to render secure view
+      function renderSecure() {
+        ui.view(document.getElementById('view'), 'f0BorGILQiWwc39ELqQ87A');
+      }
+
+      //render sample view on page load
+      render();
+
+      function authenticateUser() {
+        //typically some function to get user data
+        var accesstoken = 'input value';
+
+        //make a request to your backend to fetch a signed token generated with user attributes
+        $.get('../src/json/' + accesstoken, function(data) {
+
+          // get the ajax response
+
+          //create the REFLECT instance with the project access token and signed token
+          var ui = new ReflectUI([
+            'd6e7e493-c9ea-4226-a048-26b30cd03755',
+            data.reflectSignedToken
+          ]);
+
+          //define parameters with user attributes to match backend request
+          var companyParam = {
+             field: 'Company Twitter',
+             op: '=',
+             value: data.companyTwitter
+           }
+
+          //apply parameters
+          ui.withParameters([
+            companyParam
+          ]);
+
+          //render secure view
+          renderSecure(ui);
+        });
+      };
+
+      //authenticate user and render a parameterized view
+      $('#authenticate-params').click(function(e) {
+        authenticateUser();
+      });
+
+      //build tweet
+      function tweet(data) {
+        var tweet = "Shoutout to %23"+data+", we really admire what you do.";
+
+        return tweet;
+      }
+
+      //open twitter on data-point click
+      ui.on('twitter-kpi', 'render', function(data) {
+        console.log(data);
+      });
+
+      //open twitter on data-point click
+      ui.on('twitter-bars', 'dataPointClick', function(data) {
+        var data = data.rowData['User Twitter'];
+
+        window.open('https://twitter.com/intent/tweet?text='+tweet(data),'popUpWindow','height=400,width=600,left=10,top=10,menubar=no');
+      });
+
+      ui.on('twitter-donut', 'dataPointClick', function(data) {
+        var data = data.rowData['User Twitter'];
+
+        window.open('https://twitter.com/intent/tweet?text='+tweet(data),'popUpWindow','height=400,width=600,left=10,top=10,menubar=no');
+      });
+
+      //open twitter on legend click
+      ui.on('twitter-donut', 'legendItemClick', function(data) {
+        var data = data.value;
+
+        window.open('https://twitter.com/intent/tweet?text='+tweet(data),'popUpWindow','height=400,width=600,left=10,top=10,menubar=no');
+      });
+    </script>
+  </body>
+</html>
