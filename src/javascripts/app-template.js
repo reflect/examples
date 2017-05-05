@@ -29,18 +29,25 @@ $(function(){
     var prev = appId > 0 ? data[appId-1] : data[data.length-1];
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
-    if (prev.category === 'my-Klout-report') {
+    //remove klout-report from navigation
+    if (prev.category === 'Klout-report') {
       prev = appId > 0 ? data[appId-2] : data[data.length-2];
-    } else if (next.category === 'my-Klout-report') {
+    } else if (next.category === 'Klout-report') {
       next = data.length > appId+2 ? data[appId+2] : data[0];
     }
 
     //update page title
-    var title = app.category.replace(/-/g, ' ');
-    title = title.substr(0,1).toUpperCase() + title.substr(1);
+    var title;
+    if (app.category === 'Klout-report' ) {
+      title = location.search.substr(1) + '\'s ' + app.category.replace(/-/g, ' ');
+    } else {
+      title = app.category.replace(/-/g, ' ');
+      title = title.substr(0,1).toUpperCase() + title.substr(1);
+    }
     var $title = $('#app-title');
 
-    $title.text('Reflect / ' + title);
+    //prepend name for klout-report
+    $title.text(title + ' / Reflect');
 
     //build features list
     var features = [];
