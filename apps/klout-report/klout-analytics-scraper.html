@@ -98,15 +98,14 @@
 
       //build tweet
       function tweet(data) {
-        var tweet = "Shoutout to %23"+data+", we really admire what you do.";
+        var random = Math.floor(Math.random() * 3);
+        var tweets = ["Shoutout to %23"+data+", we really admire what you do.",
+                      "You rock %23"+data+". Always impressed by your work.",
+                      "Thanks for all you do, %23"+data+". Can't wait to see where it takes you."]
+        var tweet = tweets[random];
 
         return tweet;
       }
-
-      //open twitter on data-point click
-      ui.on('twitter-kpi', 'render', function(data) {
-        console.log(data);
-      });
 
       //open twitter on data-point click
       ui.on('twitter-bars', 'dataPointClick', function(data) {
