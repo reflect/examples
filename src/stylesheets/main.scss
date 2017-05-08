@@ -489,6 +489,26 @@ hr {
 }
 
 //REFLECT
+// Bars for Klout Report
+.klout-report
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4) {
+    fill: #265bff;
+    stroke: #265bff;
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(3) {
+    fill: #3226ff;
+    stroke: #3226ff;
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(2) {
+    fill: #7326ff;
+    stroke: #7326ff;
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(1) {
+    fill: #b426ff;
+    stroke: #b426ff;
+  }
+}
+
 .view-container {
   background-color: white;
 }

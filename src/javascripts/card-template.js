@@ -4,7 +4,7 @@ $(function(){
     var $list = $('.card-list');
 
     app.forEach(function(d) {
-      if (d.category !== 'Klout-report') {
+      if (d.category !== 'top-influencers') {
         var title = d.category.replace(/-/g, ' ');
 
         //build features list

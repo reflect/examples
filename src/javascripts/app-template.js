@@ -30,15 +30,15 @@ $(function(){
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
     //remove klout-report from navigation
-    if (prev.category === 'Klout-report') {
+    if (prev.category === 'top-influencers') {
       prev = appId > 0 ? data[appId-2] : data[data.length-2];
-    } else if (next.category === 'Klout-report') {
+    } else if (next.category === 'top-influencers') {
       next = data.length > appId+2 ? data[appId+2] : data[0];
     }
 
     //update page title
     var title;
-    if (app.category === 'Klout-report' ) {
+    if (app.category === 'top-influencers' ) {
       title = location.search.substr(1) + '\'s ' + app.category.replace(/-/g, ' ');
     } else {
       title = app.category.replace(/-/g, ' ');
