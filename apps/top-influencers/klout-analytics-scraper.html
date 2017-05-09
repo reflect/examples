@@ -13,23 +13,14 @@
     <script src="../src/javascripts/external.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container custom-report">
       <header>
         <a href="../">
           <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
         </a>
         <div id="app-header"></div>
+        <h2>Click on a data point to Tweet the user!</h2>
       </header>
-
-      <div class="toolbar">
-        <div id="app-instruction"></div>
-        <div class="controls">
-          <div id="authentication">
-            <input id="authentication-code" placeholder="Your emailed code">
-            <button id="authenticate" class="active">See my report</button>
-          </div>
-        </div>
-      </div>
 
       <!-- Where the view gets rendered -->
       <div class="view-container klout-report">
@@ -45,15 +36,14 @@
 
       //instantiate new instance
       var ui = new ReflectUI();
-      var companyTwitter;
 
       //call to render sample view
       function render() {
         ui.view(document.getElementById('view'), 'Pb7jk1AwQiupt0iIgaCFLg');
       }
 
-      //call to render secure view
-      function renderSecure(ui) {
+      //call to render filtered view
+      function renderReport(ui) {
         ui.view(document.getElementById('view'), 'rPH474xJR3StngcLgD-orQ');
       }
 
@@ -66,47 +56,34 @@
         })
       }
 
-      //render sample view on page load
-      formatScore(ui)
-      render();
+      //render different views depending on url accessed
+      var params = location.search.substr(1);
+      if (params) {
+        var code = params.match(/\&(.*)/)[1];
+        //filter view when params present
+        filterView(code);
+      } else {
+        //otherwise render sample view
+        formatScore(ui);
+        render();
+      }
 
-      function authenticateUser(code) {
-        //some function to get user data
-        var accesstoken = 'klout.json';
+      function filterView(code) {
+        var company = {
+          field: 'Company code',
+          op: '=',
+          value: code
+        }
 
-        //make a request to your backend to fetch a signed token generated with user attributes
-        $.get('../src/json/' + accesstoken, function(data) {
+        //apply filter
+        ui.withFilters([
+          company
+        ]);
 
-          //create the REFLECT instance with the project access token and signed token
-          var ui = new ReflectUI([
-            'c61eb890-5392-4129-aa3d-524f57366912',
-            data[code]
-          ]);
-
-          //define parameters with user attributes to match backend request
-          var companyParam = {
-            field: 'Company code',
-            op: '=',
-            value: code
-          }
-
-          //apply parameters
-          ui.withParameters([
-            companyParam
-          ]);
-
-          //render secure view
-          formatScore(ui);
-          renderSecure(ui);
-        });
+        //render view
+        formatScore(ui);
+        renderReport(ui);
       };
-
-      //authenticate user and render a parameterized view
-      $('#authenticate').click(function(e) {
-        var code = $('#authentication-code').val();
-
-        authenticateUser(code);
-      });
 
       //build tweet
       function tweet(data) {
