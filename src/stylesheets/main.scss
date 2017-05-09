@@ -488,8 +488,20 @@ hr {
   }
 }
 
+// Custom demo
+.custom-report {
+  .resources {
+    display: none;
+  }
+
+  .view-container {
+    border-top: 1px solid #DEDEDE;
+    border-radius: .2778rem;
+  }
+}
+
 //REFLECT
-// Bars for Klout Report
+// Bars for klout report
 .klout-report {
   .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
   .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(4).viz-opened {
