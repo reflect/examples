@@ -489,6 +489,42 @@ hr {
 }
 
 //REFLECT
+// Bars for Klout Report
+.klout-report {
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
+  .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(4).viz-opened {
+    fill: #265bff;
+    stroke: #265bff;
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(3),
+  .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(3).viz-opened {
+    fill: #3226ff;
+    stroke: #3226ff;
+    &.focussed {
+      fill: #3226ff;
+      stroke: #3226ff;
+    }
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(2),
+  .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(2).viz-opened {
+    fill: #7326ff;
+    stroke: #7326ff;
+    &.focussed {
+      fill: #7326ff;
+      stroke: #7326ff;
+    }
+  }
+  .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(1),
+  .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(1).viz-opened {
+    fill: #b426ff;
+    stroke: #b426ff;
+    &.focussed {
+      fill: #b426ff;
+      stroke: #b426ff;
+    }
+  }
+}
+
 .view-container {
   background-color: white;
 }
@@ -505,9 +541,11 @@ hr {
     left: 50%;
     top: 80px;
     color: $blue;
-    content: 'View is locked! Please login.'
+    content: 'View is locked! Please authenticate.'
   }
 }
+
+
 
 .viz-icon-plus:before {
   content: '+' !important;
