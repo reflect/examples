@@ -38,8 +38,8 @@ $(function(){
 
     //update page title
     var title;
-    if (app.category === 'top-influencers' ) {
-      title = location.search.substr(1) + '\'s ' + app.category.replace(/-/g, ' ');
+    if (app.category === 'top-influencers' && location.search.substr(1)) {
+      title = location.search.substr(1).replace(/%/g, ' ') + '\'s ' + app.category.replace(/-/g, ' ');
     } else {
       title = app.category.replace(/-/g, ' ');
       title = title.substr(0,1).toUpperCase() + title.substr(1);

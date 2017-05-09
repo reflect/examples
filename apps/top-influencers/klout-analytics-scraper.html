@@ -25,8 +25,8 @@
         <div id="app-instruction"></div>
         <div class="controls">
           <div id="authentication">
-            <input placeholder="Your emailed code">
-            <button id="authenticate-params" class="active">See my report</button>
+            <input id="authentication-code" placeholder="Your emailed code">
+            <button id="authenticate" class="active">See my report</button>
           </div>
         </div>
       </div>
@@ -45,41 +45,50 @@
 
       //instantiate new instance
       var ui = new ReflectUI();
+      var companyTwitter;
 
       //call to render sample view
       function render() {
-        ui.view(document.getElementById('view'), 'rPH474xJR3StngcLgD-orQ');
+        ui.view(document.getElementById('view'), 'Pb7jk1AwQiupt0iIgaCFLg');
       }
 
       //call to render secure view
-      function renderSecure() {
-        ui.view(document.getElementById('view'), 'f0BorGILQiWwc39ELqQ87A');
+      function renderSecure(ui) {
+        ui.view(document.getElementById('view'), 'rPH474xJR3StngcLgD-orQ');
+      }
+
+      //call to append score with /100
+      function formatScore(ui) {
+        ui.withFormatters({
+          'Klout score': function(d) {
+            return Math.round(d) + "/100";
+          }
+        })
       }
 
       //render sample view on page load
+      formatScore(ui)
       render();
 
-      function authenticateUser() {
-        //typically some function to get user data
-        var accesstoken = 'input value';
+      function authenticateUser(code) {
+        //some function to get user data
+        var accesstoken = 'klout.json';
 
         //make a request to your backend to fetch a signed token generated with user attributes
         $.get('../src/json/' + accesstoken, function(data) {
 
-          // get the ajax response
-
           //create the REFLECT instance with the project access token and signed token
           var ui = new ReflectUI([
-            'd6e7e493-c9ea-4226-a048-26b30cd03755',
-            data.reflectSignedToken
+            'c61eb890-5392-4129-aa3d-524f57366912',
+            data[code]
           ]);
 
           //define parameters with user attributes to match backend request
           var companyParam = {
-             field: 'Company Twitter',
-             op: '=',
-             value: data.companyTwitter
-           }
+            field: 'Company code',
+            op: '=',
+            value: code
+          }
 
           //apply parameters
           ui.withParameters([
@@ -87,21 +96,24 @@
           ]);
 
           //render secure view
+          formatScore(ui);
           renderSecure(ui);
         });
       };
 
       //authenticate user and render a parameterized view
-      $('#authenticate-params').click(function(e) {
-        authenticateUser();
+      $('#authenticate').click(function(e) {
+        var code = $('#authentication-code').val();
+
+        authenticateUser(code);
       });
 
       //build tweet
       function tweet(data) {
         var random = Math.floor(Math.random() * 3);
-        var tweets = ["Shoutout to %23"+data+", we really admire what you do.",
-                      "You rock %23"+data+". Always impressed by your work.",
-                      "Thanks for all you do, %23"+data+". Can't wait to see where it takes you."]
+        var tweets = ["Shoutout to %23"+data+". A real game-changer to work with.",
+                      "Killing it, %23"+data+". Always impressed by your creativity.",
+                      "Keep an eye on %23"+data+". Expecting big things this year."]
         var tweet = tweets[random];
 
         return tweet;
@@ -109,13 +121,14 @@
 
       //open twitter on data-point click
       ui.on('twitter-bars', 'dataPointClick', function(data) {
-        var data = data.rowData['User Twitter'];
+        console.log(data)
+        var data = data.rowData['Twitter name'];
 
         window.open('https://twitter.com/intent/tweet?text='+tweet(data),'popUpWindow','height=400,width=600,left=10,top=10,menubar=no');
       });
 
       ui.on('twitter-donut', 'dataPointClick', function(data) {
-        var data = data.rowData['User Twitter'];
+        var data = data.rowData['Twitter name'];
 
         window.open('https://twitter.com/intent/tweet?text='+tweet(data),'popUpWindow','height=400,width=600,left=10,top=10,menubar=no');
       });
