@@ -29,7 +29,7 @@ $(function(){
     var prev = appId > 0 ? data[appId-1] : data[data.length-1];
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
-    //remove klout-report from navigation
+    //remove top-influencers from navigation
     if (prev.category === 'top-influencers') {
       prev = appId > 0 ? data[appId-2] : data[data.length-2];
     } else if (next.category === 'top-influencers') {
@@ -38,15 +38,17 @@ $(function(){
 
     //update page title
     var title;
+    //extra regex to prep top-influencers title from url params
     if (app.category === 'top-influencers' && location.search.substr(1)) {
-      title = location.search.substr(1).replace(/%/g, ' ') + '\'s ' + app.category.replace(/-/g, ' ');
+      var company = location.search.substr(1).match(/[^&]*/)[0];
+      title = company.replace(/%20/g, ' ') + '\'s ' + app.category.replace(/-/g, ' ');
     } else {
       title = app.category.replace(/-/g, ' ');
       title = title.substr(0,1).toUpperCase() + title.substr(1);
     }
     var $title = $('#app-title');
 
-    //prepend name for klout-report
+    //append Reflect to page specific title
     $title.text(title + ' / Reflect');
 
     //build features list
