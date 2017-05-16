@@ -29,11 +29,11 @@ $(function(){
     var prev = appId > 0 ? data[appId-1] : data[data.length-1];
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
-    //remove top-influencers from navigation
-    if (prev.category === 'top-influencers') {
-      prev = appId > 0 ? data[appId-2] : data[data.length-2];
-    } else if (next.category === 'top-influencers') {
-      next = data.length > appId+2 ? data[appId+2] : data[0];
+    //remove custom demos from navigation
+    if (prev.category === 'top-influencers' || prev.category === 'MarTech-2017') {
+      prev = data[data.length-3];
+    } else if (next.category === 'top-influencers' || next.category === 'MarTech-2017') {
+      next = data[0];
     }
 
     //update page title
