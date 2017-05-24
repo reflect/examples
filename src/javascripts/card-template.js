@@ -4,7 +4,7 @@ $(function(){
     var $list = $('.card-list');
 
     app.forEach(function(d) {
-      if (d.category !== 'top-influencers') {
+      if (d.category !== 'top-influencers' && d.category !== 'MarTech-2017') {
         var title = d.category.replace(/-/g, ' ');
 
         //build features list
