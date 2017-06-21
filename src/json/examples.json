@@ -54,6 +54,15 @@
     "dataset": "world-earthquakes.csv"
   },
   {
+    "name": "cereal",
+    "category": "theming",
+    "description": "Brand your Reflect visualizations using our SAAS framework. Easily effect fonts, palettes, borders, and more.",
+    "mainGoal": "Toggle between the light and dark themes",
+    "secondaryGoal": "Download the table data by clicking <em>Export</em>",
+    "features": ["theming"],
+    "dataset": "cereal.csv"
+  },
+  {
     "name": "klout-analytics-scraper",
     "category": "top-influencers",
     "description": "Give a shoutout to those that matter most. At Reflect, we love building <a target='_blank' href='https://reflect.io/contact-us'>free custom demos</a> and <a target='_blank' href='https://reflect.io'>making good impressions</a>.",

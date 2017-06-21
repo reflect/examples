@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link href="../src/stylesheets/main.css" rel="stylesheet" />
     <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <link title="dark-theme" type="text/css" rel="stylesheet" href="https://cdn.reflect.io/latest/reflect-dark.css" disabled/>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.reflect.io/latest/reflect.js"></script>
     <script src="../src/javascripts/app-template.js"></script>
@@ -24,10 +25,8 @@
       <div class="toolbar">
         <div id="app-instruction"></div>
         <div class="controls">
-          <button value="West" class="region-btn">West</button>
-          <button value="South" class="region-btn">South</button>
-          <button value="Northeast" class="region-btn desktop-only">Northeast</button>
-          <button value="" class="clear-btn">All</button>
+          <button id="light-theme-btn" value="Light" class="theme-btn active">Light theme</button>
+          <button id="dark-theme-btn" value="Dark" class="theme-btn">Dark theme</button>
         </div>
       </div>
 
@@ -48,45 +47,33 @@
 
       //call to render the view
       function render() {
-        ui.view(document.getElementById('view'), 'cOFq5xbNSymzKXIlegKL5A');
+        ui.view(document.getElementById('view'), '_F86bgKwS9ezPWYWZ6T2UQ');
       }
 
-      //format percentage metrics (can also be done in-app)
-      ui.withFormatters({
-        'Alcohol Impaired': function(d) {
-          return d + '%';
-        },
-        'First Accident': function(d) {
-          return d + '%';
-        },
-        'Speeding': function(d) {
-          return d + '%';
-        }
-      });
-
-      //render the view
+      //render on page load
       render();
 
-      //filter by region on button click
-      $('.region-btn').click(function(e) {
-        var region = {
-          field: 'Region',
-          op: '=',
-          value: e.target.value,
-          removable: true
+      //toggle themes on toolbar button click
+      $('.theme-btn').click(function(e) {
+        var theme = e.target.value;
+
+        if (theme === "Dark") {
+          $('link[title="dark-theme"]').prop('disabled', false);
+          $('.viz-dom-node').css('color', '#ECEBEA');
+          $('.view-container').css('background-color', '#333333');
+
+          $('#dark-theme-btn').addClass('active');
+          $('#light-theme-btn').removeClass('active');
+        } else {
+          $('link[title="dark-theme"]').prop('disabled', true);
+          $('.viz-dom-node').css('color', 'black');
+          $('.view-container').css('background-color', 'white');
+
+          $('#light-theme-btn').addClass('active');
+          $('#dark-theme-btn').removeClass('active');
         }
-
-        ui.withFilters([region]);
-
-        render();
       });
 
-      //clear filter with empty array
-      $('.clear-btn').click(function(e) {
-        ui.withFilters([]);
-
-        render();
-      });
     </script>
   </body>
 </html>

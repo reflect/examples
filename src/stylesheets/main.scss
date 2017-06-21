@@ -36,6 +36,9 @@ $mobile: 799px;
   &.parameters {
     color: #FF03A6;
   }
+  &.theming {
+    color: #269CFF;
+  }
   &.interactions {
     color: orange;
   }
@@ -250,12 +253,12 @@ hr {
 //app container
 .view-container {
   @include border-btm-default;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem;
   min-height: 400px;
   overflow: hidden;
 
   @media (max-width: $mobile) {
-    padding: 5px;
+    padding: 15px 5px 5px;
   }
 }
 
@@ -508,6 +511,7 @@ hr {
 }
 
 //REFLECT
+
 // Bars for klout report
 .klout-report {
   .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
@@ -562,16 +566,6 @@ hr {
     color: $blue;
     content: 'View is locked! Please authenticate.'
   }
-}
-
-
-
-.viz-icon-plus:before {
-  content: '+' !important;
-}
-
-.viz-icon-cancel-circled:before {
-  content: '\00D7' !important;
 }
 
 @media (max-width: $mobile) {

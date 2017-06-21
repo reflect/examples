@@ -3,6 +3,7 @@ var featureUrls = {
   custom_colors: "https://reflect.io/docs/platform/embedding#Customcolors",
   filters: "https://reflect.io/docs/platform/embedding#Filters",
   parameters: "https://reflect.io/docs/platform/authentication#Parameterizedviews",
+  theming: "https://reflect.io/docs/platform/theming",
   formatters: "https://reflect.io/docs/platform/embedding#Formatters",
   interactions: "https://reflect.io/docs/platform/embedding#Interactions",
   custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews",
