@@ -253,7 +253,7 @@ hr {
 //app container
 .view-container {
   @include border-btm-default;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1rem;
   min-height: 400px;
   overflow: hidden;
 
