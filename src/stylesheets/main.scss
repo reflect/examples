@@ -258,7 +258,7 @@ hr {
   overflow: hidden;
 
   @media (max-width: $mobile) {
-    padding: 5px;
+    padding: 15px 5px 5px;
   }
 }
 
@@ -511,6 +511,7 @@ hr {
 }
 
 //REFLECT
+
 // Bars for klout report
 .klout-report {
   .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
@@ -565,16 +566,6 @@ hr {
     color: $blue;
     content: 'View is locked! Please authenticate.'
   }
-}
-
-
-
-.viz-icon-plus:before {
-  content: '+' !important;
-}
-
-.viz-icon-cancel-circled:before {
-  content: '\00D7' !important;
 }
 
 @media (max-width: $mobile) {
