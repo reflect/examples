@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link href="../src/stylesheets/main.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <link title="dark-theme" type="text/css" rel="stylesheet" href="https://cdn.reflect.io/latest/reflect-dark.css" disabled/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <script src="../src/javascripts/app-template.js"></script>
+    <script src="../src/javascripts/external.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+      </header>
+
+      <div class="toolbar">
+        <div id="app-instruction"></div>
+        <div class="controls">
+          <button id="light-theme-btn" value="Light" class="theme-btn active">Light theme</button>
+          <button id="dark-theme-btn" value="Dark" class="theme-btn">Dark theme</button>
+        </div>
+      </div>
+
+      <!-- Where the view gets rendered -->
+      <div class="view-container">
+        <div id="view"></div>
+      </div>
+
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render the view
+      function render() {
+        ui.view(document.getElementById('view'), '_ex-5cF9Qym2c65eAWTx7Q');
+      }
+
+      //render on page load
+      render();
+
+      //toggle themes on toolbar button click
+      $('.theme-btn').click(function(e) {
+        var theme = e.target.value;
+
+        if (theme === "Dark") {
+          $('link[title="dark-theme"]').prop('disabled', false);
+          $('.viz-dom-node').css('color', '#ECEBEA');
+          $('.view-container').css('background-color', '#333333');
+
+          $('#dark-theme-btn').addClass('active');
+          $('#light-theme-btn').removeClass('active');
+        } else {
+          $('link[title="dark-theme"]').prop('disabled', true);
+          $('.viz-dom-node').css('color', 'black');
+          $('.view-container').css('background-color', 'white');
+
+          $('#light-theme-btn').addClass('active');
+          $('#dark-theme-btn').removeClass('active');
+        }
+      });
+
+    </script>
+  </body>
+</html>
