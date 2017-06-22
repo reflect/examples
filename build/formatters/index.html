@@ -24,12 +24,12 @@
       <div class="toolbar">
         <div id="app-instruction"></div>
         <div class="controls">
-          <button id="toggle-formatters">Remove custom formatters</button>
+          <button id="toggle-formatters" class="active">Apply formatters</button>
         </div>
       </div>
 
       <!-- Where the view gets rendered -->
-      <div class="view-container">
+      <div class="view-container formatters-demo">
         <div id="view"></div>
       </div>
 
@@ -99,28 +99,7 @@
         });
       };
 
-      //custom colors object
-      var rudeColors = {
-        'No, not at all rude': 'lightgreen',
-        'No, not rude at all': 'lightgreen',
-        'Yes, somewhat rude': 'lightsalmon',
-        'Yes, very rude': 'lightcoral',
-        '(empty)': 'lightgrey'
-      };
-
-      //call to apply custom colors
-      function applyColors() {
-        ui.withColors({
-          'Is it rude to wake a passenger to walk around?': rudeColors,
-          'Is it rude to wake a passenger to use bathroom?': rudeColors,
-          'Is it rude to move to an unsold seat?': rudeColors,
-          'Is it rude to fly with unruly children?': rudeColors
-        });
-      };
-
       //apply formatters and colors, and render the view
-      applyFormatters();
-      applyColors();
       render();
 
       //call to clear formatters with empty object
@@ -136,12 +115,13 @@
           removeFormatters();
           render();
 
-          $('#toggle-formatters').text('Apply custom formatters').addClass('active');
+          $('#toggle-formatters').text('Apply formatters').addClass('active');
         } else {
           applyFormatters();
+          $('#jurfWr30SiiPlM8Nt0QJpg-2-grid-item').attr("id","default-styles");
           render();
 
-          $('#toggle-formatters').text('Remove custom formatters').removeClass('active');
+          $('#toggle-formatters').text('Remove formatters').removeClass('active');
         }
       });
     </script>

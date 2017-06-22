@@ -329,18 +329,18 @@ hr {
     }
   }
 
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-
   input {
     width: 160px;
 
     &.dateInput {
       width: 140px;
     }
+  }
+
+  select, #major-btn {
+    font-size: 1rem;
+    padding: 2px 6px 3px;
+    box-shadow: none;
   }
 }
 
@@ -512,6 +512,74 @@ hr {
 
 //REFLECT
 
+.view-container {
+  background-color: white;
+}
+
+.viz-view-container .viz-view-message-container {
+  position: relative !important;
+  margin-top: 100px;
+
+  //give extra notice for demonstration sake
+  &:after {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 80px;
+    color: $blue;
+    content: 'View is locked! Please authenticate.'
+  }
+}
+
+// Donut for custom colors
+$base-color: dimgrey;
+
+#jurfWr30SiiPlM8Nt0QJpg-2-grid-item {
+  .viz-pie .viz-pie-arc:nth-of-type(1) {
+    fill: $base-color !important;
+    stroke: $base-color !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(1) .viz-series-indicator {
+    background: $base-color !important;
+  }
+  .viz-pie .viz-pie-arc:nth-of-type(1) {
+    fill:lighten($base-color, 10%) !important;
+    stroke:lighten($base-color, 10%) !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(2) .viz-series-indicator {
+    background:lighten($base-color, 10%) !important;
+  }
+  .viz-pie .viz-pie-arc:nth-of-type(2) {
+    fill:lighten($base-color, 20%) !important;
+    stroke:lighten($base-color, 20%) !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(1) .viz-series-indicator {
+    background:lighten($base-color, 20%) !important;
+  }
+  .viz-pie .viz-pie-arc:nth-of-type(3) {
+    fill:lighten($base-color, 30%) !important;
+    stroke:lighten($base-color, 30%) !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(3) .viz-series-indicator {
+    background:lighten($base-color, 30%) !important;
+  }
+  .viz-pie .viz-pie-arc:nth-of-type(4) {
+    fill:lighten($base-color, 40%) !important;
+    stroke:lighten($base-color, 40%) !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(4) .viz-series-indicator {
+    background:lighten($base-color, 40%) !important;
+  }
+  .viz-pie .viz-pie-arc:nth-of-type(5) {
+    fill:lighten($base-color, 50%) !important;
+    stroke:lighten($base-color, 50%) !important;
+  }
+  .viz .viz-legend .viz-series:nth-of-type(5) .viz-series-indicator {
+    background:lighten($base-color, 50%) !important;
+  }
+}
+
 // Bars for klout report
 .klout-report {
   .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
@@ -548,23 +616,12 @@ hr {
   }
 }
 
-.view-container {
-  background-color: white;
-}
+// Theming demo exterior styles
+.view-container.theming-demo {
+  background-color: #333333;
 
-.viz-view-container .viz-view-message-container {
-  position: relative !important;
-  margin-top: 100px;
-
-  //give extra notice for demonstration sake
-  &:after {
-    position: absolute;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 80px;
-    color: $blue;
-    content: 'View is locked! Please authenticate.'
+  .viz-dom-node {
+    color: #ECEBEA;
   }
 }
 

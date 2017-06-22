@@ -114,12 +114,14 @@
         if (colorsOn) {
           removeColors();
           render();
+          $('#jurfWr30SiiPlM8Nt0QJpg-2-grid-item').attr("id","default-component-styles");
 
           $('#toggle-colors').text('Apply custom colors').addClass('active');
         } else {
           applyColors();
           render();
 
+          $('#default-component-styles').attr("id","jurfWr30SiiPlM8Nt0QJpg-2-grid-item");
           $('#toggle-colors').text('Remove custom colors').removeClass('active');
         }
       });
