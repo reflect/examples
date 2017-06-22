@@ -21,9 +21,9 @@
     "name": "airline-survey",
     "category": "formatters",
     "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
-    "mainGoal": "Toggle custom formatters and selected dimensions.",
-    "secondaryGoal": "Note how custom colors are used to imply aggreableness.",
-    "features": ["formatters", "custom colors"],
+    "mainGoal": "Apply formatters to clarify the data.",
+    "secondaryGoal": "Explore new dimensions with dropdown controls.",
+    "features": ["formatters"],
     "dataset": "airlines-survey.csv"
   },
   {
