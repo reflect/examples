@@ -329,18 +329,18 @@ hr {
     }
   }
 
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-
   input {
     width: 160px;
 
     &.dateInput {
       width: 140px;
     }
+  }
+
+  select, #major-btn {
+    font-size: 1rem;
+    padding: 2px 6px 3px;
+    box-shadow: none;
   }
 }
 

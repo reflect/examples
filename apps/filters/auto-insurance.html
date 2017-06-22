@@ -24,10 +24,9 @@
       <div class="toolbar">
         <div id="app-instruction"></div>
         <div class="controls">
-          <button value="West" class="region-btn">West</button>
+          <button value="West" class="region-btn active">West</button>
           <button value="South" class="region-btn">South</button>
-          <button value="Northeast" class="region-btn desktop-only">Northeast</button>
-          <button value="" class="clear-btn">All</button>
+          <button value="Northeast" class="region-btn">Northeast</button>
         </div>
       </div>
 
@@ -51,6 +50,18 @@
         ui.view(document.getElementById('view'), 'cOFq5xbNSymzKXIlegKL5A');
       }
 
+      //call to filter by region
+      function filterByRegion(tag) {
+        var region = {
+          field: 'Region',
+          op: '=',
+          value: tag,
+          removable: true
+        }
+
+        ui.withFilters([region]);
+      }
+
       //format percentage metrics (can also be done in-app)
       ui.withFormatters({
         'Alcohol Impaired': function(d) {
@@ -65,25 +76,14 @@
       });
 
       //render the view
+      filterByRegion('West');
       render();
 
       //filter by region on button click
       $('.region-btn').click(function(e) {
-        var region = {
-          field: 'Region',
-          op: '=',
-          value: e.target.value,
-          removable: true
-        }
-
-        ui.withFilters([region]);
-
-        render();
-      });
-
-      //clear filter with empty array
-      $('.clear-btn').click(function(e) {
-        ui.withFilters([]);
+        filterByRegion(e.target.value);
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
 
         render();
       });
