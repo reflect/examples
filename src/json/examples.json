@@ -3,8 +3,8 @@
     "name": "video-games",
     "category": "custom-colors",
     "description": "Assign unique color values to fields to improve legibility. Easily tie metrics to their visual cues and swap colors on the fly.",
-    "mainGoal": "Toggle custom colors and selected fields.",
-    "secondaryGoal": "Click on a timeseries data point to filter the entire view.",
+    "mainGoal": "Remove custom coloring to return to default styles.",
+    "secondaryGoal": "Click on a timeseries legend item to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
     "dataset": "games-sales.csv"
   },
@@ -22,7 +22,7 @@
     "category": "formatters",
     "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
     "mainGoal": "Apply formatters to clarify the data.",
-    "secondaryGoal": "Explore new dimensions with dropdown controls.",
+    "secondaryGoal": "Explore new questions with dropdown controls.",
     "features": ["formatters"],
     "dataset": "airlines-survey.csv"
   },
