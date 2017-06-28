@@ -11,7 +11,7 @@
   {
     "name": "auto-insurance",
     "category": "filters",
-    "description": "Filter your components and views with flexbile controls. Include a filter bar from the app or build triggers, simply.",
+    "description": "Filter your components and views with flexible controls. Include a filter bar from the app or build triggers, simply.",
     "mainGoal": "Swap regional filters using custom buttons.",
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
     "features": ["filters", "custom controls"],
