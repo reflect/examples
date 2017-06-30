@@ -56,7 +56,7 @@
   {
     "name": "cereal",
     "category": "theming",
-    "description": "Brand your Reflect visualizations using our SAAS framework. Easily effect fonts, palettes, borders, and more.",
+    "description": "Brand your Reflect visualizations using our SaaS framework. Easily effect fonts, palettes, borders, and more.",
     "mainGoal": "Toggle between the light and dark themes",
     "secondaryGoal": "Download the table data by clicking <em>Export</em>",
     "features": ["theming"],
