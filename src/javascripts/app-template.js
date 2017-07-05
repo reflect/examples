@@ -8,7 +8,8 @@ var featureUrls = {
   interactions: "https://reflect.io/docs/platform/embedding#Interactions",
   custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews",
   custom_components: "https://reflect.io/docs/platform/embedding#Customcomponenttypes",
-  dates: "https://reflect.io/docs/platform/embedding#Dateranges"
+  dates: "https://reflect.io/docs/platform/embedding#Dateranges",
+  template: "https://github.com/reflect/examples/tree/master/apps"
 }
 
 $(function(){

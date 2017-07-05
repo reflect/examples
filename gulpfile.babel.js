@@ -89,7 +89,7 @@ gulp.task('watch:html', ['index', 'views'], () => {
 
 // App misc
 gulp.task('misc', () => {
-  return gulp.src(['apps/**/*.css', 'apps/**/*.js'])
+  return gulp.src(['apps/**/*'])
     .pipe(gulp.dest('build'))
 });
 
@@ -134,7 +134,7 @@ gulp.task('watch', ['server'], () => {
   gulp.watch('src/json/*', ['json']);
 
   // per app misc
-  gulp.watch(['apps/*/*.css', 'apps/*/*.js'], ['watch:misc']);
+  gulp.watch(['apps/**/*'], ['watch:misc']);
 
   // views + index
   gulp.watch(['apps/*/*.html', './index.html'], ['watch:html']);

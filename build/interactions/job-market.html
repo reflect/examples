@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link href="../src/stylesheets/main.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <script src="../src/javascripts/app-template.js"></script>
+    <script src="../src/javascripts/external.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+      </header>
+
+      <div class="toolbar">
+        <div id="app-instruction"></div>
+        <div class="controls">
+          <div id="industry-controls">
+            <select name="major-selects">
+              <option value="Biology &amp; Life Science">Biology &amp; Life Science</option>
+              <option value="Business">Business</option>
+              <option value="Computers &amp; Mathematics">Computers &amp; Mathematics</option>
+              <option value="Education">Education</option>
+              <option selected value="Engineering">Engineering</option>
+              <option value="Humanities &amp; Liberal Arts">Humanities &amp; Liberal Arts</option>
+            </select>
+          </div>
+          <div id="major-controls"></div>
+        </div>
+      </div>
+
+      <!-- Where the view gets rendered -->
+      <div class="view-container">
+        <div id="view"></div>
+      </div>
+
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render the view
+      function render() {
+        ui.view(document.getElementById('view'), '7XPWmuD7TnCnbGCfoMIaJw');
+      }
+
+      //call to filter by Industry
+      function applyFilters(field, value) {
+        ui.withFilters([{
+          "field": field,
+          "op": "=",
+          "value": value
+        }]);
+      }
+
+      //call to format the title-casing of Major names
+      function applyFormatters() {
+        ui.withFormatters({
+          Major: function(d) {
+            return (d.substr(0,1).toUpperCase() + d.substr(1));
+          }
+        });
+      }
+
+      //apply default filter, formatters, and render the view
+      applyFilters('Major Category', 'Engineering');
+      applyFormatters();
+      render();
+
+      // filter by Industry using select
+      $('select[name=major-selects]').change(function() {
+        var newIndustry = $(this).val();
+
+        applyFilters('Major Category', newIndustry);
+        render();
+      });
+
+      //call to swap views and drill into Major
+      function swapViews(data) {
+        var major = data.rowData.Major;
+        var industry = $('select[name=major-selects]').find(":selected").text();
+
+        applyFilters('Major', major);
+        applyFormatters();
+
+        //swap views using same REFLECT instance
+        ui.view(document.getElementById('view'), 'l-kIPEYKS7-xsQPJ5IJrhQ');
+
+        $('#major-controls').html('<button id="major-btn">' + major + '&nbsp;&nbsp;<span>&times;</span></button>');
+        $('#industry-controls').addClass('hidden');
+
+        //revert view and remove Major filter
+        $('#major-btn').click(function() {
+          applyFilters('Major Category', industry);
+          render();
+
+          $('#major-controls').html('');
+          $('#industry-controls').removeClass('hidden');
+        });
+      }
+
+      //click on a data point to trigger view swap
+      ui.on('bars-salary', 'dataPointClick', function(data) {
+        swapViews(data)
+      });
+    </script>
+  </body>
+</html>
