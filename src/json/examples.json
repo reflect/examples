@@ -1,8 +1,26 @@
 [
   {
+    "name": "ad-retargeting",
+    "category": "adtech-sample-app",
+    "description": "Create full-scale analytics apps with lightweight Bootstrap templating and Reflect. This app is ready to fork and re-use.",
+    "mainGoal": "NA",
+    "secondaryGoal": "NA",
+    "features": ["interactions","template"],
+    "dataset": "NA"
+  },
+  {
+    "name": "cereal",
+    "category": "theming",
+    "description": "Brand your Reflect visualizations using our SaaS framework. Easily effect fonts, palettes, borders, and more.",
+    "mainGoal": "Toggle between the light and dark themes",
+    "secondaryGoal": "Download the table data by clicking <em>Export</em>",
+    "features": ["theming"],
+    "dataset": "cereal.csv"
+  },
+  {
     "name": "video-games",
     "category": "custom-colors",
-    "description": "Assign unique color values to fields to improve legibility. Easily tie metrics to their visual cues and swap colors on the fly.",
+    "description": "Assign unique color values to dimensions to build associations. Maintain visual consistency and swap colors on the fly.",
     "mainGoal": "Remove custom coloring to return to default styles.",
     "secondaryGoal": "Click on a timeseries legend item to filter the entire view.",
     "features": ["custom colors", "filters", "interactions"],
@@ -52,15 +70,6 @@
     "secondaryGoal": "Change the date inputs to filter the view.",
     "features": ["custom components", "dates"],
     "dataset": "world-earthquakes.csv"
-  },
-  {
-    "name": "cereal",
-    "category": "theming",
-    "description": "Brand your Reflect visualizations using our SaaS framework. Easily effect fonts, palettes, borders, and more.",
-    "mainGoal": "Toggle between the light and dark themes",
-    "secondaryGoal": "Download the table data by clicking <em>Export</em>",
-    "features": ["theming"],
-    "dataset": "cereal.csv"
   },
   {
     "name": "klout-analytics-scraper",
