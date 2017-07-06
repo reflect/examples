@@ -58,12 +58,6 @@
         <div id="view"></div>
       </div>
 
-
-
-
-
-
-
       <!--   Core JS Files   -->
     	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
@@ -78,14 +72,17 @@
         //instantiate new instance
         var ui = new ReflectUI();
 
-        //call to render view
+        //call to render the view
         function render() {
-          ui.view(document.getElementById('view'), 'cr8YQqn4RgGTyukrjqIFKw');
+          if ($(window).width() < 750) {
+            ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
+          } else {
+            ui.view(document.getElementById('view'), 'gf3vzhAJRy23C_4Fxg6ayg');
+          }
         }
 
         //render view
         render();
-
 
         // date toggle //
         var oneMonth = moment().subtract(1,'month').format('YYYY-MM-DD');
@@ -104,7 +101,20 @@
 
           render();
         });
-
       </script>
+
+      <!-- Swap views for better mobile viewing -->
+    	<script type="text/javascript">
+    		var startSize = $(window).width();
+    		window.onresize = function(event) {
+    			if ($(window).width() < 750 && startSize >= 750) {
+    				ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
+    			} else if ($(window).width() >= 750 && startSize < 750) {
+    				ui.view(document.getElementById('view'), 'gf3vzhAJRy23C_4Fxg6ayg');
+    			}
+
+    			startSize = $(window).width();
+    		};
+    	</script>
   </body>
 </html>
