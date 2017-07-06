@@ -197,15 +197,19 @@
 
 	<!-- Swap views for better mobile viewing -->
 	<script type="text/javascript">
-		var screenSize = $(window).width();
+		var startSize = $(window).width();
 		window.onresize = function(event) {
-			if ($(window).width() < 750 && screenSize >= 750) {
+			if ($(window).width() < 750 && startSize >= 750) {
+				ui.withFilters({});
+
 				ui.view(document.getElementById('view'), 'ut5x8iIiSxqY3d8HZNApiA');
-			} else if ($(window).width() >= 750 && screenSize < 750) {
+			} else if ($(window).width() >= 750 && startSize < 750) {
+				ui.withFilters({});
+
 				ui.view(document.getElementById('view'), 'ufLtfaBpTMaR0JKl3cmNfQ');
 			}
 
-			screenSize = $(window).width();
+			startSize = $(window).width();
 		};
 	</script>
 
