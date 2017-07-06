@@ -9,6 +9,15 @@
     "dataset": "NA"
   },
   {
+    "name": "ecommerce-game-sales",
+    "category": "ecommerce-sample-app",
+    "description": "Create full-scale analytics apps with lightweight Bootstrap templating and Reflect. This app is ready to fork and re-use.",
+    "mainGoal": "NA",
+    "secondaryGoal": "NA",
+    "features": ["theming","template"],
+    "dataset": "NA"
+  },
+  {
     "name": "cereal",
     "category": "theming",
     "description": "Brand your Reflect visualizations using our SaaS framework. Easily effect fonts, palettes, borders, and more.",

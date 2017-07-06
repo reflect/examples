@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title id="app-title"></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link href="../src/stylesheets/main.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.reflect.io/latest/reflect.js"></script>
+    <script src="../src/javascripts/app-template.js"></script>
+    <script src="../src/javascripts/external.js"></script>
+  </head>
+  <body>
+    <div class="container custom-report">
+      <header>
+        <a href="../">
+          <img class="logo" src="../src/images/reflect-logo-bw.svg" alt="Reflect logo">
+        </a>
+        <div id="app-header"></div>
+        <div>
+          <h2 id="results">Click on a data point to drill in.</h2>
+        </div>
+      </header>
+
+      <!-- Where the view gets rendered -->
+      <div class="view-container klout-report">
+        <div id="view"></div>
+      </div>
+
+      <div id="app-navigation"></div>
+      <div id="app-footer"></div>
+    </div>
+
+    <!-- REFLECT view -->
+    <script type="text/javascript">
+
+      //instantiate new instance
+      var ui = new ReflectUI();
+
+      //call to render view
+      function render() {
+        ui.view(document.getElementById('view'), 'xQYWgm3PTdqU8t-MxAXjGg');
+      }
+
+      //call to filter and render new view
+      function drillIn(data, field, view) {
+        var data = data.rowData[field];
+        var category = {
+          field: field,
+          op: '=',
+          value: data
+        }
+
+        ui.withFilters([
+          category
+        ]);
+
+        ui.view(document.getElementById('view'), view);
+
+        return data;
+      }
+
+      //render view
+      render();
+
+      //drill into categories
+      ui.on('categories-pie', 'dataPointClick', function(data) {
+
+        data = drillIn(data, 'Category', '3pGVnwphRAyhXGXUebxU_Q');
+
+        $('#results').html('<strong>Category</strong>: ' + data);
+      });
+
+      //drill into sub-categories
+      ui.on('sub-categories-pie', 'dataPointClick', function(data) {
+
+        data = drillIn(data, 'Sub Category', 'V8e_ZgCPQiGq9mYv7bg9aw');
+
+        $('#results').append('<br><strong>Sub-category</strong>: ' + data + '<br><br><button id="reset-btn">Reset</button>');
+
+        //revert view and remove filters
+        $('#reset-btn').click(function() {
+          $('#results').html('Click on a data point to drill in.');
+          ui.withFilters([]);
+          render();
+        });
+      });
+    </script>
+  </body>
+</html>
