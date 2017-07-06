@@ -4,7 +4,19 @@ html, body {
 
 .view-container {
   background: #130021;
-  margin-top: 50px;"
+  padding: 10px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+/* Navbar */
+.dropdown-toggle {
+  color: #5E5E5E !important;
+  text-decoration: none !important;
+  position: absolute;
+  top: 7.5px;
+  right: 15px;
+  display: none;
 }
 
 .dropdown-toggle img {
@@ -12,6 +24,20 @@ html, body {
   width: auto;
   border-radius: 50%;
   display: inline-block;
+}
+
+@media (min-width: 750px) {
+  .navbar-brand {
+    position: absolute;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .dropdown-toggle {
+    display: inline-block;
+  }
 }
 
 /* The switch - the box around the slider */
