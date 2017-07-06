@@ -1,6 +1,6 @@
 [
   {
-    "name": "ad-retargeting",
+    "name": "retargeting",
     "category": "adtech-sample-app",
     "description": "Create full-scale analytics apps with lightweight Bootstrap templating and Reflect. This app is ready to fork and re-use.",
     "mainGoal": "NA",
@@ -82,8 +82,8 @@
   },
   {
     "name": "martech",
-    "category": "MarTech-2017",
-    "description": "Get a leg up on competition with Reflect. Expand your existing platform with embedded analytics that match your brand.",
+    "category": "sample-prospector",
+    "description": "Find prospects by sector, then export and enhance.",
     "mainGoal": "Click on a data point to drill in!",
     "secondaryGoal": "Request a <a target='_blank' href='https://reflect.io/contact-us'>free custom demo</a>",
     "features": ["parameters", "interactions"],

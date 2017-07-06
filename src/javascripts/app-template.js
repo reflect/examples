@@ -32,9 +32,9 @@ $(function(){
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
     //remove custom demos from navigation
-    if (prev.category === 'top-influencers' || prev.category === 'MarTech-2017') {
+    if (prev.category === 'top-influencers' || prev.category === 'sample-prospector') {
       prev = data[data.length-3];
-    } else if (next.category === 'top-influencers' || next.category === 'MarTech-2017') {
+    } else if (next.category === 'top-influencers' || next.category === 'sample-prospector') {
       next = data[0];
     }
 

@@ -3,7 +3,7 @@ $(function(){
   $.get('./src/json/examples.json', function(app) {
     var $list = $('.card-list');
 
-    var ignoredApps = ['top-influencers', 'MarTech-2017'];
+    var ignoredApps = ['top-influencers', 'sample-prospector'];
 
     app.forEach(function(d) {
       if (ignoredApps.indexOf(d.category) < 0) {

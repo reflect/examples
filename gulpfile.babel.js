@@ -76,9 +76,6 @@ gulp.task('index', () => {
 // App views
 gulp.task('views', () => {
   return gulp.src('apps/**/*.html')
-    .pipe(rename(function(file) {
-      file.basename = 'index';
-    }))
     .pipe(gulp.dest('build'))
 });
 
@@ -89,7 +86,10 @@ gulp.task('watch:html', ['index', 'views'], () => {
 
 // App misc
 gulp.task('misc', () => {
-  return gulp.src(['apps/**/*'])
+  return gulp.src(['apps/**/*.css',
+                   'apps/**/*.js',
+                   'apps/**/*.ttf',
+                   'apps/**/*.woff'])
     .pipe(gulp.dest('build'))
 });
 
@@ -134,7 +134,7 @@ gulp.task('watch', ['server'], () => {
   gulp.watch('src/json/*', ['json']);
 
   // per app misc
-  gulp.watch(['apps/**/*'], ['watch:misc']);
+  gulp.watch(['apps/**/*.css', 'apps/**/*.js', 'apps/**/*.ttf', 'apps/**/*.woff'], ['watch:misc']);
 
   // views + index
   gulp.watch(['apps/*/*.html', './index.html'], ['watch:html']);
