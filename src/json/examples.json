@@ -1,6 +1,6 @@
 [
   {
-    "name": "retargeting",
+    "name": "adtech-sample-app",
     "category": "adtech-sample-app",
     "description": "Create ad and social reporting apps with just Bootstrap and Reflect. This template is ready to fork and re-use.",
     "mainGoal": "NA",
@@ -9,7 +9,7 @@
     "dataset": "NA"
   },
   {
-    "name": "ecomm-overview",
+    "name": "ecommerce-sample-app",
     "category": "ecommerce-sample-app",
     "description": "Create revenue and customer reporting apps with just Bootstrap and Reflect. This template is ready to fork and re-use.",
     "mainGoal": "NA",
