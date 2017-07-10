@@ -1,0 +1,101 @@
+html, body {
+  background: #130021;
+}
+
+.view-container {
+  background: #130021;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+/* Navbar */
+.dropdown-toggle {
+  color: #5E5E5E !important;
+  text-decoration: none !important;
+  position: absolute;
+  top: 7.5px;
+  right: 15px;
+  display: none;
+}
+
+.dropdown-toggle img {
+  height: 35px;
+  width: auto;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (min-width: 750px) {
+  .navbar-brand {
+    position: absolute;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .dropdown-toggle {
+    display: inline-block;
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 25px;
+  top: 12px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #808080;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #808080;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
