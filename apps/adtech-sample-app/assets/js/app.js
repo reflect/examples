@@ -1,11 +1,11 @@
 // page titles
 var titles = {
-  'Overview': 'Ad Retargeting | Overview',
-  'Facebook': 'Ad Retargeting | Facebook',
-  'Instagram': 'Ad Retargeting | Instagram',
-  'Twitter': 'Ad Retargeting | Twitter',
-  'LinkedIn': 'Ad Retargeting | LinkedIn',
-  'General Web': 'Ad Retargeting | Web',
+  'Summary': 'Ad Retargeting | <b>Summary</b>',
+  'Facebook': 'Ad Retargeting | <b>Facebook</b>',
+  'Instagram': 'Ad Retargeting | <b>Instagram</b>',
+  'Twitter': 'Ad Retargeting | <b>Twitter</b>',
+  'LinkedIn': 'Ad Retargeting | <b>LinkedIn</b>',
+  'General Web': 'Ad Retargeting | <b>Web</b>',
   'Contacts': 'My Network Contacts',
   'History': 'Campaign History'
 }
@@ -77,7 +77,7 @@ function render(ui, view) {
         ui.view(document.getElementById('view'), '0ROu0hKqSFCodgZTExaZmA');
 
         break;
-    case 'Overview':
+    case 'Summary':
         renderDefault(ui);
 
         break;
@@ -130,13 +130,13 @@ $(function() {
 
   window.onresize = function(event) {
     if ($(window).width() < 768 && startSize >= 768) {
-      updateTitle('Overview');
+      updateTitle('Summary');
       clearFilters(ui);
 
       ui.view(document.getElementById('view'), 'ut5x8iIiSxqY3d8HZNApiA');
     } else if ($(window).width() >= 768 && startSize < 768) {
-      updateTitle('Overview');
-      updateNav('Overview');
+      updateTitle('Summary');
+      updateNav('Summary');
       clearFilters(ui);
 
       ui.view(document.getElementById('view'), 'ufLtfaBpTMaR0JKl3cmNfQ');

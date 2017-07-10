@@ -8,15 +8,14 @@ html, body {
 
 a, button {
   text-decoration: none !important;
-  background: transparent !important;
   border: none !important;
   outline: none !important;
   font-weight: 100;
+  color: #717A87;
 }
 
-button.active {
-  background: rgba(255, 0, 0, 0.5) !important;
-  border-radius: 10%;
+label {
+  color: #717A87;
 }
 
 /* Sidebar */
@@ -25,15 +24,18 @@ button.active {
   text-align: center;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 14px;
   font-size: 18px;
   height: 75px;
+  padding: 14px;
 }
 
 .logo img {
   height: 45px;
   width: auto;
-  margin-right: 5px;
+}
+
+.logo a {
+  font-weight: 400;
 }
 
 .sidebar {
@@ -46,6 +48,12 @@ button.active {
 .sidebar a,
 .sidebar button {
   color: white;
+  background: transparent !important;
+}
+
+.sidebar button.active {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10%;
 }
 
 .sidebar .nav {
@@ -92,6 +100,10 @@ button.active {
   height: 75px;
 }
 
+.navigation {
+  background-color: transparent;
+}
+
 .navbar-brand {
   margin-left: -5px !important;
   color: #6D7A87 !important;
@@ -118,7 +130,7 @@ button.active {
 
 .logo-navbar {
   display: inline-block;
-  padding: 14px;
+  padding: 14px 12px 14px 14px;
   float: left;
 }
 
@@ -136,7 +148,7 @@ button.active {
 .settings img.avatar {
   height: 45px;
   width: auto;
-  border-radius: 50%;
+  border-radius: 10%;
   display: inline-block;
   border: 1px solid lightgrey;
 }
@@ -180,6 +192,16 @@ button.active {
 
   .navbar-brand {
     padding-left: 0;
+  }
+
+  .navbar-toggle {
+    padding-right: 10px;
+    margin-right: 14px;
+  }
+
+  .logo img {
+    height: 35px;
+    padding-top: 5px;
   }
 }
 
