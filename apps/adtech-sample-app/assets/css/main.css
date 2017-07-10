@@ -22,12 +22,12 @@ a, button {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 14px;
   font-size: 18px;
+  height: 75px;
 }
 
 .logo img {
   height: 45px;
   width: auto;
-  border-radius: 50%;
   margin-right: 5px;
 }
 
@@ -41,7 +41,6 @@ a, button {
 .sidebar a,
 .sidebar button {
   color: white;
-  text-transform: uppercase;
 }
 
 .sidebar .nav {
@@ -52,6 +51,7 @@ a, button {
 .sidebar .nav button {
   font-size: 16px;
   padding: 10px 15px;
+  text-transform: uppercase;
 }
 
 .sidebar .nav .glyphicon {

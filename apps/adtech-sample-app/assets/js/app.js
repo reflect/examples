@@ -1,13 +1,13 @@
 // page titles
 var titles = {
-  'Overview': 'Ad Retargeting || Overview',
-  'Facebook': 'Ad Retargeting || Facebook',
-  'Instagram': 'Ad Retargeting || Instagram',
-  'Twitter': 'Ad Retargeting || Twitter',
-  'LinkedIn': 'Ad Retargeting || LinkedIn',
-  'General Web': 'Ad Retargeting || Web',
-  'Contacts': 'My Contacts',
-  'History': 'Spend history'
+  'Overview': 'Ad Retargeting | Overview',
+  'Facebook': 'Ad Retargeting | Facebook',
+  'Instagram': 'Ad Retargeting | Instagram',
+  'Twitter': 'Ad Retargeting | Twitter',
+  'LinkedIn': 'Ad Retargeting | LinkedIn',
+  'General Web': 'Ad Retargeting | Web',
+  'Contacts': 'My Network Contacts',
+  'History': 'Campaign History'
 }
 
 // call to render default view
@@ -75,8 +75,9 @@ function render(ui, view) {
 
         break;
     case 'Facebook':
+    case 'Twitter':
         var data = {};
-        data.value = 'Facebook';
+        data.value = view;
 
         drillIntoDataPoint(ui, data);
 
