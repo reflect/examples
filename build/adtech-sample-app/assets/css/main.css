@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  background: #F7F7F8;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1600px;
+}
+
+a, button {
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  font-weight: 100;
+}
+
+/* Sidebar */
+.logo-sidebar {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background: #9459EA;
+  position: fixed;
+}
+
+.sidebar a,
+.sidebar button {
+  color: white;
+  text-transform: uppercase;
+}
+
+.sidebar .nav {
+  padding: 14px;
+}
+
+.sidebar .nav a,
+.sidebar .nav button {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.sidebar .nav .glyphicon {
+  color: rgba(255, 255, 255, 0.2);
+  margin-right: 10px;
+}
+
+.sidebar .nav .bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+.sidebar .nav .sub-nav {
+  margin-left: 45px;
+}
+
+.sidebar .nav .sub-nav button {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+
+/* Main panel*/
+.main-panel {
+  margin-left: 250px;
+}
+
+/* Navbar */
+.navbar {
+  margin-left: 250px;
+  background: rgba(255,255,255,.98);
+  height: 75px;
+}
+
+.navbar-brand {
+  margin-left: -5px !important;
+  color: #6D7A87 !important;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.navbar-toggle {
+  padding-right: 15px;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.navbar-collapse {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-collapse label {
+  margin-left: 15px;
+}
+
+.logo-navbar {
+  display: inline-block;
+  padding: 14px;
+  float: left;
+}
+
+.settings {
+  color: #5E5E5E !important;
+  text-decoration: none !important;
+  position: absolute;
+}
+
+.settings .glyphicon {
+  color: lightgrey;
+  font-size: 10px;
+}
+
+.settings img.avatar {
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid lightgrey;
+}
+
+.settings .dropdown-toggle {
+  background: transparent !important;
+}
+
+.settings .dropdown-menu {
+  border-radius: 5px !important;
+}
+
+.settings .dropdown-menu {
+  top: 70px;
+  right: 12px;
+}
+
+/* Visual content */
+.view-container {
+  margin-top: 75px;
+  padding: 5px 8px;
+}
+
+/* Desktop only styles */
+@media (min-width: 1001px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+/* Tablet down styles */
+@media (max-width: 1000px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+
+  .main-panel,
+  .navbar {
+    margin-left: 0 !important;
+  }
+
+  .navbar-brand {
+    padding-left: 0;
+  }
+}
+
+/* Mobile down styles */
+@media (max-width: 500px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  /* hide these elements on mobile */
+  .viz-legend,
+  .viz-controls,
+  .viz-options {
+    width: 0 !important;
+    padding: 0 !important;
+    display: none;
+  }
+
+  /* center tooltips */
+  .viz-tooltip {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: -5% !important;
+    left: 50% !important;
+    z-index: 99;
+    width: 100%;
+  }
+
+  /* allow tooltip to overlap other components */
+  .viz-visualization {
+    overflow: visible !important;
+    z-index: 0 !important;
+  }
+}
