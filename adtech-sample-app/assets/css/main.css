@@ -14,6 +14,11 @@ a, button {
   font-weight: 100;
 }
 
+button.active {
+  background: rgba(255, 0, 0, 0.5) !important;
+  border-radius: 10%;
+}
+
 /* Sidebar */
 .logo-sidebar {
   display: inline-block;
