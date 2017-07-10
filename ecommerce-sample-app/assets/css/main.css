@@ -6,7 +6,7 @@ html, body {
   background: #130021;
   padding: 10px;
   max-width: 1200px;
-  margin: 50px auto 0;
+  margin: 50px auto 0 250px;
 }
 
 /* Navbar */
@@ -26,15 +26,13 @@ html, body {
   display: inline-block;
 }
 
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 250px;
+}
+
 @media (min-width: 750px) {
-  .navbar-brand {
-    position: absolute;
-  }
-
-  .navbar-collapse {
-    text-align: center;
-  }
-
   .dropdown-toggle {
     display: inline-block;
   }
