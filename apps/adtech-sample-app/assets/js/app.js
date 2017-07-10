@@ -60,10 +60,17 @@ function updateTitle(page) {
   $('#page-title').html(titles[page]);
 }
 
+// call to update active nav item
+function updateNav(item) {
+  $('.sub-nav button.navigation').removeClass('active');
+  $('.sub-nav button.navigation[name=' + item + ']').addClass('active');
+}
+
 // call to switch Reflect views
 function render(ui, view) {
   clearFilters(ui);
   updateTitle(view);
+  updateNav(view);
 
   switch(view) {
     case 'Contacts':
@@ -89,6 +96,8 @@ function render(ui, view) {
     default:
         renderDefault(ui);
   }
+
+
 };
 
 $(function() {
@@ -121,12 +130,13 @@ $(function() {
 
   window.onresize = function(event) {
     if ($(window).width() < 768 && startSize >= 768) {
-      updateTitle('Overview')
+      updateTitle('Overview');
       clearFilters(ui);
 
       ui.view(document.getElementById('view'), 'ut5x8iIiSxqY3d8HZNApiA');
     } else if ($(window).width() >= 768 && startSize < 768) {
-      updateTitle('Overview')
+      updateTitle('Overview');
+      updateNav('Overview');
       clearFilters(ui);
 
       ui.view(document.getElementById('view'), 'ufLtfaBpTMaR0JKl3cmNfQ');
