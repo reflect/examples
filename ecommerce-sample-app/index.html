@@ -28,35 +28,52 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://reflect.github.io/examples/">SimpleShop | Customer Portal</a>
+            <a class="navbar-brand" href="https://reflect.github.io/examples/"><b>Simple</b>Shop | Customer Portal</a>
           </div>
 
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-left">
-              <li><a href="#about">Sales</a></li>
+              <li><a class="active" href="#about">Sales</a></li>
               <li><a href="#about">Inventory</a></li>
               <li><a href="#about">Invoices</a></li>
             </ul>
-            <div class="">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="assets/img/user-avatar.png" alt="user avatar"> Cody Allen
-              </a>
-            </div>
+            <!-- Settings -->
+            <ul class="nav navbar-nav navbar-right ">
+              <li class="dropdown settings hidden-xs">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img class="avatar" src="assets/img/user-avatar.png" alt="user avatar">
+                  Tom Scott
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Settings</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </li>
+						</ul>
           </div>
         </div>
       </nav>
 
       <div class="sidebar">
-        <p>Date range</p>
-        <ul class="nav">
-          <li class="top">
-            <button class="navigation" type="button" name="Contacts">
-              <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-              Contacts
-            </button>
-            
-          </li>
-        </ul>
+        <div class="nav-group">
+          <h4>Date range</h4>
+          <label class="switch">
+            <input id="dates-toggle" type="checkbox">
+            <div class="slider round"></div>
+          </label>
+          <label class="date-toggle toggle">Last month</label><br>
+          <label class="date-toggle toggle">Last week</label>
+        </div>
+        <div class="nav-group">
+          <h4>Customer type</h4>
+          <label class="switch">
+            <input id="types-toggle" type="checkbox">
+            <div class="slider round"></div>
+          </label>
+          <label class="type-toggle toggle">Business</label><br>
+          <label class="type-toggle toggle">Home</label>
+        </div>
       </div>
 
       <!-- Where the view gets rendered -->
@@ -107,6 +124,12 @@
 
           render();
         });
+
+        $('.date-toggle').click(function() {
+          $('#dates-toggle').click();
+        });
+
+
       </script>
 
       <!-- Swap views for better mobile viewing -->

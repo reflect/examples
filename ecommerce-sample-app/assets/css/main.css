@@ -2,6 +2,21 @@ html, body {
   background: #130021;
 }
 
+h4 {
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  font-weight: 200;
+}
+
+label {
+  font-weight: 600;
+}
+
+.sidebar label,
+.sidebar h4 {
+  color: white;
+}
+
 .view-container {
   background: #130021;
   padding: 10px;
@@ -10,26 +25,48 @@ html, body {
 }
 
 /* Navbar */
+.navbar-brand,
+.navbar-left a {
+  line-height: 25px !important;
+}
+
+.navbar-left a.active {
+  background: white;
+  font-weight: 700;
+}
+
 .dropdown-toggle {
-  color: #5E5E5E !important;
   text-decoration: none !important;
-  position: absolute;
-  top: 7.5px;
-  right: 15px;
+  background: transparent !important;
   display: none;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .dropdown-toggle img {
   height: 35px;
   width: auto;
   border-radius: 50%;
-  display: inline-block;
+  border: 1px solid grey;
+}
+
+.dropdown-menu {
+  left: 0 !important;
 }
 
 /* Sidebar */
 .sidebar {
   position: fixed;
   width: 250px;
+  padding: 60px 60px 30px 60px;
+}
+
+.sidebar .nav-group {
+  padding-bottom: 30px;
+}
+
+.toggle {
+  cursor: pointer;
 }
 
 @media (min-width: 750px) {
@@ -42,9 +79,10 @@ html, body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 52px;
-  height: 25px;
-  top: 12px;
+  width: 26px;
+  height: 52px;
+  top: 0;
+  float: left;
 }
 
 /* Hide default HTML checkbox */
@@ -58,7 +96,6 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -69,14 +106,10 @@ html, body {
   height: 18px;
   width: 18px;
   left: 4px;
-  bottom: 4px;
+  top: 0;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #808080;
 }
 
 input:focus + .slider {
@@ -84,9 +117,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateY(26px);
+  -ms-transform: translateY(26px);
+  transform: translateY(26px);
 }
 
 /* Rounded sliders */
