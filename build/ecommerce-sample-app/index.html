@@ -22,20 +22,31 @@
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="https://reflect.github.io/examples/"><b>Simple</b>Shop | Customer Portal</a>
+
+            <!-- Mobile Hamburger -->
+            <div class="hidden-sm hidden-md hidden-lg hidden-xl">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mobile-menu">
+                <ul class="nav navbar-nav">
+                  <a class="navigation" name="Sales" href="#sales">Sales</a>|
+                  <a class="navigation" name="Inventory" href="#inventory">Inventory</a>|
+                  <a class="navigation" name="Invoices" href="#invoices">Invoices</a>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-left">
-              <li><a class="active" href="#about">Sales</a></li>
-              <li><a href="#about">Inventory</a></li>
-              <li><a href="#about">Invoices</a></li>
+              <li><a name="Sales" class="navigation active" href="#sales">Sales</a></li>
+              <li><a name="Inventory" class="navigation" href="#inventory">Inventory</a></li>
+              <li><a name="Invoices" class="navigation" href="#invoices">Invoices</a></li>
             </ul>
             <!-- Settings -->
             <ul class="nav navbar-nav navbar-right ">
@@ -55,7 +66,7 @@
         </div>
       </nav>
 
-      <div class="sidebar">
+      <div class="sidebar hidden-tablet">
         <div class="nav-group">
           <h4>Date range</h4>
           <label class="switch">
@@ -92,11 +103,28 @@
       <script src="https://cdn.reflect.io/latest/reflect.js"></script>
       <script type="text/javascript">
 
-        //instantiate new instance
-        var ui = new ReflectUI();
+        // call to switch Reflect views
+        function render(ui, view) {
+          switch(view) {
+            case 'Sales':
+                renderDefault(ui);
 
-        //call to render the view
-        function render() {
+                break;
+            case 'Inventory':
+                ui.view(document.getElementById('view'), 'ohcofAiwRdyNMMaJDwb6ag');
+
+                break;
+            case 'Invoices':
+                ui.view(document.getElementById('view'), 'WC51OmKZQE-lN9RVik0U0Q');
+
+                break;
+            default:
+                renderDefault(ui);
+          }
+        };
+
+        // call to render default view
+        function renderDefault(ui) {
           if ($(window).width() < 750) {
             ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
           } else {
@@ -104,16 +132,46 @@
           }
         }
 
-        //render view
-        render();
+        // call to filter by customer type
+        function filterByCustomer(ui, tags) {
+          var customer = {
+            field: 'Customer Segment',
+            op: '=',
+            any: tags,
+            removable: true
+          }
 
-        // date toggle //
+          ui.withFilters([customer]);
+        }
+
+        // call to update active nav item
+        function updateNav(item) {
+          $('a.navigation').removeClass('active');
+          $('a.navigation[name=' + item + ']').addClass('active');
+        }
+
+        //instantiate new instance
+        var ui = new ReflectUI();
+
+        // swap views with navigation
+        $('a.navigation').click(function(e) {
+          var page = e.target.name;
+
+          updateNav(page)
+          render(ui, page);
+        });
+
+        // render the default view
+        renderDefault(ui);
+
+        // date toggle
         var oneMonth = moment().subtract(1,'month').format('YYYY-MM-DD');
         var oneWeek = moment().subtract(7,'d').format('YYYY-MM-DD');
         var today = moment().format('YYYY-MM-DD');
         var monthly = true;
 
         $('#dates-toggle').change(function() {
+          var page = $('a.navigation.active').attr('name');
           monthly = !monthly;
 
           if (monthly) {
@@ -122,11 +180,31 @@
             ui.withDates([oneWeek, today]);
           }
 
-          render();
+          $('.btn-download').attr('href');
+          render(ui, page);
         });
 
         $('.date-toggle').click(function() {
           $('#dates-toggle').click();
+        });
+
+        var business = true;
+
+        $('#types-toggle').change(function() {
+          var page = $('a.navigation.active').attr('name');
+          business = !business;
+
+          if (business) {
+            filterByCustomer(ui, ['Corporate', 'Small Business']);
+          } else {
+            filterByCustomer(ui, ['Consumer', 'Home Office']);
+          }
+
+          render(ui, page);
+        });
+
+        $('.type-toggle').click(function() {
+          $('#types-toggle').click();
         });
 
 

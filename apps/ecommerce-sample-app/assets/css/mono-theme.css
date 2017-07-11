@@ -337,7 +337,7 @@
   .viz-table tr:hover td {
     background: #f6f6f6; }
   .viz-table tr:last-child {
-    border-bottom: 1px solid rgba(255, 221, 56, 0.7); }
+    border-bottom: 1px solid rgba(19, 0, 33, 0.7); }
   .viz-table td {
     font-size: 16px;
     background: #fff;
@@ -5383,13 +5383,13 @@ a.rc-modal-close {
 .rc-menu-section {
   padding: 16px; }
   .rc-menu-section:not(last-of-type) {
-    border-bottom: 1px solid rgba(255, 221, 56, 0.7); }
+    border-bottom: 1px solid rgba(19, 0, 33, 0.7); }
 
 .rc-menu-header {
   display: -ms-flexbox;
   display: flex;
   padding: 7px 16px 9px;
-  border-bottom: 1px solid rgba(255, 221, 56, 0.7); }
+  border-bottom: 1px solid rgba(19, 0, 33, 0.7); }
   .rc-menu-header .rc-menu-close {
     display: -ms-flexbox;
     display: flex;

@@ -96,8 +96,6 @@ function render(ui, view) {
     default:
         renderDefault(ui);
   }
-
-
 };
 
 $(function() {
