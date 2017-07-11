@@ -46,7 +46,6 @@ function updateNav(item) {
 }
 
 $(function() {
-
   //instantiate new instance
   var ui = new ReflectUI();
 
@@ -64,7 +63,7 @@ $(function() {
   var today = moment().format('YYYY-MM-DD');
   var monthly = true;
 
-  $('#dates-toggle').change(function() {
+  $('#dates-toggle').click(function() {
     var page = $('a.navigation.active').attr('name');
     monthly = !monthly;
 
@@ -74,7 +73,6 @@ $(function() {
       ui.withDates([oneWeek, today]);
     }
 
-    $('.btn-download').attr('href');
     render(ui, page);
   });
 
@@ -86,7 +84,7 @@ $(function() {
   // toggle customer type
   var business = true;
 
-  $('#types-toggle').change(function() {
+  $('#types-toggle').click(function() {
     var page = $('a.navigation.active').attr('name');
     business = !business;
 
@@ -114,6 +112,9 @@ $(function() {
 
     startSize = $(window).width();
   };
+
+  // set starting customer type
+  filterByCustomer(ui, ['Corporate', 'Small Business']);
 
   // render the default view
   renderDefault(ui);
