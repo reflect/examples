@@ -105,8 +105,12 @@ $(function() {
   var startSize = $(window).width();
   window.onresize = function(event) {
     if ($(window).width() < 750 && startSize >= 750) {
+      updateNav('Sales');
+
       ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
     } else if ($(window).width() >= 750 && startSize < 750) {
+      updateNav('Sales');
+
       ui.view(document.getElementById('view'), 'gf3vzhAJRy23C_4Fxg6ayg');
     }
 
