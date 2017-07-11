@@ -1,6 +1,19 @@
-html, body {
-  max-width: 1600px;
+html {
+  height: 100%;
+  background: -webkit-radial-gradient(#282828, #140023); /* Safari */
+  background: -o-radial-gradient(#282828, #140023); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#282828, #140023); /* Firefox 3.6 to 15 */
+  background: radial-gradient(#282828, #140023); /* Standard syntax */
+}
+
+body {
   background: #130021;
+  height: 100%;
+}
+
+body, .navbar {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 h4 {
