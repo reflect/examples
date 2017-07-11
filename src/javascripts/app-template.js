@@ -86,7 +86,7 @@ $(function(){
 
     //populate the header
     var $header = $('#app-header');
-    var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/` + app.name + `.html`;
+    var githubLink = `https://github.com/reflect/examples/blob/master/apps/` + app.category + `/index.html`;
 
     $header.append(`
       <a id="github-header" target="_blank" class="fork-me desktop-only" href="` + githubLink + `">View on GitHub</a>
