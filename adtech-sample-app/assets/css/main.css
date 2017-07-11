@@ -96,7 +96,7 @@ label {
 /* Navbar */
 .navbar {
   margin-left: 250px;
-  background: rgba(255,255,255,.98);
+  background: #F7F7F8;
   height: 75px;
 }
 
@@ -120,7 +120,7 @@ label {
 
 .navbar-collapse {
   width: 100%;
-  background: white;
+  background: #fef9ff;
   border-bottom: 1px solid #e7e7e7;
 }
 

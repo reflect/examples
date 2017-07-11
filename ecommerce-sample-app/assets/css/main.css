@@ -1,4 +1,5 @@
 html, body {
+  max-width: 1600px;
   background: #130021;
 }
 
@@ -30,9 +31,23 @@ label {
   line-height: 25px !important;
 }
 
-.navbar-left a.active {
-  background: white;
-  font-weight: 700;
+.navbar-left a.active,
+.navbar-left a.active:hover,
+.navbar-left a.active:focus,
+.navbar-left a.active:active {
+  background: rgb(255, 221, 56) !important;
+  color: black !important;
+}
+
+.navbar-collapse {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-collapse a {
+  padding: 0 20px;
+  color: #130021 !important;
+  text-decoration: none !important;
 }
 
 .dropdown-toggle {
@@ -103,11 +118,11 @@ label {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   left: 4px;
-  top: 0;
-  background-color: white;
+  top: 2px;
+  background-color: #FFDD38;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -117,9 +132,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateY(26px);
-  -ms-transform: translateY(26px);
-  transform: translateY(26px);
+  -webkit-transform: translateY(24px);
+  -ms-transform: translateY(24px);
+  transform: translateY(24px);
 }
 
 /* Rounded sliders */
@@ -129,4 +144,27 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Tablet down styles */
+@media (max-width: 1000px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+
+  .view-container {
+    margin: 50px auto 0;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+
+  .navbar-collapse {
+    background: #FFDD38;
+  }
 }
