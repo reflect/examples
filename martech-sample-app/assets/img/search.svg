@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>zoom-bold</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Sidekick" transform="translate(-971.000000, -29.000000)" stroke="#ADB7C6" stroke-width="2">
+            <g id="Masthead" transform="translate(210.000000, 0.000000)">
+                <g id="zoom-bold" transform="translate(762.000000, 30.000000)">
+                    <polyline id="Shape" points="16.7 13.7 21.5 18.5 18.5 21.5 13.7 16.7"></polyline>
+                    <circle id="Oval" stroke-linecap="square" cx="9" cy="9" r="9"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

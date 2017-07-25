@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="32px" viewBox="0 0 138 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo Simple Shop Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SimpleShop-Dark---Hz" transform="translate(-57.000000, -34.000000)">
+            <g id="Masthead">
+                <g id="Logo-Simple-Shop-Blue" transform="translate(58.000000, 35.000000)">
+                    <text id="SimpleShop" font-family="OpenSans-BoldItalic, Open Sans" font-size="18" font-style="italic" font-weight="bold">
+                        <tspan x="39" y="21" fill="#45B0F8">Simple</tspan>
+                        <tspan x="96.2519531" y="21" fill="#ADB7C6">Shop</tspan>
+                    </text>
+                    <g id="cart-speed" stroke-width="2" stroke-linecap="square">
+                        <circle id="Oval" stroke="#45B0F8" cx="6" cy="27" r="3"></circle>
+                        <circle id="Oval" stroke="#45B0F8" cx="27" cy="27" r="3"></circle>
+                        <polyline id="Shape" stroke="#ADB7C6" points="4 4 29 4 26 20 0 20"></polyline>
+                        <path d="M2,16 L8,16" id="Shape" stroke="#45B0F8"></path>
+                        <path d="M4,12 L10,12" id="Shape" stroke="#45B0F8"></path>
+                        <polyline id="Shape" stroke="#ADB7C6" points="0 0 4 0 4 8"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
