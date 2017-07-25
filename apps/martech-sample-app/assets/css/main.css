@@ -15,7 +15,7 @@ body {
 }
 
 body, .navbar {
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
