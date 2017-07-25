@@ -1,148 +1,139 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
-		<title>Adtech Sample App</title>
+    <title>Adtech Sample App</title>
 
-		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-	  <meta name="viewport" content="width=device-width" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
 
-		<!--  Reflect core CSS  -->
-		<link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
+    <!--  Reflect core CSS  -->
+    <link href="https://cdn.reflect.io/latest/reflect.css" rel="stylesheet" />
 
-	  <!--  Bootstrap core CSS  -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--  Bootstrap core CSS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-		<!--  Demo CSS  -->
-		<link href="./assets/css/main.css" rel="stylesheet" />
-	</head>
+    <!--  Demo CSS  -->
+    <link href="./assets/css/social-sidekick.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
 
-	<body>
-		<div class="wrapper">
+  </head>
 
-			<!-- Sidebar -->
-	    <div class="sidebar hidden-tablet">
-	    	<div class="sidebar-wrapper">
+  <body>
+    <div class="wrapper">
+
+      <!-- Sidebar -->
+      <div class="sidebar hidden-tablet">
+        <div class="sidebar-wrapper">
           <div class="logo logo-sidebar">
             <a href="https://reflect.github.io/examples/">
-							<img src="assets/img/app-logo.png" alt="app logo">
-							Social SideKick
+              <img src="assets/img/social-sidekick-logo.svg" alt="app logo">
             </a>
           </div>
           <ul class="nav">
             <li class="top">
-              <button class="navigation" type="button" name="Contacts">
-								<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-                Contacts
-              </button>
               <button class="navigation" type="button" name="Summary">
-								<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
                 Advertising
               </button>
-							<div class="sub-nav">
-								<button class="navigation active" type="button" name="Summary">Summary</button>
-								<button class="navigation" type="button" name="Facebook">Facebook</button>
-								<button class="navigation" type="button" name="Twitter">Twitter</button>
-							</div>
+              <div class="sub-nav">
+                <button class="navigation active" type="button" name="Summary">Summary</button>
+                <button class="navigation" type="button" name="Facebook">Facebook</button>
+                <button class="navigation" type="button" name="Twitter">Twitter</button>
+              </div>
               <button class="navigation" type="button" name="History">
-								<span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
                 History
               </button>
+              <button class="navigation" type="button" name="Contacts">
+                Contacts
+              </button>
             </li>
-						<li class="bottom">
+            <li class="bottom">
               <a href="https://reflect.io/">
-								<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-	              Upgrade to PRO
+                <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                Upgrade to PRO
               </a>
             </li>
           </ul>
-		  	</div>
-		  </div>
+        </div>
+      </div>
 
-			<!-- Main Panel -->
-		  <div class="main-panel">
+      <!-- Main Panel -->
+      <div class="main-panel">
 
-				<!-- Navbar -->
-	      <nav class="navbar navbar-default navbar-fixed-top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
 
             <div class="navbar-header">
-							<div class="logo logo-navbar hidden-desktop">
-		            <a href="https://reflect.github.io/examples/">
-									<img src="assets/img/app-logo.png" alt="app logo">
-		            </a>
-		          </div>
-              <p id="page-title" class="navbar-brand">Ad Retargeting | <b>Summary</b></p>
+              <a class="logo logo-navbar hidden-desktop" href="https://reflect.github.io/examples/">
+                <img src="assets/img/social-sidekick-logomark.svg" alt="app logo">
+              </a>
 
-							<!-- Mobile Menu -->
-							<div class="hidden-sm hidden-md hidden-desktop">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu">
-	                <span class="sr-only">Toggle navigation</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-		            </button>
-				        <div class="collapse navbar-collapse" id="mobile-menu">
-			            <ul class="nav navbar-nav">
-		                <label>Analytics:</label>
-										<button class="navigation" type="button" name="Summary">Summary</button>
-										<button class="navigation" type="button" name="Facebook">Facebook</button><br>
-										<label>Account:</label>
-										<button class="navigation" type="button" name="Contacts">Contacts</button>
-			            </ul>
-				        </div>
-							</div>
+              <h1 id="page-title">Ad Retargeting | Summary</h1>
+              <p class="description">A summary of your ad retargeting efforts.</p>
+
+              <ul class="nav navbar-nav navbar-left top-nav">
+                <li>
+                  <button class="navigation active" type="button" name="Summary">Summary</button>
+                </li>
+                <li>
+                  <button class="navigation" type="button" name="Contacts">Contacts</button>
+                </li>
+                <li>
+                  <button class="navigation" type="button" name="History">History</button>
+                </li>
+              </ul>
+
+              <!-- Settings -->
+              <ul class="nav navbar-right ">
+                <li class="dropdown settings">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="assets/img/user-avatar.png" alt="user avatar">
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">My team</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+
             </div>
-
-						<!-- Settings -->
-            <ul class="nav navbar-nav navbar-right ">
-              <li class="dropdown settings hidden-xs">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img class="avatar" src="assets/img/user-avatar.png" alt="user avatar">
-									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">My account</a></li>
-                  <li><a href="#">My team</a></li>
-                  <li><a href="#">Help</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Log out</a></li>
-                </ul>
-              </li>
-						</ul>
-
           </div>
-	      </nav>
+        </nav>
 
-				<!-- Main Content -->
+        <!-- Main Content -->
         <div class="container-fluid">
           <div class="row">
-						<div class="view-container">
+            <div class="view-container">
 
-							<!-- Where the Reflect view gets rendered -->
-			        <div id="view"></div>
+              <!-- Where the Reflect view gets rendered -->
+              <div id="view"></div>
 
-			      </div>
-					</div>
-				</div>
+            </div>
+          </div>
+        </div>
 
-	    </div>
-		</div>
+      </div>
+    </div>
 
-	  <!--   JQuery Core JS   -->
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!--   JQuery Core JS   -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-		<!--   Bootstrap Core JS   -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--   Bootstrap Core JS   -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 
-		<!--   Reflect Core JS   -->
-	  <script src="https://cdn.reflect.io/latest/reflect.js" type="text/javascript"></script>
+    <!--   Reflect Core JS   -->
+    <script src="https://cdn.reflect.io/latest/reflect.js" type="text/javascript"></script>
 
-		<!--   Custom Demo JS   -->
-	  <script src="./assets/js/app.js"></script>
+    <!--   Custom Demo JS   -->
+    <script src="./assets/js/app.js"></script>
 
-	</body>
+  </body>
 </html>

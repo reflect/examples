@@ -62,8 +62,8 @@ function updateTitle(page) {
 
 // call to update active nav item
 function updateNav(item) {
-  $('.sub-nav button.navigation').removeClass('active');
-  $('.sub-nav button.navigation[name=' + item + ']').addClass('active');
+  $('button.navigation').removeClass('active');
+  $('button.navigation[name=' + item + ']').addClass('active');
 }
 
 // call to switch Reflect views
