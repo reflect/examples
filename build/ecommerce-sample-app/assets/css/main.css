@@ -175,6 +175,45 @@ input:checked + .slider:before {
   margin: 83px 60px 0 270px;
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  background-color: #fff;
+  box-shadow: .5rem .3rem 2rem rgba(0,0,0,0.17);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+footer .reflect-logo {
+  position: absolute;
+  left: 30px;
+}
+
+footer span a {
+  color: #269CFF !important;
+  font-weight: 600;
+}
+
+footer img {
+  height: 28px;
+}
+
+footer .github-link {
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  right: 30px;
+  color: white;
+  background: #269CFF;
+  height: 38px;
+  padding: 0 8px;
+  font-weight: 400;
+}
+
 /* Tablet up styles */
 
 @media (min-width: 991px) {
