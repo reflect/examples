@@ -2,10 +2,7 @@
 
 html {
   height: 100%;
-  background: -webkit-radial-gradient(white 10%, #aea3b4); /* Safari */
-  background: -o-radial-gradient(white 10%, #aea3b4); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(white 10%, #aea3b4); /* Firefox 3.6 to 15 */
-  background: radial-gradient(white 10%, #aea3b4); /* Standard syntax */
+  background: #F7F7F8;
 }
 
 body {
@@ -162,6 +159,41 @@ label {
 .navbar-nav > li button.active {
   color: #EC6651;
   border-bottom: 4px solid #F49E4B;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  background-color: #fff;
+  box-shadow: .5rem .3rem 2rem rgba(0,0,0,0.17);
+  text-align: center;
+}
+
+footer .reflect-logo {
+  position: absolute;
+  left: 30px;
+}
+
+footer span a {
+  color: #269CFF !important;
+  font-weight: 600;
+}
+
+footer img {
+  height: 28px;
+}
+
+footer .github-link {
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  right: 30px;
+  color: white;
+  background: #269CFF;
+  height: 38px;
+  padding: 0 8px;
 }
 
 /* Settings */
