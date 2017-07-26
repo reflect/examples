@@ -104,11 +104,11 @@ $(function() {
   // swap view when resizing
   var startSize = $(window).width();
   window.onresize = function(event) {
-    if ($(window).width() < 750 && startSize >= 750) {
+    if ($(window).width() < 768 && startSize >= 768) {
       updateNav('Sales');
 
       ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
-    } else if ($(window).width() >= 750 && startSize < 750) {
+    } else if ($(window).width() >= 768 && startSize < 768) {
       updateNav('Sales');
 
       ui.view(document.getElementById('view'), 'gf3vzhAJRy23C_4Fxg6ayg');
