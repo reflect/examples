@@ -12,7 +12,6 @@ body {
 }
 
 body, .navbar {
-  /*max-width: 1600px;*/
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
@@ -79,7 +78,7 @@ label {
 
 .sidebar .nav .bottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
 }
 
 .sidebar .nav li.bottom {
