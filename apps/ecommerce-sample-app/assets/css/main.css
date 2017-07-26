@@ -107,6 +107,10 @@ input:checked + .slider:before {
   border: none;
 }
 
+.navbar-header {
+  margin: 0 !important;
+}
+
 .navbar-brand {
   background: transparent url("../img/Logo-SimpleShop-Yellow.svg") no-repeat 0 0;
   height: 32px;
@@ -254,6 +258,10 @@ footer .github-link {
     margin: 95px 30px 0;
   }
 
+  .navbar-brand {
+    margin: 31px 0 31px 30px !important;
+  }
+
   .navbar-collapse {
     background: #4B5359;
     border: none;
@@ -262,7 +270,7 @@ footer .github-link {
   }
 
   .navbar-toggle {
-    margin: 30px 60px 0px 0px;
+    margin: 30px 30px 0px 0px;
     border: none;
   }
 

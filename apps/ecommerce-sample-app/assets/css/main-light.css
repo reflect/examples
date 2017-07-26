@@ -237,12 +237,16 @@ footer .github-link {
     margin: 95px 30px 0;
   }
 
+  .navbar-brand {
+    margin: 31px 0 31px 30px !important;
+  }
+
   .navbar-collapse {
     background: #E3E3E3;
   }
 
   .navbar-toggle {
-    margin: 30px 60px 0px 0px;
+    margin: 30px 30px 0px 0px;
     border: none;
   }
 
