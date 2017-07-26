@@ -45,6 +45,16 @@ function updateNav(item) {
   $('a.navigation[name=' + item + ']').addClass('active');
 }
 
+// call to toggle themes
+function toggleTheme(theme) {
+  if (theme === "light-theme") {
+    console.log('here')
+    $('link[title="light-theme"]').prop('disabled', false);
+  } else {
+    $('link[title="light-theme"]').prop('disabled', true);
+  }
+}
+
 $(function() {
   //instantiate new instance
   var ui = new ReflectUI();
@@ -101,14 +111,21 @@ $(function() {
     $('#types-toggle').click();
   });
 
+  // toggle theme
+  $('.theme-btn').click(function(e) {
+    var theme = $(this).attr('name');
+
+    toggleTheme(theme);
+  });
+
   // swap view when resizing
   var startSize = $(window).width();
   window.onresize = function(event) {
-    if ($(window).width() < 750 && startSize >= 750) {
+    if ($(window).width() < 768 && startSize >= 768) {
       updateNav('Sales');
 
       ui.view(document.getElementById('view'), 'cP4YDx39QcyOgGTmhJQiAA');
-    } else if ($(window).width() >= 750 && startSize < 750) {
+    } else if ($(window).width() >= 768 && startSize < 768) {
       updateNav('Sales');
 
       ui.view(document.getElementById('view'), 'gf3vzhAJRy23C_4Fxg6ayg');

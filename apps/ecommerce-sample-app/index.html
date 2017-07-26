@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
-    <title>Ecommerce Sample App</title>
+    <title>Simple Shop - Sample E-commerce App by Reflect</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -17,10 +17,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!--  Reflect Theme CSS  -->
-    <link href="assets/css/mono-theme.css" rel="stylesheet"/>
+    <link title="dark-theme" href="assets/css/simple-shop.css" rel="stylesheet"/>
+    <link title="light-theme" href="assets/css/simple-shop-blue.css" rel="stylesheet" disabled/>
 
     <!--  Demo CSS  -->
-    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link title="dark-theme" href="assets/css/main.css" rel="stylesheet"/>
+    <link title="light-theme" href="assets/css/main-light.css" rel="stylesheet" disabled/>
   </head>
   <body>
 
@@ -28,7 +30,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="https://reflect.github.io/examples/"><b>Simple</b>Shop | Customer Portal</a>
+          <a class="navbar-brand" href="https://reflect.github.io/examples/"></a>
 
           <!-- Mobile Menu -->
           <div class="hidden-sm hidden-md hidden-lg hidden-xl">
@@ -60,8 +62,7 @@
           <ul class="nav navbar-nav navbar-right ">
             <li class="dropdown settings hidden-xs">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img class="avatar" src="assets/img/user-avatar.png" alt="user avatar">
-                Tom Scott
+                <img class="avatar" src="assets/img/menu.svg" alt="user avatar">
               </a>
               <ul class="dropdown-menu">
                 <li><a href="#">Settings</a></li>
@@ -75,18 +76,18 @@
     </nav>
 
     <!-- Sidebar -->
-    <div class="sidebar hidden-tablet">
+    <div class="sidebar hidden-xs">
       <div class="nav-group">
-        <h4>Date range</h4>
+        <h4>Date Range</h4>
         <label class="switch">
           <input id="dates-toggle" type="checkbox">
           <div class="slider round"></div>
         </label>
-        <label class="date-toggle toggle">Last month</label><br>
-        <label class="date-toggle toggle">Last week</label>
+        <label class="date-toggle toggle">Last Month</label><br>
+        <label class="date-toggle toggle">Last Week</label>
       </div>
       <div class="nav-group">
-        <h4>Customer type</h4>
+        <h4>Customer Type</h4>
         <label class="switch">
           <input id="types-toggle" type="checkbox">
           <div class="slider round"></div>
@@ -100,6 +101,18 @@
     <div class="view-container">
       <div id="view"></div>
     </div>
+
+    <!-- Footer -->
+    <footer class="navbar-fixed-bottom">
+      <a target="_blank" class="hidden-xs reflect-logo" href="/"><img src="assets/img/reflect-logo.svg" alt="reflect logo"></a>
+      <span>Monetize your data with Reflect. <a target="_blank" href="https://reflect.io">Learn how today</a>.</span>
+      <div class="hidden-xs hidden-sm scheme">
+        <span>Scheme</span>
+        <button class="light-theme-btn theme-btn" type="button" name="light-theme"></button>
+        <button class="dark-theme-btn theme-btn" type="button" name="dark-theme"></button>
+      </div>
+      <a target="_blank" class="hidden-xs github-link" href="https://github.com/reflect/examples/tree/master/apps/martech-sample-app">View on GitHub</a>
+    </footer>
 
     <!--   JQuery Core JS   -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

@@ -56,6 +56,14 @@ gulp.task('cards', () => {
     .pipe(stream({stream: true}));
 });
 
+// SVGs
+gulp.task('svgs', () => {
+  return gulp.src('apps/**/*.svg')
+    .pipe(gulp.dest('build'))
+    // Live reload after compiling
+    .pipe(stream({stream: true}));
+});
+
 // Main CSS
 gulp.task('styles', () => {
   return gulp.src('src/stylesheets/**/*.scss')
@@ -104,12 +112,13 @@ gulp.task('clean', () => {
 });
 
 // Build task
-gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'index']);
+gulp.task('build', ['clean', 'scripts', 'json', 'styles', 'images', 'views', 'cards', 'misc', 'index', 'svgs']);
 
 // Start browserSync for local server
 gulp.task('server', ['build'], () => {
   browserSync.init({
-    server: "./build"
+    server: "./build",
+    notify: false
   });
 })
 
@@ -126,6 +135,9 @@ gulp.task('watch', ['server'], () => {
 
   // card images
   gulp.watch('apps/*/*.png', ['cards']);
+
+  // svgs
+  gulp.watch('apps/*/*.svg', ['svgs']);
 
   // general images
   gulp.watch('src/images/*', ['images']);

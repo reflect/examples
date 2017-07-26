@@ -12,8 +12,6 @@ var titles = {
 
 // call to render default view
 function renderDefault(ui) {
-  // apply custom date range for comparative grid
-  ui.withDates(['2017-07-05', '2017-08-05'], ['2017-09-05', '2017-10-05']);
 
   // account for screen size
   if ($(window).width() < 750) {
@@ -62,8 +60,8 @@ function updateTitle(page) {
 
 // call to update active nav item
 function updateNav(item) {
-  $('.sub-nav button.navigation').removeClass('active');
-  $('.sub-nav button.navigation[name=' + item + ']').addClass('active');
+  $('button.navigation').removeClass('active');
+  $('button.navigation[name=' + item + ']').addClass('active');
 }
 
 // call to switch Reflect views
