@@ -17,10 +17,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!--  Reflect Theme CSS  -->
-    <link href="assets/css/simple-shop.css" rel="stylesheet"/>
+    <link title="dark-theme" href="assets/css/simple-shop.css" rel="stylesheet"/>
+    <link title="light-theme" href="assets/css/simple-shop-blue.css" rel="stylesheet" disabled/>
 
     <!--  Demo CSS  -->
-    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link title="dark-theme" href="assets/css/main.css" rel="stylesheet"/>
+    <link title="light-theme" href="assets/css/main-light.css" rel="stylesheet" disabled/>
   </head>
   <body>
 
@@ -104,6 +106,11 @@
     <footer class="navbar-fixed-bottom">
       <a target="_blank" class="hidden-xs reflect-logo" href="/"><img src="assets/img/reflect-logo.svg" alt="reflect logo"></a>
       <span>Monetize your data with Reflect. <a target="_blank" href="https://reflect.io">Learn how today</a>.</span>
+      <div class="hidden-xs hidden-sm scheme">
+        <span>Scheme</span>
+        <button class="light-theme-btn theme-btn" type="button" name="light-theme"></button>
+        <button class="dark-theme-btn theme-btn" type="button" name="dark-theme"></button>
+      </div>
       <a target="_blank" class="hidden-xs github-link" href="https://github.com/reflect/examples/tree/master/apps/martech-sample-app">View on GitHub</a>
     </footer>
 
