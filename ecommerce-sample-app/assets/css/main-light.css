@@ -283,12 +283,17 @@ footer .dark-theme-btn {
   }
 
   .navbar-collapse {
-    background: #E3E3E3;
+    background: #eaebec;
+    color: #CDD2DC;
   }
 
   .navbar-toggle {
     margin: 30px 30px 0px 0px;
     border: none;
+  }
+
+  .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+    background: #eaebec !important;
   }
 
   .navbar-collapse a {
