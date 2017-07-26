@@ -110,7 +110,7 @@ input:checked + .slider:before {
 .navbar-brand {
   background: transparent url("../img/Logo-SimpleShop-Yellow.svg") no-repeat 0 0;
   height: 32px;
-  width: 140px;
+  width: 150px;
   margin: 31px 0 31px 60px !important;
   text-indent: -99999px;
 }
@@ -179,7 +179,7 @@ input:checked + .slider:before {
 
 @media (min-width: 991px) {
   .navbar-left {
-    margin-left: 35px;
+    margin-left: 25px;
   }
 }
 
