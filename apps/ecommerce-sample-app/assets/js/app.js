@@ -45,6 +45,16 @@ function updateNav(item) {
   $('a.navigation[name=' + item + ']').addClass('active');
 }
 
+// call to toggle themes
+function toggleTheme(theme) {
+  if (theme === "light-theme") {
+    console.log('here')
+    $('link[title="light-theme"]').prop('disabled', false);
+  } else {
+    $('link[title="light-theme"]').prop('disabled', true);
+  }
+}
+
 $(function() {
   //instantiate new instance
   var ui = new ReflectUI();
@@ -99,6 +109,13 @@ $(function() {
 
   $('.type-toggle').click(function() {
     $('#types-toggle').click();
+  });
+
+  // toggle theme
+  $('.theme-btn').click(function(e) {
+    var theme = $(this).attr('name');
+
+    toggleTheme(theme);
   });
 
   // swap view when resizing
