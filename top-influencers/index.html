@@ -25,6 +25,7 @@
       <!-- Where the view gets rendered -->
       <div class="view-container klout-report">
         <div id="view"></div>
+        <div id="view2"></div>
       </div>
 
       <div id="app-navigation"></div>
@@ -36,6 +37,7 @@
 
       //instantiate new instance
       var ui = new ReflectUI();
+      var ui_network = new ReflectUI();
 
       //call to render sample view
       function render() {
@@ -45,6 +47,7 @@
       //call to render filtered view
       function renderReport(ui) {
         ui.view(document.getElementById('view'), 'm2NVmnvzT9usm3NKwTrsLA');
+        ui_network.view(document.getElementById('view2'), 'yrXAotztSNygbsqARcKwKQ');
       }
 
       //call to append score with /100
@@ -53,22 +56,29 @@
           'Klout score': function(d) {
             return Math.round(d) + "/100";
           }
-        })
+        });
+
+        ui_network.withFormatters({
+          'Company Klout score': function(d) {
+            return Math.round(d) + "/100";
+          }
+        });
       }
 
       //render different views depending on url accessed
       var params = location.search.substr(1);
       if (params) {
         var code = params.match(/\&(.*)/)[1];
+        var name = params.match(/[^&]*/)[0].replace(/\%20/g, ' ');
         //filter view when params present
-        filterView(code);
+        filterView(code, name);
       } else {
         //otherwise render sample view
         formatScore(ui);
         render();
       }
 
-      function filterView(code) {
+      function filterView(code, name) {
         var company = {
           field: 'Company code',
           op: '=',
@@ -79,6 +89,11 @@
         ui.withFilters([
           company
         ]);
+
+        //highlight company bar
+        ui_network.withColors({
+          'Company': { [name]: '#3226FF' }
+        });
 
         //render view
         formatScore(ui);
