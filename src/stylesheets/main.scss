@@ -584,7 +584,11 @@ $base-color: dimgrey;
 }
 
 // Bars for klout report
-.klout-report {
+.klout-report #view2 {
+  margin-top:-20px;
+}
+
+.klout-report #view {
   .viz-bar .viz-color-0 .viz-bar-rect:nth-of-type(4),
   .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect:nth-of-type(4).viz-opened {
     fill: #265bff;
