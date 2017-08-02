@@ -630,7 +630,6 @@
     padding: 0 !important;
     font-size: 12px !important; }
   .viz .viz-tooltip .viz-dimension-value {
-    color: #fff;
     background-color: #6D7A87;
     padding-top: 7px;
     padding-bottom: 7px; }
@@ -647,88 +646,88 @@
     color: #6D7A87;
     z-index: 100; }
   .viz .viz-tooltip .viz-color-0.viz-series-indicator {
-    background: #FFE584;
+    background: #FD9841;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-0.viz-series-indicator.viz-active {
-      background: #FFE584;
+      background: #FD9841;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-1.viz-series-indicator {
-    background: #E3CD36;
+    background: #EC6651;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-1.viz-series-indicator.viz-active {
-      background: #E3CD36;
+      background: #EC6651;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-2.viz-series-indicator {
-    background: #DFA642;
+    background: #C85558;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-2.viz-series-indicator.viz-active {
-      background: #DFA642;
+      background: #C85558;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-3.viz-series-indicator {
-    background: #E4802B;
+    background: #B33E75;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-3.viz-series-indicator.viz-active {
-      background: #E4802B;
+      background: #B33E75;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-4.viz-series-indicator {
-    background: #E15959;
+    background: #A3327D;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-4.viz-series-indicator.viz-active {
-      background: #E15959;
+      background: #A3327D;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-5.viz-series-indicator {
-    background: #C14D5C;
+    background: #8F267F;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-5.viz-series-indicator.viz-active {
-      background: #C14D5C;
+      background: #8F267F;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-6.viz-series-indicator {
-    background: #AF3A7B;
+    background: #7D1A81;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-6.viz-series-indicator.viz-active {
-      background: #AF3A7B;
+      background: #7D1A81;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-7.viz-series-indicator {
-    background: #9624AF;
+    background: #620E85;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-7.viz-series-indicator.viz-active {
-      background: #9624AF;
+      background: #620E85;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-8.viz-series-indicator {
-    background: #A75BF0;
+    background: #38028C;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-8.viz-series-indicator.viz-active {
-      background: #A75BF0;
+      background: #38028C;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-9.viz-series-indicator {
-    background: #B687FE;
+    background: #2253B2;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-9.viz-series-indicator.viz-active {
-      background: #B687FE;
+      background: #2253B2;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-10.viz-series-indicator {
-    background: #BFBCFD;
+    background: #1B80C6;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-10.viz-series-indicator.viz-active {
-      background: #BFBCFD;
+      background: #1B80C6;
       opacity: 1; }
   .viz .viz-tooltip .viz-color-11.viz-series-indicator {
-    background: #BCE1FD;
+    background: #15A1D4;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-tooltip .viz-color-11.viz-series-indicator.viz-active {
-      background: #BCE1FD;
+      background: #15A1D4;
       opacity: 1; }
   .viz .viz-tooltip.top {
     margin-top: 7px; }
@@ -740,99 +739,99 @@
     margin-left: -7px; }
 
 .viz.viz-focused .viz-tooltip .viz-color-0.viz-series-indicator {
-  background: #FFE584;
+  background: #FD9841;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-0.viz-series-indicator.viz-active {
-    background: #FFE584;
+    background: #FD9841;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-1.viz-series-indicator {
-  background: #E3CD36;
+  background: #EC6651;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-1.viz-series-indicator.viz-active {
-    background: #E3CD36;
+    background: #EC6651;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-2.viz-series-indicator {
-  background: #DFA642;
+  background: #C85558;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-2.viz-series-indicator.viz-active {
-    background: #DFA642;
+    background: #C85558;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-3.viz-series-indicator {
-  background: #E4802B;
+  background: #B33E75;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-3.viz-series-indicator.viz-active {
-    background: #E4802B;
+    background: #B33E75;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-4.viz-series-indicator {
-  background: #E15959;
+  background: #A3327D;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-4.viz-series-indicator.viz-active {
-    background: #E15959;
+    background: #A3327D;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-5.viz-series-indicator {
-  background: #C14D5C;
+  background: #8F267F;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-5.viz-series-indicator.viz-active {
-    background: #C14D5C;
+    background: #8F267F;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-6.viz-series-indicator {
-  background: #AF3A7B;
+  background: #7D1A81;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-6.viz-series-indicator.viz-active {
-    background: #AF3A7B;
+    background: #7D1A81;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-7.viz-series-indicator {
-  background: #9624AF;
+  background: #620E85;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-7.viz-series-indicator.viz-active {
-    background: #9624AF;
+    background: #620E85;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-8.viz-series-indicator {
-  background: #A75BF0;
+  background: #38028C;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-8.viz-series-indicator.viz-active {
-    background: #A75BF0;
+    background: #38028C;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-9.viz-series-indicator {
-  background: #B687FE;
+  background: #2253B2;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-9.viz-series-indicator.viz-active {
-    background: #B687FE;
+    background: #2253B2;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-10.viz-series-indicator {
-  background: #BFBCFD;
+  background: #1B80C6;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-10.viz-series-indicator.viz-active {
-    background: #BFBCFD;
+    background: #1B80C6;
     opacity: 1; }
 
 .viz.viz-focused .viz-tooltip .viz-color-11.viz-series-indicator {
-  background: #BCE1FD;
+  background: #15A1D4;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-tooltip .viz-color-11.viz-series-indicator.viz-active {
-    background: #BCE1FD;
+    background: #15A1D4;
     opacity: 1; }
 
 .viz .viz-single-series {
@@ -841,578 +840,578 @@
 
 .viz-bar .viz-color-0 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
   .viz-bar .viz-color-0 .viz-bar-rect:hover {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-0.viz-entire-series .viz-bar-rect {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-0.viz-active .viz-bar-rect.viz-opened {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-1 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
   .viz-bar .viz-color-1 .viz-bar-rect:hover {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-1.viz-entire-series .viz-bar-rect {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-1.viz-active .viz-bar-rect.viz-opened {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-2 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
   .viz-bar .viz-color-2 .viz-bar-rect:hover {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-2.viz-entire-series .viz-bar-rect {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-2.viz-active .viz-bar-rect.viz-opened {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-3 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
   .viz-bar .viz-color-3 .viz-bar-rect:hover {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-3.viz-entire-series .viz-bar-rect {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-3.viz-active .viz-bar-rect.viz-opened {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-4 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
   .viz-bar .viz-color-4 .viz-bar-rect:hover {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-4.viz-entire-series .viz-bar-rect {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-4.viz-active .viz-bar-rect.viz-opened {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-5 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
   .viz-bar .viz-color-5 .viz-bar-rect:hover {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-5.viz-entire-series .viz-bar-rect {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-5.viz-active .viz-bar-rect.viz-opened {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-6 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
   .viz-bar .viz-color-6 .viz-bar-rect:hover {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-6.viz-entire-series .viz-bar-rect {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-6.viz-active .viz-bar-rect.viz-opened {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-7 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
   .viz-bar .viz-color-7 .viz-bar-rect:hover {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-7.viz-entire-series .viz-bar-rect {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-7.viz-active .viz-bar-rect.viz-opened {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-8 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
   .viz-bar .viz-color-8 .viz-bar-rect:hover {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-8.viz-entire-series .viz-bar-rect {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-8.viz-active .viz-bar-rect.viz-opened {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-9 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
   .viz-bar .viz-color-9 .viz-bar-rect:hover {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-9.viz-entire-series .viz-bar-rect {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-9.viz-active .viz-bar-rect.viz-opened {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-10 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
   .viz-bar .viz-color-10 .viz-bar-rect:hover {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-10.viz-entire-series .viz-bar-rect {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-10.viz-active .viz-bar-rect.viz-opened {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-11 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
   .viz-bar .viz-color-11 .viz-bar-rect:hover {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-bar .viz-color-11.viz-entire-series .viz-bar-rect {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
 
 .viz-bar .viz-color-11.viz-active .viz-bar-rect.viz-opened {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-0 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-0 .viz-bar-rect:hover {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-0.viz-entire-series .viz-bar-rect {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-0.viz-active .viz-bar-rect.viz-opened {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-1 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-1 .viz-bar-rect:hover {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-1.viz-entire-series .viz-bar-rect {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-1.viz-active .viz-bar-rect.viz-opened {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-2 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-2 .viz-bar-rect:hover {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-2.viz-entire-series .viz-bar-rect {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-2.viz-active .viz-bar-rect.viz-opened {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-3 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-3 .viz-bar-rect:hover {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-3.viz-entire-series .viz-bar-rect {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-3.viz-active .viz-bar-rect.viz-opened {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-4 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-4 .viz-bar-rect:hover {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-4.viz-entire-series .viz-bar-rect {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-4.viz-active .viz-bar-rect.viz-opened {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-5 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-5 .viz-bar-rect:hover {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-5.viz-entire-series .viz-bar-rect {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-5.viz-active .viz-bar-rect.viz-opened {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-6 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-6 .viz-bar-rect:hover {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-6.viz-entire-series .viz-bar-rect {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-6.viz-active .viz-bar-rect.viz-opened {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-7 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-7 .viz-bar-rect:hover {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-7.viz-entire-series .viz-bar-rect {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-7.viz-active .viz-bar-rect.viz-opened {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-8 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-8 .viz-bar-rect:hover {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-8.viz-entire-series .viz-bar-rect {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-8.viz-active .viz-bar-rect.viz-opened {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-9 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-9 .viz-bar-rect:hover {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-9.viz-entire-series .viz-bar-rect {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-9.viz-active .viz-bar-rect.viz-opened {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-10 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-10 .viz-bar-rect:hover {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-10.viz-entire-series .viz-bar-rect {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-10.viz-active .viz-bar-rect.viz-opened {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-11 .viz-bar-rect {
   transition: all 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4; }
   .viz-bar.viz-focused .viz-color-11 .viz-bar-rect:hover {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-11.viz-entire-series .viz-bar-rect {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
 
 .viz-bar.viz-focused .viz-color-11.viz-active .viz-bar-rect.viz-opened {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
 
 .viz-bar .viz-axis.viz-axis-x g.tick text {
@@ -1440,19 +1439,19 @@
 
 .viz-line .viz-color-0.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
   .viz-line .viz-color-0.viz-line-path:hover, .viz-line .viz-color-0.viz-line-path.viz-active {
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-0 .viz-scatter-point {
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1; }
   .viz-line .viz-color-0 .viz-scatter-point.viz-active {
-    stroke: #ffda51;
+    stroke: #fc7d0f;
     stroke-opacity: 1; }
   .viz-line .viz-color-0 .viz-scatter-point.viz-active, .viz-line .viz-color-0 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1460,19 +1459,19 @@
 
 .viz-line .viz-color-1.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
   .viz-line .viz-color-1.viz-line-path:hover, .viz-line .viz-color-1.viz-line-path.viz-active {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-1 .viz-scatter-point {
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1; }
   .viz-line .viz-color-1 .viz-scatter-point.viz-active {
-    stroke: #cab41c;
+    stroke: #e73e23;
     stroke-opacity: 1; }
   .viz-line .viz-color-1 .viz-scatter-point.viz-active, .viz-line .viz-color-1 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1480,19 +1479,19 @@
 
 .viz-line .viz-color-2.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
   .viz-line .viz-color-2.viz-line-path:hover, .viz-line .viz-color-2.viz-line-path.viz-active {
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-2 .viz-scatter-point {
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1; }
   .viz-line .viz-color-2 .viz-scatter-point.viz-active {
-    stroke: #cc8e22;
+    stroke: #b1393c;
     stroke-opacity: 1; }
   .viz-line .viz-color-2 .viz-scatter-point.viz-active, .viz-line .viz-color-2 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1500,19 +1499,19 @@
 
 .viz-line .viz-color-3.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
   .viz-line .viz-color-3.viz-line-path:hover, .viz-line .viz-color-3.viz-line-path.viz-active {
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-3 .viz-scatter-point {
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1; }
   .viz-line .viz-color-3 .viz-scatter-point.viz-active {
-    stroke: #c36719;
+    stroke: #8d315c;
     stroke-opacity: 1; }
   .viz-line .viz-color-3 .viz-scatter-point.viz-active, .viz-line .viz-color-3 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1520,19 +1519,19 @@
 
 .viz-line .viz-color-4.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
   .viz-line .viz-color-4.viz-line-path:hover, .viz-line .viz-color-4.viz-line-path.viz-active {
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-4 .viz-scatter-point {
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1; }
   .viz-line .viz-color-4 .viz-scatter-point.viz-active {
-    stroke: #d92e2e;
+    stroke: #7c265f;
     stroke-opacity: 1; }
   .viz-line .viz-color-4 .viz-scatter-point.viz-active, .viz-line .viz-color-4 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1540,19 +1539,19 @@
 
 .viz-line .viz-color-5.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
   .viz-line .viz-color-5.viz-line-path:hover, .viz-line .viz-color-5.viz-line-path.viz-active {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-5 .viz-scatter-point {
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1; }
   .viz-line .viz-color-5 .viz-scatter-point.viz-active {
-    stroke: #a23946;
+    stroke: #671b5b;
     stroke-opacity: 1; }
   .viz-line .viz-color-5 .viz-scatter-point.viz-active, .viz-line .viz-color-5 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1560,19 +1559,19 @@
 
 .viz-line .viz-color-6.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
   .viz-line .viz-color-6.viz-line-path:hover, .viz-line .viz-color-6.viz-line-path.viz-active {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-6 .viz-scatter-point {
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1; }
   .viz-line .viz-color-6 .viz-scatter-point.viz-active {
-    stroke: #892d60;
+    stroke: #541157;
     stroke-opacity: 1; }
   .viz-line .viz-color-6 .viz-scatter-point.viz-active, .viz-line .viz-color-6 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1580,19 +1579,19 @@
 
 .viz-line .viz-color-7.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
   .viz-line .viz-color-7.viz-line-path:hover, .viz-line .viz-color-7.viz-line-path.viz-active {
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-7 .viz-scatter-point {
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1; }
   .viz-line .viz-color-7 .viz-scatter-point.viz-active {
-    stroke: #721b85;
+    stroke: #400957;
     stroke-opacity: 1; }
   .viz-line .viz-color-7 .viz-scatter-point.viz-active, .viz-line .viz-color-7 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1600,19 +1599,19 @@
 
 .viz-line .viz-color-8.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
   .viz-line .viz-color-8.viz-line-path:hover, .viz-line .viz-color-8.viz-line-path.viz-active {
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-8 .viz-scatter-point {
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1; }
   .viz-line .viz-color-8 .viz-scatter-point.viz-active {
-    stroke: #8e2cec;
+    stroke: #24015a;
     stroke-opacity: 1; }
   .viz-line .viz-color-8 .viz-scatter-point.viz-active, .viz-line .viz-color-8 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1620,19 +1619,19 @@
 
 .viz-line .viz-color-9.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
   .viz-line .viz-color-9.viz-line-path:hover, .viz-line .viz-color-9.viz-line-path.viz-active {
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-9 .viz-scatter-point {
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1; }
   .viz-line .viz-color-9 .viz-scatter-point.viz-active {
-    stroke: #9754fe;
+    stroke: #1a3f87;
     stroke-opacity: 1; }
   .viz-line .viz-color-9 .viz-scatter-point.viz-active, .viz-line .viz-color-9 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1640,19 +1639,19 @@
 
 .viz-line .viz-color-10.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
   .viz-line .viz-color-10.viz-line-path:hover, .viz-line .viz-color-10.viz-line-path.viz-active {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-10 .viz-scatter-point {
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1; }
   .viz-line .viz-color-10 .viz-scatter-point.viz-active {
-    stroke: #908afc;
+    stroke: #156399;
     stroke-opacity: 1; }
   .viz-line .viz-color-10 .viz-scatter-point.viz-active, .viz-line .viz-color-10 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1660,19 +1659,19 @@
 
 .viz-line .viz-color-11.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
   .viz-line .viz-color-11.viz-line-path:hover, .viz-line .viz-color-11.viz-line-path.viz-active {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-line .viz-color-11 .viz-scatter-point {
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1; }
   .viz-line .viz-color-11 .viz-scatter-point.viz-active {
-    stroke: #8acbfc;
+    stroke: #107ea6;
     stroke-opacity: 1; }
   .viz-line .viz-color-11 .viz-scatter-point.viz-active, .viz-line .viz-color-11 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1680,19 +1679,19 @@
 
 .viz-line.viz-focused .viz-color-0.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-0.viz-line-path:hover, .viz-line.viz-focused .viz-color-0.viz-line-path.viz-active {
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-0 .viz-scatter-point {
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-0 .viz-scatter-point.viz-active {
-    stroke: #ffda51;
+    stroke: #fc7d0f;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-0 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-0 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1700,19 +1699,19 @@
 
 .viz-line.viz-focused .viz-color-1.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-1.viz-line-path:hover, .viz-line.viz-focused .viz-color-1.viz-line-path.viz-active {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-1 .viz-scatter-point {
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-1 .viz-scatter-point.viz-active {
-    stroke: #cab41c;
+    stroke: #e73e23;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-1 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-1 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1720,19 +1719,19 @@
 
 .viz-line.viz-focused .viz-color-2.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-2.viz-line-path:hover, .viz-line.viz-focused .viz-color-2.viz-line-path.viz-active {
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-2 .viz-scatter-point {
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-2 .viz-scatter-point.viz-active {
-    stroke: #cc8e22;
+    stroke: #b1393c;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-2 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-2 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1740,19 +1739,19 @@
 
 .viz-line.viz-focused .viz-color-3.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-3.viz-line-path:hover, .viz-line.viz-focused .viz-color-3.viz-line-path.viz-active {
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-3 .viz-scatter-point {
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-3 .viz-scatter-point.viz-active {
-    stroke: #c36719;
+    stroke: #8d315c;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-3 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-3 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1760,19 +1759,19 @@
 
 .viz-line.viz-focused .viz-color-4.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-4.viz-line-path:hover, .viz-line.viz-focused .viz-color-4.viz-line-path.viz-active {
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-4 .viz-scatter-point {
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-4 .viz-scatter-point.viz-active {
-    stroke: #d92e2e;
+    stroke: #7c265f;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-4 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-4 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1780,19 +1779,19 @@
 
 .viz-line.viz-focused .viz-color-5.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-5.viz-line-path:hover, .viz-line.viz-focused .viz-color-5.viz-line-path.viz-active {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-5 .viz-scatter-point {
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-5 .viz-scatter-point.viz-active {
-    stroke: #a23946;
+    stroke: #671b5b;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-5 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-5 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1800,19 +1799,19 @@
 
 .viz-line.viz-focused .viz-color-6.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-6.viz-line-path:hover, .viz-line.viz-focused .viz-color-6.viz-line-path.viz-active {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-6 .viz-scatter-point {
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-6 .viz-scatter-point.viz-active {
-    stroke: #892d60;
+    stroke: #541157;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-6 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-6 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1820,19 +1819,19 @@
 
 .viz-line.viz-focused .viz-color-7.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-7.viz-line-path:hover, .viz-line.viz-focused .viz-color-7.viz-line-path.viz-active {
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-7 .viz-scatter-point {
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-7 .viz-scatter-point.viz-active {
-    stroke: #721b85;
+    stroke: #400957;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-7 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-7 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1840,19 +1839,19 @@
 
 .viz-line.viz-focused .viz-color-8.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-8.viz-line-path:hover, .viz-line.viz-focused .viz-color-8.viz-line-path.viz-active {
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-8 .viz-scatter-point {
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-8 .viz-scatter-point.viz-active {
-    stroke: #8e2cec;
+    stroke: #24015a;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-8 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-8 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1860,19 +1859,19 @@
 
 .viz-line.viz-focused .viz-color-9.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-9.viz-line-path:hover, .viz-line.viz-focused .viz-color-9.viz-line-path.viz-active {
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-9 .viz-scatter-point {
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-9 .viz-scatter-point.viz-active {
-    stroke: #9754fe;
+    stroke: #1a3f87;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-9 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-9 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1880,19 +1879,19 @@
 
 .viz-line.viz-focused .viz-color-10.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-10.viz-line-path:hover, .viz-line.viz-focused .viz-color-10.viz-line-path.viz-active {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-10 .viz-scatter-point {
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-10 .viz-scatter-point.viz-active {
-    stroke: #908afc;
+    stroke: #156399;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-10 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-10 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1900,19 +1899,19 @@
 
 .viz-line.viz-focused .viz-color-11.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-11.viz-line-path:hover, .viz-line.viz-focused .viz-color-11.viz-line-path.viz-active {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-line.viz-focused .viz-color-11 .viz-scatter-point {
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4; }
   .viz-line.viz-focused .viz-color-11 .viz-scatter-point.viz-active {
-    stroke: #8acbfc;
+    stroke: #107ea6;
     stroke-opacity: 1; }
   .viz-line.viz-focused .viz-color-11 .viz-scatter-point.viz-active, .viz-line.viz-focused .viz-color-11 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1947,31 +1946,31 @@
 
 .viz-area .viz-color-0.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
   .viz-area .viz-color-0.viz-line-path:hover, .viz-area .viz-color-0.viz-line-path.viz-active {
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-0.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
   .viz-area .viz-color-0.viz-area-path:hover, .viz-area .viz-color-0.viz-area-path.viz-active {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-0 .viz-scatter-point {
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1; }
   .viz-area .viz-color-0 .viz-scatter-point.viz-active {
-    stroke: #ffda51;
+    stroke: #fc7d0f;
     stroke-opacity: 1; }
   .viz-area .viz-color-0 .viz-scatter-point.viz-active, .viz-area .viz-color-0 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -1979,31 +1978,31 @@
 
 .viz-area .viz-color-1.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
   .viz-area .viz-color-1.viz-line-path:hover, .viz-area .viz-color-1.viz-line-path.viz-active {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-1.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
   .viz-area .viz-color-1.viz-area-path:hover, .viz-area .viz-color-1.viz-area-path.viz-active {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-1 .viz-scatter-point {
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1; }
   .viz-area .viz-color-1 .viz-scatter-point.viz-active {
-    stroke: #cab41c;
+    stroke: #e73e23;
     stroke-opacity: 1; }
   .viz-area .viz-color-1 .viz-scatter-point.viz-active, .viz-area .viz-color-1 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2011,31 +2010,31 @@
 
 .viz-area .viz-color-2.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
   .viz-area .viz-color-2.viz-line-path:hover, .viz-area .viz-color-2.viz-line-path.viz-active {
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-2.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
   .viz-area .viz-color-2.viz-area-path:hover, .viz-area .viz-color-2.viz-area-path.viz-active {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-2 .viz-scatter-point {
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1; }
   .viz-area .viz-color-2 .viz-scatter-point.viz-active {
-    stroke: #cc8e22;
+    stroke: #b1393c;
     stroke-opacity: 1; }
   .viz-area .viz-color-2 .viz-scatter-point.viz-active, .viz-area .viz-color-2 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2043,31 +2042,31 @@
 
 .viz-area .viz-color-3.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
   .viz-area .viz-color-3.viz-line-path:hover, .viz-area .viz-color-3.viz-line-path.viz-active {
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-3.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
   .viz-area .viz-color-3.viz-area-path:hover, .viz-area .viz-color-3.viz-area-path.viz-active {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-3 .viz-scatter-point {
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1; }
   .viz-area .viz-color-3 .viz-scatter-point.viz-active {
-    stroke: #c36719;
+    stroke: #8d315c;
     stroke-opacity: 1; }
   .viz-area .viz-color-3 .viz-scatter-point.viz-active, .viz-area .viz-color-3 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2075,31 +2074,31 @@
 
 .viz-area .viz-color-4.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
   .viz-area .viz-color-4.viz-line-path:hover, .viz-area .viz-color-4.viz-line-path.viz-active {
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-4.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
   .viz-area .viz-color-4.viz-area-path:hover, .viz-area .viz-color-4.viz-area-path.viz-active {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-4 .viz-scatter-point {
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1; }
   .viz-area .viz-color-4 .viz-scatter-point.viz-active {
-    stroke: #d92e2e;
+    stroke: #7c265f;
     stroke-opacity: 1; }
   .viz-area .viz-color-4 .viz-scatter-point.viz-active, .viz-area .viz-color-4 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2107,31 +2106,31 @@
 
 .viz-area .viz-color-5.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
   .viz-area .viz-color-5.viz-line-path:hover, .viz-area .viz-color-5.viz-line-path.viz-active {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-5.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
   .viz-area .viz-color-5.viz-area-path:hover, .viz-area .viz-color-5.viz-area-path.viz-active {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-5 .viz-scatter-point {
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1; }
   .viz-area .viz-color-5 .viz-scatter-point.viz-active {
-    stroke: #a23946;
+    stroke: #671b5b;
     stroke-opacity: 1; }
   .viz-area .viz-color-5 .viz-scatter-point.viz-active, .viz-area .viz-color-5 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2139,31 +2138,31 @@
 
 .viz-area .viz-color-6.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
   .viz-area .viz-color-6.viz-line-path:hover, .viz-area .viz-color-6.viz-line-path.viz-active {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-6.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
   .viz-area .viz-color-6.viz-area-path:hover, .viz-area .viz-color-6.viz-area-path.viz-active {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-6 .viz-scatter-point {
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1; }
   .viz-area .viz-color-6 .viz-scatter-point.viz-active {
-    stroke: #892d60;
+    stroke: #541157;
     stroke-opacity: 1; }
   .viz-area .viz-color-6 .viz-scatter-point.viz-active, .viz-area .viz-color-6 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2171,31 +2170,31 @@
 
 .viz-area .viz-color-7.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
   .viz-area .viz-color-7.viz-line-path:hover, .viz-area .viz-color-7.viz-line-path.viz-active {
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-7.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
   .viz-area .viz-color-7.viz-area-path:hover, .viz-area .viz-color-7.viz-area-path.viz-active {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-7 .viz-scatter-point {
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1; }
   .viz-area .viz-color-7 .viz-scatter-point.viz-active {
-    stroke: #721b85;
+    stroke: #400957;
     stroke-opacity: 1; }
   .viz-area .viz-color-7 .viz-scatter-point.viz-active, .viz-area .viz-color-7 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2203,31 +2202,31 @@
 
 .viz-area .viz-color-8.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
   .viz-area .viz-color-8.viz-line-path:hover, .viz-area .viz-color-8.viz-line-path.viz-active {
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-8.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
   .viz-area .viz-color-8.viz-area-path:hover, .viz-area .viz-color-8.viz-area-path.viz-active {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-8 .viz-scatter-point {
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1; }
   .viz-area .viz-color-8 .viz-scatter-point.viz-active {
-    stroke: #8e2cec;
+    stroke: #24015a;
     stroke-opacity: 1; }
   .viz-area .viz-color-8 .viz-scatter-point.viz-active, .viz-area .viz-color-8 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2235,31 +2234,31 @@
 
 .viz-area .viz-color-9.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
   .viz-area .viz-color-9.viz-line-path:hover, .viz-area .viz-color-9.viz-line-path.viz-active {
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-9.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
   .viz-area .viz-color-9.viz-area-path:hover, .viz-area .viz-color-9.viz-area-path.viz-active {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-9 .viz-scatter-point {
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1; }
   .viz-area .viz-color-9 .viz-scatter-point.viz-active {
-    stroke: #9754fe;
+    stroke: #1a3f87;
     stroke-opacity: 1; }
   .viz-area .viz-color-9 .viz-scatter-point.viz-active, .viz-area .viz-color-9 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2267,31 +2266,31 @@
 
 .viz-area .viz-color-10.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
   .viz-area .viz-color-10.viz-line-path:hover, .viz-area .viz-color-10.viz-line-path.viz-active {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-10.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
   .viz-area .viz-color-10.viz-area-path:hover, .viz-area .viz-color-10.viz-area-path.viz-active {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-10 .viz-scatter-point {
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1; }
   .viz-area .viz-color-10 .viz-scatter-point.viz-active {
-    stroke: #908afc;
+    stroke: #156399;
     stroke-opacity: 1; }
   .viz-area .viz-color-10 .viz-scatter-point.viz-active, .viz-area .viz-color-10 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2299,31 +2298,31 @@
 
 .viz-area .viz-color-11.viz-line-path {
   transition: stroke-opacity 0.25s linear;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
   .viz-area .viz-color-11.viz-line-path:hover, .viz-area .viz-color-11.viz-line-path.viz-active {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-11.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
   .viz-area .viz-color-11.viz-area-path:hover, .viz-area .viz-color-11.viz-area-path.viz-active {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-area .viz-color-11 .viz-scatter-point {
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1; }
   .viz-area .viz-color-11 .viz-scatter-point.viz-active {
-    stroke: #8acbfc;
+    stroke: #107ea6;
     stroke-opacity: 1; }
   .viz-area .viz-color-11 .viz-scatter-point.viz-active, .viz-area .viz-color-11 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2355,23 +2354,23 @@
 
 .viz-area.viz-focused .viz-color-0.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-0.viz-area-path:hover, .viz-area.viz-focused .viz-color-0.viz-area-path.viz-active {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-0 .viz-scatter-point {
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-0 .viz-scatter-point.viz-active {
-    stroke: #ffda51;
+    stroke: #fc7d0f;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-0 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-0 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2379,23 +2378,23 @@
 
 .viz-area.viz-focused .viz-color-1.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-1.viz-area-path:hover, .viz-area.viz-focused .viz-color-1.viz-area-path.viz-active {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-1 .viz-scatter-point {
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-1 .viz-scatter-point.viz-active {
-    stroke: #cab41c;
+    stroke: #e73e23;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-1 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-1 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2403,23 +2402,23 @@
 
 .viz-area.viz-focused .viz-color-2.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-2.viz-area-path:hover, .viz-area.viz-focused .viz-color-2.viz-area-path.viz-active {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-2 .viz-scatter-point {
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-2 .viz-scatter-point.viz-active {
-    stroke: #cc8e22;
+    stroke: #b1393c;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-2 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-2 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2427,23 +2426,23 @@
 
 .viz-area.viz-focused .viz-color-3.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-3.viz-area-path:hover, .viz-area.viz-focused .viz-color-3.viz-area-path.viz-active {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-3 .viz-scatter-point {
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-3 .viz-scatter-point.viz-active {
-    stroke: #c36719;
+    stroke: #8d315c;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-3 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-3 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2451,23 +2450,23 @@
 
 .viz-area.viz-focused .viz-color-4.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-4.viz-area-path:hover, .viz-area.viz-focused .viz-color-4.viz-area-path.viz-active {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-4 .viz-scatter-point {
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-4 .viz-scatter-point.viz-active {
-    stroke: #d92e2e;
+    stroke: #7c265f;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-4 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-4 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2475,23 +2474,23 @@
 
 .viz-area.viz-focused .viz-color-5.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-5.viz-area-path:hover, .viz-area.viz-focused .viz-color-5.viz-area-path.viz-active {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-5 .viz-scatter-point {
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-5 .viz-scatter-point.viz-active {
-    stroke: #a23946;
+    stroke: #671b5b;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-5 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-5 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2499,23 +2498,23 @@
 
 .viz-area.viz-focused .viz-color-6.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-6.viz-area-path:hover, .viz-area.viz-focused .viz-color-6.viz-area-path.viz-active {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-6 .viz-scatter-point {
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-6 .viz-scatter-point.viz-active {
-    stroke: #892d60;
+    stroke: #541157;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-6 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-6 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2523,23 +2522,23 @@
 
 .viz-area.viz-focused .viz-color-7.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-7.viz-area-path:hover, .viz-area.viz-focused .viz-color-7.viz-area-path.viz-active {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-7 .viz-scatter-point {
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-7 .viz-scatter-point.viz-active {
-    stroke: #721b85;
+    stroke: #400957;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-7 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-7 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2547,23 +2546,23 @@
 
 .viz-area.viz-focused .viz-color-8.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-8.viz-area-path:hover, .viz-area.viz-focused .viz-color-8.viz-area-path.viz-active {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-8 .viz-scatter-point {
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-8 .viz-scatter-point.viz-active {
-    stroke: #8e2cec;
+    stroke: #24015a;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-8 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-8 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2571,23 +2570,23 @@
 
 .viz-area.viz-focused .viz-color-9.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-9.viz-area-path:hover, .viz-area.viz-focused .viz-color-9.viz-area-path.viz-active {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-9 .viz-scatter-point {
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-9 .viz-scatter-point.viz-active {
-    stroke: #9754fe;
+    stroke: #1a3f87;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-9 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-9 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2595,23 +2594,23 @@
 
 .viz-area.viz-focused .viz-color-10.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-10.viz-area-path:hover, .viz-area.viz-focused .viz-color-10.viz-area-path.viz-active {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-10 .viz-scatter-point {
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-10 .viz-scatter-point.viz-active {
-    stroke: #908afc;
+    stroke: #156399;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-10 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-10 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2619,23 +2618,23 @@
 
 .viz-area.viz-focused .viz-color-11.viz-area-path {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-11.viz-area-path:hover, .viz-area.viz-focused .viz-color-11.viz-area-path.viz-active {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-area.viz-focused .viz-color-11 .viz-scatter-point {
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4; }
   .viz-area.viz-focused .viz-color-11 .viz-scatter-point.viz-active {
-    stroke: #8acbfc;
+    stroke: #107ea6;
     stroke-opacity: 1; }
   .viz-area.viz-focused .viz-color-11 .viz-scatter-point.viz-active, .viz-area.viz-focused .viz-color-11 .viz-scatter-point.viz-opened {
     fill: white !important;
@@ -2646,434 +2645,434 @@
 
 .viz-pie .viz-color-0.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
   .viz-pie .viz-color-0.viz-pie-arc:hover, .viz-pie .viz-color-0.viz-pie-arc.viz-active {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-0.viz-active .viz-pie-arc {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 1;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-1.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
   .viz-pie .viz-color-1.viz-pie-arc:hover, .viz-pie .viz-color-1.viz-pie-arc.viz-active {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-1.viz-active .viz-pie-arc {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 1;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-2.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
   .viz-pie .viz-color-2.viz-pie-arc:hover, .viz-pie .viz-color-2.viz-pie-arc.viz-active {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-2.viz-active .viz-pie-arc {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 1;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-3.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
   .viz-pie .viz-color-3.viz-pie-arc:hover, .viz-pie .viz-color-3.viz-pie-arc.viz-active {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-3.viz-active .viz-pie-arc {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 1;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-4.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
   .viz-pie .viz-color-4.viz-pie-arc:hover, .viz-pie .viz-color-4.viz-pie-arc.viz-active {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-4.viz-active .viz-pie-arc {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 1;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-5.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
   .viz-pie .viz-color-5.viz-pie-arc:hover, .viz-pie .viz-color-5.viz-pie-arc.viz-active {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-5.viz-active .viz-pie-arc {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 1;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-6.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
   .viz-pie .viz-color-6.viz-pie-arc:hover, .viz-pie .viz-color-6.viz-pie-arc.viz-active {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-6.viz-active .viz-pie-arc {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 1;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-7.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
   .viz-pie .viz-color-7.viz-pie-arc:hover, .viz-pie .viz-color-7.viz-pie-arc.viz-active {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-7.viz-active .viz-pie-arc {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 1;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-8.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
   .viz-pie .viz-color-8.viz-pie-arc:hover, .viz-pie .viz-color-8.viz-pie-arc.viz-active {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-8.viz-active .viz-pie-arc {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 1;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-9.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
   .viz-pie .viz-color-9.viz-pie-arc:hover, .viz-pie .viz-color-9.viz-pie-arc.viz-active {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-9.viz-active .viz-pie-arc {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 1;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-10.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
   .viz-pie .viz-color-10.viz-pie-arc:hover, .viz-pie .viz-color-10.viz-pie-arc.viz-active {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-10.viz-active .viz-pie-arc {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 1;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 1; }
 
 .viz-pie .viz-color-11.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
   .viz-pie .viz-color-11.viz-pie-arc:hover, .viz-pie .viz-color-11.viz-pie-arc.viz-active {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-pie .viz-color-11.viz-active .viz-pie-arc {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 1;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-0.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-0.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-0.viz-pie-arc.viz-active {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 1;
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-0.viz-active .viz-pie-arc {
-  fill: #FFE584;
+  fill: #FD9841;
   fill-opacity: 0.4;
-  stroke: #FFE584;
+  stroke: #FD9841;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-1.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-1.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-1.viz-pie-arc.viz-active {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 1;
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-1.viz-active .viz-pie-arc {
-  fill: #E3CD36;
+  fill: #EC6651;
   fill-opacity: 0.4;
-  stroke: #E3CD36;
+  stroke: #EC6651;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-2.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-2.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-2.viz-pie-arc.viz-active {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 1;
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-2.viz-active .viz-pie-arc {
-  fill: #DFA642;
+  fill: #C85558;
   fill-opacity: 0.4;
-  stroke: #DFA642;
+  stroke: #C85558;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-3.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-3.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-3.viz-pie-arc.viz-active {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 1;
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-3.viz-active .viz-pie-arc {
-  fill: #E4802B;
+  fill: #B33E75;
   fill-opacity: 0.4;
-  stroke: #E4802B;
+  stroke: #B33E75;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-4.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-4.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-4.viz-pie-arc.viz-active {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 1;
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-4.viz-active .viz-pie-arc {
-  fill: #E15959;
+  fill: #A3327D;
   fill-opacity: 0.4;
-  stroke: #E15959;
+  stroke: #A3327D;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-5.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-5.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-5.viz-pie-arc.viz-active {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 1;
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-5.viz-active .viz-pie-arc {
-  fill: #C14D5C;
+  fill: #8F267F;
   fill-opacity: 0.4;
-  stroke: #C14D5C;
+  stroke: #8F267F;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-6.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-6.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-6.viz-pie-arc.viz-active {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 1;
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-6.viz-active .viz-pie-arc {
-  fill: #AF3A7B;
+  fill: #7D1A81;
   fill-opacity: 0.4;
-  stroke: #AF3A7B;
+  stroke: #7D1A81;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-7.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-7.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-7.viz-pie-arc.viz-active {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 1;
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-7.viz-active .viz-pie-arc {
-  fill: #9624AF;
+  fill: #620E85;
   fill-opacity: 0.4;
-  stroke: #9624AF;
+  stroke: #620E85;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-8.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-8.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-8.viz-pie-arc.viz-active {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 1;
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-8.viz-active .viz-pie-arc {
-  fill: #A75BF0;
+  fill: #38028C;
   fill-opacity: 0.4;
-  stroke: #A75BF0;
+  stroke: #38028C;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-9.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-9.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-9.viz-pie-arc.viz-active {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 1;
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-9.viz-active .viz-pie-arc {
-  fill: #B687FE;
+  fill: #2253B2;
   fill-opacity: 0.4;
-  stroke: #B687FE;
+  stroke: #2253B2;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-10.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-10.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-10.viz-pie-arc.viz-active {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 1;
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-10.viz-active .viz-pie-arc {
-  fill: #BFBCFD;
+  fill: #1B80C6;
   fill-opacity: 0.4;
-  stroke: #BFBCFD;
+  stroke: #1B80C6;
   stroke-opacity: 0.4; }
 
 .viz-pie.viz-focused .viz-color-11.viz-pie-arc {
   transition: fill-color 0.25s linear, stroke-color 0.25s linear;
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4; }
   .viz-pie.viz-focused .viz-color-11.viz-pie-arc:hover, .viz-pie.viz-focused .viz-color-11.viz-pie-arc.viz-active {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 1;
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
 
 .viz-pie.viz-focused .viz-color-11.viz-active .viz-pie-arc {
-  fill: #BCE1FD;
+  fill: #15A1D4;
   fill-opacity: 0.4;
-  stroke: #BCE1FD;
+  stroke: #15A1D4;
   stroke-opacity: 0.4; }
 
 .viz-pie .viz-pie-arc-empty {
@@ -3117,88 +3116,88 @@
   .viz .viz-legend .viz-series-indicator {
     margin-right: 4px; }
   .viz .viz-legend .viz-color-0.viz-series-indicator {
-    background: #FFE584;
+    background: #FD9841;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-0.viz-series-indicator.viz-active {
-      background: #FFE584;
+      background: #FD9841;
       opacity: 1; }
   .viz .viz-legend .viz-color-1.viz-series-indicator {
-    background: #E3CD36;
+    background: #EC6651;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-1.viz-series-indicator.viz-active {
-      background: #E3CD36;
+      background: #EC6651;
       opacity: 1; }
   .viz .viz-legend .viz-color-2.viz-series-indicator {
-    background: #DFA642;
+    background: #C85558;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-2.viz-series-indicator.viz-active {
-      background: #DFA642;
+      background: #C85558;
       opacity: 1; }
   .viz .viz-legend .viz-color-3.viz-series-indicator {
-    background: #E4802B;
+    background: #B33E75;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-3.viz-series-indicator.viz-active {
-      background: #E4802B;
+      background: #B33E75;
       opacity: 1; }
   .viz .viz-legend .viz-color-4.viz-series-indicator {
-    background: #E15959;
+    background: #A3327D;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-4.viz-series-indicator.viz-active {
-      background: #E15959;
+      background: #A3327D;
       opacity: 1; }
   .viz .viz-legend .viz-color-5.viz-series-indicator {
-    background: #C14D5C;
+    background: #8F267F;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-5.viz-series-indicator.viz-active {
-      background: #C14D5C;
+      background: #8F267F;
       opacity: 1; }
   .viz .viz-legend .viz-color-6.viz-series-indicator {
-    background: #AF3A7B;
+    background: #7D1A81;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-6.viz-series-indicator.viz-active {
-      background: #AF3A7B;
+      background: #7D1A81;
       opacity: 1; }
   .viz .viz-legend .viz-color-7.viz-series-indicator {
-    background: #9624AF;
+    background: #620E85;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-7.viz-series-indicator.viz-active {
-      background: #9624AF;
+      background: #620E85;
       opacity: 1; }
   .viz .viz-legend .viz-color-8.viz-series-indicator {
-    background: #A75BF0;
+    background: #38028C;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-8.viz-series-indicator.viz-active {
-      background: #A75BF0;
+      background: #38028C;
       opacity: 1; }
   .viz .viz-legend .viz-color-9.viz-series-indicator {
-    background: #B687FE;
+    background: #2253B2;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-9.viz-series-indicator.viz-active {
-      background: #B687FE;
+      background: #2253B2;
       opacity: 1; }
   .viz .viz-legend .viz-color-10.viz-series-indicator {
-    background: #BFBCFD;
+    background: #1B80C6;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-10.viz-series-indicator.viz-active {
-      background: #BFBCFD;
+      background: #1B80C6;
       opacity: 1; }
   .viz .viz-legend .viz-color-11.viz-series-indicator {
-    background: #BCE1FD;
+    background: #15A1D4;
     transition: opacity 0.25s linear;
     opacity: 1; }
     .viz .viz-legend .viz-color-11.viz-series-indicator.viz-active {
-      background: #BCE1FD;
+      background: #15A1D4;
       opacity: 1; }
 
 .viz .viz-legend-item-value {
@@ -3207,99 +3206,99 @@
     content: ': '; }
 
 .viz.viz-focused .viz-legend .viz-color-0.viz-series-indicator {
-  background: #FFE584;
+  background: #FD9841;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-0.viz-series-indicator.viz-active {
-    background: #FFE584;
+    background: #FD9841;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-1.viz-series-indicator {
-  background: #E3CD36;
+  background: #EC6651;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-1.viz-series-indicator.viz-active {
-    background: #E3CD36;
+    background: #EC6651;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-2.viz-series-indicator {
-  background: #DFA642;
+  background: #C85558;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-2.viz-series-indicator.viz-active {
-    background: #DFA642;
+    background: #C85558;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-3.viz-series-indicator {
-  background: #E4802B;
+  background: #B33E75;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-3.viz-series-indicator.viz-active {
-    background: #E4802B;
+    background: #B33E75;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-4.viz-series-indicator {
-  background: #E15959;
+  background: #A3327D;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-4.viz-series-indicator.viz-active {
-    background: #E15959;
+    background: #A3327D;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-5.viz-series-indicator {
-  background: #C14D5C;
+  background: #8F267F;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-5.viz-series-indicator.viz-active {
-    background: #C14D5C;
+    background: #8F267F;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-6.viz-series-indicator {
-  background: #AF3A7B;
+  background: #7D1A81;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-6.viz-series-indicator.viz-active {
-    background: #AF3A7B;
+    background: #7D1A81;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-7.viz-series-indicator {
-  background: #9624AF;
+  background: #620E85;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-7.viz-series-indicator.viz-active {
-    background: #9624AF;
+    background: #620E85;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-8.viz-series-indicator {
-  background: #A75BF0;
+  background: #38028C;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-8.viz-series-indicator.viz-active {
-    background: #A75BF0;
+    background: #38028C;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-9.viz-series-indicator {
-  background: #B687FE;
+  background: #2253B2;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-9.viz-series-indicator.viz-active {
-    background: #B687FE;
+    background: #2253B2;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-10.viz-series-indicator {
-  background: #BFBCFD;
+  background: #1B80C6;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-10.viz-series-indicator.viz-active {
-    background: #BFBCFD;
+    background: #1B80C6;
     opacity: 1; }
 
 .viz.viz-focused .viz-legend .viz-color-11.viz-series-indicator {
-  background: #BCE1FD;
+  background: #15A1D4;
   transition: opacity 0.25s linear;
   opacity: 0.4; }
   .viz.viz-focused .viz-legend .viz-color-11.viz-series-indicator.viz-active {
-    background: #BCE1FD;
+    background: #15A1D4;
     opacity: 1; }
 
 .viz {
@@ -5311,577 +5310,577 @@ a.rc-modal-close {
 .reflect-charts-color-0 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-0 .reflect-charts-poi {
-    stroke: #FFE584;
+    stroke: #FD9841;
     fill: #fff; }
   .reflect-charts-color-0 .reflect-charts-series-indicator {
-    background: #FFE584; }
+    background: #FD9841; }
   .reflect-charts-color-0 .reflect-charts-line-path {
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
     .reflect-charts-color-0 .reflect-charts-line-path:hover {
-      stroke: #FFE584;
+      stroke: #FD9841;
       stroke-opacity: 1; }
 
 .reflect-charts-color-1 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-1 .reflect-charts-poi {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     fill: #fff; }
   .reflect-charts-color-1 .reflect-charts-series-indicator {
-    background: #E3CD36; }
+    background: #EC6651; }
   .reflect-charts-color-1 .reflect-charts-line-path {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
     .reflect-charts-color-1 .reflect-charts-line-path:hover {
-      stroke: #E3CD36;
+      stroke: #EC6651;
       stroke-opacity: 1; }
 
 .reflect-charts-color-2 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-2 .reflect-charts-poi {
-    stroke: #DFA642;
+    stroke: #C85558;
     fill: #fff; }
   .reflect-charts-color-2 .reflect-charts-series-indicator {
-    background: #DFA642; }
+    background: #C85558; }
   .reflect-charts-color-2 .reflect-charts-line-path {
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
     .reflect-charts-color-2 .reflect-charts-line-path:hover {
-      stroke: #DFA642;
+      stroke: #C85558;
       stroke-opacity: 1; }
 
 .reflect-charts-color-3 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-3 .reflect-charts-poi {
-    stroke: #E4802B;
+    stroke: #B33E75;
     fill: #fff; }
   .reflect-charts-color-3 .reflect-charts-series-indicator {
-    background: #E4802B; }
+    background: #B33E75; }
   .reflect-charts-color-3 .reflect-charts-line-path {
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
     .reflect-charts-color-3 .reflect-charts-line-path:hover {
-      stroke: #E4802B;
+      stroke: #B33E75;
       stroke-opacity: 1; }
 
 .reflect-charts-color-4 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-4 .reflect-charts-poi {
-    stroke: #E15959;
+    stroke: #A3327D;
     fill: #fff; }
   .reflect-charts-color-4 .reflect-charts-series-indicator {
-    background: #E15959; }
+    background: #A3327D; }
   .reflect-charts-color-4 .reflect-charts-line-path {
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
     .reflect-charts-color-4 .reflect-charts-line-path:hover {
-      stroke: #E15959;
+      stroke: #A3327D;
       stroke-opacity: 1; }
 
 .reflect-charts-color-5 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-5 .reflect-charts-poi {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     fill: #fff; }
   .reflect-charts-color-5 .reflect-charts-series-indicator {
-    background: #C14D5C; }
+    background: #8F267F; }
   .reflect-charts-color-5 .reflect-charts-line-path {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
     .reflect-charts-color-5 .reflect-charts-line-path:hover {
-      stroke: #C14D5C;
+      stroke: #8F267F;
       stroke-opacity: 1; }
 
 .reflect-charts-color-6 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-6 .reflect-charts-poi {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     fill: #fff; }
   .reflect-charts-color-6 .reflect-charts-series-indicator {
-    background: #AF3A7B; }
+    background: #7D1A81; }
   .reflect-charts-color-6 .reflect-charts-line-path {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
     .reflect-charts-color-6 .reflect-charts-line-path:hover {
-      stroke: #AF3A7B;
+      stroke: #7D1A81;
       stroke-opacity: 1; }
 
 .reflect-charts-color-7 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-7 .reflect-charts-poi {
-    stroke: #9624AF;
+    stroke: #620E85;
     fill: #fff; }
   .reflect-charts-color-7 .reflect-charts-series-indicator {
-    background: #9624AF; }
+    background: #620E85; }
   .reflect-charts-color-7 .reflect-charts-line-path {
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
     .reflect-charts-color-7 .reflect-charts-line-path:hover {
-      stroke: #9624AF;
+      stroke: #620E85;
       stroke-opacity: 1; }
 
 .reflect-charts-color-8 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-8 .reflect-charts-poi {
-    stroke: #A75BF0;
+    stroke: #38028C;
     fill: #fff; }
   .reflect-charts-color-8 .reflect-charts-series-indicator {
-    background: #A75BF0; }
+    background: #38028C; }
   .reflect-charts-color-8 .reflect-charts-line-path {
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
     .reflect-charts-color-8 .reflect-charts-line-path:hover {
-      stroke: #A75BF0;
+      stroke: #38028C;
       stroke-opacity: 1; }
 
 .reflect-charts-color-9 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-9 .reflect-charts-poi {
-    stroke: #B687FE;
+    stroke: #2253B2;
     fill: #fff; }
   .reflect-charts-color-9 .reflect-charts-series-indicator {
-    background: #B687FE; }
+    background: #2253B2; }
   .reflect-charts-color-9 .reflect-charts-line-path {
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
     .reflect-charts-color-9 .reflect-charts-line-path:hover {
-      stroke: #B687FE;
+      stroke: #2253B2;
       stroke-opacity: 1; }
 
 .reflect-charts-color-10 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-10 .reflect-charts-poi {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     fill: #fff; }
   .reflect-charts-color-10 .reflect-charts-series-indicator {
-    background: #BFBCFD; }
+    background: #1B80C6; }
   .reflect-charts-color-10 .reflect-charts-line-path {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
     .reflect-charts-color-10 .reflect-charts-line-path:hover {
-      stroke: #BFBCFD;
+      stroke: #1B80C6;
       stroke-opacity: 1; }
 
 .reflect-charts-color-11 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-11 .reflect-charts-poi {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     fill: #fff; }
   .reflect-charts-color-11 .reflect-charts-series-indicator {
-    background: #BCE1FD; }
+    background: #15A1D4; }
   .reflect-charts-color-11 .reflect-charts-line-path {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
     .reflect-charts-color-11 .reflect-charts-line-path:hover {
-      stroke: #BCE1FD;
+      stroke: #15A1D4;
       stroke-opacity: 1; }
 
 .reflect-charts-color-0 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-0 .reflect-charts-poi {
-    stroke: #FFE584;
+    stroke: #FD9841;
     fill: #fff; }
   .reflect-charts-color-0 .reflect-charts-series-indicator {
-    background: #FFE584; }
+    background: #FD9841; }
   .reflect-charts-color-0 .reflect-charts-column-rect {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 0.8; }
     .reflect-charts-color-0 .reflect-charts-column-rect:hover {
-      fill: #FFE584;
+      fill: #FD9841;
       fill-opacity: 1; }
 
 .reflect-charts-color-1 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-1 .reflect-charts-poi {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     fill: #fff; }
   .reflect-charts-color-1 .reflect-charts-series-indicator {
-    background: #E3CD36; }
+    background: #EC6651; }
   .reflect-charts-color-1 .reflect-charts-column-rect {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 0.8; }
     .reflect-charts-color-1 .reflect-charts-column-rect:hover {
-      fill: #E3CD36;
+      fill: #EC6651;
       fill-opacity: 1; }
 
 .reflect-charts-color-2 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-2 .reflect-charts-poi {
-    stroke: #DFA642;
+    stroke: #C85558;
     fill: #fff; }
   .reflect-charts-color-2 .reflect-charts-series-indicator {
-    background: #DFA642; }
+    background: #C85558; }
   .reflect-charts-color-2 .reflect-charts-column-rect {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 0.8; }
     .reflect-charts-color-2 .reflect-charts-column-rect:hover {
-      fill: #DFA642;
+      fill: #C85558;
       fill-opacity: 1; }
 
 .reflect-charts-color-3 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-3 .reflect-charts-poi {
-    stroke: #E4802B;
+    stroke: #B33E75;
     fill: #fff; }
   .reflect-charts-color-3 .reflect-charts-series-indicator {
-    background: #E4802B; }
+    background: #B33E75; }
   .reflect-charts-color-3 .reflect-charts-column-rect {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 0.8; }
     .reflect-charts-color-3 .reflect-charts-column-rect:hover {
-      fill: #E4802B;
+      fill: #B33E75;
       fill-opacity: 1; }
 
 .reflect-charts-color-4 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-4 .reflect-charts-poi {
-    stroke: #E15959;
+    stroke: #A3327D;
     fill: #fff; }
   .reflect-charts-color-4 .reflect-charts-series-indicator {
-    background: #E15959; }
+    background: #A3327D; }
   .reflect-charts-color-4 .reflect-charts-column-rect {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 0.8; }
     .reflect-charts-color-4 .reflect-charts-column-rect:hover {
-      fill: #E15959;
+      fill: #A3327D;
       fill-opacity: 1; }
 
 .reflect-charts-color-5 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-5 .reflect-charts-poi {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     fill: #fff; }
   .reflect-charts-color-5 .reflect-charts-series-indicator {
-    background: #C14D5C; }
+    background: #8F267F; }
   .reflect-charts-color-5 .reflect-charts-column-rect {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 0.8; }
     .reflect-charts-color-5 .reflect-charts-column-rect:hover {
-      fill: #C14D5C;
+      fill: #8F267F;
       fill-opacity: 1; }
 
 .reflect-charts-color-6 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-6 .reflect-charts-poi {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     fill: #fff; }
   .reflect-charts-color-6 .reflect-charts-series-indicator {
-    background: #AF3A7B; }
+    background: #7D1A81; }
   .reflect-charts-color-6 .reflect-charts-column-rect {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 0.8; }
     .reflect-charts-color-6 .reflect-charts-column-rect:hover {
-      fill: #AF3A7B;
+      fill: #7D1A81;
       fill-opacity: 1; }
 
 .reflect-charts-color-7 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-7 .reflect-charts-poi {
-    stroke: #9624AF;
+    stroke: #620E85;
     fill: #fff; }
   .reflect-charts-color-7 .reflect-charts-series-indicator {
-    background: #9624AF; }
+    background: #620E85; }
   .reflect-charts-color-7 .reflect-charts-column-rect {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 0.8; }
     .reflect-charts-color-7 .reflect-charts-column-rect:hover {
-      fill: #9624AF;
+      fill: #620E85;
       fill-opacity: 1; }
 
 .reflect-charts-color-8 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-8 .reflect-charts-poi {
-    stroke: #A75BF0;
+    stroke: #38028C;
     fill: #fff; }
   .reflect-charts-color-8 .reflect-charts-series-indicator {
-    background: #A75BF0; }
+    background: #38028C; }
   .reflect-charts-color-8 .reflect-charts-column-rect {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 0.8; }
     .reflect-charts-color-8 .reflect-charts-column-rect:hover {
-      fill: #A75BF0;
+      fill: #38028C;
       fill-opacity: 1; }
 
 .reflect-charts-color-9 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-9 .reflect-charts-poi {
-    stroke: #B687FE;
+    stroke: #2253B2;
     fill: #fff; }
   .reflect-charts-color-9 .reflect-charts-series-indicator {
-    background: #B687FE; }
+    background: #2253B2; }
   .reflect-charts-color-9 .reflect-charts-column-rect {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 0.8; }
     .reflect-charts-color-9 .reflect-charts-column-rect:hover {
-      fill: #B687FE;
+      fill: #2253B2;
       fill-opacity: 1; }
 
 .reflect-charts-color-10 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-10 .reflect-charts-poi {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     fill: #fff; }
   .reflect-charts-color-10 .reflect-charts-series-indicator {
-    background: #BFBCFD; }
+    background: #1B80C6; }
   .reflect-charts-color-10 .reflect-charts-column-rect {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 0.8; }
     .reflect-charts-color-10 .reflect-charts-column-rect:hover {
-      fill: #BFBCFD;
+      fill: #1B80C6;
       fill-opacity: 1; }
 
 .reflect-charts-color-11 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-11 .reflect-charts-poi {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     fill: #fff; }
   .reflect-charts-color-11 .reflect-charts-series-indicator {
-    background: #BCE1FD; }
+    background: #15A1D4; }
   .reflect-charts-color-11 .reflect-charts-column-rect {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 0.8; }
     .reflect-charts-color-11 .reflect-charts-column-rect:hover {
-      fill: #BCE1FD;
+      fill: #15A1D4;
       fill-opacity: 1; }
 
 .reflect-charts-color-0 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-0 .reflect-charts-poi {
-    stroke: #FFE584;
+    stroke: #FD9841;
     fill: #fff; }
   .reflect-charts-color-0 .reflect-charts-series-indicator {
-    background: #FFE584; }
+    background: #FD9841; }
   .reflect-charts-color-0 .reflect-charts-line-path {
-    stroke: #FFE584;
+    stroke: #FD9841;
     stroke-opacity: 1; }
     .reflect-charts-color-0 .reflect-charts-line-path:hover {
-      stroke: #FFE584;
+      stroke: #FD9841;
       stroke-opacity: 1; }
   .reflect-charts-color-0 .reflect-charts-area-path {
-    fill: #FFE584;
+    fill: #FD9841;
     fill-opacity: 0.8; }
     .reflect-charts-color-0 .reflect-charts-area-path:hover {
-      fill: #FFE584;
+      fill: #FD9841;
       fill-opacity: 1; }
 
 .reflect-charts-color-1 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-1 .reflect-charts-poi {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     fill: #fff; }
   .reflect-charts-color-1 .reflect-charts-series-indicator {
-    background: #E3CD36; }
+    background: #EC6651; }
   .reflect-charts-color-1 .reflect-charts-line-path {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     stroke-opacity: 1; }
     .reflect-charts-color-1 .reflect-charts-line-path:hover {
-      stroke: #E3CD36;
+      stroke: #EC6651;
       stroke-opacity: 1; }
   .reflect-charts-color-1 .reflect-charts-area-path {
-    fill: #E3CD36;
+    fill: #EC6651;
     fill-opacity: 0.8; }
     .reflect-charts-color-1 .reflect-charts-area-path:hover {
-      fill: #E3CD36;
+      fill: #EC6651;
       fill-opacity: 1; }
 
 .reflect-charts-color-2 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-2 .reflect-charts-poi {
-    stroke: #DFA642;
+    stroke: #C85558;
     fill: #fff; }
   .reflect-charts-color-2 .reflect-charts-series-indicator {
-    background: #DFA642; }
+    background: #C85558; }
   .reflect-charts-color-2 .reflect-charts-line-path {
-    stroke: #DFA642;
+    stroke: #C85558;
     stroke-opacity: 1; }
     .reflect-charts-color-2 .reflect-charts-line-path:hover {
-      stroke: #DFA642;
+      stroke: #C85558;
       stroke-opacity: 1; }
   .reflect-charts-color-2 .reflect-charts-area-path {
-    fill: #DFA642;
+    fill: #C85558;
     fill-opacity: 0.8; }
     .reflect-charts-color-2 .reflect-charts-area-path:hover {
-      fill: #DFA642;
+      fill: #C85558;
       fill-opacity: 1; }
 
 .reflect-charts-color-3 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-3 .reflect-charts-poi {
-    stroke: #E4802B;
+    stroke: #B33E75;
     fill: #fff; }
   .reflect-charts-color-3 .reflect-charts-series-indicator {
-    background: #E4802B; }
+    background: #B33E75; }
   .reflect-charts-color-3 .reflect-charts-line-path {
-    stroke: #E4802B;
+    stroke: #B33E75;
     stroke-opacity: 1; }
     .reflect-charts-color-3 .reflect-charts-line-path:hover {
-      stroke: #E4802B;
+      stroke: #B33E75;
       stroke-opacity: 1; }
   .reflect-charts-color-3 .reflect-charts-area-path {
-    fill: #E4802B;
+    fill: #B33E75;
     fill-opacity: 0.8; }
     .reflect-charts-color-3 .reflect-charts-area-path:hover {
-      fill: #E4802B;
+      fill: #B33E75;
       fill-opacity: 1; }
 
 .reflect-charts-color-4 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-4 .reflect-charts-poi {
-    stroke: #E15959;
+    stroke: #A3327D;
     fill: #fff; }
   .reflect-charts-color-4 .reflect-charts-series-indicator {
-    background: #E15959; }
+    background: #A3327D; }
   .reflect-charts-color-4 .reflect-charts-line-path {
-    stroke: #E15959;
+    stroke: #A3327D;
     stroke-opacity: 1; }
     .reflect-charts-color-4 .reflect-charts-line-path:hover {
-      stroke: #E15959;
+      stroke: #A3327D;
       stroke-opacity: 1; }
   .reflect-charts-color-4 .reflect-charts-area-path {
-    fill: #E15959;
+    fill: #A3327D;
     fill-opacity: 0.8; }
     .reflect-charts-color-4 .reflect-charts-area-path:hover {
-      fill: #E15959;
+      fill: #A3327D;
       fill-opacity: 1; }
 
 .reflect-charts-color-5 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-5 .reflect-charts-poi {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     fill: #fff; }
   .reflect-charts-color-5 .reflect-charts-series-indicator {
-    background: #C14D5C; }
+    background: #8F267F; }
   .reflect-charts-color-5 .reflect-charts-line-path {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     stroke-opacity: 1; }
     .reflect-charts-color-5 .reflect-charts-line-path:hover {
-      stroke: #C14D5C;
+      stroke: #8F267F;
       stroke-opacity: 1; }
   .reflect-charts-color-5 .reflect-charts-area-path {
-    fill: #C14D5C;
+    fill: #8F267F;
     fill-opacity: 0.8; }
     .reflect-charts-color-5 .reflect-charts-area-path:hover {
-      fill: #C14D5C;
+      fill: #8F267F;
       fill-opacity: 1; }
 
 .reflect-charts-color-6 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-6 .reflect-charts-poi {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     fill: #fff; }
   .reflect-charts-color-6 .reflect-charts-series-indicator {
-    background: #AF3A7B; }
+    background: #7D1A81; }
   .reflect-charts-color-6 .reflect-charts-line-path {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     stroke-opacity: 1; }
     .reflect-charts-color-6 .reflect-charts-line-path:hover {
-      stroke: #AF3A7B;
+      stroke: #7D1A81;
       stroke-opacity: 1; }
   .reflect-charts-color-6 .reflect-charts-area-path {
-    fill: #AF3A7B;
+    fill: #7D1A81;
     fill-opacity: 0.8; }
     .reflect-charts-color-6 .reflect-charts-area-path:hover {
-      fill: #AF3A7B;
+      fill: #7D1A81;
       fill-opacity: 1; }
 
 .reflect-charts-color-7 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-7 .reflect-charts-poi {
-    stroke: #9624AF;
+    stroke: #620E85;
     fill: #fff; }
   .reflect-charts-color-7 .reflect-charts-series-indicator {
-    background: #9624AF; }
+    background: #620E85; }
   .reflect-charts-color-7 .reflect-charts-line-path {
-    stroke: #9624AF;
+    stroke: #620E85;
     stroke-opacity: 1; }
     .reflect-charts-color-7 .reflect-charts-line-path:hover {
-      stroke: #9624AF;
+      stroke: #620E85;
       stroke-opacity: 1; }
   .reflect-charts-color-7 .reflect-charts-area-path {
-    fill: #9624AF;
+    fill: #620E85;
     fill-opacity: 0.8; }
     .reflect-charts-color-7 .reflect-charts-area-path:hover {
-      fill: #9624AF;
+      fill: #620E85;
       fill-opacity: 1; }
 
 .reflect-charts-color-8 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-8 .reflect-charts-poi {
-    stroke: #A75BF0;
+    stroke: #38028C;
     fill: #fff; }
   .reflect-charts-color-8 .reflect-charts-series-indicator {
-    background: #A75BF0; }
+    background: #38028C; }
   .reflect-charts-color-8 .reflect-charts-line-path {
-    stroke: #A75BF0;
+    stroke: #38028C;
     stroke-opacity: 1; }
     .reflect-charts-color-8 .reflect-charts-line-path:hover {
-      stroke: #A75BF0;
+      stroke: #38028C;
       stroke-opacity: 1; }
   .reflect-charts-color-8 .reflect-charts-area-path {
-    fill: #A75BF0;
+    fill: #38028C;
     fill-opacity: 0.8; }
     .reflect-charts-color-8 .reflect-charts-area-path:hover {
-      fill: #A75BF0;
+      fill: #38028C;
       fill-opacity: 1; }
 
 .reflect-charts-color-9 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-9 .reflect-charts-poi {
-    stroke: #B687FE;
+    stroke: #2253B2;
     fill: #fff; }
   .reflect-charts-color-9 .reflect-charts-series-indicator {
-    background: #B687FE; }
+    background: #2253B2; }
   .reflect-charts-color-9 .reflect-charts-line-path {
-    stroke: #B687FE;
+    stroke: #2253B2;
     stroke-opacity: 1; }
     .reflect-charts-color-9 .reflect-charts-line-path:hover {
-      stroke: #B687FE;
+      stroke: #2253B2;
       stroke-opacity: 1; }
   .reflect-charts-color-9 .reflect-charts-area-path {
-    fill: #B687FE;
+    fill: #2253B2;
     fill-opacity: 0.8; }
     .reflect-charts-color-9 .reflect-charts-area-path:hover {
-      fill: #B687FE;
+      fill: #2253B2;
       fill-opacity: 1; }
 
 .reflect-charts-color-10 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-10 .reflect-charts-poi {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     fill: #fff; }
   .reflect-charts-color-10 .reflect-charts-series-indicator {
-    background: #BFBCFD; }
+    background: #1B80C6; }
   .reflect-charts-color-10 .reflect-charts-line-path {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     stroke-opacity: 1; }
     .reflect-charts-color-10 .reflect-charts-line-path:hover {
-      stroke: #BFBCFD;
+      stroke: #1B80C6;
       stroke-opacity: 1; }
   .reflect-charts-color-10 .reflect-charts-area-path {
-    fill: #BFBCFD;
+    fill: #1B80C6;
     fill-opacity: 0.8; }
     .reflect-charts-color-10 .reflect-charts-area-path:hover {
-      fill: #BFBCFD;
+      fill: #1B80C6;
       fill-opacity: 1; }
 
 .reflect-charts-color-11 {
   transition: opacity 0.25s linear; }
   .reflect-charts-color-11 .reflect-charts-poi {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     fill: #fff; }
   .reflect-charts-color-11 .reflect-charts-series-indicator {
-    background: #BCE1FD; }
+    background: #15A1D4; }
   .reflect-charts-color-11 .reflect-charts-line-path {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     stroke-opacity: 1; }
     .reflect-charts-color-11 .reflect-charts-line-path:hover {
-      stroke: #BCE1FD;
+      stroke: #15A1D4;
       stroke-opacity: 1; }
   .reflect-charts-color-11 .reflect-charts-area-path {
-    fill: #BCE1FD;
+    fill: #15A1D4;
     fill-opacity: 0.8; }
     .reflect-charts-color-11 .reflect-charts-area-path:hover {
-      fill: #BCE1FD;
+      fill: #15A1D4;
       fill-opacity: 1; }
 
 .reflect-charts-area-path {
@@ -5890,134 +5889,134 @@ a.rc-modal-close {
 .reflect-charts-donut .reflect-charts-color-0 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-0 .reflect-charts-poi {
-    stroke: #FFE584;
+    stroke: #FD9841;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-0 .reflect-charts-series-indicator {
-    background: #FFE584; }
+    background: #FD9841; }
   .reflect-charts-donut .reflect-charts-color-0 .reflect-charts-donut-arc {
-    stroke: #FFE584;
-    fill: #FFE584; }
+    stroke: #FD9841;
+    fill: #FD9841; }
 
 .reflect-charts-donut .reflect-charts-color-1 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-1 .reflect-charts-poi {
-    stroke: #E3CD36;
+    stroke: #EC6651;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-1 .reflect-charts-series-indicator {
-    background: #E3CD36; }
+    background: #EC6651; }
   .reflect-charts-donut .reflect-charts-color-1 .reflect-charts-donut-arc {
-    stroke: #E3CD36;
-    fill: #E3CD36; }
+    stroke: #EC6651;
+    fill: #EC6651; }
 
 .reflect-charts-donut .reflect-charts-color-2 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-2 .reflect-charts-poi {
-    stroke: #DFA642;
+    stroke: #C85558;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-2 .reflect-charts-series-indicator {
-    background: #DFA642; }
+    background: #C85558; }
   .reflect-charts-donut .reflect-charts-color-2 .reflect-charts-donut-arc {
-    stroke: #DFA642;
-    fill: #DFA642; }
+    stroke: #C85558;
+    fill: #C85558; }
 
 .reflect-charts-donut .reflect-charts-color-3 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-3 .reflect-charts-poi {
-    stroke: #E4802B;
+    stroke: #B33E75;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-3 .reflect-charts-series-indicator {
-    background: #E4802B; }
+    background: #B33E75; }
   .reflect-charts-donut .reflect-charts-color-3 .reflect-charts-donut-arc {
-    stroke: #E4802B;
-    fill: #E4802B; }
+    stroke: #B33E75;
+    fill: #B33E75; }
 
 .reflect-charts-donut .reflect-charts-color-4 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-4 .reflect-charts-poi {
-    stroke: #E15959;
+    stroke: #A3327D;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-4 .reflect-charts-series-indicator {
-    background: #E15959; }
+    background: #A3327D; }
   .reflect-charts-donut .reflect-charts-color-4 .reflect-charts-donut-arc {
-    stroke: #E15959;
-    fill: #E15959; }
+    stroke: #A3327D;
+    fill: #A3327D; }
 
 .reflect-charts-donut .reflect-charts-color-5 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-5 .reflect-charts-poi {
-    stroke: #C14D5C;
+    stroke: #8F267F;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-5 .reflect-charts-series-indicator {
-    background: #C14D5C; }
+    background: #8F267F; }
   .reflect-charts-donut .reflect-charts-color-5 .reflect-charts-donut-arc {
-    stroke: #C14D5C;
-    fill: #C14D5C; }
+    stroke: #8F267F;
+    fill: #8F267F; }
 
 .reflect-charts-donut .reflect-charts-color-6 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-6 .reflect-charts-poi {
-    stroke: #AF3A7B;
+    stroke: #7D1A81;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-6 .reflect-charts-series-indicator {
-    background: #AF3A7B; }
+    background: #7D1A81; }
   .reflect-charts-donut .reflect-charts-color-6 .reflect-charts-donut-arc {
-    stroke: #AF3A7B;
-    fill: #AF3A7B; }
+    stroke: #7D1A81;
+    fill: #7D1A81; }
 
 .reflect-charts-donut .reflect-charts-color-7 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-7 .reflect-charts-poi {
-    stroke: #9624AF;
+    stroke: #620E85;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-7 .reflect-charts-series-indicator {
-    background: #9624AF; }
+    background: #620E85; }
   .reflect-charts-donut .reflect-charts-color-7 .reflect-charts-donut-arc {
-    stroke: #9624AF;
-    fill: #9624AF; }
+    stroke: #620E85;
+    fill: #620E85; }
 
 .reflect-charts-donut .reflect-charts-color-8 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-8 .reflect-charts-poi {
-    stroke: #A75BF0;
+    stroke: #38028C;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-8 .reflect-charts-series-indicator {
-    background: #A75BF0; }
+    background: #38028C; }
   .reflect-charts-donut .reflect-charts-color-8 .reflect-charts-donut-arc {
-    stroke: #A75BF0;
-    fill: #A75BF0; }
+    stroke: #38028C;
+    fill: #38028C; }
 
 .reflect-charts-donut .reflect-charts-color-9 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-9 .reflect-charts-poi {
-    stroke: #B687FE;
+    stroke: #2253B2;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-9 .reflect-charts-series-indicator {
-    background: #B687FE; }
+    background: #2253B2; }
   .reflect-charts-donut .reflect-charts-color-9 .reflect-charts-donut-arc {
-    stroke: #B687FE;
-    fill: #B687FE; }
+    stroke: #2253B2;
+    fill: #2253B2; }
 
 .reflect-charts-donut .reflect-charts-color-10 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-10 .reflect-charts-poi {
-    stroke: #BFBCFD;
+    stroke: #1B80C6;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-10 .reflect-charts-series-indicator {
-    background: #BFBCFD; }
+    background: #1B80C6; }
   .reflect-charts-donut .reflect-charts-color-10 .reflect-charts-donut-arc {
-    stroke: #BFBCFD;
-    fill: #BFBCFD; }
+    stroke: #1B80C6;
+    fill: #1B80C6; }
 
 .reflect-charts-donut .reflect-charts-color-11 {
   transition: opacity 0.25s linear; }
   .reflect-charts-donut .reflect-charts-color-11 .reflect-charts-poi {
-    stroke: #BCE1FD;
+    stroke: #15A1D4;
     fill: #fff; }
   .reflect-charts-donut .reflect-charts-color-11 .reflect-charts-series-indicator {
-    background: #BCE1FD; }
+    background: #15A1D4; }
   .reflect-charts-donut .reflect-charts-color-11 .reflect-charts-donut-arc {
-    stroke: #BCE1FD;
-    fill: #BCE1FD; }
+    stroke: #15A1D4;
+    fill: #15A1D4; }
 
 .reflect-charts-wrapper {
   position: relative;
