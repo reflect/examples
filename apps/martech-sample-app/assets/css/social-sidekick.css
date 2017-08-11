@@ -630,6 +630,7 @@
     padding: 0 !important;
     font-size: 12px !important; }
   .viz .viz-tooltip .viz-dimension-value {
+    color: #fff;
     background-color: #6D7A87;
     padding-top: 7px;
     padding-bottom: 7px; }
