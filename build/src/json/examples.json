@@ -1,34 +1,43 @@
 [
   {
-    "name": "martech-sample-app",
-    "category": "martech-sample-app",
-    "description": "Create ad and social reporting apps with just Bootstrap and Reflect. This template is ready to fork and re-use.",
+    "name": "logistics-sample-app",
+    "category": "logistics-sample-app",
+    "description": "Identify new buyer markets and keep your suppliers informed. This template is ready to fork and re-use.",
     "mainGoal": "NA",
     "secondaryGoal": "NA",
-    "features": ["interactions","template"],
+    "features": ["multitenancy","ready to fork"],
+    "dataset": "NA"
+  },
+  {
+    "name": "martech-sample-app",
+    "category": "martech-sample-app",
+    "description": "Prove out ROI to your advertising and marketing clients. This template is ready to fork and re-use.",
+    "mainGoal": "NA",
+    "secondaryGoal": "NA",
+    "features": ["data interactions","ready to fork"],
     "dataset": "NA"
   },
   {
     "name": "ecommerce-sample-app",
     "category": "ecommerce-sample-app",
-    "description": "Create revenue and customer reporting apps with just Bootstrap and Reflect. This template is ready to fork and re-use.",
+    "description": "Illustrate sales trends and share PDF exports. This template is ready to fork and re-use.",
     "mainGoal": "NA",
     "secondaryGoal": "NA",
-    "features": ["theming","template"],
+    "features": ["filters","ready to fork"],
     "dataset": "NA"
   },
   {
     "name": "cereal",
-    "category": "theming",
+    "category": "theming-your-view",
     "description": "Brand your Reflect visualizations using our SaaS framework. Easily effect fonts, palettes, borders, and more.",
     "mainGoal": "Toggle between the light and dark themes",
     "secondaryGoal": "Download the table data by clicking <em>Export</em>",
-    "features": ["theming"],
+    "features": ["themes"],
     "dataset": "cereal.csv"
   },
   {
     "name": "auto-insurance",
-    "category": "filters",
+    "category": "filtering-with-controls",
     "description": "Filter your components and views with flexbile controls. Include a filter bar from the app or build triggers, simply.",
     "mainGoal": "Swap regional filters using custom buttons.",
     "secondaryGoal": "Use the filter bar to learn where the Learner's Permit age is 14.",
@@ -37,7 +46,7 @@
   },
   {
     "name": "airline-survey",
-    "category": "formatters",
+    "category": "reformatting-values",
     "description": "Manipulate your data on the frontend. Shorten metrics, add units, and define empty values with custom formatters.",
     "mainGoal": "Apply formatters to clarify the data.",
     "secondaryGoal": "Explore new questions with dropdown controls.",
@@ -46,25 +55,25 @@
   },
   {
     "name": "job-market",
-    "category": "interactions",
-    "description": "Use data point interactions to update components and views. Exchange views by simply changing the view ID.",
+    "category": "adding-data-interactions",
+    "description": "Use data point interactions to drill into data points and swap reports. Install custom controls for added flexibility.",
     "mainGoal": "Use the select bar to filter by Industry.",
     "secondaryGoal": "Click on a bar column to drill into a new view.",
-    "features": ["interactions", "custom controls"],
+    "features": ["data interactions", "custom controls"],
     "dataset": "leading-industries.csv"
   },
   {
     "name": "e-commerce",
-    "category": "parameters",
+    "category": "enforcing-multitenancy",
     "description": "Apply parameters to enforce user authentication. Users will only see data permitted by their credentials.",
     "mainGoal": "Turn on parameters and login.",
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
-    "features": ["parameters"],
+    "features": ["multitenancy"],
     "dataset": "default"
   },
   {
     "name": "earthquakes",
-    "category": "custom-components",
+    "category": "installing-custom-components",
     "description": "Build new, exciting components on top of our data modeling. Retain full Reflect feature functionality.",
     "mainGoal": "Explore the world of quakes using zoom and drag.",
     "secondaryGoal": "Change the date inputs to filter the view.",
@@ -72,30 +81,21 @@
     "dataset": "world-earthquakes.csv"
   },
   {
+    "name": "video-games",
+    "category": "applying-custom-colors",
+    "description": "Assign unique color values to dimensions to build associations. Maintain visual consistency and swap colors on the fly.",
+    "mainGoal": "Remove custom coloring to return to default styles.",
+    "secondaryGoal": "Click on a timeseries legend item to filter the entire view.",
+    "features": ["custom colors", "filters"],
+    "dataset": "games-sales.csv"
+  },
+  {
     "name": "klout-analytics-scraper",
     "category": "top-influencers",
     "description": "Give a shoutout to those that matter most. At Reflect, we love building <a target='_blank' href='https://reflect.io/contact-us'>free custom demos</a> and <a target='_blank' href='https://reflect.io'>making good impressions</a>.",
     "mainGoal": "Submit the code you received to see your top influencers.",
     "secondaryGoal": "Click on any data point to send the user a tweet!",
-    "features": ["parameters", "interactions"],
+    "features": ["data interactions"],
     "dataset": "klout"
-  },
-  {
-    "name": "martech",
-    "category": "sample-prospector",
-    "description": "Find prospects by sector, then export and enhance.",
-    "mainGoal": "Click on a data point to drill in!",
-    "secondaryGoal": "Request a <a target='_blank' href='https://reflect.io/contact-us'>free custom demo</a>",
-    "features": ["parameters", "interactions"],
-    "dataset": "klout"
-  },
-  {
-    "name": "video-games",
-    "category": "custom-colors",
-    "description": "Assign unique color values to dimensions to build associations. Maintain visual consistency and swap colors on the fly.",
-    "mainGoal": "Remove custom coloring to return to default styles.",
-    "secondaryGoal": "Click on a timeseries legend item to filter the entire view.",
-    "features": ["custom colors", "filters", "interactions"],
-    "dataset": "games-sales.csv"
   }
 ]

@@ -33,13 +33,13 @@ $mobile: 799px;
   &.formatters {
     color: #FACF13;
   }
-  &.parameters {
+  &.multitenancy {
     color: #FF03A6;
   }
-  &.theming {
+  &.themes {
     color: #269CFF;
   }
-  &.interactions {
+  &.data_interactions {
     color: orange;
   }
   &.dates {
@@ -48,7 +48,7 @@ $mobile: 799px;
   &.custom_components {
     color: #4475CC;
   }
-  &.template {
+  &.ready_to_fork {
     color: grey;
   }
 }

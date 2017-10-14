@@ -2,14 +2,14 @@
 var featureUrls = {
   custom_colors: "https://reflect.io/docs/platform/embedding#Customcolors",
   filters: "https://reflect.io/docs/platform/embedding#Filters",
-  parameters: "https://reflect.io/docs/platform/authentication#Parameterizedviews",
-  theming: "https://reflect.io/docs/platform/theming",
+  multitenancy: "https://reflect.io/docs/platform/authentication#Parameterizedviews",
+  themes: "https://reflect.io/docs/platform/theming",
   formatters: "https://reflect.io/docs/platform/embedding#Formatters",
-  interactions: "https://reflect.io/docs/platform/embedding#Interactions",
+  data_interactions: "https://reflect.io/docs/platform/embedding#Interactions",
   custom_controls: "https://reflect.io/docs/platform/embedding#CustomizingyourReflectviews",
   custom_components: "https://reflect.io/docs/platform/embedding#Customcomponenttypes",
   dates: "https://reflect.io/docs/platform/embedding#Dateranges",
-  template: "https://github.com/reflect/examples/tree/master/apps"
+  ready_to_fork: "https://github.com/reflect/examples/tree/master/apps"
 }
 
 $(function(){
@@ -32,9 +32,9 @@ $(function(){
     var next = data.length > appId+1 ? data[appId+1] : data[0];
 
     //remove custom demos from navigation
-    if (prev.category === 'top-influencers' || prev.category === 'sample-prospector') {
-      prev = data[data.length-3];
-    } else if (next.category === 'top-influencers' || next.category === 'sample-prospector') {
+    if (prev.category === 'top-influencers') {
+      prev = data[data.length-2];
+    } else if (next.category === 'top-influencers') {
       next = data[0];
     }
 
@@ -69,7 +69,7 @@ $(function(){
     var datasetLink;
 
     if (dataset === 'default') {
-      datasetLink = '<p>Default sample connection</p>';
+      datasetLink = '<p> Default sample connection</p>';
     } else if (dataset === 'klout') {
       datasetLink = '<p>Klout API</p>';
     } else {
