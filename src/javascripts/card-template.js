@@ -3,7 +3,7 @@ $(function(){
   $.get('./src/json/examples.json', function(app) {
     var $list = $('.card-list');
 
-    var ignoredApps = ['top-influencers', 'sample-prospector'];
+    var ignoredApps = ['top-influencers'];
 
     app.forEach(function(d) {
       if (ignoredApps.indexOf(d.category) < 0) {
@@ -19,11 +19,18 @@ $(function(){
 
         features = features.sort().join('');
 
+        //retrieve path or redirect for external apps
+        var path = "./" + d.category;
+
+        if (d.category === "logistics-sample-app") {
+          path = "https://reflect-examples-logistics-app.herokuapp.com"
+        }
+
         //create the card
         $list.append(`
           <div class="card-wrapper">
             <div class="card">
-              <a href="./` + d.category + `">
+              <a href="` + path + `">
                 <div class="image-wrapper">
                   <img src="./` + d.category + `/` + d.name + `.png" />
                 </div>
