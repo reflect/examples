@@ -5,7 +5,7 @@
     "description": "Identify new buyer markets and keep your suppliers informed. This template is ready to fork and re-use.",
     "mainGoal": "NA",
     "secondaryGoal": "NA",
-    "features": ["multitenancy","ready to fork"],
+    "features": ["parameters","ready to fork"],
     "dataset": "NA"
   },
   {
@@ -64,11 +64,11 @@
   },
   {
     "name": "e-commerce",
-    "category": "enforcing-multitenancy",
+    "category": "enforcing-parameters",
     "description": "Apply parameters to enforce user authentication. Users will only see data permitted by their credentials.",
     "mainGoal": "Turn on parameters and login.",
     "secondaryGoal": "Note how the view is now limited to Ted's personal data.",
-    "features": ["multitenancy"],
+    "features": ["parameters"],
     "dataset": "default"
   },
   {
