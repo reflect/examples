@@ -72,9 +72,17 @@
         '(empty)': 'Undecided'
       };
 
+      var parentFormatters = {
+        'Yes': 'Has kids',
+        'No': 'Has no kids'
+      };
+
       //call to apply custom formatters
       function applyFormatters() {
         ui.withFormatters({
+          'Fliers': function(d) {
+            return d + ' fliers';
+          },
           'Is it rude to wake a passenger to walk around?': function(d) {
             return rudeFormatters[d];
           },
@@ -93,8 +101,8 @@
           'Who gets control of window shade?': function(d) {
             return windowFormatters[d];
           },
-          'Fliers': function(d) {
-            return d + ' fliers';
+          'Is a parent': function(d) {
+            return parentFormatters[d];
           }
         });
       };
