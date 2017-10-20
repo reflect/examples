@@ -24,7 +24,7 @@ body, .navbar {
   background: #fff;
   position: fixed;
   width: 290px;
-  padding: 60px 60px 30px 60px;
+  padding: 70px 60px 30px 60px;
 }
 
 .sidebar h4 {
@@ -175,7 +175,7 @@ input:checked + .slider:before {
   background: #fff;
   /*padding: 10px;*/
   /*max-width: 1200px;*/
-  margin: 83px 60px 0 270px;
+  margin: 83px 60px 60px 270px;
 }
 
 /* Footer */
