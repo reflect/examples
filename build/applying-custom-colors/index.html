@@ -48,6 +48,19 @@
         ui.view(document.getElementById('view'), 'jurfWr30SiiPlM8Nt0QJpg');
       }
 
+      //call to reformat long values
+      function applyFormatters() {
+        ui.withFormatters({
+          'Publisher': function(d) {
+            if (d === 'Sony Computer Entertainment') {
+              d = 'Sony';
+            }
+
+            return d;
+          }
+        })
+      }
+
       //call to apply custom colors
       function applyColors() {
         ui.withColors({
@@ -55,7 +68,7 @@
             'Nintendo': '#DE0000',
             'Electronic Arts': '#005BAA',
             'Activision': 'silver',
-            'Sony Computer Entertainment': '#EDA802',
+            'Sony': '#EDA802',
             'Ubisoft': '#512DA8'
           }
         });
@@ -66,7 +79,8 @@
         ui.withColors({});
       }
 
-      //apply custom colors and render on page load
+      //apply reformat names, custom colors and render on page load
+      applyFormatters()
       applyColors();
       render();
 
