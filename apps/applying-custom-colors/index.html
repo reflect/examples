@@ -48,7 +48,7 @@
         ui.view(document.getElementById('view'), 'jurfWr30SiiPlM8Nt0QJpg');
       }
 
-      //call to reformat long values
+      //call to reformat long Publisher names
       function applyFormatters() {
         ui.withFormatters({
           'Publisher': function(d) {
@@ -68,7 +68,7 @@
             'Nintendo': '#DE0000',
             'Electronic Arts': '#005BAA',
             'Activision': 'silver',
-            'Sony': '#EDA802',
+            'Sony Computer Entertainment': '#EDA802',
             'Ubisoft': '#512DA8'
           }
         });
@@ -79,7 +79,7 @@
         ui.withColors({});
       }
 
-      //apply reformat names, custom colors and render on page load
+      //reformat names, apply custom colors and render on page load
       applyFormatters()
       applyColors();
       render();
