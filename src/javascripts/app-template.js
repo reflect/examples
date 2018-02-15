@@ -2,7 +2,7 @@
 var featureUrls = {
   custom_colors: "https://reflect.io/docs/platform/embedding#Customcolors",
   filters: "https://reflect.io/docs/platform/embedding#Filters",
-  parameters: "https://reflect.io/docs/platform/authentication#Parameterizedviews",
+  authentication: "https://reflect.io/docs/platform/authentication#authentication-tokens",
   themes: "https://reflect.io/docs/platform/theming",
   formatters: "https://reflect.io/docs/platform/embedding#Formatters",
   data_interactions: "https://reflect.io/docs/platform/embedding#Interactions",

@@ -6,9 +6,9 @@
     <title id="app-title"></title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link href="../src/stylesheets/main.css" rel="stylesheet" />
-    <link href="https://cdn.reflect.io/1.0.0/reflect.css" rel="stylesheet" />
+    <link href="https://cdn.reflect.io/1.12.2/reflect.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.reflect.io/1.0.0/reflect.js"></script>
+    <script src="https://cdn.reflect.io/1.12.2/reflect.js"></script>
     <script src="../src/javascripts/app-template.js"></script>
     <script src="../src/javascripts/external.js"></script>
   </head>
@@ -24,12 +24,12 @@
       <div class="toolbar">
         <div id="app-instruction"></div>
         <div class="controls">
-          <button id="enforce-params" class="active">Turn Parameters On</button>
+          <button id="enforce-auth" class="active">Turn Authentication On</button>
           <div id="authentication" class="hidden">
             <input placeholder="Ted@SalesTeam.com" disabled>
-            <button id="authenticate-params" class="active">Login</button>
+            <button id="authenticate" class="active">Log in</button>
           </div>
-          <button id="remove-params" class="hidden">Turn Parameters Off</button>
+          <button id="remove-auth" class="hidden">Turn Authentication Off</button>
         </div>
       </div>
 
@@ -67,23 +67,8 @@
 
         //make a request to your backend to fetch a signed token generated with user attributes
         $.get('../src/json/' + userId, function(data) {
-          //create the REFLECT instance with the project access token and signed token
-          var ui = new ReflectUI([
-            'd6e7e493-c9ea-4226-a048-26b30cd03755',
-            data.reflectSignedToken
-          ]);
-
-          //define parameters with user attributes to match backend request
-          var userParam = {
-             field: 'Region',
-             op: '=',
-             value: data.userRegion
-           }
-
-          //apply parameters
-          ui.withParameters([
-            userParam
-          ]);
+          //create the REFLECT instance with the encrypted token
+          var ui = new ReflectUI(data.token);
 
           //render secure view
           renderSecure(ui);
@@ -91,27 +76,27 @@
       };
 
       //try rendering view without authentication -- fails
-      $('#enforce-params').click(function(e) {
+      $('#enforce-auth').click(function(e) {
         renderSecure(ui);
 
-        $('#enforce-params').addClass('hidden');
+        $('#enforce-auth').addClass('hidden');
         $('#authentication').removeClass('hidden');
       });
 
       //authenticate user and render a parameterized view
-      $('#authenticate-params').click(function(e) {
+      $('#authenticate').click(function(e) {
         authenticateUser();
 
         $('#authentication').addClass('hidden');
-        $('#remove-params').removeClass('hidden');
+        $('#remove-auth').removeClass('hidden');
       });
 
       //remove parameters and return to exposed view
-      $('#remove-params').click(function(e) {
+      $('#remove-auth').click(function(e) {
         render();
 
-        $('#remove-params').addClass('hidden');
-        $('#enforce-params').removeClass('hidden');
+        $('#remove-auth').addClass('hidden');
+        $('#enforce-auth').removeClass('hidden');
       });
     </script>
   </body>
